@@ -1,0 +1,12 @@
+/* Webfont: Rebeqa-ThinItalic */@font-face {
+    font-family: 'AméliaDisplayThinIta';
+    src: url('Rebeqa-ThinItalic.eot'); /* IE9 Compat Modes */
+    src: url('Rebeqa-ThinItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Rebeqa-ThinItalic.woff') format('woff'), /* Modern Browsers */
+         url('Rebeqa-ThinItalic.woff2') format('woff2'), /* Modern Browsers */
+         url('Rebeqa-ThinItalic.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

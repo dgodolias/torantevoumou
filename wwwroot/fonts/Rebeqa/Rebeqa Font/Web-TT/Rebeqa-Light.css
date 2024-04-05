@@ -1,0 +1,12 @@
+/* Webfont: Rebeqa-Light */@font-face {
+    font-family: 'AméliaDisplayLight';
+    src: url('Rebeqa-Light.eot'); /* IE9 Compat Modes */
+    src: url('Rebeqa-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Rebeqa-Light.woff') format('woff'), /* Modern Browsers */
+         url('Rebeqa-Light.woff2') format('woff2'), /* Modern Browsers */
+         url('Rebeqa-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

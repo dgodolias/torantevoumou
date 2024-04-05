@@ -1,0 +1,12 @@
+/* Webfont: Rebeqa-SemiBold */@font-face {
+    font-family: 'AméliaDisplaySemBd';
+    src: url('Rebeqa-SemiBold.eot'); /* IE9 Compat Modes */
+    src: url('Rebeqa-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Rebeqa-SemiBold.woff') format('woff'), /* Modern Browsers */
+         url('Rebeqa-SemiBold.woff2') format('woff2'), /* Modern Browsers */
+         url('Rebeqa-SemiBold.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

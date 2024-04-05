@@ -1,8 +1,32 @@
 @page
+@model YourNamespace.IndexModel
 @{
-    ViewData["Title"] = "Admin Page";
+    ViewData["Title"] = "Home page";
 }
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <h2>Clients</h2>
 
-<h1>Admin Page</h1>
+    <ul>
+    @if (Model.Clients != null)
+    {
+        @foreach (var client in Model.Clients)
+        {
+            <li>
+                ID: @client.Id<br />
+                First Name: @client.FirstName<br />
+                Last Name: @client.LastName<br />
+                Appointment Date: @client.AppointmentDate.ToShortDateString()<br />
+                Appointment Time: @client.AppointmentTime.ToString(@"hh\:mm\:ss")<br />
+            </li>
+        }
+    }
+</ul>
 
-<p>Welcome to the admin page!</p>
+</body>
+</html>

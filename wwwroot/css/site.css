@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'Aesthetic Regular';
+    src: url('../fonts/Aesthetic/AestheticRegular.otf') format('opentype');
+}
+
 body {
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: 'Aesthetic Regular', fallback;
 }
 
 h2 {
@@ -15,4 +20,16 @@ ul {
 li {
     padding: 10px;
     border-bottom: 1px solid #ccc;
+}
+
+.carousel-indicators li {
+    padding: 3px;
+    width: 60px;
+    height: 2px;
+    margin: 0 10px; /* Adds space around the indicators */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.container {
+    padding-top: 10px;
 }

@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using YourNamespace;
-using System.Timers;
 
 var builder = WebApplication.CreateBuilder(args);
 
