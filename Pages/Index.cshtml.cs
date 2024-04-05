@@ -14,11 +14,11 @@ namespace YourNamespace
             _db = db;
         }
 
-        public List<Movie> Movies { get; set; }
+        public List<Client> Clients { get; set; }
 
         public async Task OnGetAsync()
         {
-            Movies = await _db.Movies.ToListAsync();
+            Clients = await _db.Clients.ToListAsync();
         }
     }
 }

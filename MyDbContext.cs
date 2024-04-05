@@ -1,11 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
 namespace YourNamespace;
-public class Movie
-{
-    public int Id { get; set; }
-    public string Title { get; set; }
-}
 
 public class MyDbContext : DbContext
 {
@@ -14,9 +9,9 @@ public class MyDbContext : DbContext
     {
     }
 
-    public DbSet<Movie> Movies { get; set; }
+    public DbSet<Client> Clients { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Movie>().ToTable("movie");
+        modelBuilder.Entity<Client>().ToTable("Appointments");
     }
 }

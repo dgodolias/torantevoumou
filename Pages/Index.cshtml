@@ -10,13 +10,20 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <h2>Movies</h2>
+    <h2>Clients</h2>
 
     <ul>
-        @foreach (var movie in Model.Movies)
-        {
-            <li>@movie.Title - @movie.Id</li>
-        }
-    </ul>
+    @foreach (var client in Model.Clients)
+    {
+        <li>
+            ID: @client.Id<br />
+            First Name: @client.FirstName<br />
+            Last Name: @client.LastName<br />
+            Appointment Date: @client.AppointmentDate.ToShortDateString()<br />
+            Appointment Time: @client.AppointmentTime.ToString(@"hh\:mm\:ss")<br />
+        </li>
+    }
+</ul>
+
 </body>
 </html>
