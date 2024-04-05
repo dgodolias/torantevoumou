@@ -3,12 +3,20 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <h2>Movies</h2>
 
-<h2>Movies</h2>
-
-<ul>
-    @foreach (var movie in Model.Movies)
-    {
-        <li>@movie.Title - @movie.Id</li>
-    }
-</ul>
+    <ul>
+        @foreach (var movie in Model.Movies)
+        {
+            <li>@movie.Title - @movie.Id</li>
+        }
+    </ul>
+</body>
+</html>

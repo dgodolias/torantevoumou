@@ -15,4 +15,8 @@ public class MyDbContext : DbContext
     }
 
     public DbSet<Movie> Movies { get; set; }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Movie>().ToTable("movie");
+    }
 }
