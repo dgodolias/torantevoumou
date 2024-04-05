@@ -42,7 +42,7 @@ app.MapGet("/", async (HttpContext context) =>
         {
             Console.WriteLine($"Id: {movie.Id}, Title: {movie.Title}");
         }*/
-        return Results.Ok("Successfully retrieved data"); // Add a return statement to ensure all code paths return a value
+        return Results.Ok("Successfully retrieved dataaaa"); // Add a return statement to ensure all code paths return a value
     }
     catch (Exception ex)
     {
