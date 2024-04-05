@@ -1,0 +1,14 @@
+@page
+@model YourNamespace.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h2>Movies</h2>
+
+<ul>
+    @foreach (var movie in Model.Movies)
+    {
+        <li>@movie.Title - @movie.Id</li>
+    }
+</ul>
