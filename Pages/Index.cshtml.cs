@@ -14,7 +14,7 @@ namespace YourNamespace
             _db = db;
         }
 
-        public List<Client> Clients { get; set; }
+        public List<Client>? Clients { get; set; }
 
         public async Task OnGetAsync()
         {
