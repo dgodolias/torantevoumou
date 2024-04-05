@@ -1,10 +1,6 @@
-using System;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using YourNamespace;
+using System.Timers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,13 +28,21 @@ app.UseRouting();
 app.UseAuthorization();
 
 
+List<YourNamespace.Movie> movieList = new List<YourNamespace.Movie>();
+
 app.MapGet("/", async (HttpContext context) =>
 {
     try
     {
         var db = context.RequestServices.GetRequiredService<MyDbContext>();
         var movies = await db.Movies.FromSqlRaw("SELECT * FROM movie").ToListAsync();
-        return Results.Ok(new OkObjectResult(movies));
+        movieList = movies; // Store the movies in the list
+        // Print each movie in the terminal
+        /*foreach (var movie in movies)
+        {
+            Console.WriteLine($"Id: {movie.Id}, Title: {movie.Title}");
+        }*/
+        return Results.Ok("Successfully retrieved data"); // Add a return statement to ensure all code paths return a value
     }
     catch (Exception ex)
     {
@@ -46,7 +50,22 @@ app.MapGet("/", async (HttpContext context) =>
     }
 });
 
+var timer = new System.Timers.Timer(1000);
+timer.Elapsed += (sender, e) =>
+{
+    if (movieList.Count > 0)
+    {
+        foreach (var movie in movieList)
+        {
+            Console.WriteLine($"Id: {movie.Id}, Title: {movie.Title}");
+        }
+
+        // Stop the timer after printing the movies
+        timer.Stop();
+    }
+};
+timer.Start();
+
 app.MapRazorPages();
 
 app.Run();
-//sxolio
