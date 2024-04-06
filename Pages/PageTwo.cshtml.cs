@@ -6,14 +6,28 @@ namespace YourNamespace
 {
     public class PageTwoModel : PageModel
     {
-        public bool ButtonClicked { get; set; }
+        public bool ButtonClickedInsideTimespan { get; set; }
 
         public IActionResult OnGet()
         {
+            int time = 15;
             var buttonClickedTime = DateTime.Parse(HttpContext.Session.GetString("ButtonClickedTime") ?? DateTime.MinValue.ToString());
-            ButtonClicked = HttpContext.Session.GetString("ButtonClicked") == "true" && DateTime.UtcNow - buttonClickedTime < TimeSpan.FromMinutes(30);
+            ButtonClickedInsideTimespan = HttpContext.Session.GetString("ButtonClicked") == "True" && DateTime.UtcNow - buttonClickedTime < TimeSpan.FromSeconds(time);
+            
+            var InputValue = HttpContext.Session.GetString("InputValue");
 
-            if (!ButtonClicked)
+            if (DateTime.UtcNow - buttonClickedTime >= TimeSpan.FromSeconds(time))
+            {
+                HttpContext.Session.SetString("InputValue", string.Empty);
+            }
+
+            bool validSessionPageTwo = !string.IsNullOrEmpty(InputValue) && InputValue == "123" && ButtonClickedInsideTimespan;
+            int sessiontimeleft = time - (int)(DateTime.UtcNow - buttonClickedTime).TotalSeconds;
+            HttpContext.Session.SetString("validSessionPageTwo", validSessionPageTwo.ToString());
+            Console.WriteLine($"Valid session page two: {validSessionPageTwo}");
+            Console.WriteLine($"Session time left: {sessiontimeleft}");
+
+            if (!ButtonClickedInsideTimespan || string.IsNullOrEmpty(InputValue))
             {
                 return RedirectToPage("/PageOne");
             }
