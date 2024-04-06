@@ -33,7 +33,6 @@ C:\Users\USER\Desktop\webapp\MyWebApp\bin\Debug\net6.0\Microsoft.IdentityModel.P
 C:\Users\USER\Desktop\webapp\MyWebApp\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\USER\Desktop\webapp\MyWebApp\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
 C:\Users\USER\Desktop\webapp\MyWebApp\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\USER\Desktop\webapp\MyWebApp\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\USER\Desktop\webapp\MyWebApp\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Users\USER\Desktop\webapp\MyWebApp\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Users\USER\Desktop\webapp\MyWebApp\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
@@ -71,3 +70,5 @@ C:\Users\USER\Desktop\webapp\MyWebApp\obj\Debug\net6.0\refint\MyWebApp.dll
 C:\Users\USER\Desktop\webapp\MyWebApp\obj\Debug\net6.0\MyWebApp.pdb
 C:\Users\USER\Desktop\webapp\MyWebApp\obj\Debug\net6.0\MyWebApp.genruntimeconfig.cache
 C:\Users\USER\Desktop\webapp\MyWebApp\obj\Debug\net6.0\ref\MyWebApp.dll
+C:\Users\USER\Desktop\webapp\MyWebApp\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\webapp\MyWebApp\bin\Debug\net6.0\EntityFramework.dll

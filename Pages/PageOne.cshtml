@@ -1,0 +1,7 @@
+@page
+@model YourNamespace.PageOneModel
+
+<form method="post">
+    @Html.AntiForgeryToken()
+    <input type="submit" value="Go to Page Two" />
+</form>

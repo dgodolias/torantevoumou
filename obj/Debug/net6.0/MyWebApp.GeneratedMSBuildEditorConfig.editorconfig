@@ -26,3 +26,11 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/USER/Desktop/webapp/MyWebApp/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/webapp/MyWebApp/Pages/PageOne.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZU9uZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/webapp/MyWebApp/Pages/PageTwo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZVR3by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
