@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 using YourNamespace;
@@ -11,14 +10,6 @@ builder.Services.AddDbContext<MyDbContext>(options =>
 
 // Add Razor Pages services.
 builder.Services.AddRazorPages();
-
-// Add authentication services.
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
-    {
-        options.LoginPath = "/adminlogin";
-        options.ExpireTimeSpan = TimeSpan.FromMinutes(1);
-    });
 
 // Add session state services.
 builder.Services.AddDistributedMemoryCache();

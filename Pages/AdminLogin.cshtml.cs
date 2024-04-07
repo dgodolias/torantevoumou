@@ -1,47 +1,41 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using System.Security.Claims;
-using Microsoft.AspNetCore.Authorization;
 
-[AllowAnonymous]
-[IgnoreAntiforgeryToken]
-public class AdminLoginModel : PageModel
+namespace YourNamespace
 {
-    [BindProperty]
-    public string? Username { get; set; }
-
-    [BindProperty]
-    public string? Password { get; set; }
-
-    public void OnGet()
+    [AllowAnonymous]
+    public class AdminLogin : PageModel
     {
-    }
-
-    public async Task<IActionResult> OnPostAsync()
-    {
-        // Replace "expectedUsername" and "expectedPassword" with the actual username and password.
-        const string expectedUsername = "admin";
-        const string expectedPassword = "123";
-
-        if (Username == expectedUsername && Password == expectedPassword)
+        [BindProperty]
+        public string Username { get; set; }
+        [BindProperty]
+        public string Password { get; set; }
+        public IActionResult OnGet()
         {
-            var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, Username),
-                // Add other claims as needed.
-            };
+            if (HttpContext.Session.GetString("validSessionPageTwo") == "True") return RedirectToPage("/Admin");
 
-            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-            var authProperties = new AuthenticationProperties();
-
-            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProperties);
-
-            return RedirectToPage("/Admin");
+            return Page();
         }
 
-        // If the user's credentials are not valid, redisplay the login page.
-        return Page();
+        public async Task<IActionResult> OnPostAsync()
+        {   
+            // Console.WriteLine($"validSessionPageTwo: {HttpContext.Session.GetString("validSessionPageTwo")}");
+            // if (HttpContext.Session.GetString("validSessionPageTwo") == "true") return RedirectToPage("/PageTwo");
+
+            if (Username != null && Password != null) {
+                HttpContext.Session.SetString("Username", Username);
+                HttpContext.Session.SetString("Password", Password);
+            }
+            if (Username != "admin" && Password != "123") {
+                HttpContext.Session.SetString("ButtonClicked", "False");
+            } else {
+                HttpContext.Session.SetString("ButtonClicked", "True");
+                HttpContext.Session.SetString("ButtonClickedTime", DateTime.UtcNow.ToString());
+            }
+            if (Password == "123" && Username == "admin" && HttpContext.Session.GetString("ButtonClicked") == "True") return RedirectToPage("/Admin");
+
+            return Page();
+        }
     }
 }

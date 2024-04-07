@@ -1,7 +1,8 @@
 @page
-@model AdminLoginModel
+@model YourNamespace.AdminLogin
 
 <form method="post">
+    @Html.AntiForgeryToken()
     <label for="username">Username:</label>
     <input id="username" name="Username" type="text" />
 
