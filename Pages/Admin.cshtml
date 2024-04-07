@@ -1,25 +1,29 @@
 @page
 @model YourNamespace.Admin
+@{
+    Layout = null;
+}
 
-<h1>Page Two</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
 <body>
-    <h2>Clients</h2>
+    <h1>Admin Page</h1>
 
-    <ul>
-    @if (Model.Clients != null)
-    {
-        @foreach (var client in Model.Clients)
-        {
-            <li>
-                using YourNamespace;
-                #line default
-                First Name: @client.FirstName<br />
-                Last Name: @client.LastName<br />
-                Appointment Date: @client.AppointmentDate.ToShortDateString()<br />
-                Appointment Time: @client.AppointmentTime.ToString(@"hh\:mm\:ss")<br />
-            </li>
-        }
-    }
-</ul>
+    <!-- Add the datepicker here -->
+    <div id="datepicker"></div>
 
+    <h2>Matching Clients</h2>
+    <div id="matchingClients"></div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script>
+        var clients = @Html.Raw(Json.Serialize(Model.Clients));
+    </script>
+    <script src="~/js/calendar.js"></script> <!-- Link to the JavaScript file -->
 </body>
+</html>

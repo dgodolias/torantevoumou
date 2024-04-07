@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LuOITgVKlPv2Rf5eWPw2pxomSpUSBEnv6RP19No277w=",
+  "Hash": "dzZXK2uLx1wFnWddTj0KRGcaMQNU5PNFK9td9xJrcdw=",
   "Source": "MyWebApp",
   "BasePath": "_content/MyWebApp",
   "Mode": "Default",
@@ -2310,6 +2310,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\mypic3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\js\\calendar.js",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "js/calendar.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\calendar.js"
     },
     {
       "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\js\\site.js",
