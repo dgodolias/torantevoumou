@@ -10,7 +10,7 @@ function fetchAppointments(date) {
     var selectedDate = moment(date, "MM/DD/YYYY"); // Parse the selected date with moment.js
 
     // Create a table
-    var html = "<table><thead><tr><th>Time</th><th>Id</th><th>First Name</th><th>Last Name</th><th>Appointment Date</th></tr></thead><tbody>";
+    var html = "<table style='border-collapse: collapse; width: 100%;'><thead><tr><th style='border: 1px solid black; padding: 5px;'>Time</th><th style='border: 1px solid black; padding: 5px;'>Id</th><th style='border: 1px solid black; padding: 5px;'>First Name</th><th style='border: 1px solid black; padding: 5px;'>Last Name</th></tr></thead><tbody>";
 
     // Loop through each 30-minute period from 9 AM to 9 PM
     for (var i = 9; i <= 21; i += 0.5) {
@@ -27,9 +27,9 @@ function fetchAppointments(date) {
 
         // Add a row to the table for the current time period
         if (client) {
-            html += "<tr><td>" + time + "</td><td>" + client.id + "</td><td>" + client.firstName + "</td><td>" + client.lastName + "</td><td>" + moment(client.appointmentDate).format('MM/DD/YYYY') + "</td></tr>";
+            html += "<tr><td style='border: 1px solid black; padding: 5px;'>" + time + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.id + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.firstName + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.lastName + "</td></tr>";
         } else {
-            html += "<tr><td>" + time + "</td><td colspan='4'>No appointment</td></tr>";
+            html += "<tr><td style='border: 1px solid black; padding: 5px;'>" + time + "</td><td style='border: 1px solid black; padding: 5px;' colspan='3'></td></tr>";
         }
     }
 
