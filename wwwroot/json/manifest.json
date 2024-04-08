@@ -1,0 +1,24 @@
+{
+    "short_name": "MyApp",
+    "name": "My Application",
+    "description": "My awesome Application",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#3f51b5",
+    "icons": [
+        {
+            "src": "icon/lowres.webp",
+            "sizes": "48x48",
+            "type": "image/webp"
+        },
+        {
+            "src": "icon/hd_hi.ico",
+            "sizes": "72x72 96x96 128x128 256x256"
+        },
+        {
+            "src": "icon/hd_hi.svg",
+            "sizes": "72x72"
+        }
+    ]
+}

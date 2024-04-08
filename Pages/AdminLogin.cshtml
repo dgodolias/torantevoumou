@@ -1,6 +1,8 @@
 @page
 @model YourNamespace.AdminLogin
-
+<head>
+    <link rel="manifest" href="/manifest.json">
+</head>
 <form method="post">
     @Html.AntiForgeryToken()
     <label for="username">Username:</label>
