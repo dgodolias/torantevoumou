@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "G/aZgIDr6ZL6Tt91IoaTdlAfdxOmfuXhOtaVoBTVPto=",
+  "Hash": "YkzObMgPMySu79w/2HnfsmucJ8CNrIGyDJW2wk9Ev+A=",
   "Source": "MyWebApp",
   "BasePath": "_content/MyWebApp",
   "Mode": "Default",
@@ -2363,6 +2363,23 @@
       "OriginalItemSpec": "wwwroot\\js\\calendar.js"
     },
     {
+      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\js\\service-worker.js",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "js/service-worker.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\service-worker.js"
+    },
+    {
       "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\js\\site.js",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
@@ -2378,6 +2395,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\json\\manifest.json",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "json/manifest.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\json\\manifest.json"
     }
   ]
 }
