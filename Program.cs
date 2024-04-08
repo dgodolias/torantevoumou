@@ -1,5 +1,5 @@
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
-
 using YourNamespace;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -34,7 +34,19 @@ else
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+
+app.UseStaticFiles(new StaticFileOptions
+{
+    OnPrepareResponse = ctx =>
+    {
+        if (ctx.File.Name == "manifest.json")
+        {
+            ctx.Context.Response.Headers.Append("Cache-Control", "no-cache, no-store, must-revalidate");
+            ctx.Context.Response.Headers.Append("Pragma", "no-cache");
+            ctx.Context.Response.Headers.Append("Expires", "0");
+        }
+    }
+});
 
 app.UseRouting();
 
