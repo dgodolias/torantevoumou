@@ -8,25 +8,29 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyWebApp
 build_property.RootNamespace = MyWebApp
-build_property.ProjectDir = C:\Users\Demos\Desktop\webapp\MyWebApp\
+build_property.ProjectDir = C:\Users\USER\Desktop\webapp\MyWebApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Demos\Desktop\webapp\MyWebApp
+build_property.MSBuildProjectDirectory = C:\Users\USER\Desktop\webapp\MyWebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Demos/Desktop/webapp/MyWebApp/Pages/Admin.cshtml]
+[C:/Users/USER/Desktop/webapp/MyWebApp/Pages/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Demos/Desktop/webapp/MyWebApp/Pages/AdminLogin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5Mb2dpbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Demos/Desktop/webapp/MyWebApp/Pages/calendar.cshtml]
+[C:/Users/USER/Desktop/webapp/MyWebApp/Pages/calendar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2FsZW5kYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Demos/Desktop/webapp/MyWebApp/Pages/Index.cshtml]
+[C:/Users/USER/Desktop/webapp/MyWebApp/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/webapp/MyWebApp/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/webapp/MyWebApp/Pages/Myprofile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlwcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

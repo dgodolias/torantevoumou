@@ -41,7 +41,7 @@ namespace YourNamespace
 
             if (!ButtonClickedInsideTimespan || string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password) || !validSessionPageTwo)
             {
-                return RedirectToPage("/AdminLogin");
+                return RedirectToPage("/Login");
             }
 
             // Populate the Clients property with the necessary data
