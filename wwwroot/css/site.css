@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Aesthetic Regular';
-    src: url('../fonts/Aesthetic/AestheticRegular.otf') format('opentype');
+    font-family: 'Nasa';
+    src: url('../fonts/Nasa/nasalization-rg.otf') format('opentype');
 }
 
 body {
     background-color: #f0f0f0;
-    font-family: 'Aesthetic Regular', fallback;
+    font-family: 'Nasa', fallback;
 }
 
 h2 {

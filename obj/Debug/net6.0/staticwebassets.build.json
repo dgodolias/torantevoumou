@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dzZXK2uLx1wFnWddTj0KRGcaMQNU5PNFK9td9xJrcdw=",
+  "Hash": "G/aZgIDr6ZL6Tt91IoaTdlAfdxOmfuXhOtaVoBTVPto=",
   "Source": "MyWebApp",
   "BasePath": "_content/MyWebApp",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\Aesthetic\\AestheticRegular.otf"
+    },
+    {
+      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Nasa\\nasalization-rg.otf",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "fonts/Nasa/nasalization-rg.otf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\Nasa\\nasalization-rg.otf"
+    },
+    {
+      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Nasa\\Typodermic Desktop EULA 2023.pdf",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "fonts/Nasa/Typodermic Desktop EULA 2023.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\Nasa\\Typodermic Desktop EULA 2023.pdf"
     },
     {
       "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.otf",
