@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YkzObMgPMySu79w/2HnfsmucJ8CNrIGyDJW2wk9Ev+A=",
+  "Hash": "oEPedGYQqDil0xnO3/FVEbMW2GLpCuxLTBPlV3DDKqw=",
   "Source": "MyWebApp",
   "BasePath": "_content/MyWebApp",
   "Mode": "Default",
@@ -2344,6 +2344,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\mypic3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\images\\piletter.jpg",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "images/piletter.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\piletter.jpg"
     },
     {
       "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\js\\calendar.js",
