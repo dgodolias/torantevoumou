@@ -24,32 +24,52 @@ namespace YourNamespace
 
         public IActionResult OnGet()
         {
-            if (HttpContext.Session.GetString("validSessionPageTwo") == "True") return RedirectToPage("/Admin");
+            var validSession = HttpContext.Session.GetString("validSession");
+            var sessionUsername = HttpContext.Session.GetString("Username");
+
+            if (validSession == "True" && sessionUsername == "admin")
+            {
+                return RedirectToPage("/Admin");
+            }
+            else if (validSession == "True")
+            {
+                return RedirectToPage("/MyProfile");
+            }
 
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync()
         {   
+            bool validuser = false;
             if (Username != null && Password != null) {
                 HttpContext.Session.SetString("Username", Username);
                 HttpContext.Session.SetString("Password", Password);
+                validuser = await UserExists(Username, Password);
+                
             }
-            if (Username != "admin" && Password != "123") {
+            Console.WriteLine(validuser);
+            if (!validuser) {
                 HttpContext.Session.SetString("ButtonClicked", "False");
             } else {
                 HttpContext.Session.SetString("ButtonClicked", "True");
                 HttpContext.Session.SetString("ButtonClickedTime", DateTime.UtcNow.ToString());
+                Console.WriteLine("Button clicked Time: " + HttpContext.Session.GetString("ButtonClickedTime"));
             }
-            if (Password == "123" && Username == "admin" && HttpContext.Session.GetString("ButtonClicked") == "True") return RedirectToPage("/Admin");
+           
+            HttpContext.Session.SetString("validuser", validuser.ToString());
 
-            if (await UserExists(Username, Password))
+            Console.WriteLine($"validuser: {validuser}");
+            Console.WriteLine($"ButtonClicked: {HttpContext.Session.GetString("ButtonClicked")}");
+            Console.WriteLine($"Username: {Username}");
+            Console.WriteLine($"Password: {Password}"); 
+            if (validuser && HttpContext.Session.GetString("ButtonClicked") == "True" && Username != "admin" && Password != "123")
             {
                 return RedirectToPage("/Myprofile");
             }
-            else
+            else if (validuser && HttpContext.Session.GetString("ButtonClicked") == "True" && Username == "admin" && Password == "123")
             {
-                // User doesn't exist, handle accordingly
+                return RedirectToPage("/Admin");
             }
 
             return Page();
@@ -57,6 +77,7 @@ namespace YourNamespace
 
         private async Task<bool> UserExists(string username, string password)
         {
+            if (Username == "admin" && Password == "123") return true;
             using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
             var user = await connection.QueryFirstOrDefaultAsync("SELECT * FROM Appointments WHERE Username = @Username AND Password = @Password", new { Username = username, Password = password });
 

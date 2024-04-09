@@ -1,8 +1,21 @@
 @page
-@model YourNamespace.MyProfileModel
+@model YourNamespace.MyProfile
 
 @{
     ViewData["Title"] = "My Profile";
 }
 
 <h1>@ViewData["Title"]</h1>
+
+<section>
+    <h2>Το ραντεβού μου</h2>
+
+    @if (Model.Appointment != null)
+    {
+        <p>@Model.Appointment.Date.ToShortDateString(): @Model.Appointment.Time.ToString("hh\\:mm")</p>
+    }
+    else
+    {
+        <p>Δεν έχετε κανένα ραντεβού.</p>
+    }
+</section>

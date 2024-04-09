@@ -33,13 +33,11 @@ namespace YourNamespace
                 HttpContext.Session.SetString("Password", string.Empty);
             }
 
-            bool validSessionPageTwo = !string.IsNullOrEmpty(Username) && Username == "admin" && !string.IsNullOrEmpty(Password) && Password == "123" && ButtonClickedInsideTimespan;
-            int sessiontimeleft = time - (int)(DateTime.UtcNow - buttonClickedTime).TotalSeconds;
-            HttpContext.Session.SetString("validSessionPageTwo", validSessionPageTwo.ToString());
-            Console.WriteLine($"Valid session page two: {validSessionPageTwo}");
-            Console.WriteLine($"Session time left: {sessiontimeleft}");
+            bool validSession = !string.IsNullOrEmpty(Username) && Username == "admin" && !string.IsNullOrEmpty(Password) && Password == "123" && ButtonClickedInsideTimespan;
+            HttpContext.Session.SetString("validSession", validSession.ToString());
 
-            if (!ButtonClickedInsideTimespan || string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password) || !validSessionPageTwo)
+
+            if (!ButtonClickedInsideTimespan || string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password) || !validSession)
             {
                 return RedirectToPage("/Login");
             }
