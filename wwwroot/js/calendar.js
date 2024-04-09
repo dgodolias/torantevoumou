@@ -1,16 +1,17 @@
 $( function() {
     $("#datepicker").datepicker({
         onSelect: function(dateText) {
-            fetchAppointments(dateText);
+            fetchUsers(dateText);
         }
     });
+
 });
 
-function fetchAppointments(date) {
+function fetchUsers(date) {
     var selectedDate = moment(date, "MM/DD/YYYY"); // Parse the selected date with moment.js
 
     // Create a table
-    var html = "<table style='border-collapse: collapse; width: 100%;'><thead><tr><th style='border: 1px solid black; padding: 5px;'>Time</th><th style='border: 1px solid black; padding: 5px;'>Id</th><th style='border: 1px solid black; padding: 5px;'>First Name</th><th style='border: 1px solid black; padding: 5px;'>Last Name</th></tr></thead><tbody>";
+    var html = "<table style='border-collapse: collapse; width: 100%;'><thead><tr><th style='border: 1px solid black; padding: 5px;'>Time</th><th style='border: 1px solid black; padding: 5px;'>Id</th><th style='border: 1px solid black; padding: 5px;'>First Name</th><th style='border: 1px solid black; padding: 5px;'>Last Name</th><th style='border: 1px solid black; padding: 5px;'>Username</th><th style='border: 1px solid black; padding: 5px;'>Email</th><th style='border: 1px solid black; padding: 5px;'>Phone Number</th></tr></thead><tbody>";
 
     // Loop through each 30-minute period from 9 AM to 9 PM
     for (var i = 9; i <= 21; i += 0.5) {
@@ -27,9 +28,10 @@ function fetchAppointments(date) {
 
         // Add a row to the table for the current time period
         if (client) {
-            html += "<tr><td style='border: 1px solid black; padding: 5px;'>" + time + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.id + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.firstName + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.lastName + "</td></tr>";
+            console.log(client);
+            html += "<tr><td style='border: 1px solid black; padding: 5px;'>" + time + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.id + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.firstName + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.lastName + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.username + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.email + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.phoneNumber + "</td></tr>";
         } else {
-            html += "<tr><td style='border: 1px solid black; padding: 5px;'>" + time + "</td><td style='border: 1px solid black; padding: 5px;' colspan='3'></td></tr>";
+            html += "<tr><td style='border: 1px solid black; padding: 5px;'>" + time + "</td><td style='border: 1px solid black; padding: 5px;' colspan='6'></td></tr>";
         }
     }
 

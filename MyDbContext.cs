@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace YourNamespace;
+namespace Namespace;
 
 public class MyDbContext : DbContext
 {
@@ -12,6 +12,6 @@ public class MyDbContext : DbContext
     public DbSet<Client> Clients { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Client>().ToTable("Appointments");
+        modelBuilder.Entity<Client>().ToTable("Users");
     }
 }

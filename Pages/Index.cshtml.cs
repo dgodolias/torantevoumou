@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 
-namespace YourNamespace
+namespace Namespace
 {
     public class IndexModel : PageModel
     {

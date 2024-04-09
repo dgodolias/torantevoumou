@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
-using YourNamespace;
+using Namespace;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Data.SqlClient;
 using Dapper;
 
-namespace YourNamespace
+namespace Namespace
 {
     public class MyProfile : PageModel
     {
@@ -16,7 +16,7 @@ namespace YourNamespace
 
         public bool ButtonClickedInsideTimespan { get; set; }
 
-        // Change the Appointments property to a single Appointment
+        // Change the Users property to a single Appointment
         public Appointment? Appointment { get; set; }
 
         public async Task<IActionResult> OnGetAsync()
@@ -76,7 +76,7 @@ namespace YourNamespace
         private async Task<Appointment?> GetUserAppointment(string username, string password)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
-            var appointment = await connection.QueryFirstOrDefaultAsync<Appointment>("SELECT appointmentDate AS Date, appointmentTime AS Time FROM Appointments WHERE Username = @Username AND Password = @Password", new { Username = username, Password = password });
+            var appointment = await connection.QueryFirstOrDefaultAsync<Appointment>("SELECT appointmentDate AS Date, appointmentTime AS Time FROM Users WHERE Username = @Username AND Password = @Password", new { Username = username, Password = password });
 
             if (appointment != null)
             {

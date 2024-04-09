@@ -3,9 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Dapper;
 using Microsoft.Data.SqlClient;
-using Microsoft.Extensions.Configuration;
 
-namespace YourNamespace
+namespace Namespace
 {
     [AllowAnonymous]
     public class Login : PageModel
@@ -79,7 +78,7 @@ namespace YourNamespace
         {
             if (Username == "admin" && Password == "123") return true;
             using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
-            var user = await connection.QueryFirstOrDefaultAsync("SELECT * FROM Appointments WHERE Username = @Username AND Password = @Password", new { Username = username, Password = password });
+            var user = await connection.QueryFirstOrDefaultAsync("SELECT * FROM Users WHERE Username = @Username AND Password = @Password", new { Username = username, Password = password });
 
             return user != null;
         }

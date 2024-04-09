@@ -34,81 +34,17 @@ li {
     padding-top: 10px;
 }
 
-/* Change the background color and border of the datepicker */
-.ui-datepicker {
-    background: #f7f7f7;
-    border: 1px solid #ccc;
+#datepicker {
+    float: left;
+    margin-top: 120px;
+    margin-left: 120px;
 }
 
-/* Change the color of the date text */
-.ui-datepicker .ui-state-default {
-    color: #444;
-}
-
-/* Change the background and text color of the selected date */
-.ui-datepicker .ui-state-active {
-    background: #0288d1;
-    color: #fff;
-}
-/* Change the background color and border of the datepicker */
-.ui-datepicker {
-    background: #f7f7f7;
-    border: 1px solid #ccc;
-}
-
-/* Change the color of the date text */
-.ui-datepicker .ui-state-default {
-    color: #444;
-}
-
-/* Change the background and text color of the selected date */
-.ui-datepicker .ui-state-active {
-    background: #0288d1;
-    color: #fff;
-}
-/* Change the background color and border of the datepicker */
-.ui-datepicker {
-    background: #f7f7f7;
-    border: 1px solid #ccc;
-}
-
-/* Change the color of the date text */
-.ui-datepicker .ui-state-default {
-    color: #444;
-}
-
-/* Change the background and text color of the selected date */
-.ui-datepicker .ui-state-active {
-    background: #0288d1;
-    color: #fff;
-}
-/* Increase the size of the datepicker */
-.ui-datepicker {
-    width: 300px; /* Adjust as needed */
-    height: 300px; /* Adjust as needed */
-    margin: 0 auto; /* Centers the datepicker */
-}
-
-/* Increase the size of the date cells */
-.ui-datepicker td {
-    width: 40px; /* Adjust as needed */
-    height: 40px; /* Adjust as needed */
-}
-
-/* Increase the size of the date text */
-.ui-datepicker td a {
-    font-size: 1.2em; /* Adjust as needed */
-}
-
-/* Change the background and text color of the current day */
-.ui-datepicker .ui-state-highlight {
-    background: #81d4fa;
-    color: #000;
-}
-
-/* Change the color of the month and year text */
-.ui-datepicker .ui-datepicker-title {
-    color: #333;
+.ui-datepicker { 
+    width: 17em; 
+    padding: .2em .2em 0; 
+    display: none; 
+    font-family: 'Nasa', sans-serif !important;
 }
 
 .centered-title {
@@ -118,8 +54,4 @@ li {
 .content-container {
     display: flex;
     justify-content: space-between;
-}
-
-.content-item {
-    width: 45%; /* Adjust as needed */
 }
