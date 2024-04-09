@@ -55,3 +55,20 @@ li {
     display: flex;
     justify-content: space-between;
 }
+
+.text-danger {
+    color: red;
+}
+
+.form-group {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+}
+.form-group label {
+    width: 150px; /* Adjust this value as needed */
+}
+.form-group .text-danger {
+    color: red;
+    margin-left: 1em;
+}
