@@ -19,11 +19,20 @@ function fetchUsers(date) {
 
         // Find the client for the current time period
         var client = clients.find(function(client) {
-            var appointmentDate = moment(client.appointmentDate); // Parse the appointment date with moment.js
-            var appointmentTime = moment(client.appointmentTime, "HH:mm").format("HH:mm"); // Parse the appointment time with moment.js
+            var appointmentDates = client.appointmentDate.split('#'); // Split the appointment dates into an array
+            var appointmentTimes = client.appointmentTime.split('#'); // Split the appointment times into an array
 
             // Check if the appointment date is the same as the selected date and the appointment time is the same as the current time
-            return appointmentDate.isSame(selectedDate, 'day') && appointmentTime === time;
+            for (var j = 0; j < appointmentDates.length; j++) {
+                var appointmentDate = moment(appointmentDates[j]); // Parse the appointment date with moment.js
+                var appointmentTime = moment(appointmentTimes[j], "HH:mm").format("HH:mm"); // Parse the appointment time with moment.js
+
+                if (appointmentDate.isSame(selectedDate, 'day') && appointmentTime === time) {
+                    return true;
+                }
+            }
+
+            return false;
         });
 
         // Add a row to the table for the current time period

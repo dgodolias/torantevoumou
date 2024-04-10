@@ -12,6 +12,6 @@ public class MyDbContext : DbContext
     public DbSet<Client> Clients { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Client>().ToTable("Users");
+        modelBuilder.Entity<Client>().HasNoKey().ToTable("Users");
     }
 }

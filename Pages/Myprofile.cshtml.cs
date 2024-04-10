@@ -35,22 +35,13 @@ namespace Namespace
             }
 
             bool usernameNotEmpty = !string.IsNullOrEmpty(Username);
-            Console.WriteLine($"Username not empty: {usernameNotEmpty}");
 
             bool validUser = HttpContext.Session.GetString("validuser") == "True";
-            Console.WriteLine($"Valid user: {validUser}");
 
             bool passwordNotEmpty = !string.IsNullOrEmpty(Password);
-            Console.WriteLine($"Password not empty: {passwordNotEmpty}");
-
-            Console.WriteLine($"Button clicked inside timespan: {ButtonClickedInsideTimespan}");
 
             bool validSession = usernameNotEmpty && validUser && passwordNotEmpty && ButtonClickedInsideTimespan;
             HttpContext.Session.SetString("validSession", validSession.ToString());
-            Console.WriteLine($"Valid session: {validSession}");
-
-            Console.WriteLine($"Button clicked time: {buttonClickedTime}");
-            Console.WriteLine($"Current time: {DateTime.UtcNow}");
 
             if (!ButtonClickedInsideTimespan || string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password) || !validSession)
             {   
