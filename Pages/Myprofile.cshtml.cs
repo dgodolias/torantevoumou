@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Data.SqlClient;
 using Dapper;
+using System.Data.Entity;
 
 namespace Namespace
 {
@@ -9,12 +10,16 @@ namespace Namespace
     {
         private readonly IConfiguration _configuration;
 
-        public Myprofile(IConfiguration configuration)
+        private readonly MyDbContext _db;
+        
+        public Myprofile(IConfiguration configuration, MyDbContext db)
         {
             _configuration = configuration;
+            _db = db;
         }
 
         public bool ButtonClickedInsideTimespan { get; set; }
+        public List<Client>? Clients { get; set; }
 
         // Change the Users property to a single Appointment
         public Appointment? Appointment { get; set; }
@@ -51,6 +56,7 @@ namespace Namespace
 
             // Populate the Appointment property with the necessary data
             Appointment = await GetUserAppointment(Username, Password);
+            Clients = _db.Clients.ToList();
 
             return Page();
         }
