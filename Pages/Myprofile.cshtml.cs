@@ -2,7 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Data.SqlClient;
 using Dapper;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Namespace
 {
@@ -56,7 +57,7 @@ namespace Namespace
 
             // Populate the Appointment property with the necessary data
             Appointment = await GetUserAppointment(Username, Password);
-            Clients = _db.Clients.ToList();
+            Clients = await _db.Clients.ToListAsync();
 
             return Page();
         }
