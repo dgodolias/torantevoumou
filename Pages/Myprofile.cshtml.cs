@@ -63,21 +63,26 @@ namespace Namespace
             if (appointment != null)
             {
 
-                var dates = appointment.Date.Split('#').Where(date => !string.IsNullOrWhiteSpace(date)).ToArray();
-                var times = appointment.Time.Split('#').Where(time => !string.IsNullOrWhiteSpace(time)).ToArray();
+                var dates = appointment.Date?.Split('#').Where(date => !string.IsNullOrWhiteSpace(date)).ToArray();
+                var times = appointment.Time?.Split('#').Where(time => !string.IsNullOrWhiteSpace(time)).ToArray();
 
                 // Initialize the DateTime list
                 appointment.DateTime = new List<DateTime>();
 
                 // Combine each date and time into a single DateTime and add it to the list
-                for (int i = 0; i < dates.Length; i++)
+                if (dates != null && times != null)
                 {
-                    Console.WriteLine($"Date: {dates[i]}, Time: {times[i]}"); // Print the date and time
-                    if (!string.IsNullOrWhiteSpace(dates[i]) && !string.IsNullOrWhiteSpace(times[i]))
+                    // Combine each date and time into a single DateTime and add it to the list
+                    for (int i = 0; i < dates.Length; i++)
                     {
-                        var date = DateTime.Parse(dates[i]);
-                        var time = TimeSpan.Parse(times[i]);
-                        appointment.DateTime.Add(date.Date + time);
+                        if (!string.IsNullOrWhiteSpace(dates[i]) && !string.IsNullOrWhiteSpace(times[i]) && dates[i] != "NULL" && times[i] != "NULL")
+                        {
+                            Console.WriteLine($"Date: {dates[i]}, Time: {times[i]}"); // Print the date and time
+
+                            var date = DateTime.Parse(dates[i]);
+                            var time = TimeSpan.Parse(times[i]);
+                            appointment.DateTime.Add(date.Date + time);
+                        }
                     }
                 }
             }
@@ -88,8 +93,8 @@ namespace Namespace
 
     public class Appointment
     {
-        public string Date { get; set; }
-        public string Time { get; set; }
-        public List<DateTime> DateTime { get; set; }
+        public string? Date { get; set; }
+        public string? Time { get; set; }
+        public List<DateTime>? DateTime { get; set; }
     }
 }
