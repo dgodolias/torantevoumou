@@ -10,9 +10,12 @@
 <section>
     <h2>Το ραντεβού μου</h2>
 
-    @if (Model.Appointment != null)
+    @if (Model.Appointment != null && Model.Appointment.DateTime.Any())
     {
-        <p>@Model.Appointment.Date.ToShortDateString(): @Model.Appointment.Time.ToString("hh\\:mm")</p>
+        foreach (var dateTime in Model.Appointment.DateTime)
+        {
+            <p>@dateTime.ToShortDateString(): @dateTime.ToString("hh\\:mm")</p>
+        }
     }
     else
     {

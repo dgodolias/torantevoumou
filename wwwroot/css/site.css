@@ -42,7 +42,7 @@ li {
 
 .ui-datepicker { 
     width: 17em; 
-    padding: .2em .2em 0; 
+    padding: .5em .5em 0; 
     display: none; 
     font-family: 'Nasa', sans-serif !important;
 }

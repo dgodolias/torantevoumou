@@ -52,15 +52,6 @@ namespace Namespace
             // Populate the Appointment property with the necessary data
             Appointment = await GetUserAppointment(Username, Password);
 
-            if (Appointment == null)
-            {
-                Console.WriteLine("No appointment found for the user.");
-            }
-            else
-            {
-                Console.WriteLine($"Appointment date and time: {Appointment.DateTime}");
-            }
-
             return Page();
         }
 
@@ -71,8 +62,24 @@ namespace Namespace
 
             if (appointment != null)
             {
-                // Combine the date from appointment.Date and the time from appointment.Time into a single DateTime
-                appointment.DateTime = appointment.Date.Date + appointment.Time;
+
+                var dates = appointment.Date.Split('#').Where(date => !string.IsNullOrWhiteSpace(date)).ToArray();
+                var times = appointment.Time.Split('#').Where(time => !string.IsNullOrWhiteSpace(time)).ToArray();
+
+                // Initialize the DateTime list
+                appointment.DateTime = new List<DateTime>();
+
+                // Combine each date and time into a single DateTime and add it to the list
+                for (int i = 0; i < dates.Length; i++)
+                {
+                    Console.WriteLine($"Date: {dates[i]}, Time: {times[i]}"); // Print the date and time
+                    if (!string.IsNullOrWhiteSpace(dates[i]) && !string.IsNullOrWhiteSpace(times[i]))
+                    {
+                        var date = DateTime.Parse(dates[i]);
+                        var time = TimeSpan.Parse(times[i]);
+                        appointment.DateTime.Add(date.Date + time);
+                    }
+                }
             }
 
             return appointment;
@@ -81,8 +88,8 @@ namespace Namespace
 
     public class Appointment
     {
-        public DateTime Date { get; set; }
-        public TimeSpan Time { get; set; }
-        public DateTime DateTime { get; set; }
+        public string Date { get; set; }
+        public string Time { get; set; }
+        public List<DateTime> DateTime { get; set; }
     }
 }
