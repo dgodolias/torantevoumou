@@ -5,11 +5,11 @@ using Dapper;
 
 namespace Namespace
 {
-    public class MyProfile : PageModel
+    public class Myprofile : PageModel
     {
         private readonly IConfiguration _configuration;
 
-        public MyProfile(IConfiguration configuration)
+        public Myprofile(IConfiguration configuration)
         {
             _configuration = configuration;
         }

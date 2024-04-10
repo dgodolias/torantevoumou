@@ -32,7 +32,7 @@ namespace Namespace
             }
             else if (validSession == "True")
             {
-                return RedirectToPage("/MyProfile");
+                return RedirectToPage("/Myprofile");
             }
 
             return Page();

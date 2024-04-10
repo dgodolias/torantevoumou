@@ -38,6 +38,7 @@ li {
     float: left;
     margin-top: 120px;
     margin-left: 120px;
+    font-family: 'Nasa', sans-serif !important;
 }
 
 .ui-datepicker { 
