@@ -41,16 +41,16 @@ namespace Namespace
 
             bool usernameNotEmpty = !string.IsNullOrEmpty(Username);
 
-            bool validUser = HttpContext.Session.GetString("validuser") == "True";
+            bool validMyprofileUser = HttpContext.Session.GetString("validMyprofileuser") == "True";
+            Console.WriteLine($"validMyprofileUser: {validMyprofileUser}");
 
             bool passwordNotEmpty = !string.IsNullOrEmpty(Password);
 
-            bool validSession = usernameNotEmpty && validUser && passwordNotEmpty && ButtonClickedInsideTimespan;
-            HttpContext.Session.SetString("validSession", validSession.ToString());
+            bool validSession = usernameNotEmpty && validMyprofileUser && passwordNotEmpty && ButtonClickedInsideTimespan;
+            HttpContext.Session.SetString("validSessionMyprofile", validSession.ToString());
 
             if (!ButtonClickedInsideTimespan || string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password) || !validSession)
             {   
-                Console.WriteLine("Redirecting to Login");
                 return RedirectToPage("/Login");
             }
 

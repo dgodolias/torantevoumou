@@ -34,7 +34,7 @@ namespace Namespace
             }
 
             bool validSession = !string.IsNullOrEmpty(Username) && Username == "admin" && !string.IsNullOrEmpty(Password) && Password == "123" && ButtonClickedInsideTimespan;
-            HttpContext.Session.SetString("validSession", validSession.ToString());
+            HttpContext.Session.SetString("validSessionAdmin", validSession.ToString());
 
 
             if (!ButtonClickedInsideTimespan || string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password) || !validSession)
