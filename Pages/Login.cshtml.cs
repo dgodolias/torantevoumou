@@ -61,7 +61,7 @@ namespace Namespace
             }
            
 
-            if (validuser && HttpContext.Session.GetString("ButtonClicked") == "True" && Username != "admin" && Password != "123")
+            if (validuser && HttpContext.Session.GetString("ButtonClicked") == "True" && Username != "admin")
             {
                 HttpContext.Session.SetString("validAdminuser", validAdminuser.ToString());
                 HttpContext.Session.SetString("validMyprofileuser", validMyprofileuser.ToString());
