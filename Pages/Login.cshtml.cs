@@ -79,10 +79,11 @@ namespace Namespace
 
         private async Task<bool> UserExists(string username, string password)
         {
-            
             using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
-            var user = await connection.QueryFirstOrDefaultAsync("SELECT * FROM Users WHERE Username = @Username AND Password = @Password", new { Username = username, Password = password });
-
+            var user = username.Contains("@") 
+                ? await connection.QueryFirstOrDefaultAsync("SELECT * FROM Users WHERE Email = @Username AND Password = @Password", new { Username = username, Password = password })
+                : await connection.QueryFirstOrDefaultAsync("SELECT * FROM Users WHERE Username = @Username AND Password = @Password", new { Username = username, Password = password });
+        
             return user != null;
         }
     }

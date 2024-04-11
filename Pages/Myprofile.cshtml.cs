@@ -65,7 +65,10 @@ namespace Namespace
         private async Task<Appointment?> GetUserAppointment(string username, string password)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
-            var appointment = await connection.QueryFirstOrDefaultAsync<Appointment>("SELECT Id, appointmentDate AS Date, appointmentTime AS Time FROM Users WHERE Username = @Username AND Password = @Password", new { Username = username, Password = password });
+            var query = username.Contains("@") 
+                ? "SELECT Id, appointmentDate AS Date, appointmentTime AS Time FROM Users WHERE Email = @Username AND Password = @Password"
+                : "SELECT Id, appointmentDate AS Date, appointmentTime AS Time FROM Users WHERE Username = @Username AND Password = @Password";
+            var appointment = await connection.QueryFirstOrDefaultAsync<Appointment>(query, new { Username = username, Password = password });
 
             if (appointment != null)
             {
