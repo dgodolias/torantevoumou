@@ -73,3 +73,14 @@ li {
     color: red;
     margin-left: 1em;
 }
+
+.appointment-button {
+    color: white;
+    background-color: rgb(0, 255, 85);
+    font-family: 'Nasa', sans-serif !important;
+    transition: transform 0.1s; /* This will animate the change in size */
+}
+
+.appointment-button:active {
+    transform: scale(0.95); /* This will make the button 95% of its original size */
+}

@@ -2712,19 +2712,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\Demos\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\MyWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\MyWebApp.csproj",
       "projectName": "MyWebApp",
-      "projectPath": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\MyWebApp.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\obj\\",
+      "projectPath": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\MyWebApp.csproj",
+      "packagesPath": "C:\\Users\\Demos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Demos\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

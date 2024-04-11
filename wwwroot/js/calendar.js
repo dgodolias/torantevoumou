@@ -17,7 +17,21 @@ function fetchUsersForAdmin(date) {
     var selectedDate = moment(date, "MM/DD/YYYY"); // Parse the selected date with moment.js
 
     // Create a table
-    var html = "<table style='border-collapse: collapse; width: 100%;'><thead><tr><th style='border: 1px solid black; padding: 5px;'>Time</th><th style='border: 1px solid black; padding: 5px;'>Id</th><th style='border: 1px solid black; padding: 5px;'>First Name</th><th style='border: 1px solid black; padding: 5px;'>Last Name</th><th style='border: 1px solid black; padding: 5px;'>Username</th><th style='border: 1px solid black; padding: 5px;'>Email</th><th style='border: 1px solid black; padding: 5px;'>Phone Number</th></tr></thead><tbody>";
+    var html = `
+        <table style='border-collapse: collapse; width: 100%;'>
+            <thead>
+                <tr>
+                    <th style='border: 1px solid black; padding: 5px;'>Time</th>
+                    <th style='border: 1px solid black; padding: 5px;'>Id</th>
+                    <th style='border: 1px solid black; padding: 5px;'>First Name</th>
+                    <th style='border: 1px solid black; padding: 5px;'>Last Name</th>
+                    <th style='border: 1px solid black; padding: 5px;'>Username</th>
+                    <th style='border: 1px solid black; padding: 5px;'>Email</th>
+                    <th style='border: 1px solid black; padding: 5px;'>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+    `;
 
     // Loop through each 30-minute period from 9 AM to 9 PM
     for (var i = 9; i <= 21; i += 0.5) {
@@ -44,9 +58,24 @@ function fetchUsersForAdmin(date) {
         // Add a row to the table for the current time period
         if (client) {
             console.log(client);
-            html += "<tr><td style='border: 1px solid black; padding: 5px;'>" + time + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.id + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.firstName + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.lastName + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.username + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.email + "</td><td style='border: 1px solid black; padding: 5px;'>" + client.phoneNumber + "</td></tr>";
+            html += `
+                <tr>
+                    <td style='border: 1px solid black; padding: 5px;'>${time}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>${client.id}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>${client.firstName}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>${client.lastName}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>${client.username}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>${client.email}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>${client.phoneNumber}</td>
+                </tr>
+            `;
         } else {
-            html += "<tr><td style='border: 1px solid black; padding: 5px;'>" + time + "</td><td style='border: 1px solid black; padding: 5px;' colspan='6'></td></tr>";
+            html += `
+                <tr>
+                    <td style='border: 1px solid black; padding: 5px;'>${time}</td>
+                    <td style='border: 1px solid black; padding: 5px;' colspan='6'></td>
+                </tr>
+            `;
         }
     }
 
@@ -57,8 +86,20 @@ function fetchUsersForAdmin(date) {
 
 function fetchUsersMyprofile(date) {
     var selectedDate = moment(date, "MM/DD/YYYY");
+    var userId = document.getElementById('userId').value;
+    
+    console.log("userid:",userId);
 
-    var html = "<table style='border-collapse: collapse; width: 100%;'><thead><tr><th style='border: 1px solid black; padding: 5px;'>Time</th><th style='border: 1px solid black; padding: 5px;'>Appointments</th></tr></thead><tbody>";
+    var html = `
+        <table style='border-collapse: collapse; width: 100%;'>
+            <thead>
+                <tr>
+                    <th style='border: 1px solid black; padding: 5px;'>Time</th>
+                    <th style='border: 1px solid black; padding: 5px;'>Appointments</th>
+                </tr>
+            </thead>
+            <tbody>
+    `;
 
     for (var i = 9; i <= 21; i += 0.5) {
         var time = moment({hour: Math.floor(i), minute: (i % 1) * 60}).format("HH:mm");
@@ -80,13 +121,34 @@ function fetchUsersMyprofile(date) {
         });
 
         if (client) {
-            html += "<tr><td style='border: 1px solid black; padding: 5px;'>" + time + "</td><td style='border: 1px solid black; padding: 5px;'>Κλεισμένο ραντεβού</td></tr>";
+            html += `
+                <tr>
+                    <td style='border: 1px solid black; padding: 5px;'>${time}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>Κλεισμένο ραντεβού</td>
+                </tr>
+            `;
         } else {
-            html += "<tr><td style='border: 1px solid black; padding: 5px;'>" + time + "</td><td style='border: 1px solid black; padding: 5px;'>Διαθέσιμο για ραντεβού</td></tr>";
+            html += `
+                <tr>
+                    <td style='border: 1px solid black; padding: 5px;'>${time}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>
+                        <button class='appointment-button' data-time='${time}'>Διαθέσιμο για ραντεβού</button>
+                    </td>
+                </tr>
+            `;
         }
     }
 
     html += "</tbody></table>";
 
     $("#appointments").html(html);
+
+    // Add event listeners to the buttons
+    $(".appointment-button").click(function() {
+    var futureDate = selectedDate.format("MM-DD-YYYY") + "#";
+    var futureTime = moment($(this).data("time"), "HH:mm").format("HH:mm:ss") + "#";
+
+    console.log("Future Date: " + futureDate);
+    console.log("Future Time: " + futureTime);
+    });
 }

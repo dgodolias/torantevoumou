@@ -65,11 +65,11 @@ namespace Namespace
         private async Task<Appointment?> GetUserAppointment(string username, string password)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
-            var appointment = await connection.QueryFirstOrDefaultAsync<Appointment>("SELECT appointmentDate AS Date, appointmentTime AS Time FROM Users WHERE Username = @Username AND Password = @Password", new { Username = username, Password = password });
+            var appointment = await connection.QueryFirstOrDefaultAsync<Appointment>("SELECT Id, appointmentDate AS Date, appointmentTime AS Time FROM Users WHERE Username = @Username AND Password = @Password", new { Username = username, Password = password });
 
             if (appointment != null)
             {
-
+                Console.WriteLine("User ID: " + appointment.Id);
                 var dates = appointment.Date?.Split('#').Where(date => !string.IsNullOrWhiteSpace(date)).ToArray();
                 var times = appointment.Time?.Split('#').Where(time => !string.IsNullOrWhiteSpace(time)).ToArray();
 
@@ -100,6 +100,7 @@ namespace Namespace
 
     public class Appointment
     {
+        public int Id { get; set; }
         public string? Date { get; set; }
         public string? Time { get; set; }
         public List<DateTime>? DateTime { get; set; }

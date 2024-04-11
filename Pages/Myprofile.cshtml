@@ -32,6 +32,9 @@
         <h2>Select Date</h2>
         <div id="datepickerMyprofile" class="datepicker"></div>
         <div id="appointments"></div> <!-- Div where the table will be inserted -->
+
+        <!-- Hidden input field for the user ID -->
+        <input type="hidden" id="userId" value="@Model.Appointment.Id" />
     </section>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
