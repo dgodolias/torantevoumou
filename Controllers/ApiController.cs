@@ -29,8 +29,7 @@ namespace Namespace.Controllers
         public async Task<IActionResult> UpdateAppointment([FromBody] UpdateAppointmentModel model)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
-            await connection.ExecuteAsync("UPDATE Users SET appointmentDate = ISNULL(appointmentDate, '') + @FutureDate, appointmentTime = ISNULL(appointmentTime, '') + @FutureTime WHERE Id = @UserId", new { UserId = model.userId, FutureDate = model.appointmentDate, FutureTime = model.appointmentTime });
-
+            await connection.ExecuteAsync("UPDATE Users SET appointmentDate = COALESCE(appointmentDate, @FutureDate), appointmentTime = COALESCE(appointmentTime, @FutureTime) WHERE Id = @UserId", new { UserId = model.userId, FutureDate = model.appointmentDate, FutureTime = model.appointmentTime });
             return Ok();
         }
     }

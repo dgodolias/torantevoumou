@@ -100,14 +100,14 @@ namespace Namespace
         private async Task AddUser(string firstName, string lastName, string username, string password, string email, string phoneNumber)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
-
+        
             var maxId = await connection.QueryFirstOrDefaultAsync<int>("SELECT MAX(id) FROM Users");
             var newId = maxId + 1;
-
+        
             Console.WriteLine($"New User ID: {newId}");
-
-            await connection.ExecuteAsync("INSERT INTO Users (id, firstName, lastName, username, password, email, phoneNumber) VALUES (@Id, @FirstName, @LastName, @Username, @Password, @Email, @PhoneNumber)",
-                new { Id = newId, FirstName = firstName, LastName = lastName, Username = username, Password = password, Email = email, PhoneNumber = phoneNumber });
+        
+            await connection.ExecuteAsync("INSERT INTO Users (id, firstName, lastName, username, password, email, phoneNumber, appointmentDate, appointmentTime) VALUES (@Id, @FirstName, @LastName, @Username, @Password, @Email, @PhoneNumber, @AppointmentDate, @AppointmentTime)",
+                new { Id = newId, FirstName = firstName, LastName = lastName, Username = username, Password = password, Email = email, PhoneNumber = phoneNumber, AppointmentDate = (string)null, AppointmentTime = (string)null });
         }
     }
 }

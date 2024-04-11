@@ -27,7 +27,7 @@ namespace Namespace
 
         public async Task<IActionResult> OnGetAsync()
         {
-            int time = 15;
+            int time = 60 * 60;
             var buttonClickedTime = DateTime.Parse(HttpContext.Session.GetString("ButtonClickedTime") ?? DateTime.MinValue.ToString());
             ButtonClickedInsideTimespan = HttpContext.Session.GetString("ButtonClicked") == "True" && DateTime.UtcNow - buttonClickedTime < TimeSpan.FromSeconds(time);
             

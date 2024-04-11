@@ -39,19 +39,21 @@ function fetchUsersForAdmin(date) {
 
         // Find the client for the current time period
         var client = clients.find(function(client) {
-            var appointmentDates = client.appointmentDate.split('#'); // Split the appointment dates into an array
-            var appointmentTimes = client.appointmentTime.split('#'); // Split the appointment times into an array
+            if (client.appointmentDate !== null && client.appointmentDate !== ''
+                && client.appointmentTime !== null && client.appointmentTime !== '') {
+                var appointmentDates = client.appointmentDate.split('#'); // Split the appointment dates into an array
+                var appointmentTimes = client.appointmentTime.split('#'); // Split the appointment times into an array
 
-            // Check if the appointment date is the same as the selected date and the appointment time is the same as the current time
-            for (var j = 0; j < appointmentDates.length; j++) {
-                var appointmentDate = moment(appointmentDates[j]); // Parse the appointment date with moment.js
-                var appointmentTime = moment(appointmentTimes[j], "HH:mm").format("HH:mm"); // Parse the appointment time with moment.js
+                // Check if the appointment date is the same as the selected date and the appointment time is the same as the current time
+                for (var j = 0; j < appointmentDates.length; j++) {
+                    var appointmentDate = moment(appointmentDates[j]); // Parse the appointment date with moment.js
+                    var appointmentTime = moment(appointmentTimes[j], "HH:mm").format("HH:mm"); // Parse the appointment time with moment.js
 
-                if (appointmentDate.isSame(selectedDate, 'day') && appointmentTime === time) {
-                    return true;
+                    if (appointmentDate.isSame(selectedDate, 'day') && appointmentTime === time) {
+                        return true;
+                    }
                 }
             }
-
             return false;
         });
 
@@ -104,26 +106,21 @@ function fetchUsersMyprofile(date) {
         var time = moment({hour: Math.floor(i), minute: (i % 1) * 60}).format("HH:mm");
 
         var client = clients.find(function(client) {
-            console.log()
-            var appointmentDates = client.appointmentDate.split('#');
-            appointmentDates = appointmentDates.filter(function(item) {
-                return item !== null && item !== 'NULL';
-            });
-            var appointmentTimes = client.appointmentTime.split('#');
-            appointmentTimes = appointmentTimes.filter(function(item) {
-                return item !== null && item !== 'NULL';
-            });
+            if (client.appointmentDate !== null && client.appointmentDate !== ''
+                && client.appointmentTime !== null && client.appointmentTime !== '') {
+                var appointmentDates = client.appointmentDate.split('#'); // Split the appointment dates into an array
+                var appointmentTimes = client.appointmentTime.split('#'); // Split the appointment times into an array
 
-            for (var j = 0; j < appointmentDates.length; j++) {
-                console.log(appointmentDates[j]);
-                var appointmentDate = moment(appointmentDates[j]);
-                var appointmentTime = moment(appointmentTimes[j], "HH:mm").format("HH:mm");
+                for (var j = 0; j < appointmentDates.length; j++) {
+                    console.log(appointmentDates[j]);
+                    var appointmentDate = moment(appointmentDates[j]);
+                    var appointmentTime = moment(appointmentTimes[j], "HH:mm").format("HH:mm");
 
-                if (appointmentDate.isSame(selectedDate, 'day') && appointmentTime === time) {
-                    return true;
+                    if (appointmentDate.isSame(selectedDate, 'day') && appointmentTime === time) {
+                        return true;
+                    }
                 }
             }
-
             return false;
         });
 
@@ -168,10 +165,11 @@ function fetchUsersMyprofile(date) {
             appointmentTime: futureTime
         }),
         success: function (data) {
-            // Handle success
+            location.reload(); // Reload the page
         },
-        error: function (error) {
-            // Handle error
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.error("AJAX request failed: ", textStatus, errorThrown);
+            alert("An error occurred while updating the appointment. Please try again.");
         }
     });
 });
