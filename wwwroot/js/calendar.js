@@ -87,8 +87,7 @@ function fetchUsersForAdmin(date) {
 function fetchUsersMyprofile(date) {
     var selectedDate = moment(date, "MM/DD/YYYY");
     var userId = document.getElementById('userId').value;
-    
-    console.log("userid:",userId);
+    console.log(userId);
 
     var html = `
         <table style='border-collapse: collapse; width: 100%;'>
@@ -105,10 +104,18 @@ function fetchUsersMyprofile(date) {
         var time = moment({hour: Math.floor(i), minute: (i % 1) * 60}).format("HH:mm");
 
         var client = clients.find(function(client) {
+            console.log()
             var appointmentDates = client.appointmentDate.split('#');
+            appointmentDates = appointmentDates.filter(function(item) {
+                return item !== null && item !== 'NULL';
+            });
             var appointmentTimes = client.appointmentTime.split('#');
+            appointmentTimes = appointmentTimes.filter(function(item) {
+                return item !== null && item !== 'NULL';
+            });
 
             for (var j = 0; j < appointmentDates.length; j++) {
+                console.log(appointmentDates[j]);
                 var appointmentDate = moment(appointmentDates[j]);
                 var appointmentTime = moment(appointmentTimes[j], "HH:mm").format("HH:mm");
 
@@ -150,5 +157,22 @@ function fetchUsersMyprofile(date) {
 
     console.log("Future Date: " + futureDate);
     console.log("Future Time: " + futureTime);
+
+    $.ajax({
+        url: '/api/updateAppointment',
+        type: 'POST',
+        contentType: 'application/json', // Set the Content-Type header
+        data: JSON.stringify({ // Stringify your data
+            userId: userId,
+            appointmentDate: futureDate,
+            appointmentTime: futureTime
+        }),
+        success: function (data) {
+            // Handle success
+        },
+        error: function (error) {
+            // Handle error
+        }
     });
+});
 }
