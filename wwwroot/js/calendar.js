@@ -1,6 +1,7 @@
-function initializeDatepicker(selector, callback) {
+function initializeDatepicker(selector, callback, disablePastDates) {
     $(selector).datepicker({
         inline: true,
+        minDate: disablePastDates ? 0 : null,
         onSelect: function(dateText) {
             var date = new Date(dateText);
             callback(date);
@@ -9,8 +10,8 @@ function initializeDatepicker(selector, callback) {
 }
 
 $(function() {
-    initializeDatepicker("#datepickerForAdmin", fetchUsersForAdmin);
-    initializeDatepicker("#datepickerMyprofile", fetchUsersMyprofile);
+    initializeDatepicker("#datepickerForAdmin", fetchUsersForAdmin, false);
+    initializeDatepicker("#datepickerMyprofile", fetchUsersMyprofile, true);
 });
 
 function fetchUsersForAdmin(date) {
@@ -132,14 +133,26 @@ function fetchUsersMyprofile(date) {
                 </tr>
             `;
         } else {
-            html += `
-                <tr>
-                    <td style='border: 1px solid black; padding: 5px;'>${time}</td>
-                    <td style='border: 1px solid black; padding: 5px;'>
-                        <button class='appointment-button' data-time='${time}'>Διαθέσιμο για ραντεβού</button>
-                    </td>
-                </tr>
-            `;
+            var currentTime = moment();
+            var rowTime = moment(time, "HH:mm");
+
+            if (selectedDate.isSame(currentTime, 'day') && rowTime.isBefore(currentTime)) {
+                html += `
+                    <tr>
+                        <td style='border: 1px solid black; padding: 5px;'>${time}</td>
+                        <td style='border: 1px solid black; padding: 5px;'>Κλεισμένο ραντεβού</td>
+                    </tr>
+                `;
+            } else {
+                html += `
+                    <tr>
+                        <td style='border: 1px solid black; padding: 5px;'>${time}</td>
+                        <td style='border: 1px solid black; padding: 5px;'>
+                            <button class='appointment-button' data-time='${time}'>Διαθέσιμο για ραντεβού</button>
+                        </td>
+                    </tr>
+                `;
+            }
         }
     }
 
