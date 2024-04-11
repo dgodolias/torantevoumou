@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oEPedGYQqDil0xnO3/FVEbMW2GLpCuxLTBPlV3DDKqw=",
+  "Hash": "zJIKKse5hgmOWhnF3LWGtqYSL4yEjAnE9sFpUCqRlaM=",
   "Source": "MyWebApp",
   "BasePath": "_content/MyWebApp",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\css\\login.css",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
     {
       "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\css\\site.css",
       "SourceId": "MyWebApp",
@@ -2344,6 +2361,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\mypic3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\images\\pencils-762555.jpg",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "images/pencils-762555.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pencils-762555.jpg"
     },
     {
       "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\images\\piletter.jpg",

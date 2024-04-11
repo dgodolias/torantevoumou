@@ -84,3 +84,4 @@ li {
 .appointment-button:active {
     transform: scale(0.95); /* This will make the button 95% of its original size */
 }
+
