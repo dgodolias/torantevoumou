@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zJIKKse5hgmOWhnF3LWGtqYSL4yEjAnE9sFpUCqRlaM=",
+  "Hash": "C6JdTPcq8zKEFB//M6EOSbn+XiEgl7WXbxlQycx2PZU=",
   "Source": "MyWebApp",
   "BasePath": "_content/MyWebApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "MyWebApp\\wwwroot",
       "Source": "MyWebApp",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\css\\login.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\css\\login.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "css/login.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\css\\site.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Aesthetic\\AestheticRegular.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Aesthetic\\AestheticRegular.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Aesthetic/AestheticRegular.otf",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Aesthetic\\AestheticRegular.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Nasa\\nasalization-rg.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Nasa\\nasalization-rg.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Nasa/nasalization-rg.otf",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Nasa\\nasalization-rg.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Nasa\\Typodermic Desktop EULA 2023.pdf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Nasa\\Typodermic Desktop EULA 2023.pdf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Nasa/Typodermic Desktop EULA 2023.pdf",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Nasa\\Typodermic Desktop EULA 2023.pdf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-Black.otf",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-Black.woff",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BlackItalic.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BlackItalic.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-BlackItalic.otf",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BlackItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Bold.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Bold.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-Bold.otf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Bold.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BoldItalic.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BoldItalic.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-BoldItalic.otf",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BoldItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBold.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBold.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-ExtraBold.otf",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBold.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBoldItalic.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBoldItalic.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-ExtraBoldItalic.otf",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBoldItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLight.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLight.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-ExtraLight.otf",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLight.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLightItalic.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLightItalic.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-ExtraLightItalic.otf",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLightItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Italic.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Italic.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-Italic.otf",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Italic.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Light.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Light.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-Light.otf",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Light.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-LightItalic.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-LightItalic.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-LightItalic.otf",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-LightItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Medium.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Medium.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-Medium.otf",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Medium.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-MediumItalic.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-MediumItalic.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-MediumItalic.otf",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-MediumItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Regular.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Regular.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-Regular.otf",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Regular.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBold.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBold.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-SemiBold.otf",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBold.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBoldItalic.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBoldItalic.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-SemiBoldItalic.otf",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBoldItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Thin.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Thin.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-Thin.otf",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Thin.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ThinItalic.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ThinItalic.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-ThinItalic.otf",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ThinItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Black.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Black.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-Black.ttf",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Black.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BlackItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BlackItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-BlackItalic.ttf",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BlackItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Bold.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Bold.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-Bold.ttf",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Bold.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BoldItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BoldItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-BoldItalic.ttf",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBold.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBold.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-ExtraBold.ttf",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBold.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBoldItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBoldItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-ExtraBoldItalic.ttf",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLight.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLight.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-ExtraLight.ttf",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLight.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLightItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLightItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-ExtraLightItalic.ttf",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLightItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Italic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Italic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-Italic.ttf",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Italic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Light.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Light.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-Light.ttf",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Light.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-LightItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-LightItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-LightItalic.ttf",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-LightItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Medium.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Medium.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-Medium.ttf",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Medium.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-MediumItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-MediumItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-MediumItalic.ttf",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-MediumItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Regular.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Regular.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-Regular.ttf",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Regular.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBold.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBold.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-SemiBold.ttf",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBold.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBoldItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBoldItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-SemiBoldItalic.ttf",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Thin.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Thin.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-Thin.ttf",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Thin.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ThinItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ThinItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/OpenType-TT/Rebeqa-ThinItalic.ttf",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ThinItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\readme.txt",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\readme.txt",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/readme.txt",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\readme.txt"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-PS\\Rebeqa-VF.otf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-PS\\Rebeqa-VF.otf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Variable-PS/Rebeqa-VF.otf",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-PS\\Rebeqa-VF.otf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-TT\\Rebeqa-VF.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-TT\\Rebeqa-VF.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Variable-TT/Rebeqa-VF.ttf",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-TT\\Rebeqa-VF.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Black.css",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Black.html",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Black.ttf",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Black.woff",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Black.woff2",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-BlackItalic.css",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-BlackItalic.html",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-BlackItalic.ttf",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-BlackItalic.woff",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-BlackItalic.woff2",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Bold.css",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Bold.html",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Bold.ttf",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Bold.woff",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Bold.woff2",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-BoldItalic.css",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-BoldItalic.html",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-BoldItalic.ttf",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-BoldItalic.woff",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-BoldItalic.woff2",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraBold.css",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraBold.html",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraBold.ttf",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraBold.woff",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraBold.woff2",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraBoldItalic.css",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraBoldItalic.html",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraBoldItalic.ttf",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraBoldItalic.woff",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraBoldItalic.woff2",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraLight.css",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraLight.html",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraLight.ttf",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraLight.woff",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraLight.woff2",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraLightItalic.css",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraLightItalic.html",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraLightItalic.ttf",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraLightItalic.woff",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ExtraLightItalic.woff2",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Italic.css",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Italic.html",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Italic.ttf",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Italic.woff",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Italic.woff2",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Light.css",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Light.html",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Light.ttf",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Light.woff",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Light.woff2",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-LightItalic.css",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-LightItalic.html",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-LightItalic.ttf",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-LightItalic.woff",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-LightItalic.woff2",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Medium.css",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Medium.html",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Medium.ttf",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Medium.woff",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Medium.woff2",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-MediumItalic.css",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-MediumItalic.html",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-MediumItalic.ttf",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-MediumItalic.woff",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-MediumItalic.woff2",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Regular.css",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Regular.html",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Regular.ttf",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Regular.woff",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Regular.woff2",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-SemiBold.css",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-SemiBold.html",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-SemiBold.ttf",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-SemiBold.woff",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-SemiBold.woff2",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-SemiBoldItalic.css",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-SemiBoldItalic.html",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-SemiBoldItalic.ttf",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-SemiBoldItalic.woff",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-SemiBoldItalic.woff2",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Thin.css",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Thin.html",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Thin.ttf",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Thin.woff",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-Thin.woff2",
       "AssetKind": "All",
@@ -2227,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.css",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ThinItalic.css",
       "AssetKind": "All",
@@ -2244,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.css"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.html",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ThinItalic.html",
       "AssetKind": "All",
@@ -2261,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.html"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.ttf",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.ttf",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ThinItalic.ttf",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ThinItalic.woff",
       "AssetKind": "All",
@@ -2295,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff2",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff2",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "fonts/Rebeqa/Rebeqa Font/Web-TT/Rebeqa-ThinItalic.woff2",
       "AssetKind": "All",
@@ -2312,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\images\\mypic1.jpg",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\images\\mypic1.jpg",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "images/mypic1.jpg",
       "AssetKind": "All",
@@ -2329,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mypic1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\images\\mypic2.jpg",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\images\\mypic2.jpg",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "images/mypic2.jpg",
       "AssetKind": "All",
@@ -2346,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mypic2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\images\\mypic3.jpg",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\images\\mypic3.jpg",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "images/mypic3.jpg",
       "AssetKind": "All",
@@ -2363,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mypic3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\images\\pencils-762555.jpg",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\images\\pencils-762555.jpg",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "images/pencils-762555.jpg",
       "AssetKind": "All",
@@ -2380,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\images\\pencils-762555.jpg"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\images\\piletter.jpg",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\images\\piletter.jpg",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "images/piletter.jpg",
       "AssetKind": "All",
@@ -2397,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\piletter.jpg"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\js\\calendar.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\js\\calendar.js",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "js/calendar.js",
       "AssetKind": "All",
@@ -2414,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\js\\calendar.js"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\js\\service-worker.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\js\\service-worker.js",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "js/service-worker.js",
       "AssetKind": "All",
@@ -2431,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\js\\service-worker.js"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\js\\site.js",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -2448,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\json\\manifest.json",
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\json\\manifest.json",
       "SourceId": "MyWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Demos\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
       "BasePath": "_content/MyWebApp",
       "RelativePath": "json/manifest.json",
       "AssetKind": "All",

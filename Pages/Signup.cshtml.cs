@@ -44,7 +44,7 @@ namespace Namespace
             }
 
             // Username can only contain Latin, Greek letters or numbers
-            var usernameRegex = new Regex(@"^[a-zA-Z0-9Α-Ωα-ω]+$");
+            var usernameRegex = new Regex(@"^[a-zA-Z0-9]{6,}$");
             // Password must contain at least 8 characters, with at least one letter and one number
             var passwordRegex = new Regex(@"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$");
             // Phone number must only contain numbers
