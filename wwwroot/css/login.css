@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Nasa';
-    src: url('../fonts/Nasa/nasalization-rg.otf') format('opentype');
+  font-family: 'Nasa';
+  src: url('../fonts/Nasa/nasalization-rg.otf') format('opentype');
 }
 *{
   margin: 0;

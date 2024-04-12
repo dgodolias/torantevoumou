@@ -1,0 +1,48 @@
+@page
+@model Namespace.Myprofile
+
+@{
+    ViewData["Title"] = "My Profile";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="~/css/site.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <h1>@ViewData["Title"]</h1>
+
+    <section>
+        <h2>My Appointment</h2>
+
+        @if (Model.Appointment != null && Model.Appointment.DateTime.Any())
+        {
+            foreach (var dateTime in Model.Appointment.DateTime)
+            {
+                <p>@dateTime.ToShortDateString(): @dateTime.ToString("hh\\:mm")</p>
+            }
+        }
+        else
+        {
+            <p>You don't have any appointment.</p>
+        }
+
+        <h2>Select Date</h2>
+        <div id="datepickerMyprofile" class="datepicker"></div>
+        <div id="appointments"></div> <!-- Div where the table will be inserted -->
+
+        <!-- Hidden input field for the user ID -->
+        <input type="hidden" id="userId" value="@Model.Appointment.Id" />
+    </section>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script>
+        var clients = @Html.Raw(Json.Serialize(Model.Clients));
+    </script>
+    <script src="~/js/calendar.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>

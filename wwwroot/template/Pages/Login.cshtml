@@ -1,0 +1,56 @@
+@page
+@model Namespace.Login
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Σύνδεση Χρήστη</title>
+        <link rel="stylesheet" href="~/css/login.css"> <!-- Link to the CSS file -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+    <body>
+        <div class="bg-img">
+            <div class="content">
+                <header>Φόρμα Σύνδεσης</header>
+                <form method="post">
+                    @Html.AntiForgeryToken()
+                    <div class="field">
+                        <span class="fa fa-user"></span>
+                        <input id="username" name="Username" type="text" required placeholder="Όνομα Χρήστη ή Email">
+                    </div>
+                    <div class="field space">
+                        <span class="fa fa-lock"></span>
+                        <input id="password" name="Password" type="password" class="pass-key" required placeholder="Κωδικός πρόσβασης">
+                        <span class="show">SHOW</span>
+                    </div>
+                    <div class="pass">
+                        <a href="#">Ξεχάσατε τον κωδικό πρόσβασής σας;</a>
+                    </div>
+                    <div class="field">
+                        <button type="submit" id="button">ΣΥΝΔΕΣΗ</button>
+                    </div>
+                </form>
+                
+                <div class="signup">
+                    Δεν έχετε λογαριασμό;
+                    <a href="/Signup">Εγγραφή</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            const pass_field = document.querySelector('.pass-key');
+            const showBtn = document.querySelector('.show');
+            showBtn.addEventListener('click', function(){
+             if(pass_field.type === "password"){
+                pass_field.type = "text";
+                showBtn.textContent = "HIDE";
+                showBtn.style.color = "#3498db";
+             }else{
+                pass_field.type = "password";
+                showBtn.textContent = "SHOW";
+                showBtn.style.color = "#222";
+             }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+/* Webfont: Rebeqa-Black */@font-face {
+    font-family: 'AméliaDisplayBlack';
+    src: url('Rebeqa-Black.eot'); /* IE9 Compat Modes */
+    src: url('Rebeqa-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Rebeqa-Black.woff') format('woff'), /* Modern Browsers */
+         url('Rebeqa-Black.woff2') format('woff2'), /* Modern Browsers */
+         url('Rebeqa-Black.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

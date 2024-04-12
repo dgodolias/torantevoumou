@@ -8,7 +8,10 @@ builder.Services.AddDbContext<MyDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MyDbConnection")));
 
 // Add Razor Pages services.
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages(options =>
+{
+    options.RootDirectory = "/wwwroot/template/Pages";
+});
 
 // Add session state services.
 builder.Services.AddDistributedMemoryCache();
