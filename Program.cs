@@ -10,7 +10,7 @@ builder.Services.AddDbContext<MyDbContext>(options =>
 // Add Razor Pages services.
 builder.Services.AddRazorPages(options =>
 {
-    options.RootDirectory = "/wwwroot/template/Pages";
+    options.RootDirectory = "/Pages";
 });
 
 // Add session state services.
