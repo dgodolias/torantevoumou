@@ -1,3 +1,4 @@
+
 function initializeDatepicker(selector, callback, disablePastDates) {
     $(selector).datepicker({
         inline: true,
@@ -160,29 +161,26 @@ function fetchUsersMyprofile(date) {
 
     $("#appointments").html(html);
 
-    // Add event listeners to the buttons
     $(".appointment-button").click(function() {
+    console.log("selectedate",selectedDate);
     var futureDate = selectedDate.format("MM-DD-YYYY") + "#";
     var futureTime = moment($(this).data("time"), "HH:mm").format("HH:mm:ss") + "#";
-
-    console.log("Future Date: " + futureDate);
-    console.log("Future Time: " + futureTime);
-
-    $.ajax({
-        url: '/api/updateAppointment',
+        console.log("futuredate",futureDate);
+        console.log("futuretime",futureTime);
+        $.ajax({
+        url: '/api/AddClientWithAppointment',
         type: 'POST',
-        contentType: 'application/json', // Set the Content-Type header
-        data: JSON.stringify({ // Stringify your data
-            userId: userId,
-            appointmentDate: futureDate,
-            appointmentTime: futureTime
+        contentType: 'application/json', // Set the content type
+        data: JSON.stringify({ // Convert the data to a JSON string
+            Id: userId,
+            Date: futureDate,
+            Time: futureTime
         }),
-        success: function (data) {
-            location.reload(); // Reload the page
+        success: function(result) {
+            console.log("Appointment added successfully");
         },
-        error: function (jqXHR, textStatus, errorThrown) {
-            console.error("AJAX request failed: ", textStatus, errorThrown);
-            alert("An error occurred while updating the appointment. Please try again.");
+        error: function(error) {
+            console.error("Error adding appointment: ", error);
         }
     });
 });

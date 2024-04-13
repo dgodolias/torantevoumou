@@ -8,7 +8,7 @@ builder.Services.AddRazorPages(options =>
 {
     options.RootDirectory = "/Pages";
 });
-builder.Services.AddSingleton<FirebaseService>();
+builder.Services.AddSingleton<Namespace.FirebaseService>();
 // Add session state services.
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
