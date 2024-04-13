@@ -28,7 +28,6 @@ public class FirebaseService
             .PutAsync(client);
     }
 
-
     public async Task UpdateClient(Client client)
     {
         await _client

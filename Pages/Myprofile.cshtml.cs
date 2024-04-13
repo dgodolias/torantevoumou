@@ -66,8 +66,8 @@ namespace Namespace
             var clients = await _firebaseService.GetClients();
         
             // Find the client with the matching username and password
-            var client = clients.FirstOrDefault(c => c.Email == username && c.Password == password);
-            Console.WriteLine(client != null);
+            var client = clients.FirstOrDefault(c => (c.Email == username || c.Username == username) && c.Password == password);
+
             if (client != null)
             {
                 var appointment = new Appointment
@@ -76,7 +76,7 @@ namespace Namespace
                     Date = client.AppointmentDate,
                     Time = client.AppointmentTime
                 };
-        
+
                 var dates = appointment.Date?.Split('#').Where(date => !string.IsNullOrWhiteSpace(date)).ToArray();
                 var times = appointment.Time?.Split('#').Where(time => !string.IsNullOrWhiteSpace(time)).ToArray();
         

@@ -85,10 +85,6 @@ namespace Namespace
             var clients = await _firebaseService.GetClients();
             Console.WriteLine($"check");
             // Print all clients to the console
-            foreach (var client in clients)
-            {
-                Console.WriteLine($"Username: {client.Username}, Password: {client.Password}");
-            }
         
             var user = clients.FirstOrDefault(client => client.Username == username && client.Password == password);
             

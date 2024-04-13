@@ -34,13 +34,7 @@
         <div id="appointments"></div> <!-- Div where the table will be inserted -->
 
         <!-- Hidden input field for the user ID -->
-        @if (Model.Appointment != null && Model.Appointment.DateTime != null)
-        {
-            foreach (var dateTime in Model.Appointment.DateTime)
-            {
-                <p>@dateTime</p>
-            }
-        }
+        <input type="hidden" id="userId" value="@Model.Appointment.Id" />
     </section>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
