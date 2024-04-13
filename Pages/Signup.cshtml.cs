@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Dapper;
-using Microsoft.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.ComponentModel.DataAnnotations;
 
@@ -11,7 +10,7 @@ namespace Namespace
     [AllowAnonymous]
     public class SignupModel : PageModel
     {
-        private readonly IConfiguration _configuration;
+        private readonly FirebaseService _firebaseService;
 
         [BindProperty, Required(ErrorMessage = "First name is required.")]
         public string? FirstName { get; set; }
@@ -26,9 +25,9 @@ namespace Namespace
         [BindProperty, Required(ErrorMessage = "Phone number is required.")]
         public string? PhoneNumber { get; set; }
 
-        public SignupModel(IConfiguration configuration)
+        public SignupModel(FirebaseService firebaseService)
         {
-            _configuration = configuration;
+            _firebaseService = firebaseService;
         }
 
         public IActionResult OnGet()
@@ -71,17 +70,17 @@ namespace Namespace
             }
 
             bool sthExists = false;
-            if (await UsernameExists(Username))
+            if (await _firebaseService.UsernameExists(Username))
             {
                 ViewData["UsernameError"] = "Username already exists.";
                 sthExists = true;
             }
-            if (await EmailExists(Email)) // Check if the email exists regardless of whether the username exists
+            if (await _firebaseService.EmailExists(Email)) // Check if the email exists regardless of whether the username exists
             {
                 ViewData["EmailError"] = "Email already exists.";
                 sthExists = true;
             }
-            if (await PhoneNumberExists(PhoneNumber)) // Check if the phone number exists regardless of whether the username exists
+            if (await _firebaseService.PhoneNumberExists(PhoneNumber)) // Check if the phone number exists regardless of whether the username exists
             {
                 ViewData["PhoneNumberError"] = "Phone number already exists.";
                 sthExists = true;
@@ -92,44 +91,8 @@ namespace Namespace
                 return Page();
             }
 
-            await AddUser(FirstName, LastName, Username, Password, Email, PhoneNumber);
+            await _firebaseService.AddUser(FirstName, LastName, Username, Password, Email, PhoneNumber);
             return RedirectToPage("/Login");
-        }
-
-        private async Task<bool> UsernameExists(string username)
-        {
-            using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
-            var existingUser = await connection.QueryFirstOrDefaultAsync("SELECT * FROM Users WHERE username = @Username", new { Username = username });
-
-            return (existingUser != null) || (username == "admin");
-        }
-
-        private async Task<bool> EmailExists(string email)
-        {
-            using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
-            var existingUser = await connection.QueryFirstOrDefaultAsync("SELECT * FROM Users WHERE Email = @Email", new { Email = email });
-
-            return existingUser != null;
-        }
-        private async Task<bool> PhoneNumberExists(string phoneNumber)
-        {
-            using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
-            var existingUser = await connection.QueryFirstOrDefaultAsync("SELECT * FROM Users WHERE PhoneNumber = @PhoneNumber", new { PhoneNumber = phoneNumber });
-
-            return existingUser != null;
-        }
-
-        private async Task AddUser(string firstName, string lastName, string username, string password, string email, string phoneNumber)
-        {
-            using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
-
-            var maxId = await connection.QueryFirstOrDefaultAsync<int>("SELECT MAX(id) FROM Users");
-            var newId = maxId + 1;
-
-            Console.WriteLine($"New User ID: {newId}");
-
-            await connection.ExecuteAsync("INSERT INTO Users (id, firstName, lastName, username, password, email, phoneNumber, appointmentDate, appointmentTime) VALUES (@Id, @FirstName, @LastName, @Username, @Password, @Email, @PhoneNumber, @AppointmentDate, @AppointmentTime)",
-                new { Id = newId, FirstName = firstName, LastName = lastName, Username = username, Password = password, Email = email, PhoneNumber = phoneNumber, AppointmentDate = (string)null, AppointmentTime = (string)null });
         }
     }
 }

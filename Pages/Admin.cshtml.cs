@@ -1,16 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Namespace
 {
     public class Admin : PageModel
     {
-        private readonly MyDbContext _db;
+        private readonly FirebaseService _firebaseService;
 
-        public Admin(MyDbContext db)
+        public Admin(FirebaseService firebaseService)
         {
-            _db = db;
+            _firebaseService = firebaseService;
         }
 
         public bool ButtonClickedInsideTimespan { get; set; }
@@ -36,14 +37,13 @@ namespace Namespace
             bool validSession = !string.IsNullOrEmpty(Username) && Username == "admin" && !string.IsNullOrEmpty(Password) && Password == "123" && ButtonClickedInsideTimespan;
             HttpContext.Session.SetString("validSessionAdmin", validSession.ToString());
 
-
             if (!ButtonClickedInsideTimespan || string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password) || !validSession)
             {
                 return RedirectToPage("/Login");
             }
 
             // Populate the Clients property with the necessary data
-            Clients = await _db.Clients.ToListAsync();
+            Clients = await _firebaseService.GetClients();
 
             return Page();
         }

@@ -46,6 +46,14 @@
               "target": "Package",
               "version": "[6.1.0, )"
             },
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.0, )"

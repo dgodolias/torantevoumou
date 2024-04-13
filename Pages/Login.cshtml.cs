@@ -16,10 +16,13 @@ namespace Namespace
         [BindProperty]
         public string? Password { get; set; }
 
-        public Login(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        private FirebaseService _firebaseService;
+
+    public Login(IConfiguration configuration, FirebaseService firebaseService)
+    {
+        _configuration = configuration;
+        _firebaseService = firebaseService;
+    }
 
         public IActionResult OnGet()
         {
@@ -73,17 +76,22 @@ namespace Namespace
                 HttpContext.Session.SetString("validMyprofileuser", validMyprofileuser.ToString());
                 return RedirectToPage("/Admin");
             }
-
+            
             return Page();
         }
 
         private async Task<bool> UserExists(string username, string password)
         {
-            using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
-            var user = username.Contains("@") 
-                ? await connection.QueryFirstOrDefaultAsync("SELECT * FROM Users WHERE Email = @Username AND Password = @Password", new { Username = username, Password = password })
-                : await connection.QueryFirstOrDefaultAsync("SELECT * FROM Users WHERE Username = @Username AND Password = @Password", new { Username = username, Password = password });
+            var clients = await _firebaseService.GetClients();
+            Console.WriteLine($"check");
+            // Print all clients to the console
+            foreach (var client in clients)
+            {
+                Console.WriteLine($"Username: {client.Username}, Password: {client.Password}");
+            }
         
+            var user = clients.FirstOrDefault(client => client.Username == username && client.Password == password);
+            
             return user != null;
         }
     }

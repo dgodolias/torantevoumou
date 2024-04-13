@@ -3,20 +3,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Data.SqlClient;
 using Dapper;
 using Microsoft.EntityFrameworkCore;
-
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Namespace
 {
     public class Myprofile : PageModel
     {
         private readonly IConfiguration _configuration;
-
-        private readonly MyDbContext _db;
+        private readonly FirebaseService _firebaseService;
         
-        public Myprofile(IConfiguration configuration, MyDbContext db)
+        public Myprofile(IConfiguration configuration, FirebaseService firebaseService)
         {
             _configuration = configuration;
-            _db = db;
+            _firebaseService = firebaseService;
         }
 
         public bool ButtonClickedInsideTimespan { get; set; }
@@ -41,12 +41,10 @@ namespace Namespace
             }
 
             bool usernameNotEmpty = !string.IsNullOrEmpty(Username);
-
             bool validMyprofileUser = HttpContext.Session.GetString("validMyprofileuser") == "True";
             Console.WriteLine($"validMyprofileUser: {validMyprofileUser}");
 
             bool passwordNotEmpty = !string.IsNullOrEmpty(Password);
-
             bool validSession = usernameNotEmpty && validMyprofileUser && passwordNotEmpty && ButtonClickedInsideTimespan;
             HttpContext.Session.SetString("validSessionMyprofile", validSession.ToString());
 
@@ -57,47 +55,54 @@ namespace Namespace
 
             // Populate the Appointment property with the necessary data
             Appointment = await GetUserAppointment(Username, Password);
-            Clients = await _db.Clients.ToListAsync();
+            Clients = await _firebaseService.GetClients();
 
             return Page();
         }
 
         private async Task<Appointment?> GetUserAppointment(string username, string password)
         {
-            using var connection = new SqlConnection(_configuration.GetConnectionString("MyDbConnection"));
-            var query = username.Contains("@") 
-                ? "SELECT Id, appointmentDate AS Date, appointmentTime AS Time FROM Users WHERE Email = @Username AND Password = @Password"
-                : "SELECT Id, appointmentDate AS Date, appointmentTime AS Time FROM Users WHERE Username = @Username AND Password = @Password";
-            var appointment = await connection.QueryFirstOrDefaultAsync<Appointment>(query, new { Username = username, Password = password });
-
-            if (appointment != null)
+            // Get the list of clients from Firebase
+            var clients = await _firebaseService.GetClients();
+        
+            // Find the client with the matching username and password
+            var client = clients.FirstOrDefault(c => c.Email == username && c.Password == password);
+            Console.WriteLine(client != null);
+            if (client != null)
             {
-                Console.WriteLine("User ID: " + appointment.Id);
+                var appointment = new Appointment
+                {
+                    Id = client.Id,
+                    Date = client.AppointmentDate,
+                    Time = client.AppointmentTime
+                };
+        
                 var dates = appointment.Date?.Split('#').Where(date => !string.IsNullOrWhiteSpace(date)).ToArray();
                 var times = appointment.Time?.Split('#').Where(time => !string.IsNullOrWhiteSpace(time)).ToArray();
-
+        
                 // Initialize the DateTime list
                 appointment.DateTime = new List<DateTime>();
-
+                Console.WriteLine($"check11");
                 // Combine each date and time into a single DateTime and add it to the list
                 if (dates != null && times != null)
                 {
-                    // Combine each date and time into a single DateTime and add it to the list
                     for (int i = 0; i < dates.Length; i++)
                     {
                         if (!string.IsNullOrWhiteSpace(dates[i]) && !string.IsNullOrWhiteSpace(times[i]) && dates[i] != "NULL" && times[i] != "NULL")
                         {
                             Console.WriteLine($"Date: {dates[i]}, Time: {times[i]}"); // Print the date and time
-
+        
                             var date = DateTime.Parse(dates[i]);
                             var time = TimeSpan.Parse(times[i]);
                             appointment.DateTime.Add(date.Date + time);
                         }
                     }
                 }
+                Console.WriteLine($"check11");
+                return appointment;
             }
-
-            return appointment;
+        
+            return null;
         }
     }
 

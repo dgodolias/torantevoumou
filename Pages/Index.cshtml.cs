@@ -1,22 +1,23 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Namespace
 {
     public class IndexModel : PageModel
     {
-        private readonly MyDbContext _db;
+        private readonly FirebaseService _firebaseService;
 
-        public IndexModel(MyDbContext db)
+        public IndexModel(FirebaseService firebaseService)
         {
-            _db = db;
+            _firebaseService = firebaseService;
         }
 
         public List<Client>? Clients { get; set; }
 
         public async Task OnGetAsync()
         {
-            Clients = await _db.Clients.ToListAsync();
+            Clients = await _firebaseService.GetClients();
         }
     }
 }
