@@ -168,7 +168,7 @@ function fetchUsersMyprofile(date) {
         console.log("futuredate",futureDate);
         console.log("futuretime",futureTime);
         $.ajax({
-        url: '/api/AddClientWithAppointment',
+        url: '/api/UpdateClientAppointment',
         type: 'POST',
         contentType: 'application/json', // Set the content type
         data: JSON.stringify({ // Convert the data to a JSON string

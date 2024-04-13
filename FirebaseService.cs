@@ -29,7 +29,7 @@ namespace Namespace
         public async Task AddClient(Client client)
         {
             await _client
-                .Child("Clients")
+                .Child("users")
                 .Child(client.Id.ToString())
                 .PutAsync(client);
         }
@@ -37,7 +37,7 @@ namespace Namespace
         public async Task UpdateClient(Client client)
         {
             await _client
-                .Child("Clients")
+                .Child("users")
                 .Child(client.Id.ToString())
                 .PutAsync(client);
         }
@@ -45,7 +45,7 @@ namespace Namespace
         public async Task DeleteClient(string id)
         {
             await _client
-                .Child("Clients")
+                .Child("users")
                 .Child(id)
                 .DeleteAsync();
         }
@@ -96,39 +96,26 @@ namespace Namespace
             await AddClient(client);
         }
 
-        public class Appointment
+
+        public async Task<bool> UpdateClientAppointment(Appointment appointment)
         {
-            public string Id { get; set; }
-            public string Date { get; set; }
-            public string Time { get; set; }
+            var clients = await GetClients();
+            Console.WriteLine("appid",appointment.Id.ToString());
+            var client = clients.FirstOrDefault(client => client.Id == appointment.Id);
+            Console.WriteLine("clientid",client.Id.ToString());
+            if (client == null)
+            {
+                return false;
+            }
+
+            client.AppointmentDate += appointment.Date;
+            client.AppointmentTime += appointment.Time;
+
+            await UpdateClient(client);
+
+            return true;
         }
 
-        public async Task AddClientWithAppointment(string appointmentJson)
-        {
-            var appointment = JsonConvert.DeserializeObject<Appointment>(appointmentJson);
 
-            // Get the client with the specified Id
-            var client = (await _client
-                .Child("Clients")
-                .Child(appointment.Id)
-                .OnceAsync<Client>()).FirstOrDefault().Object;
-
-            if (client != null)
-            {
-                // Update the appointmentDate and appointmentTime properties
-                client.appointmentDate = appointment.Date;
-                client.appointmentTime = appointment.Time;
-
-                // Update the client in the database
-                await _client
-                    .Child("Clients")
-                    .Child(appointment.Id)
-                    .PutAsync(client);
-            }
-            else
-            {
-                Console.WriteLine($"Client with Id {appointment.Id} not found");
-            }
-        }
     }
 }

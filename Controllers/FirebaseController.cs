@@ -1,13 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-public class Appointment
-{
-    public string UserId { get; set; }
-    public string FutureDate { get; set; }
-    public string FutureTime { get; set; }
-}
-
 namespace Namespace
 {
     [Route("api")]
@@ -21,12 +14,12 @@ namespace Namespace
             _firebaseService = firebaseService;
         }
 
-        [HttpPost("AddClientWithAppointment")]
-        public async Task AddClientWithAppointment([FromBody] Appointment appointment)
+        [HttpPost("UpdateClientAppointment")]
+        public async Task UpdateClientAppointment([FromBody] Appointment appointment)
         {
-            Console.WriteLine("Adding client with appointment");
+            Console.WriteLine(appointment);
         
-            var result = await _firebaseService.UpdateClientAppointment(appointment.UserId, appointment.FutureDate, appointment.FutureTime);
+            var result = await _firebaseService.UpdateClientAppointment(appointment);
         
             if (result)
             {
@@ -34,7 +27,7 @@ namespace Namespace
             }
             else
             {
-                Console.WriteLine($"Error updating appointment for client with Id {appointment.UserId}");
+                Console.WriteLine($"Error updating appointment for client with Id {appointment.Id}");
             }
         }
     }
