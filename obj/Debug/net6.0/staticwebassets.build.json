@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9sN6e7bIMv0RJigKzetwJoCfnkMm83ai/qPJww5PEzw=",
+  "Hash": "yMybh9PU5J1gmOJETcZ2GwSezI4qbsIESPFSrrfLF7g=",
   "Source": "MyWebApp",
   "BasePath": "_content/MyWebApp",
   "Mode": "Default",
@@ -236,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\nivo-lightbox\\prev@2x.png"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\css\\signup.css",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "css/signup.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\signup.css"
     },
     {
       "Identity": "C:\\Users\\USER\\Desktop\\webapp\\MyWebApp\\wwwroot\\css\\style.css",

@@ -54,13 +54,11 @@ namespace Namespace
                 var json = await httpClient.GetStringAsync(firebaseUrl);
                 
                 var clientsList = JsonConvert.DeserializeObject<List<Client>>(json);
-                Console.WriteLine(json);
                 
                 var clientsDict = new Dictionary<string, Client>();
                 int idCounter = 0;
                 foreach (var client in clientsList)
                 {
-                    Console.WriteLine(client);
                     if (client != null)
                     {
                         clientsDict.Add(idCounter.ToString(), client);
