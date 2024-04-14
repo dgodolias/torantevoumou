@@ -2,11 +2,6 @@ using Firebase.Database;
 using Firebase.Database.Query;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System.IO;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
 
 namespace Namespace
 {
@@ -30,16 +25,17 @@ namespace Namespace
         {
             await _client
                 .Child("users")
-                .Child(client.Id.ToString())
                 .PutAsync(client);
         }
 
-        public async Task UpdateClient(Client client)
+        public async Task UpdateClient(KeyValuePair<string, Client> client)
         {
+            var updateData = new { appointmentDate = client.Value.AppointmentDate, appointmentTime = client.Value.AppointmentTime };
+
             await _client
                 .Child("users")
-                .Child(client.Id.ToString())
-                .PutAsync(client);
+                .Child(client.Key)
+                .PatchAsync(updateData);
         }
 
         public async Task DeleteClient(string id)
@@ -50,35 +46,49 @@ namespace Namespace
                 .DeleteAsync();
         }
 
-        public async Task<List<Client>> GetClients()
+        public async Task<Dictionary<string, Client>> GetClients()
         {
             using (var httpClient = new HttpClient())
             {
                 var firebaseUrl = "https://torantevoumou-default-rtdb.europe-west1.firebasedatabase.app/users.json";
                 var json = await httpClient.GetStringAsync(firebaseUrl);
+                
+                var clientsList = JsonConvert.DeserializeObject<List<Client>>(json);
+                Console.WriteLine(json);
+                
+                var clientsDict = new Dictionary<string, Client>();
+                int idCounter = 0;
+                foreach (var client in clientsList)
+                {
+                    Console.WriteLine(client);
+                    if (client != null)
+                    {
+                        clientsDict.Add(idCounter.ToString(), client);
+                        
+                    }
+                    idCounter++;
+                }
 
-                var clients = JsonConvert.DeserializeObject<List<Client>>(json);
-
-                return clients;
+                return clientsDict;
             }
         }
 
         public async Task<bool> UsernameExists(string username)
         {
             var clients = await GetClients();
-            return clients.Any(client => client.Username == username);
+            return clients.Any(client => client.Value.Username == username);
         }
 
         public async Task<bool> EmailExists(string email)
         {
             var clients = await GetClients();
-            return clients.Any(client => client.Email == email);
+            return clients.Any(client => client.Value.Email == email);
         }
 
         public async Task<bool> PhoneNumberExists(string phoneNumber)
         {
             var clients = await GetClients();
-            return clients.Any(client => client.PhoneNumber == phoneNumber);
+            return clients.Any(client => client.Value.PhoneNumber == phoneNumber);
         }
 
         public async Task AddUser(string firstName, string lastName, string username, string password, string email, string phoneNumber)
@@ -100,19 +110,22 @@ namespace Namespace
         public async Task<bool> UpdateClientAppointment(Appointment appointment)
         {
             var clients = await GetClients();
-            Console.WriteLine("appid",appointment.Id.ToString());
-            var client = clients.FirstOrDefault(client => client.Id == appointment.Id);
-            Console.WriteLine("clientid",client.Id.ToString());
-            if (client == null)
+        
+            var client = clients.FirstOrDefault(client => client.Key == appointment.Id);
+        
+            if (client.Value == null)
             {
                 return false;
             }
-
-            client.AppointmentDate += appointment.Date;
-            client.AppointmentTime += appointment.Time;
-
+        
+            client.Value.AppointmentDate += appointment.Date;
+            client.Value.AppointmentTime += appointment.Time;
+        
             await UpdateClient(client);
-
+        
+            // Fetch the latest data from the server
+            clients = await GetClients();
+        
             return true;
         }
 

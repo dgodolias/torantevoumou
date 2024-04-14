@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Namespace
@@ -17,7 +18,10 @@ namespace Namespace
 
         public async Task OnGetAsync()
         {
-            Clients = await _firebaseService.GetClients();
+            var clientsData = await _firebaseService.GetClients();
+        
+            // Extract only the Client objects to the Clients list
+            Clients = clientsData.Values.ToList();
         }
     }
 }

@@ -43,7 +43,7 @@ namespace Namespace
             }
 
             // Populate the Clients property with the necessary data
-            Clients = await _firebaseService.GetClients();
+            Clients = (await _firebaseService.GetClients()).Values.ToList();
 
             return Page();
         }

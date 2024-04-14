@@ -163,11 +163,11 @@ function fetchUsersMyprofile(date) {
 
     $(".appointment-button").click(function() {
     console.log("selectedate",selectedDate);
-    var futureDate = selectedDate.format("MM-DD-YYYY") + "#";
+    var futureDate = selectedDate.format("YYYY-MM-DD") + "#";
     var futureTime = moment($(this).data("time"), "HH:mm").format("HH:mm:ss") + "#";
-        console.log("futuredate",futureDate);
-        console.log("futuretime",futureTime);
-        $.ajax({
+    console.log("futuredate",futureDate);
+    console.log("futuretime",futureTime);
+    $.ajax({
         url: '/api/UpdateClientAppointment',
         type: 'POST',
         contentType: 'application/json', // Set the content type
@@ -178,6 +178,7 @@ function fetchUsersMyprofile(date) {
         }),
         success: function(result) {
             console.log("Appointment added successfully");
+            location.reload(); // Reload the page
         },
         error: function(error) {
             console.error("Error adding appointment: ", error);

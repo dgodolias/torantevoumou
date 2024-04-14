@@ -86,9 +86,9 @@ namespace Namespace
             Console.WriteLine($"check");
             // Print all clients to the console
         
-            var user = clients.FirstOrDefault(client => client.Username == username && client.Password == password);
+            var user = clients.FirstOrDefault(client => client.Value.Username == username && client.Value.Password == password);
             
-            return user != null;
+            return user.Value != null;
         }
     }
 }

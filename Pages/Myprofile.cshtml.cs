@@ -55,7 +55,8 @@ namespace Namespace
 
             // Populate the Appointment property with the necessary data
             Appointment = await GetUserAppointment(Username, Password);
-            Clients = await _firebaseService.GetClients();
+            var clientsDictionary = await _firebaseService.GetClients();
+            Clients = clientsDictionary.Values.ToList();
 
             return Page();
         }
@@ -66,15 +67,15 @@ namespace Namespace
             var clients = await _firebaseService.GetClients();
         
             // Find the client with the matching username and password
-            var client = clients.FirstOrDefault(c => (c.Email == username || c.Username == username) && c.Password == password);
+            var client = clients.FirstOrDefault(c => (c.Value.Email == username || c.Value.Username == username) && c.Value.Password == password);
 
-            if (client != null)
+            if (client.Value != null)
             {
                 var appointment = new Appointment
                 {
-                    Id = client.Id,
-                    Date = client.AppointmentDate,
-                    Time = client.AppointmentTime
+                    Id = client.Key,
+                    Date = client.Value.AppointmentDate,
+                    Time = client.Value.AppointmentTime
                 };
 
                 var dates = appointment.Date?.Split('#').Where(date => !string.IsNullOrWhiteSpace(date)).ToArray();
