@@ -42,10 +42,6 @@
               "target": "Package",
               "version": "[2.1.35, )"
             },
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.1.0, )"
-            },
             "FirebaseAdmin": {
               "target": "Package",
               "version": "[2.4.1, )"

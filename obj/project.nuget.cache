@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "qDqzDkBXyHAhXmm+yFvi7PFKxwnxIXrPz+agOhVOgMtHbiB6J6d2/CzxXGO5C++9KE3nb0MVgaPH4dwFY3mNVw==",
+  "dgSpecHash": "p7ONvH+9hv2vVX2UXVWjkWQe4iCC4NIWlmSVm7k8mexlaKRZK+Q+fNlCxIMxBurSQ+jsc34knRX2/4DxPdVxrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Demos\\Desktop\\webapp\\torantevoumou\\torantevoumou.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Demos\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Demos\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Demos\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
-    "C:\\Users\\Demos\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",
     "C:\\Users\\Demos\\.nuget\\packages\\firebaseadmin\\2.4.1\\firebaseadmin.2.4.1.nupkg.sha512",
     "C:\\Users\\Demos\\.nuget\\packages\\firebasedatabase.net\\4.2.0\\firebasedatabase.net.4.2.0.nupkg.sha512",
     "C:\\Users\\Demos\\.nuget\\packages\\google.api.gax\\3.2.0\\google.api.gax.3.2.0.nupkg.sha512",
@@ -83,16 +82,5 @@
     "C:\\Users\\Demos\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Demos\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'EntityFramework 6.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "EntityFramework",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }
