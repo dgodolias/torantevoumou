@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "MyWebApp": {
+    "torantevoumou": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

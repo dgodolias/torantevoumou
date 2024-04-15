@@ -1,5 +1,5 @@
 {
     "appService.preDeployTask": "publish-release",
     "appService.deploySubpath": "bin\\Release\\net6.0\\publish",
-    "appService.defaultWebAppToDeploy": "undefined/subscriptions/ab7478b6-66de-41f9-8577-f8b533d11c93/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/mywebapp3220031"
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/ab7478b6-66de-41f9-8577-f8b533d11c93/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/torantevoumou3220031"
 }

@@ -6,13 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "MyWebApp/1.0.0": {
+      "torantevoumou/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "MyWebApp.dll": {}
+          "torantevoumou.dll": {}
         }
       },
       "Azure.Core/1.24.0": {
@@ -622,7 +622,7 @@
     }
   },
   "libraries": {
-    "MyWebApp/1.0.0": {
+    "torantevoumou/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
