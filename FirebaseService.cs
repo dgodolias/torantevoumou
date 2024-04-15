@@ -11,9 +11,8 @@ namespace Namespace
 
         public FirebaseService()
         {
-            string json = File.ReadAllText("./key.json");
-            JObject jObject = JObject.Parse(json);
-            string privateKey = jObject["private_key"].ToString();
+            var auth = new FirebaseAuth();
+            string privateKey = auth.PrivateKey;
 
             _client = new FirebaseClient("https://torantevoumou-default-rtdb.europe-west1.firebasedatabase.app", new FirebaseOptions
             {

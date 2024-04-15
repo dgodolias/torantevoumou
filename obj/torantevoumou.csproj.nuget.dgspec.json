@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Demos\\Desktop\\webapp\\torantevoumou\\torantevoumou.csproj": {}
+    "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\torantevoumou.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Demos\\Desktop\\webapp\\torantevoumou\\torantevoumou.csproj": {
+    "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\torantevoumou.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Demos\\Desktop\\webapp\\torantevoumou\\torantevoumou.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\torantevoumou.csproj",
         "projectName": "torantevoumou",
-        "projectPath": "C:\\Users\\Demos\\Desktop\\webapp\\torantevoumou\\torantevoumou.csproj",
-        "packagesPath": "C:\\Users\\Demos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Demos\\Desktop\\webapp\\torantevoumou\\obj\\",
+        "projectPath": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\torantevoumou.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Demos\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
