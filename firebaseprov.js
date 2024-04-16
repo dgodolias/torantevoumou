@@ -1,19 +1,33 @@
 var admin = require("firebase-admin");
 
-var privateKey = require("./key.json");
+var privateKey;
+
+try {
+  privateKey = require("./key.json");
+} catch (error) {
+  privateKey = process.env.FIREBASE_PRIVATE_KEY;
+}
+
+process.env.FIREBASE_PRIVATE_KEY_ID = "39e9eb25a56f32af7afdcfa0a02e3d324a37fe53";
+process.env.FIREBASE_CLIENT_EMAIL = "firebase-adminsdk-xzywf@torantevoumou.iam.gserviceaccount.com";
+process.env.FIREBASE_CLIENT_ID = "118208077520675921916";
+process.env.FIREBASE_AUTH_URI = "https://accounts.google.com/o/oauth2/auth";
+process.env.FIREBASE_TOKEN_URI = "https://oauth2.googleapis.com/token";
+process.env.FIREBASE_AUTH_PROVIDER_X509_CERT_URL = "https://www.googleapis.com/oauth2/v1/certs";
+process.env.FIREBASE_CLIENT_X509_CERT_URL = "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-xzywf%40torantevoumou.iam.gserviceaccount.com";
 
 admin.initializeApp({
   credential: admin.credential.cert({
     type: "service_account",
     projectId: "torantevoumou",
-    privateKeyId: "39e9eb25a56f32af7afdcfa0a02e3d324a37fe53",
+    privateKeyId: process.env.FIREBASE_PRIVATE_KEY_ID,
     privateKey: privateKey,
-    clientEmail: "firebase-adminsdk-xzywf@torantevoumou.iam.gserviceaccount.com",
-    clientId: "118208077520675921916",
-    authUri: "https://accounts.google.com/o/oauth2/auth",
-    tokenUri: "https://oauth2.googleapis.com/token",
-    authProviderX509CertUrl: "https://www.googleapis.com/oauth2/v1/certs",
-    clientX509CertUrl: "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-xzywf%40torantevoumou.iam.gserviceaccount.com"
+    clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+    clientId: process.env.FIREBASE_CLIENT_ID,
+    authUri: process.env.FIREBASE_AUTH_URI,
+    tokenUri: process.env.FIREBASE_TOKEN_URI,
+    authProviderX509CertUrl: process.env.FIREBASE_AUTH_PROVIDER_X509_CERT_URL,
+    clientX509CertUrl: process.env.FIREBASE_CLIENT_X509_CERT_URL
   }),
   databaseURL: "https://torantevoumou-default-rtdb.europe-west1.firebasedatabase.app"
 });

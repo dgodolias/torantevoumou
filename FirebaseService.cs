@@ -10,8 +10,14 @@ namespace Namespace
 
         public FirebaseService()
         {
-            var auth = new FirebaseAuth();
-            string privateKey = auth.PrivateKey;
+            var privateKey = Environment.GetEnvironmentVariable("FIREBASE_PRIVATE_KEY");
+            var privateKeyId = Environment.GetEnvironmentVariable("FIREBASE_PRIVATE_KEY_ID");
+            var clientEmail = Environment.GetEnvironmentVariable("FIREBASE_CLIENT_EMAIL");
+            var clientId = Environment.GetEnvironmentVariable("FIREBASE_CLIENT_ID");
+            var authUri = Environment.GetEnvironmentVariable("FIREBASE_AUTH_URI");
+            var tokenUri = Environment.GetEnvironmentVariable("FIREBASE_TOKEN_URI");
+            var authProviderX509CertUrl = Environment.GetEnvironmentVariable("FIREBASE_AUTH_PROVIDER_X509_CERT_URL");
+            var clientX509CertUrl = Environment.GetEnvironmentVariable("FIREBASE_CLIENT_X509_CERT_URL");
 
             _client = new FirebaseClient("https://torantevoumou-default-rtdb.europe-west1.firebasedatabase.app", new FirebaseOptions
             {
