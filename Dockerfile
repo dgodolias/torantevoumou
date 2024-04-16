@@ -34,4 +34,4 @@ COPY --from=build-env /app/package*.json ./
 RUN npm install
 
 # Run your .NET application
-CMD [ "dotnet", "torantevoumou.dll" ]
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet torantevoumou.dll
