@@ -64,7 +64,7 @@ async Task CheckFirebaseConnection()
         RedirectStandardError = true, // Redirect standard error
         UseShellExecute = false,
         CreateNoWindow = true,
-        Arguments = "./firebaseprovider.js"
+        Arguments = "./firebaseprov.js"
     };
 
     var process = new Process { StartInfo = startInfo };

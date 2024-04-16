@@ -1,0 +1,977 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\404.html",
+      "PackagePath": "staticwebassets\\404.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\close.png",
+      "PackagePath": "staticwebassets\\css\\nivo-lightbox\\close.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\close@2x.png",
+      "PackagePath": "staticwebassets\\css\\nivo-lightbox\\close@2x.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\default.css",
+      "PackagePath": "staticwebassets\\css\\nivo-lightbox\\default.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\nivo-lightbox\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\loading@2x.gif",
+      "PackagePath": "staticwebassets\\css\\nivo-lightbox\\loading@2x.gif"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\next.png",
+      "PackagePath": "staticwebassets\\css\\nivo-lightbox\\next.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\next@2x.png",
+      "PackagePath": "staticwebassets\\css\\nivo-lightbox\\next@2x.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\nivo-lightbox.css",
+      "PackagePath": "staticwebassets\\css\\nivo-lightbox\\nivo-lightbox.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\prev.png",
+      "PackagePath": "staticwebassets\\css\\nivo-lightbox\\prev.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\prev@2x.png",
+      "PackagePath": "staticwebassets\\css\\nivo-lightbox\\prev@2x.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\signup.css",
+      "PackagePath": "staticwebassets\\css\\signup.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Aesthetic\\AestheticRegular.otf",
+      "PackagePath": "staticwebassets\\fonts\\Aesthetic\\AestheticRegular.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Nasa\\Typodermic Desktop EULA 2023.pdf",
+      "PackagePath": "staticwebassets\\fonts\\Nasa\\Typodermic Desktop EULA 2023.pdf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Nasa\\nasalization-rg.otf",
+      "PackagePath": "staticwebassets\\fonts\\Nasa\\nasalization-rg.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BlackItalic.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BlackItalic.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Bold.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Bold.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BoldItalic.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BoldItalic.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBold.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBold.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBoldItalic.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBoldItalic.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLight.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLight.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLightItalic.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLightItalic.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Italic.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Italic.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Light.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Light.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-LightItalic.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-LightItalic.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Medium.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Medium.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-MediumItalic.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-MediumItalic.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Regular.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Regular.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBold.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBold.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBoldItalic.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBoldItalic.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Thin.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Thin.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ThinItalic.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ThinItalic.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-PS\\Rebeqa-VF.otf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Variable-PS\\Rebeqa-VF.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-TT\\Rebeqa-VF.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Variable-TT\\Rebeqa-VF.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.css",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.html",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\readme.txt",
+      "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\readme.txt"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\animated.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\animated.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\core.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\core.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\fixed-width.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\font-awesome.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\icons.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\icons.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\larger.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\larger.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\list.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\list.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\mixins.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\path.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\path.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\stacked.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\variables.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\variables.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_animated.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_core.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_larger.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_list.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_path.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\fonts\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\fonts\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\about.jpg",
+      "PackagePath": "staticwebassets\\img\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\ai-generated-8256457.png",
+      "PackagePath": "staticwebassets\\img\\ai-generated-8256457.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\intro-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\intro-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\massage-5578595.jpg",
+      "PackagePath": "staticwebassets\\img\\massage-5578595.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\mypic1.jpg",
+      "PackagePath": "staticwebassets\\img\\mypic1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\mypic2.jpg",
+      "PackagePath": "staticwebassets\\img\\mypic2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\mypic3.jpg",
+      "PackagePath": "staticwebassets\\img\\mypic3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\physiotherapy-595529.jpg",
+      "PackagePath": "staticwebassets\\img\\physiotherapy-595529.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\piletter.png",
+      "PackagePath": "staticwebassets\\img\\piletter.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\01-large.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\01-large.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\01-small.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\01-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\02-large.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\02-large.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\02-small.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\02-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\03-large.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\03-large.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\03-small.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\03-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\04-large.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\04-large.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\04-small.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\04-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\05-large.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\05-large.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\05-small.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\05-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\06-large.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\06-large.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\06-small.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\06-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\07-large.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\07-large.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\07-small.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\07-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\08-large.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\08-large.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\08-small.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\08-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\09-large.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\09-large.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\09-small.jpg",
+      "PackagePath": "staticwebassets\\img\\portfolio\\09-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\team\\01.jpg",
+      "PackagePath": "staticwebassets\\img\\team\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\team\\02.jpg",
+      "PackagePath": "staticwebassets\\img\\team\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\team\\03.jpg",
+      "PackagePath": "staticwebassets\\img\\team\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\team\\04.jpg",
+      "PackagePath": "staticwebassets\\img\\team\\04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\01.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonials\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\02.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonials\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\03.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonials\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\04.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonials\\04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\05.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonials\\05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\06.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonials\\06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\SmoothScroll.js",
+      "PackagePath": "staticwebassets\\js\\SmoothScroll.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\calendar.js",
+      "PackagePath": "staticwebassets\\js\\calendar.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\contact_me.js",
+      "PackagePath": "staticwebassets\\js\\contact_me.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jqBootstrapValidation.js",
+      "PackagePath": "staticwebassets\\js\\jqBootstrapValidation.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jquery.1.11.1.js",
+      "PackagePath": "staticwebassets\\js\\jquery.1.11.1.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\nivo-lightbox.js",
+      "PackagePath": "staticwebassets\\js\\nivo-lightbox.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\service-worker.js",
+      "PackagePath": "staticwebassets\\js\\service-worker.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\json\\manifest.json",
+      "PackagePath": "staticwebassets\\json\\manifest.json"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\mail\\contact_me.php",
+      "PackagePath": "staticwebassets\\mail\\contact_me.php"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.torantevoumou.props",
+      "PackagePath": "build\\torantevoumou.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.torantevoumou.props",
+      "PackagePath": "buildMultiTargeting\\torantevoumou.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.torantevoumou.props",
+      "PackagePath": "buildTransitive\\torantevoumou.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.torantevoumou.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

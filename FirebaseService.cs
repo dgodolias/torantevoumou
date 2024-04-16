@@ -1,7 +1,6 @@
 using Firebase.Database;
 using Firebase.Database.Query;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace Namespace
 {
