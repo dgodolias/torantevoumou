@@ -34,4 +34,4 @@ admin.initializeApp({
 
 console.log("Firebase admin app has been initialized.");
 
-// Add any other Firebase-related code here
+// Add any other Firebase-related code here.
