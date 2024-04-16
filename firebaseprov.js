@@ -5,10 +5,10 @@ var privateKey;
 try {
   privateKey = require("./key.json");
 } catch (error) {
-  privateKey = process.env.FIREBASE_PRIVATE_KEY;
+  privateKey = process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n');
 }
 
-process.env.FIREBASE_PRIVATE_KEY_ID = "39e9eb25a56f32af7afdcfa0a02e3d324a37fe53";
+process.env.FIREBASE_PRIVATE_KEY_ID = "b107c7102aedd63ec4effbf5e178ca2b2674fced";
 process.env.FIREBASE_CLIENT_EMAIL = "firebase-adminsdk-xzywf@torantevoumou.iam.gserviceaccount.com";
 process.env.FIREBASE_CLIENT_ID = "118208077520675921916";
 process.env.FIREBASE_AUTH_URI = "https://accounts.google.com/o/oauth2/auth";
