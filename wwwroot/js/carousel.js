@@ -1,7 +1,9 @@
 let currentIndex = 0;
 const images = document.querySelectorAll('.carousel img');
+const totalDuration = images.length * 5; // in seconds
 
 // Apply initial styles and animation delay
 images.forEach((img, index) => {
-    img.style.animation = `carousel-animation ${images.length * 4}s ${index * 4}s linear infinite`;
+    const delay = (totalDuration / images.length) * index; // delay for each image
+    img.style.animation = `carousel-animation ${totalDuration}s ${delay}s linear infinite`;
 });
