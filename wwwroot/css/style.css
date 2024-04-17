@@ -259,7 +259,6 @@ header .intro-text {
 	object-position: top left;
 	opacity: 0;
 	position: absolute;
-	animation: carousel-animation 4s 1; /* Increase the duration of the animations to 4 seconds */
 }
 
 @keyframes carousel-animation {

@@ -1,18 +1,16 @@
-var images = document.querySelectorAll('.carousel-image');
-var currentImage = 0;
+let currentIndex = 0;
+const images = document.querySelectorAll('.carousel img');
 
-// Show the first image
-images[currentImage].classList.add('show');
+// Apply initial styles and animation delay
+images.forEach((img, index) => {
+    img.style.animation = `carousel-animation 4s ${index * 4}s infinite`; // Change '4' to the duration of your animation
+});
 
-// Change the image every 4 seconds
-setInterval(function() {
-    images[currentImage].classList.remove('show', 'carousel-image');
-    void images[currentImage].offsetWidth;
-    images[currentImage].classList.add('carousel-image');
+function runCarousel() {
+    currentIndex++;
+    if(currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+}
 
-    currentImage = (currentImage + 1) % images.length;
-
-    images[currentImage].classList.remove('carousel-image');
-    void images[currentImage].offsetWidth;
-    images[currentImage].classList.add('show', 'carousel-image');
-}, 4000); /* Increase the interval to 4 seconds */
+setInterval(runCarousel, 4000); // Change image every 4 seconds
