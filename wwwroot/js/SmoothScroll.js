@@ -83,6 +83,14 @@ function initTest() {
 /**
  * Sets up scrolls array, determines if frames are involved.
  */
+var scrollHeight, windowHeight;
+
+function refresh() {
+    // Recalculate layout, update state, or perform some other action
+    scrollHeight = document.documentElement.scrollHeight;
+    windowHeight = window.innerHeight;
+}
+
 function init() {
   
     if (!document.body) return;
@@ -285,14 +293,14 @@ function wheel(event) {
     // delta is 120 most of the time
     // synaptics seems to send 1 sometimes
     if (Math.abs(deltaX) > 1.2) {
-        deltaX *= options.stepSize / 120;
+        deltaX *= options.stepSize / 300;
     }
     if (Math.abs(deltaY) > 1.2) {
-        deltaY *= options.stepSize / 120;
+        deltaY *= options.stepSize / 300;
     }
     
     scrollArray(overflowing, -deltaX, -deltaY);
-    event.preventDefault();
+    event.target.addEventListener('wheel', wheel, { passive: false });
 }
 
 /**

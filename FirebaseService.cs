@@ -19,7 +19,7 @@ namespace Namespace
             var authProviderX509CertUrl = Environment.GetEnvironmentVariable("FIREBASE_AUTH_PROVIDER_X509_CERT_URL");
             var clientX509CertUrl = Environment.GetEnvironmentVariable("FIREBASE_CLIENT_X509_CERT_URL");
 
-            _client = new FirebaseClient("https://torantevoumou-default-rtdb.europe-west1.firebasedatabase.app", new FirebaseOptions
+            _client = new FirebaseClient("https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app", new FirebaseOptions
             {
                 AuthTokenAsyncFactory = () => Task.FromResult(privateKey)
             });
@@ -54,7 +54,7 @@ namespace Namespace
         {
             using (var httpClient = new HttpClient())
             {
-                var firebaseUrl = "https://torantevoumou-default-rtdb.europe-west1.firebasedatabase.app/users.json";
+                var firebaseUrl = "https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app/users.json";
                 var json = await httpClient.GetStringAsync(firebaseUrl);
                 
                 var clientsList = JsonConvert.DeserializeObject<List<Client>>(json);

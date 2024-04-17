@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nW7s8tBUIuTTmA+QADyuHk1ycoAUdUv4nnbKHw92SFM=",
+  "Hash": "5T9LnO26ZwsjwsxHzOhVTm9FbFJuOnVuB/CDw4AyYqI=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -3281,6 +3281,23 @@
       "OriginalItemSpec": "wwwroot\\img\\massage-5578595.jpg"
     },
     {
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\medic.jpg",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "img/medic.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\medic.jpg"
+    },
+    {
       "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\mypic1.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
@@ -3842,23 +3859,6 @@
       "OriginalItemSpec": "wwwroot\\img\\testimonials\\06.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\index.html",
-      "SourceId": "torantevoumou",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
-      "BasePath": "_content/torantevoumou",
-      "RelativePath": "index.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\index.html"
-    },
-    {
       "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\bootstrap.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
@@ -3908,6 +3908,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\calendar.js"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\carousel.js",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "js/carousel.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\carousel.js"
     },
     {
       "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\contact_me.js",

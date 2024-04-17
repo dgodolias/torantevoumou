@@ -769,6 +769,10 @@
       "PackagePath": "staticwebassets\\img\\massage-5578595.jpg"
     },
     {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\medic.jpg",
+      "PackagePath": "staticwebassets\\img\\medic.jpg"
+    },
+    {
       "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\mypic1.jpg",
       "PackagePath": "staticwebassets\\img\\mypic1.jpg"
     },
@@ -901,10 +905,6 @@
       "PackagePath": "staticwebassets\\img\\testimonials\\06.jpg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
-    },
-    {
       "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\SmoothScroll.js",
       "PackagePath": "staticwebassets\\js\\SmoothScroll.js"
     },
@@ -919,6 +919,10 @@
     {
       "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\calendar.js",
       "PackagePath": "staticwebassets\\js\\calendar.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\carousel.js",
+      "PackagePath": "staticwebassets\\js\\carousel.js"
     },
     {
       "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\contact_me.js",
