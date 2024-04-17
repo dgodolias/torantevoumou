@@ -93,19 +93,21 @@
   <!-- About Section -->
   <div id="about">
     <div class="container">
-        <div class="row">
+      <div class="row">
+        <div class="content-wrapper"> <!-- New parent div -->
           <!-- Carousel -->
-        <div class="carousel">
-          <img class="carousel-image" src="img/mypic1.jpg">
-          <img class="carousel-image" src="img/medic.jpg">
-          <img class="carousel-image" src="img/mypic2.jpg">
-        </div>
-        <!-- ---------- -->
+          <div class="carousel">
+            <img class="carousel-image" src="img/mypic1.jpg">
+            <img class="carousel-image" src="img/medic.jpg">
+            <img class="carousel-image" src="img/mypic2.jpg">
+          </div>
+          <div id = "gap-carousel-about"></div>
+          <!-- ---------- -->
           <div class="col-xs-12 col-md-6">
             <div class="about-text">
-              <h2 class = "coloured-faded-text">Σχετικά με εμάς</h2>
+              <h2 class="coloured-faded-text">Σχετικα με εμας</h2>
               <p>Είμαστε μια κλινική φυσιοθεραπείας που βρίσκεται στην Ελλάδα. Παρέχουμε μια ευρεία γκάμα υπηρεσιών φυσιοθεραπείας για να βοηθήσουμε τους ασθενείς μας να ανακτήσουν την υγεία και την ευεξία τους.</p>
-              <h3 class = "coloured-faded-text">Γιατί να μας επιλέξετε;</h3>
+              <h3 class="coloured-faded-text">Γιατι να μας επιλεξετε?</h3>
               <div class="list-style">
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                   <ul>
@@ -126,7 +128,8 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> <!-- End of new parent div -->
+      </div>
     </div>
   </div>
   <!-- Contact Section -->
@@ -135,7 +138,7 @@
       <div class="col-md-8">
         <div class="row">
           <div class="section-title">
-            <h2>Επικοινωνήστε μαζί μας</h2>
+            <h2>Επικοινωνηστε μαζι μας</h2>
             <p>Παρακαλούμε συμπληρώστε την παρακάτω φόρμα για να μας στείλετε ένα email και θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό.</p>
           </div>
           <form name="sentMessage" id="contactForm" novalidate>

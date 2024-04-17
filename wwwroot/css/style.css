@@ -234,27 +234,51 @@ header .intro-text {
 	text-align: left;
 }
 /* About Section */
+
+.content-wrapper {
+	display: flex;
+	justify-content: space-between; /* Optional: Adds space between the carousel and about text */
+}
 .carousel {
-	position: relative;
-	width: 30%; /* Reduced from 70% to 50% */
-	height: 200px; /* Reduced from 400px to 300px */
-	overflow: hidden;
+	height: 330px; /* Adjust this value as needed */
+	overflow: hidden; /* Hide anything that goes outside the carousel */
+	border-radius: 15px;
 }
+.carousel{
+	flex: 1;
+	max-width: 400px; /* Adjust this value as needed */
+}
+.col-xs-12 {
+	flex: 1;
 
+}
 .carousel-image {
-	display: none;
-	position: absolute;
-	width: 100%;
 	height: 100%;
+	width: 100%;
 	object-fit: cover;
+	object-position: top left;
+	opacity: 0;
+	position: absolute;
+	animation: carousel-animation 4s 1; /* Increase the duration of the animations to 4 seconds */
 }
 
+@keyframes carousel-animation {
+	0% { transform: scale(0.8) translateX(100%); opacity: 0; }
+	20% { transform: scale(1) translateX(0); opacity: 1; }
+	80% { transform: scale(1) translateX(0); opacity: 1; }
+	100% { transform: scale(0.8) translateX(-100%); opacity: 0; }
+}
 .coloured-faded-text {
     /* Apply the same linear gradient */
     background: linear-gradient(to right, #9ca5ff 0%, #64cf94 100%);
     /* Use the background as the text color */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+#gap-carousel-about {
+	display: flex;
+	width: 80px; /* Adjust this value as needed */
+	max-width: 100px; /* Adjust this value as needed */
 }
 #about {
 	padding: 100px 0;
@@ -292,8 +316,7 @@ header .intro-text {
 	padding-right: 8px;
 }
 #about img {
-	width: 520px;
-	margin-top: 10px;
+	width: 470px;
 	background: #dfdfdf;
 	border-right: 0;
 	box-shadow: 0 0 50px rgba(0,0,0,0.06);
