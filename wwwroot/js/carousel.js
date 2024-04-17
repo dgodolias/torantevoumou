@@ -3,7 +3,7 @@ const images = document.querySelectorAll('.carousel img');
 
 // Apply initial styles and animation delay
 images.forEach((img, index) => {
-    img.style.animation = `carousel-animation 4s ${index * 4}s`;
+    img.style.animation = `carousel-animation 8s ${index * 8}s ease-in-out`;
 });
 
 function runCarousel() {
@@ -11,7 +11,7 @@ function runCarousel() {
     for(let i = 0; i < images.length; i++) {
         images[i].style.animation = '';
         void images[i].offsetWidth; // Trigger reflow to restart animation
-        images[i].style.animation = `carousel-animation 4s ${i * 4}s`;
+        images[i].style.animation = `carousel-animation 8s ${i * 8}s ease-in-out`;
     }
 
     currentIndex++;
@@ -20,4 +20,4 @@ function runCarousel() {
     }
 }
 
-setInterval(runCarousel, images.length * 4000); // Change image every 4 seconds times the number of images
+setInterval(runCarousel, images.length * 8000); // Change image every 8 seconds times the number of images

@@ -263,7 +263,7 @@ header .intro-text {
 
 @keyframes carousel-animation {
 	0% { transform: scale(0.8) translateX(100%); opacity: 0; }
-	20% { transform: scale(1) translateX(0); opacity: 1; }
+	40% { transform: scale(1) translateX(0); opacity: 1; }
 	80% { transform: scale(1) translateX(0); opacity: 1; }
 	100% { transform: scale(0.8) translateX(-100%); opacity: 0; }
 }
@@ -315,10 +315,11 @@ header .intro-text {
 	padding-right: 8px;
 }
 #about img {
-	width: 470px;
+	width: 400px;
 	background: #dfdfdf;
 	border-right: 0;
 	box-shadow: 0 0 50px rgba(0,0,0,0.06);
+	border-radius: 15px;
 }
 #about p {
 	line-height: 24px;
