@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5T9LnO26ZwsjwsxHzOhVTm9FbFJuOnVuB/CDw4AyYqI=",
+  "Hash": "FJm/xn4Fv3WEQzx2ZJiRcjvJuyQbKPs3b5RMyzQG+qo=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dashboard.css",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "css/dashboard.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
     },
     {
       "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\login.css",
@@ -3942,6 +3959,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\contact_me.js"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\dashboard.js",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "js/dashboard.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\dashboard.js"
     },
     {
       "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jqBootstrapValidation.js",

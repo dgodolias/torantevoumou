@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
       "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
@@ -927,6 +931,10 @@
     {
       "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\contact_me.js",
       "PackagePath": "staticwebassets\\js\\contact_me.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\js\\dashboard.js"
     },
     {
       "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jqBootstrapValidation.js",
