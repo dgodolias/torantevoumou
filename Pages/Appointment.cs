@@ -1,4 +1,4 @@
-public class Appointment
+public class AppointmentModel
 {
     public string Id { get; set; }
     public string? Date { get; set; }

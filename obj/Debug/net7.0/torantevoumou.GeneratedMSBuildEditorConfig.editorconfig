@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/USER/Desktop/webapp/torantevoumou/Pages/appointments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYXBwb2ludG1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/USER/Desktop/webapp/torantevoumou/Pages/calendar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2FsZW5kYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,10 +38,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/USER/Desktop/webapp/torantevoumou/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/USER/Desktop/webapp/torantevoumou/Pages/Myprofile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlwcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/USER/Desktop/webapp/torantevoumou/Pages/Signup.cshtml]

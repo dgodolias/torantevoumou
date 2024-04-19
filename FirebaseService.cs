@@ -109,7 +109,7 @@ namespace Namespace
         }
 
 
-        public async Task<bool> UpdateClientAppointment(Appointment appointment)
+        public async Task<bool> UpdateClientAppointment(AppointmentModel appointment)
         {
             var clients = await GetClients();
         

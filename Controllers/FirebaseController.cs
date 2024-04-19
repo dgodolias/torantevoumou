@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace Namespace
 {
@@ -15,7 +14,7 @@ namespace Namespace
         }
 
         [HttpPost("UpdateClientAppointment")]
-        public async Task UpdateClientAppointment([FromBody] Appointment appointment)
+        public async Task UpdateClientAppointment([FromBody] AppointmentModel appointment)
         {
             Console.WriteLine(appointment);
         

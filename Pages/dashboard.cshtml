@@ -1,5 +1,5 @@
 @page
-@model Namespace.DashboardModel
+@model Namespace.dashboard
 @{
   ViewData["Title"] = "Dashboard";
 }
@@ -66,7 +66,7 @@
                         </a>
                     </li>
 
-                    <li class="nav-link">
+                    <li class="nav-link" id="appointmentLink">
                         <a href="#">
                             <i class='bx bx-pie-chart-alt icon' ></i>
                             <span class="text nav-text">Κλείνω ραντεβού</span>
@@ -116,9 +116,25 @@
     </nav>
 
     <section class="home">
-        <div class="text">Dashboard Sidebar</div>
+        <div id="appointmentsContainer">
+            <div class="text">Dashboard Sidebar</div>
+        </div>
     </section>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/calendar.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#appointmentLink').click(function(e) {
+            e.preventDefault();
+            $('#appointmentsContainer').load('/appointments', function() {
+                $.getScript("/js/appointments.js", function() {
+                    initializeDatepickers();
+                });
+            });
+        });
+    });
+    </script>
     <script src="~/js/dashboard.js"></script>
 
 </body>

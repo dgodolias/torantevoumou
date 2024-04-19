@@ -12,7 +12,11 @@ function initializeDatepicker(selector, callback, disablePastDates) {
 
 $(function() {
     initializeDatepicker("#datepickerForAdmin", fetchUsersForAdmin, false);
-    initializeDatepicker("#datepickerMyprofile", fetchUsersMyprofile, true);
+    initializeDatepicker("#datepickerappointments", fetchUsersAppointments, true);
+});
+
+$(function() {
+    initializeDatepickers();
 });
 
 function fetchUsersForAdmin(date) {
@@ -88,7 +92,7 @@ function fetchUsersForAdmin(date) {
     $("#matchingClients").html(html);
 }
 
-function fetchUsersMyprofile(date) {
+function fetchUsersAppointments(date) {
     var selectedDate = moment(date, "MM/DD/YYYY");
     var userId = document.getElementById('userId').value;
     console.log(userId);

@@ -26,35 +26,35 @@ namespace Namespace
 
         public IActionResult OnGet()
         {
-            var validSessionMyprofile = HttpContext.Session.GetString("validSessionMyprofile");
+            var validSessionDashboard = HttpContext.Session.GetString("validSessionDashboard");
             var validSessionAdmin = HttpContext.Session.GetString("validSessionAdmin");
 
             if (validSessionAdmin == "True")
             {
                 return RedirectToPage("/Admin");
             }
-            else if (validSessionMyprofile == "True")
+            else if (validSessionDashboard == "True")
             {
-                return RedirectToPage("/Myprofile");
+                return RedirectToPage("/Dashboard");
             }
             HttpContext.Session.SetString("validAdminuser", "False");
-            HttpContext.Session.SetString("validMyprofileuser", "False");
+            HttpContext.Session.SetString("validDashboarduser", "False");
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync()
         {   
             bool validAdminuser = false;
-            bool validMyprofileuser = false;
+            bool validDashboarduser = false;
             if (Username != null && Password != null) {
                 HttpContext.Session.SetString("Username", Username);
                 HttpContext.Session.SetString("Password", Password);
-                validMyprofileuser = await UserExists(Username, Password);
+                validDashboarduser = await UserExists(Username, Password);
                 validAdminuser = Username == "admin" && Password == "123";
                 
             }
 
-            bool validuser = validMyprofileuser || validAdminuser;
+            bool validuser = validDashboarduser || validAdminuser;
 
             if (!validuser) {
                 HttpContext.Session.SetString("ButtonClicked", "False");
@@ -67,13 +67,13 @@ namespace Namespace
             if (validuser && HttpContext.Session.GetString("ButtonClicked") == "True" && Username != "admin")
             {
                 HttpContext.Session.SetString("validAdminuser", validAdminuser.ToString());
-                HttpContext.Session.SetString("validMyprofileuser", validMyprofileuser.ToString());
-                return RedirectToPage("/Myprofile");
+                HttpContext.Session.SetString("validDashboarduser", validDashboarduser.ToString());
+                return RedirectToPage("/Dashboard");
             }
             else if (validuser && HttpContext.Session.GetString("ButtonClicked") == "True" && Username == "admin" && Password == "123")
             {
                 HttpContext.Session.SetString("validAdminuser", validAdminuser.ToString());
-                HttpContext.Session.SetString("validMyprofileuser", validMyprofileuser.ToString());
+                HttpContext.Session.SetString("validDashboarduser", validDashboarduser.ToString());
                 return RedirectToPage("/Admin");
             }
             
