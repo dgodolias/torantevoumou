@@ -1,0 +1,52 @@
+@page
+@model Namespace.profile
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - Profile</title>
+    <link rel="stylesheet" type="text/css" href="~/css/dashboard.css">
+</head>
+<body>
+    <h1>Profile</h1>
+
+    @if (Model.UserProfile != null)
+    {
+        <div>
+            <p>
+                <strong>Email:</strong> 
+                <input type="email" value="@Model.UserProfile.Email" id="email" readonly />
+                <button id="changeEmail">Αλλαγή</button>
+            </p>
+            <p>
+                <strong>First Name:</strong> 
+                <input type="text" value="@Model.UserProfile.FirstName" id="firstName" readonly />
+                <button id="changeFirstName">Αλλαγή</button>
+            </p>
+            <p>
+                <strong>Last Name:</strong> 
+                <input type="text" value="@Model.UserProfile.LastName" id="lastName" readonly />
+                <button id="changeLastName">Αλλαγή</button>
+            </p>
+            <p>
+                <strong>Username:</strong> 
+                <input type="text" value="@Model.UserProfile.Username" id="username" readonly />
+                <button id="changeUsername">Αλλαγή</button>
+            </p>
+            <p>
+                <strong>Password:</strong> 
+                <input type="password" value="@Model.UserProfile.Password" id="password" readonly />
+                <button id="changePassword">Αλλαγή</button>
+            </p>
+        </div>
+    }
+    else
+    {
+        <p>No user information available.</p>
+    }
+    <script src="~/js/profile.js"></script>
+</body>
+</html>

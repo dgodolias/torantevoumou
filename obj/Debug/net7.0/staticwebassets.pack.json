@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
-    },
-    {
       "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dashboard.css",
       "PackagePath": "staticwebassets\\css\\dashboard.css"
     },
@@ -951,6 +947,10 @@
     {
       "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\nivo-lightbox.js",
       "PackagePath": "staticwebassets\\js\\nivo-lightbox.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\profile.js",
+      "PackagePath": "staticwebassets\\js\\profile.js"
     },
     {
       "Id": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\service-worker.js",

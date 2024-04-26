@@ -31,8 +31,13 @@ modeSwitch.addEventListener("click" , () =>{
 $(document).ready(function () {
     $('#appointmentLink').click(function (e) {
         e.preventDefault();
-        $('#appointmentsContainer').load('/appointments');
+        $('#container').load('/appointments');
     });
+
+    $("#profileLink").click(function (e) {
+    e.preventDefault();
+    $("#container").load("/profile");
+});
 });
 
 //-----------------------------------------//

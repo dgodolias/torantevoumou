@@ -104,11 +104,13 @@ body.dark{
     opacity: 0;
 }
 /* =========================== */
-#appointmentsContainer {
+.embedded-page {
     max-height: 100vh; /* Adjust this value as needed */
     overflow: auto; /* Enables scroll if needed */
 }
-
+input[readonly] {
+    background-color: #ccc;
+}
 .sidebar header {
     position: relative;
 }
