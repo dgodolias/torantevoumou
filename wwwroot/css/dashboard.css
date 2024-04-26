@@ -3,6 +3,7 @@
 	font-family: 'Nasa';
 	src: url('../fonts/Nasa/nasalization-rg.otf') format('opentype');
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -103,6 +104,10 @@ body.dark{
     opacity: 0;
 }
 /* =========================== */
+#appointmentsContainer {
+    max-height: 100vh; /* Adjust this value as needed */
+    overflow: auto; /* Enables scroll if needed */
+}
 
 .sidebar header {
     position: relative;
@@ -242,6 +247,7 @@ body.dark .sidebar li a:hover .text{
 .mode .sun-moon i.sun{
     opacity: 0;
 }
+
 body.dark .mode .sun-moon i.sun{
     opacity: 1;
 }
