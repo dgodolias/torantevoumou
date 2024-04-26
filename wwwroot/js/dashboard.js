@@ -27,4 +27,12 @@ modeSwitch.addEventListener("click" , () =>{
     }
 });
 
+// Embedding the appointments view in the dashboard view
+$(document).ready(function () {
+    $('#appointmentLink').click(function (e) {
+        e.preventDefault();
+        $('#appointmentsContainer').load('/appointments');
+    });
+});
+
 //-----------------------------------------//
