@@ -15,9 +15,6 @@ $(function() {
     initializeDatepicker("#datepickerappointments", fetchUsersAppointments, true);
 });
 
-$(function() {
-    initializeDatepickers();
-});
 
 function fetchUsersForAdmin(date) {
     var selectedDate = moment(date, "MM/DD/YYYY"); // Parse the selected date with moment.js
