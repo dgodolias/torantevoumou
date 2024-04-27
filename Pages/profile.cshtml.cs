@@ -16,30 +16,29 @@ namespace Namespace
 
         public Client? UserProfile { get; set; }
 
-        public async Task<IActionResult> OnGetAsync()
+        public async Task<IActionResult> OnGetAsync(string userId)
         {  
-            var Username = HttpContext.Session.GetString("Username");
-            var Password = HttpContext.Session.GetString("Password");
-
+            // Use the userId in your method
+        
             if (HttpContext.Session.GetString("validDashboarduser") != "True")
             {   
                 return RedirectToPage("/Login");
             }
-
+        
             // Populate the User property with the necessary data
-            UserProfile = await GetUserProfile(Username, Password);
-
+            UserProfile = await GetUserProfile(userId);
+        
             return Page();
         }
-
-        private async Task<Client?> GetUserProfile(string username, string password)
+        
+        private async Task<Client?> GetUserProfile(string userId)
         {
             // Get the list of clients from Firebase
             var clients = await _firebaseService.GetClients();
+            
+            // Find the client with the matching userId
+            var client = clients.FirstOrDefault(c => c.Key == userId);
         
-            // Find the client with the matching username and password
-            var client = clients.FirstOrDefault(c => (c.Value.Email == username || c.Value.Username == username) && c.Value.Password == password);
-
             return client.Value;
         }
     }

@@ -29,15 +29,17 @@ modeSwitch.addEventListener("click" , () =>{
 
 // Embedding the appointments view in the dashboard view
 $(document).ready(function () {
+    var userId = $('#container').data('userId'); // Fetch the userId from the data attribute
+
     $('#appointmentLink').click(function (e) {
         e.preventDefault();
-        $('#container').load('/appointments');
+        $('#container').load('/appointments?userId=' + userId);
     });
 
     $("#profileLink").click(function (e) {
-    e.preventDefault();
-    $("#container").load("/profile");
-});
+        e.preventDefault();
+        $("#container").load("/profile?userId=" + userId);
+    });
 });
 
 //-----------------------------------------//
