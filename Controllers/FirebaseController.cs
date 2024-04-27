@@ -1,3 +1,4 @@
+using FirebaseAdmin.Auth;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Namespace
@@ -27,6 +28,22 @@ namespace Namespace
             else
             {
                 Console.WriteLine($"Error updating appointment for client with Id {appointment.Id}");
+            }
+        }
+
+        [HttpPost("updateUser")]
+        public async Task<IActionResult> UpdateUser([FromBody] Dictionary<string, object> changes)
+        {
+            string? userId = HttpContext.Session.GetString("UserId");
+            var result = await _firebaseService.UpdateUser(userId, changes);
+        
+            if (result)
+            {
+                return Ok("Update successful!");
+            }
+            else
+            {
+                return BadRequest("Update failed. Please try again.");
             }
         }
     }

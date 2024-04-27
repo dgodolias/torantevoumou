@@ -34,12 +34,10 @@ namespace Namespace
 
         public async Task UpdateClient(KeyValuePair<string, Client> client)
         {
-            var updateData = new { appointmentDate = client.Value.AppointmentDate, appointmentTime = client.Value.AppointmentTime };
-
             await _client
                 .Child("users")
                 .Child(client.Key)
-                .PatchAsync(updateData);
+                .PutAsync(client.Value);
         }
 
         public async Task DeleteClient(string id)
@@ -131,6 +129,67 @@ namespace Namespace
             return true;
         }
 
+        public async Task<bool> UpdateUser(string userId, Dictionary<string, object> changes)
+        {
+            Console.WriteLine($"Updating user {userId}...");
         
+            var clients = await GetClients();
+        
+            var client = clients.FirstOrDefault(client => client.Key == userId);
+        
+            if (client.Value == null)
+            {
+                Console.WriteLine($"User {userId} not found.");
+                return false;
+            }
+        
+            Console.WriteLine($"User {userId} found. Applying changes...");
+        
+            var change = changes.First();
+            List<string> ClientFieldNames = typeof(Client).GetProperties().Select(property => property.Name).ToList();
+            Console.WriteLine($"ClientFieldNames: {string.Join(", ", ClientFieldNames)}");
+            for (int i = 0; i < ClientFieldNames.Count; i++)
+            {
+                if (string.Equals(change.Key, ClientFieldNames[i], StringComparison.OrdinalIgnoreCase))
+                {
+                    switch (change.Key.ToLower())
+                    {
+                        case "email":
+                            client.Value.Email = change.Value.ToString();
+                            break;
+                        case "firstname":
+                            client.Value.FirstName = change.Value.ToString();
+                            break;
+                        case "lastname":
+                            client.Value.LastName = change.Value.ToString();
+                            break;
+                        case "password":
+                            client.Value.Password = change.Value.ToString();
+                            break;
+                        case "phonenumber":
+                            client.Value.PhoneNumber = change.Value.ToString();
+                            break;
+                        case "username":
+                            client.Value.Username = change.Value.ToString();
+                            break;
+                        default:
+                            Console.WriteLine($"No action defined for field {change.Key}.");
+                            break;
+                    }
+                    Console.WriteLine($"Set {change.Key} to {change.Value}.");
+                    break;
+                }
+            }
+
+        
+            await UpdateClient(client);
+        
+            // Fetch the latest data from the server
+            clients = await GetClients();
+        
+            Console.WriteLine($"User {userId} updated successfully.");
+        
+            return true;
+        }
     }
 }

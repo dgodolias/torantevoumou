@@ -20,14 +20,17 @@ namespace Namespace
         public AppointmentModel? Appointment { get; set; }
 
         public async Task<IActionResult> OnGetAsync(string userId)
-        {  
-            // Use the userId in your method
+        {
+            var validSessionDashboard = HttpContext.Session.GetString("validSessionDashboard");
+            if (validSessionDashboard != "True")
+            {
+                return RedirectToPage("/Login");
+            }
 
-            // Pass the user ID to the GetUserAppointment method
             Appointment = await GetUserAppointment(userId);
             var clientsDictionary = await _firebaseService.GetClients();
             Clients = clientsDictionary.Values.ToList();
-        
+
             return Page();
         }
 
@@ -47,7 +50,7 @@ namespace Namespace
                     Date = client.Value.AppointmentDate,
                     Time = client.Value.AppointmentTime
                 };
-        
+                Console.WriteLine(appointment.Id);
                 var dates = appointment.Date?.Split('#').Where(date => !string.IsNullOrWhiteSpace(date)).ToArray();
                 var times = appointment.Time?.Split('#').Where(time => !string.IsNullOrWhiteSpace(time)).ToArray();
         
