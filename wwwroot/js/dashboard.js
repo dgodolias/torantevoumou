@@ -40,6 +40,7 @@ $(document).ready(function () {
         e.preventDefault();
         $("#container").load("/profile?userId=" + userId);
     });
+
 });
 
 //-----------------------------------------//
