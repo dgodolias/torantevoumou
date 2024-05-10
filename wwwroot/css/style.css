@@ -3,6 +3,28 @@
 	src: url('../fonts/Nasa/nasalization-rg.otf') format('opentype');
 }
 
+/* Index */
+.index h1,
+.index h2,
+.index h3,
+.index h4,
+.index h5 {
+	color: #ffffff; /* white color */
+}
+
+.index #menu.navbar-default {
+	background-color: #ffffff; /* white color */
+}
+
+.index #menu a.navbar-brand {
+	color: #ffffff; /* white color */
+}
+
+.index #menu.navbar-default .navbar-nav > li > a {
+	color: #ffffff; /* white color */
+}
+/*     */
+
 body, html {
 	font-family: 'Nasa', fallback;
 	text-rendering: optimizeLegibility !important;
@@ -43,6 +65,7 @@ h5 {
 	font-weight: 700;
 	line-height: 20px;
 }
+
 p {
 	font-size: 15px;
 }
@@ -194,6 +217,18 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline-offset: none;
 }
 /* Header Section */
+.intro_index {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../img/whiteroom.jpg) center no-repeat;
+	background-position: center +70%; /* Adjust this value to position the image */
+	background-color: #dfdfdf;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
 .intro {
 	display: table;
 	width: 100%;
@@ -229,9 +264,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin: 30px 0 40px 0;
 }
 header .intro-text {
-	padding-top: 350px;
-	padding-bottom: 200px;
-	text-align: left;
+    padding-top: 250px;
+    /* padding-bottom: 300px; */
+    text-align: left;
+    margin-bottom: 570px;
 }
 /* About Section */
 

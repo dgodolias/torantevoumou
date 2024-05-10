@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "j4etfYxm9rrz8WEh3BDk53mQt0R4DTsiY7hhdqcYY+Y=",
+  "Hash": "8VKUA6PPidJElDjy57btO/E9Z8PEvM7rEt+hWbU19LI=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -17,7 +17,7 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\404.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\404.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -34,7 +34,7 @@
       "OriginalItemSpec": "wwwroot\\404.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\bootstrap.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\bootstrap.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -51,7 +51,7 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dashboard.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dashboard.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -68,7 +68,7 @@
       "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\login.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\login.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -85,7 +85,7 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\close.png",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\close.png",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -102,7 +102,7 @@
       "OriginalItemSpec": "wwwroot\\css\\nivo-lightbox\\close.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\close@2x.png",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\close@2x.png",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -119,7 +119,7 @@
       "OriginalItemSpec": "wwwroot\\css\\nivo-lightbox\\close@2x.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\default.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\default.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -136,7 +136,7 @@
       "OriginalItemSpec": "wwwroot\\css\\nivo-lightbox\\default.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\loading.gif",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\loading.gif",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -153,7 +153,7 @@
       "OriginalItemSpec": "wwwroot\\css\\nivo-lightbox\\loading.gif"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\loading@2x.gif",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\loading@2x.gif",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -170,7 +170,7 @@
       "OriginalItemSpec": "wwwroot\\css\\nivo-lightbox\\loading@2x.gif"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\next.png",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\next.png",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -187,7 +187,7 @@
       "OriginalItemSpec": "wwwroot\\css\\nivo-lightbox\\next.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\next@2x.png",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\next@2x.png",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -204,7 +204,7 @@
       "OriginalItemSpec": "wwwroot\\css\\nivo-lightbox\\next@2x.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\nivo-lightbox.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\nivo-lightbox.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -221,7 +221,7 @@
       "OriginalItemSpec": "wwwroot\\css\\nivo-lightbox\\nivo-lightbox.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\prev.png",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\prev.png",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -238,7 +238,7 @@
       "OriginalItemSpec": "wwwroot\\css\\nivo-lightbox\\prev.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\prev@2x.png",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\nivo-lightbox\\prev@2x.png",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -255,7 +255,7 @@
       "OriginalItemSpec": "wwwroot\\css\\nivo-lightbox\\prev@2x.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\signup.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\signup.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -272,7 +272,7 @@
       "OriginalItemSpec": "wwwroot\\css\\signup.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\style.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\style.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -289,7 +289,7 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Aesthetic\\AestheticRegular.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Aesthetic\\AestheticRegular.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -306,7 +306,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Aesthetic\\AestheticRegular.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\css\\font-awesome.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\css\\font-awesome.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -323,7 +323,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\css\\font-awesome.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\css\\font-awesome.min.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\css\\font-awesome.min.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -340,7 +340,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\css\\font-awesome.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.eot",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.eot",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -357,7 +357,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.svg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.svg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -374,7 +374,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -391,7 +391,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -408,7 +408,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -425,7 +425,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\FontAwesome.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\FontAwesome.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -442,7 +442,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\fonts\\FontAwesome.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\animated.less",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\animated.less",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -459,7 +459,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\less\\animated.less"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\bordered-pulled.less",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\bordered-pulled.less",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -476,7 +476,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\less\\bordered-pulled.less"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\core.less",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\core.less",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -493,7 +493,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\less\\core.less"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\fixed-width.less",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\fixed-width.less",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -510,7 +510,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\less\\fixed-width.less"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\font-awesome.less",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\font-awesome.less",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -527,7 +527,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\less\\font-awesome.less"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\icons.less",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\icons.less",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -544,7 +544,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\less\\icons.less"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\larger.less",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\larger.less",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -561,7 +561,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\less\\larger.less"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\list.less",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\list.less",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -578,7 +578,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\less\\list.less"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\mixins.less",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\mixins.less",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -595,7 +595,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\less\\mixins.less"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\path.less",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\path.less",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -612,7 +612,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\less\\path.less"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\rotated-flipped.less",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\rotated-flipped.less",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -629,7 +629,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\less\\rotated-flipped.less"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\stacked.less",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\stacked.less",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -646,7 +646,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\less\\stacked.less"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\variables.less",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\less\\variables.less",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -663,7 +663,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\less\\variables.less"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_animated.scss",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_animated.scss",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -680,7 +680,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\scss\\_animated.scss"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_bordered-pulled.scss",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_bordered-pulled.scss",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -697,7 +697,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\scss\\_bordered-pulled.scss"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_core.scss",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_core.scss",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -714,7 +714,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\scss\\_core.scss"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_fixed-width.scss",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_fixed-width.scss",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -731,7 +731,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\scss\\_fixed-width.scss"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_icons.scss",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_icons.scss",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -748,7 +748,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\scss\\_icons.scss"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_larger.scss",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_larger.scss",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -765,7 +765,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\scss\\_larger.scss"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_list.scss",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_list.scss",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -782,7 +782,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\scss\\_list.scss"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_mixins.scss",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_mixins.scss",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -799,7 +799,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\scss\\_mixins.scss"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_path.scss",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_path.scss",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -816,7 +816,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\scss\\_path.scss"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_rotated-flipped.scss",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_rotated-flipped.scss",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -833,7 +833,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\scss\\_rotated-flipped.scss"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_stacked.scss",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_stacked.scss",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -850,7 +850,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\scss\\_stacked.scss"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_variables.scss",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\_variables.scss",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -867,7 +867,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\scss\\_variables.scss"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\font-awesome.scss",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\scss\\font-awesome.scss",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -884,7 +884,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\font-awesome\\scss\\font-awesome.scss"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.eot",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.eot",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -901,7 +901,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.eot"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.svg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.svg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -918,7 +918,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -935,7 +935,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -952,7 +952,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -969,7 +969,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fonts\\glyphicons-halflings-regular.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Nasa\\nasalization-rg.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Nasa\\nasalization-rg.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -986,7 +986,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Nasa\\nasalization-rg.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Nasa\\Typodermic Desktop EULA 2023.pdf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Nasa\\Typodermic Desktop EULA 2023.pdf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1003,7 +1003,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Nasa\\Typodermic Desktop EULA 2023.pdf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1020,7 +1020,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1037,7 +1037,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BlackItalic.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BlackItalic.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1054,7 +1054,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BlackItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Bold.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Bold.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1071,7 +1071,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Bold.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BoldItalic.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BoldItalic.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1088,7 +1088,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-BoldItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBold.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBold.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1105,7 +1105,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBold.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBoldItalic.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBoldItalic.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1122,7 +1122,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraBoldItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLight.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLight.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1139,7 +1139,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLight.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLightItalic.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLightItalic.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1156,7 +1156,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ExtraLightItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Italic.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Italic.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1173,7 +1173,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Italic.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Light.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Light.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1190,7 +1190,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Light.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-LightItalic.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-LightItalic.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1207,7 +1207,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-LightItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Medium.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Medium.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1224,7 +1224,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Medium.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-MediumItalic.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-MediumItalic.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1241,7 +1241,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-MediumItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Regular.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Regular.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1258,7 +1258,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Regular.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBold.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBold.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1275,7 +1275,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBold.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBoldItalic.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBoldItalic.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1292,7 +1292,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-SemiBoldItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Thin.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Thin.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1309,7 +1309,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Thin.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ThinItalic.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ThinItalic.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1326,7 +1326,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-ThinItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Black.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Black.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1343,7 +1343,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Black.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BlackItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BlackItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1360,7 +1360,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BlackItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Bold.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Bold.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1377,7 +1377,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Bold.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BoldItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BoldItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1394,7 +1394,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-BoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBold.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBold.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1411,7 +1411,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBold.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBoldItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBoldItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1428,7 +1428,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraBoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLight.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLight.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1445,7 +1445,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLight.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLightItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLightItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1462,7 +1462,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ExtraLightItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Italic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Italic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1479,7 +1479,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Italic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Light.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Light.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1496,7 +1496,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Light.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-LightItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-LightItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1513,7 +1513,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-LightItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Medium.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Medium.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1530,7 +1530,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Medium.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-MediumItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-MediumItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1547,7 +1547,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-MediumItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Regular.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Regular.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1564,7 +1564,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Regular.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBold.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBold.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1581,7 +1581,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBold.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBoldItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBoldItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1598,7 +1598,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-SemiBoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Thin.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Thin.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1615,7 +1615,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-Thin.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ThinItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ThinItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1632,7 +1632,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-TT\\Rebeqa-ThinItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\readme.txt",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\readme.txt",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1649,7 +1649,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\readme.txt"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-PS\\Rebeqa-VF.otf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-PS\\Rebeqa-VF.otf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1666,7 +1666,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-PS\\Rebeqa-VF.otf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-TT\\Rebeqa-VF.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-TT\\Rebeqa-VF.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1683,7 +1683,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Variable-TT\\Rebeqa-VF.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1700,7 +1700,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1717,7 +1717,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1734,7 +1734,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1751,7 +1751,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1768,7 +1768,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Black.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1785,7 +1785,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1802,7 +1802,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1819,7 +1819,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1836,7 +1836,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1853,7 +1853,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1870,7 +1870,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1887,7 +1887,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1904,7 +1904,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1921,7 +1921,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1938,7 +1938,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Bold.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1955,7 +1955,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1972,7 +1972,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -1989,7 +1989,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2006,7 +2006,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2023,7 +2023,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BoldItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2040,7 +2040,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2057,7 +2057,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2074,7 +2074,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2091,7 +2091,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2108,7 +2108,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBold.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2125,7 +2125,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2142,7 +2142,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2159,7 +2159,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2176,7 +2176,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2193,7 +2193,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraBoldItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2210,7 +2210,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2227,7 +2227,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2244,7 +2244,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2261,7 +2261,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2278,7 +2278,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLight.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2295,7 +2295,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2312,7 +2312,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2329,7 +2329,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2346,7 +2346,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2363,7 +2363,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ExtraLightItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2380,7 +2380,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2397,7 +2397,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2414,7 +2414,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2431,7 +2431,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2448,7 +2448,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2465,7 +2465,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2482,7 +2482,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2499,7 +2499,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2516,7 +2516,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2533,7 +2533,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Light.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2550,7 +2550,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2567,7 +2567,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2584,7 +2584,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2601,7 +2601,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2618,7 +2618,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-LightItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2635,7 +2635,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2652,7 +2652,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2669,7 +2669,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2686,7 +2686,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2703,7 +2703,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Medium.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2720,7 +2720,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2737,7 +2737,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2754,7 +2754,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2771,7 +2771,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2788,7 +2788,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2805,7 +2805,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2822,7 +2822,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2839,7 +2839,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2856,7 +2856,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2873,7 +2873,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Regular.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2890,7 +2890,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2907,7 +2907,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2924,7 +2924,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2941,7 +2941,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2958,7 +2958,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2975,7 +2975,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -2992,7 +2992,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3009,7 +3009,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3026,7 +3026,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3043,7 +3043,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBoldItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3060,7 +3060,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3077,7 +3077,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3094,7 +3094,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3111,7 +3111,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3128,7 +3128,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Thin.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.css",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.css",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3145,7 +3145,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.html",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.html",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3162,7 +3162,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.ttf",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.ttf",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3179,7 +3179,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3196,7 +3196,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff2",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff2",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3213,7 +3213,7 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.woff2"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\about.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\about.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3230,7 +3230,7 @@
       "OriginalItemSpec": "wwwroot\\img\\about.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\ai-generated-8256457.png",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\ai-generated-8256457.png",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3247,7 +3247,7 @@
       "OriginalItemSpec": "wwwroot\\img\\ai-generated-8256457.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\intro-bg.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\intro-bg.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3264,7 +3264,7 @@
       "OriginalItemSpec": "wwwroot\\img\\intro-bg.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\massage-5578595.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\massage-5578595.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3281,7 +3281,7 @@
       "OriginalItemSpec": "wwwroot\\img\\massage-5578595.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\medic.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\medic.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3298,7 +3298,7 @@
       "OriginalItemSpec": "wwwroot\\img\\medic.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\mypic1.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\mypic1.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3315,7 +3315,7 @@
       "OriginalItemSpec": "wwwroot\\img\\mypic1.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\mypic2.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\mypic2.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3332,7 +3332,7 @@
       "OriginalItemSpec": "wwwroot\\img\\mypic2.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\mypic3.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\mypic3.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3349,7 +3349,7 @@
       "OriginalItemSpec": "wwwroot\\img\\mypic3.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\physiotherapy-595529.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\physiotherapy-595529.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3366,7 +3366,7 @@
       "OriginalItemSpec": "wwwroot\\img\\physiotherapy-595529.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\piletter.png",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\piletter.png",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3383,7 +3383,7 @@
       "OriginalItemSpec": "wwwroot\\img\\piletter.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\01-large.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\01-large.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3400,7 +3400,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\01-large.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\01-small.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\01-small.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3417,7 +3417,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\01-small.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\02-large.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\02-large.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3434,7 +3434,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\02-large.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\02-small.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\02-small.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3451,7 +3451,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\02-small.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\03-large.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\03-large.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3468,7 +3468,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\03-large.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\03-small.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\03-small.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3485,7 +3485,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\03-small.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\04-large.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\04-large.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3502,7 +3502,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\04-large.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\04-small.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\04-small.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3519,7 +3519,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\04-small.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\05-large.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\05-large.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3536,7 +3536,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\05-large.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\05-small.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\05-small.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3553,7 +3553,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\05-small.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\06-large.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\06-large.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3570,7 +3570,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\06-large.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\06-small.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\06-small.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3587,7 +3587,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\06-small.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\07-large.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\07-large.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3604,7 +3604,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\07-large.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\07-small.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\07-small.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3621,7 +3621,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\07-small.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\08-large.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\08-large.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3638,7 +3638,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\08-large.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\08-small.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\08-small.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3655,7 +3655,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\08-small.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\09-large.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\09-large.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3672,7 +3672,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\09-large.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\09-small.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\portfolio\\09-small.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3689,7 +3689,7 @@
       "OriginalItemSpec": "wwwroot\\img\\portfolio\\09-small.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\team\\01.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\team\\01.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3706,7 +3706,7 @@
       "OriginalItemSpec": "wwwroot\\img\\team\\01.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\team\\02.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\team\\02.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3723,7 +3723,7 @@
       "OriginalItemSpec": "wwwroot\\img\\team\\02.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\team\\03.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\team\\03.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3740,7 +3740,7 @@
       "OriginalItemSpec": "wwwroot\\img\\team\\03.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\team\\04.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\team\\04.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3757,7 +3757,7 @@
       "OriginalItemSpec": "wwwroot\\img\\team\\04.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\01.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\01.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3774,7 +3774,7 @@
       "OriginalItemSpec": "wwwroot\\img\\testimonials\\01.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\02.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\02.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3791,7 +3791,7 @@
       "OriginalItemSpec": "wwwroot\\img\\testimonials\\02.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\03.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\03.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3808,7 +3808,7 @@
       "OriginalItemSpec": "wwwroot\\img\\testimonials\\03.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\04.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\04.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3825,7 +3825,7 @@
       "OriginalItemSpec": "wwwroot\\img\\testimonials\\04.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\05.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\05.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3842,7 +3842,7 @@
       "OriginalItemSpec": "wwwroot\\img\\testimonials\\05.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\06.jpg",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\testimonials\\06.jpg",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3859,7 +3859,24 @@
       "OriginalItemSpec": "wwwroot\\img\\testimonials\\06.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\bootstrap.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\whiteroom.jpg",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "img/whiteroom.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\whiteroom.jpg"
+    },
+    {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\bootstrap.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3876,7 +3893,7 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\bootstrap.min.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\bootstrap.min.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3893,7 +3910,7 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\calendar.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\calendar.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3910,7 +3927,7 @@
       "OriginalItemSpec": "wwwroot\\js\\calendar.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\carousel.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\carousel.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3927,7 +3944,7 @@
       "OriginalItemSpec": "wwwroot\\js\\carousel.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\contact_me.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\contact_me.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3944,7 +3961,7 @@
       "OriginalItemSpec": "wwwroot\\js\\contact_me.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\dashboard.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\dashboard.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3961,7 +3978,7 @@
       "OriginalItemSpec": "wwwroot\\js\\dashboard.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jqBootstrapValidation.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jqBootstrapValidation.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3978,7 +3995,7 @@
       "OriginalItemSpec": "wwwroot\\js\\jqBootstrapValidation.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jquery.1.11.1.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jquery.1.11.1.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -3995,7 +4012,7 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.1.11.1.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\main.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\main.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -4012,7 +4029,7 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\nivo-lightbox.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\nivo-lightbox.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -4029,7 +4046,7 @@
       "OriginalItemSpec": "wwwroot\\js\\nivo-lightbox.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\profile.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\profile.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -4046,7 +4063,7 @@
       "OriginalItemSpec": "wwwroot\\js\\profile.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\service-worker.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\service-worker.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -4063,7 +4080,7 @@
       "OriginalItemSpec": "wwwroot\\js\\service-worker.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\site.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\site.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -4080,7 +4097,7 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\SmoothScroll.js",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\SmoothScroll.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -4097,7 +4114,7 @@
       "OriginalItemSpec": "wwwroot\\js\\SmoothScroll.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\json\\manifest.json",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\json\\manifest.json",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
@@ -4114,7 +4131,7 @@
       "OriginalItemSpec": "wwwroot\\json\\manifest.json"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\mail\\contact_me.php",
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\mail\\contact_me.php",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
