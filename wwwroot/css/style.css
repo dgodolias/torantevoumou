@@ -466,7 +466,8 @@ header .intro-text {
     /* Apply the same linear gradient */
     background: linear-gradient(to right, #9ca5ff 0%, #64cf94 100%);
     /* Use the background as the text color */
-    -webkit-background-clip: text;
+-webkit-background-clip: text;
+background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 #gap-carousel-about {
