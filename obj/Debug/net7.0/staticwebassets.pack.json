@@ -937,16 +937,20 @@
       "PackagePath": "staticwebassets\\js\\dashboard.js"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\index2.js",
+      "PackagePath": "staticwebassets\\js\\index2.js"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jqBootstrapValidation.js",
       "PackagePath": "staticwebassets\\js\\jqBootstrapValidation.js"
     },
     {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jquery.1.11.1.js",
       "PackagePath": "staticwebassets\\js\\jquery.1.11.1.js"
-    },
-    {
-      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\main.js",
-      "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\nivo-lightbox.js",

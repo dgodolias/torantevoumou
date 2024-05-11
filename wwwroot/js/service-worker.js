@@ -5,7 +5,7 @@ self.addEventListener('install', function(event) {
           '/',
           '/index.html',
           '/styles/main.css',
-          '/script/main.js'
+          '/script/index2.js'
         ]);
       })
     );
