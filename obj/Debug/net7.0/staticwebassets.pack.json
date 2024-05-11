@@ -937,6 +937,10 @@
       "PackagePath": "staticwebassets\\js\\dashboard.js"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\flames.js",
+      "PackagePath": "staticwebassets\\js\\flames.js"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\index.js",
       "PackagePath": "staticwebassets\\js\\index.js"
     },
