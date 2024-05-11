@@ -9,20 +9,38 @@
 .index h3,
 .index h4,
 .index h5 {
-	color: #ffffff; /* white color */
+	color: #636363; /* white color */
+}
+
+.index h1 {
+	font-size: 50px;
+
 }
 
 .index #menu.navbar-default {
-	background-color: #ffffff; /* white color */
+	background-color: #636363; /* white color */
 }
 
 .index #menu a.navbar-brand {
-	color: #ffffff; /* white color */
+	color: #636363; /* white color */
 }
 
 .index #menu.navbar-default .navbar-nav > li > a {
-	color: #ffffff; /* white color */
+	color: #636363; /* white color */
 }
+.index .intro-text ul li {
+	list-style-type: disc;
+}
+
+.index .intro-text, .index .intro-text * {
+	color: #636363;
+}
+
+.index, .index * {
+	color: #636363;
+	font-size: 17.5px;
+}
+
 /*     */
 
 body, html {
@@ -40,29 +58,24 @@ h1, h2, h3, h4 {
 h1 {
 	text-transform: uppercase;
 	margin: 0 0 20px 0;
-	font-weight: 800;
 	color: #dfdfdf;
 }
 h2 {
 	text-transform: uppercase;
 	margin: 0 0 20px 0;
-	font-weight: 800;
 	font-size: 36px;
 	color: #dfdfdf;
 }
 h3 {
 	font-size: 20px;
-	font-weight: 600;
 	color: #dfdfdf;
 }
 h4 {
 	font-size: 18px;
 	color: #dfdfdf;
-	font-weight: 600;
 }
 h5 {
 	text-transform: uppercase;
-	font-weight: 700;
 	line-height: 20px;
 }
 
@@ -97,7 +110,7 @@ hr {
 #menu {
 	padding: 0px;
 	transition: all 0.8s;
-	background: rgba(0, 0, 0, 0.15) !important;
+	background: rgba(0, 0, 0, 0.12) !important;
 }
 .container {
 	width: 80%;
@@ -267,7 +280,12 @@ header .intro-text {
     padding-top: 250px;
     /* padding-bottom: 300px; */
     text-align: left;
-    margin-bottom: 570px;
+    margin-bottom: 450px;
+}
+
+#list1 {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 /* About Section */
 
