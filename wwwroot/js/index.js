@@ -1,5 +1,5 @@
 // List of businesses
-var businesses = ["Φυσιοθεραπευτήριο Παπακωσταντόπουλος", "Κουρείο TheBarbers"];
+var businesses = ["Φυσιοθεραπευτήριο Παπακωσταντόπουλος", "Κουρείο TheBarbers", "Φαρμακείο Παπαδόπουλος", "Φούρνος Παπαδόπουλος"];
 
 // Greek alphabet
 var alphabet = "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ".split('');
@@ -36,10 +36,24 @@ function displayBusinesses() {
         }
         letterDiv.appendChild(businessList);
         letterDiv.addEventListener('click', function() {
-            var businessList = this.querySelector('ul');
-            businessList.style.display = businessList.style.display === 'none' ? 'block' : 'none';
+            displaySelectedBusinesses(this.querySelector('h2').textContent);
         });
         businessDictionary.appendChild(letterDiv);
+    }
+}
+
+// Function to display businesses starting with the selected letter
+function displaySelectedBusinesses(letter) {
+    var selectedBusinesses = businesses.filter(function(business) {
+        return business[0].toUpperCase() === letter;
+    });
+    selectedBusinesses.sort();
+    var resultsDiv = document.getElementById('results');
+    resultsDiv.innerHTML = '';
+    for (var i = 0; i < selectedBusinesses.length; i++) {
+        var businessDiv = document.createElement('div');
+        businessDiv.textContent = selectedBusinesses[i];
+        resultsDiv.appendChild(businessDiv);
     }
 }
 
