@@ -41,18 +41,20 @@
 }
 
 #parentContainer {
-	display: flex;
+    border: 1px solid #bba8a8;
+    display: flex;
+    border-radius: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
+    background: rgba(168, 241, 168, 0.55) !important;
 }
 
 #businessDictionary {
-	border: 1px solid black;
 	padding: 10px;
 	width: 200px;
 	column-count: 2;
 }
 
 #searchBarContainer {
-	border: 1px solid black;
 	padding: 10px;
 	flex-grow: 1;
 	display: block;
@@ -66,21 +68,37 @@
 	width: 100%;
 }
 
-#alphindex {
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
+
 
 #spacer {
 	width: 30px;
 }
 
 #line {
-	width: 50%;
-	border-top: 1px solid rgb(0, 255, 191);
+	width: 90%;
 	align-self: center;
+	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
 }
 
+.letterAlphIndex {
+	position: relative;
+}
+
+.letterAlphIndex::after {
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	transition: width 0.2s;
+}
+
+.letterAlphIndex:hover::after {
+	width: 70%;
+	left: calc((100% - 70%) / 2);
+}
 /*     */
 
 /*Flames*/
@@ -245,10 +263,16 @@ hr {
 	width: 70px;
 	text-align: center;
 	position: relative;
-	background: #1E7A46;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	border: 0;
 }
+
+#alphindextitle {
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size: x-large;
+}
+
 /* Navigation */
 #menu {
 	padding: 0px;

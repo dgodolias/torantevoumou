@@ -22,7 +22,7 @@ function displayBusinesses(businessesToDisplay) {
     businessDictionary.innerHTML = '';
     for (var i = 0; i < alphabet.length; i++) {
         var letterDiv = document.createElement('div');
-        letterDiv.style.borderBottom = '1px solid black';
+        letterDiv.className = 'letterAlphIndex';
         letterDiv.style.cursor = 'pointer'; // Change cursor to pointer
         letterDiv.innerHTML = '<h2>' + alphabet[i] + '</h2>';
         var businessList = document.createElement('ul');
@@ -53,6 +53,25 @@ function displaySelectedBusinesses(letter) {
     for (var i = 0; i < selectedBusinesses.length; i++) {
         var businessDiv = document.createElement('div');
         businessDiv.textContent = selectedBusinesses[i];
+        businessDiv.className = 'letterAlphIndex'; // Add class
+        businessDiv.style.textAlign = 'left'; // Align text to the left
+        resultsDiv.appendChild(businessDiv);
+    }
+}
+
+// Function to display filtered businesses
+function displayFilteredBusinesses(businessesToDisplay) {
+    // Sort businesses
+    businessesToDisplay.sort();
+
+    // Display businesses
+    var resultsDiv = document.getElementById('results');
+    resultsDiv.innerHTML = '';
+    for (var i = 0; i < businessesToDisplay.length; i++) {
+        var businessDiv = document.createElement('div');
+        businessDiv.textContent = businessesToDisplay[i];
+        businessDiv.className = 'letterAlphIndex'; // Add class
+        businessDiv.style.textAlign = 'left'; // Align text to the left
         resultsDiv.appendChild(businessDiv);
     }
 }
@@ -70,20 +89,7 @@ function toLowerGreek(input) {
     return output;
 }
 
-// Function to display filtered businesses
-function displayFilteredBusinesses(businessesToDisplay) {
-    // Sort businesses
-    businessesToDisplay.sort();
 
-    // Display businesses
-    var resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = '';
-    for (var i = 0; i < businessesToDisplay.length; i++) {
-        var businessDiv = document.createElement('div');
-        businessDiv.textContent = businessesToDisplay[i];
-        resultsDiv.appendChild(businessDiv);
-    }
-}
 
 // Function to filter businesses
 function filterBusinesses() {
