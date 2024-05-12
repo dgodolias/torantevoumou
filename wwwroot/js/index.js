@@ -52,8 +52,9 @@ function displaySelectedBusinesses(letter) {
     resultsDiv.innerHTML = '';
     for (var i = 0; i < selectedBusinesses.length; i++) {
         var businessDiv = document.createElement('div');
+        businessDiv.style.cursor = 'pointer'; // Change cursor to pointer
         businessDiv.textContent = selectedBusinesses[i];
-        businessDiv.className = 'letterAlphIndex'; // Add class
+        businessDiv.className = 'businessAlphIndex'; // Add class
         businessDiv.style.textAlign = 'left'; // Align text to the left
         resultsDiv.appendChild(businessDiv);
     }
@@ -76,16 +77,18 @@ function displayFilteredBusinesses(businessesToDisplay) {
     }
 }
 
-// Custom function to convert Greek text to lowercase
+// Custom function to convert Greek text to lowercase and remove accents
 function toLowerGreek(input) {
-    var output = input.replace(/Ά/g, 'ά').replace(/Έ/g, 'έ').replace(/Ή/g, 'ή').replace(/Ί/g, 'ί')
-        .replace(/Ό/g, 'ό').replace(/Ύ/g, 'ύ').replace(/Ώ/g, 'ώ').replace(/Ϊ/g, 'ϊ').replace(/Ϋ/g, 'ϋ')
+    var output = input.replace(/Ά/g, 'α').replace(/Έ/g, 'ε').replace(/Ή/g, 'η').replace(/Ί/g, 'ι')
+        .replace(/Ό/g, 'ο').replace(/Ύ/g, 'υ').replace(/Ώ/g, 'ω').replace(/Ϊ/g, 'ι').replace(/Ϋ/g, 'υ')
         .replace(/Α/g, 'α').replace(/Β/g, 'β').replace(/Γ/g, 'γ').replace(/Δ/g, 'δ')
         .replace(/Ε/g, 'ε').replace(/Ζ/g, 'ζ').replace(/Η/g, 'η').replace(/Θ/g, 'θ')
         .replace(/Ι/g, 'ι').replace(/Κ/g, 'κ').replace(/Λ/g, 'λ').replace(/Μ/g, 'μ')
         .replace(/Ν/g, 'ν').replace(/Ξ/g, 'ξ').replace(/Ο/g, 'ο').replace(/Π/g, 'π')
         .replace(/Ρ/g, 'ρ').replace(/Σ/g, 'σ').replace(/Τ/g, 'τ').replace(/Υ/g, 'υ')
-        .replace(/Φ/g, 'φ').replace(/Χ/g, 'χ').replace(/Ψ/g, 'ψ').replace(/Ω/g, 'ω');
+        .replace(/Φ/g, 'φ').replace(/Χ/g, 'χ').replace(/Ψ/g, 'ψ').replace(/Ω/g, 'ω')
+        .replace(/ά/g, 'α').replace(/έ/g, 'ε').replace(/ή/g, 'η').replace(/ί/g, 'ι')
+        .replace(/ό/g, 'ο').replace(/ύ/g, 'υ').replace(/ώ/g, 'ω').replace(/ϊ/g, 'ι').replace(/ϋ/g, 'υ');
     return output;
 }
 

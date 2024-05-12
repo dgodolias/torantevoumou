@@ -75,12 +75,16 @@
 }
 
 #line {
-	width: 90%;
+	width: 100%;
 	align-self: center;
 	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
 }
 
 .letterAlphIndex {
+	position: relative;
+}
+
+.businessAlphIndex {
 	position: relative;
 }
 
@@ -94,10 +98,32 @@
 	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
 	transition: width 0.2s;
 }
+.businessAlphIndex::after {
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	transition: width 0.2s;
+}
 
 .letterAlphIndex:hover::after {
 	width: 70%;
 	left: calc((100% - 70%) / 2);
+}
+
+.businessAlphIndex:hover::after {
+	width: 100%;
+}
+
+.letterAlphIndex:active {
+	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+}
+
+.businessAlphIndex:active {
+	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
 }
 /*     */
 

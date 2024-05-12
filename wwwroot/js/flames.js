@@ -1266,6 +1266,56 @@ function createTextureAsync(url) {
 initFramebuffers();
 multipleSplats(parseInt(Math.random() * 20) + 5);
 
+let splatsIntervalId;
+let lastMousePosition = { x: null, y: null };
+let mouseMoveTimeoutId;
+
+function startSplats() {
+  stopSplats();  // Ensure any existing splats are stopped before starting new ones
+  splatsIntervalId = setInterval(() => {
+    multipleSplats(parseInt(Math.random() * 20) + 5);
+  }, 2000);  // 2 seconds
+}
+
+function stopSplats() {
+  clearInterval(splatsIntervalId);
+}
+
+// Start splats when mouse leaves the canvas
+canvas.addEventListener("mouseleave", () => {
+  startSplats();
+});
+
+// Stop splats when mouse enters the canvas
+canvas.addEventListener("mouseenter", () => {
+  stopSplats();
+});
+
+// Check if mouse is moving
+canvas.addEventListener("mousemove", (event) => {
+  // Clear any existing timeout
+  clearTimeout(mouseMoveTimeoutId);
+
+  if (lastMousePosition.x === event.clientX && lastMousePosition.y === event.clientY) {
+    // Mouse is not moving
+    startSplats();
+  } else {
+    // Mouse is moving
+    stopSplats();
+    // Start a timeout to start the splats if the mouse doesn't move within 2 seconds
+    mouseMoveTimeoutId = setTimeout(startSplats, 2000);
+  }
+
+  // Update last mouse position
+  lastMousePosition.x = event.clientX;
+  lastMousePosition.y = event.clientY;
+});
+
+// Start splats initially
+startSplats();
+// Start splats initially
+startSplats();
+
 let lastColorChangeTime = Date.now();
 
 update();
@@ -1617,6 +1667,7 @@ canvas.addEventListener("mouseenter", () => {
 canvas.addEventListener("mouseleave", () => {
   clearInterval(intervalId);
 });
+
 
 /* canvas.addEventListener('touchstart', e => {
     e.preventDefault();
