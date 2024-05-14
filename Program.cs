@@ -1,6 +1,5 @@
 using System.Diagnostics;
 
-Console.WriteLine("check1");
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -30,7 +29,7 @@ else
     app.UseExceptionHandler("/Error");
     app.UseHsts();
 }
-Console.WriteLine("check3");
+
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
@@ -42,16 +41,16 @@ app.UseAuthorization();
 
 // Use session state.
 app.UseSession();
-Console.WriteLine("check4");
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapRazorPages();
     endpoints.MapControllers();
 });
-Console.WriteLine("check5");
+
 // Check Firebase connection
 CheckFirebaseConnection().Wait();
-Console.WriteLine("check6");
+
 app.Run();
 
 async Task CheckFirebaseConnection()

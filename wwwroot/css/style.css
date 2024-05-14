@@ -3,6 +3,7 @@
 	src: url('../fonts/Nasa/nasalization-rg.otf') format('opentype');
 }
 
+
 /* Index */
 .index h1,
 .index h2,
@@ -44,8 +45,8 @@
     border: 1px solid #bba8a8;
     display: flex;
     border-radius: 70px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
-    background: rgba(168, 241, 168, 0.55) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    background: rgba(233,233,233, 0.55) !important;
 }
 
 #businessDictionary {
@@ -68,7 +69,10 @@
 	width: 100%;
 }
 
-
+.intro_index {
+	background: url(../img/whiteroom.jpg) center center no-repeat;
+	background-color: #dfdfdf;
+}
 
 #spacer {
 	width: 30px;
@@ -220,13 +224,18 @@
   }
 }
 .banner_canvas {
-	position: absolute; /* Change from fixed to absolute */
-	top: 0;
-	left: 0;
-	height: auto; /* Change from 100% to auto */
-	width: auto; /* Change from 100% to auto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
+#services {
+    position: relative;
+	height: 1000px;
+}
 
 /*     */
 
@@ -309,6 +318,8 @@ hr {
 	width: 80%;
 	margin: 0 auto;
 	padding: 30px;
+	z-index: 2;
+	position: relative;
 }
 #menu.navbar-default {
 	background-color: #dfdfdf;

@@ -49,10 +49,10 @@ let config = {
   COLORFUL: false,
   PAUSED: false,
   BACK_COLOR: {
-    r: 195,
-    g: 217,
-    b: 195
-  },
+    r: 255,
+    g: 255,
+    b: 255
+},
   IMAGE_URL: "../img/whiteroom.jpg",
   TRANSPARENT: false,
   BLOOM: true,
