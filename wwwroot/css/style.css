@@ -247,6 +247,7 @@ body, html {
 	font-weight: 400;
 	width: 100% !important;
 	height: 100% !important;
+	scroll-behavior: smooth;
 }
 h1, h2, h3, h4 {
 	font-family: 'Nasa', fallback;
@@ -308,6 +309,17 @@ hr {
 	font-size: x-large;
 }
 
+.index #services {
+	position: relative;  /* Ensure the parent is a positioned element */
+}
+
+.index #alphindex {
+	position: absolute;  /* Position the element absolutely within its parent */
+	bottom: 10%;  
+	left: 0;
+	right: 0;
+	margin: auto;
+}
 /* Navigation */
 #menu {
 	padding: 0px;
