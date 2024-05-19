@@ -15,6 +15,7 @@ namespace Namespace
         }
 
         [HttpPost("UpdateClientAppointment")]
+        /*
         public async Task UpdateClientAppointment([FromBody] AppointmentModel appointment)
         {
             Console.WriteLine(appointment);
@@ -30,6 +31,7 @@ namespace Namespace
                 Console.WriteLine($"Error updating appointment for client with Id {appointment.Id}");
             }
         }
+        */
 
         [HttpPost("updateUser")]
         public async Task<IActionResult> UpdateUser([FromBody] Dictionary<string, object> changes)

@@ -14,11 +14,11 @@ namespace Namespace
             _firebaseService = firebaseService;
         }
 
-        public List<Client>? Clients { get; set; }
+        public List<User>? Users { get; set; }
 
         // Change the Users property to a single Appointment
         public AppointmentModel? Appointment { get; set; }
-
+        /*
         public async Task<IActionResult> OnGetAsync(string userId)
         {
             var validSessionDashboard = HttpContext.Session.GetString("validSessionDashboard");
@@ -28,27 +28,27 @@ namespace Namespace
             }
 
             Appointment = await GetUserAppointment(userId);
-            var clientsDictionary = await _firebaseService.GetClients();
-            Clients = clientsDictionary.Values.ToList();
+            var UsersDictionary = await _firebaseService.GetUsers();
+            Users = UsersDictionary.Values.ToList();
 
             return Page();
         }
 
         private async Task<AppointmentModel?> GetUserAppointment(string userId)
         {
-            // Get the list of clients from Firebase
-            var clients = await _firebaseService.GetClients();
+            // Get the list of Users from Firebase
+            var Users = await _firebaseService.GetUsers();
         
-            // Find the client with the matching ID
-            var client = clients.FirstOrDefault(c => c.Key == userId);
+            // Find the User with the matching ID
+            var User = Users.FirstOrDefault(c => c.Key == userId);
         
-            if (client.Value != null)
+            if (User.Value != null)
             {
                 var appointment = new AppointmentModel
                 {
-                    Id = client.Key,
-                    Date = client.Value.AppointmentDate,
-                    Time = client.Value.AppointmentTime
+                    Id = User.Key,
+                    Date = User.Value.AppointmentDate,
+                    Time = User.Value.AppointmentTime
                 };
                 Console.WriteLine(appointment.Id);
                 var dates = appointment.Date?.Split('#').Where(date => !string.IsNullOrWhiteSpace(date)).ToArray();
@@ -77,5 +77,6 @@ namespace Namespace
         
             return null;
         }
+        */
     }
 }

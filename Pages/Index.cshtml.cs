@@ -11,14 +11,14 @@ namespace Namespace
             _firebaseService = firebaseService;
         }
 
-        public List<Client>? Clients { get; set; }
+        public List<User>? Users { get; set; }
 
         public async Task OnGetAsync()
         {
-            var clientsData = await _firebaseService.GetClients();
+            var usersData = await _firebaseService.GetUsers();
         
             // Extract only the Client objects to the Clients list
-            Clients = clientsData.Values.ToList();
+            Users = usersData.Values.ToList();
         }
     }
 }

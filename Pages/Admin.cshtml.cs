@@ -14,8 +14,8 @@ namespace Namespace
 
         public bool ButtonClickedInsideTimespan { get; set; }
 
-        // Add the Clients property
-        public List<Client>? Clients { get; set; }
+        // Add the Users property
+        public List<User>? Users { get; set; }
 
         public async Task<IActionResult> OnGetAsync()
         {
@@ -40,8 +40,8 @@ namespace Namespace
                 return RedirectToPage("/Login");
             }
 
-            // Populate the Clients property with the necessary data
-            Clients = (await _firebaseService.GetClients()).Values.ToList();
+            // Populate the Users property with the necessary data
+            Users = (await _firebaseService.GetUsers()).Values.ToList();
 
             return Page();
         }

@@ -46,7 +46,7 @@ namespace Namespace
             HttpContext.Session.SetString("validSessionDashboard", validSession.ToString());
 
             // Get the user's ID from the Firebase service
-            var clients = await _firebaseService.GetClients();
+            var clients = await _firebaseService.GetUsers();
             var client = clients.FirstOrDefault(c => (c.Value.Email == Username || c.Value.Username == Username) && c.Value.Password == Password);
             if (client.Value != null)
             {

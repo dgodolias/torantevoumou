@@ -80,7 +80,7 @@ namespace Namespace
 
         private async Task<bool> UserExists(string username, string password)
         {
-            var clients = await _firebaseService.GetClients();
+            var clients = await _firebaseService.GetUsers();
             Console.WriteLine($"check");
             // Print all clients to the console
         

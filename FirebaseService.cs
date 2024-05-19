@@ -6,94 +6,94 @@ namespace Namespace
 {
     public class FirebaseService
     {
-        private readonly FirebaseClient _client;
+        private readonly FirebaseClient _User;
 
         public FirebaseService()
         {
             var privateKey = Environment.GetEnvironmentVariable("FIREBASE_PRIVATE_KEY");
             var privateKeyId = Environment.GetEnvironmentVariable("FIREBASE_PRIVATE_KEY_ID");
-            var clientEmail = Environment.GetEnvironmentVariable("FIREBASE_CLIENT_EMAIL");
-            var clientId = Environment.GetEnvironmentVariable("FIREBASE_CLIENT_ID");
+            var UserEmail = Environment.GetEnvironmentVariable("FIREBASE_User_EMAIL");
+            var UserId = Environment.GetEnvironmentVariable("FIREBASE_User_ID");
             var authUri = Environment.GetEnvironmentVariable("FIREBASE_AUTH_URI");
             var tokenUri = Environment.GetEnvironmentVariable("FIREBASE_TOKEN_URI");
             var authProviderX509CertUrl = Environment.GetEnvironmentVariable("FIREBASE_AUTH_PROVIDER_X509_CERT_URL");
-            var clientX509CertUrl = Environment.GetEnvironmentVariable("FIREBASE_CLIENT_X509_CERT_URL");
+            var UserX509CertUrl = Environment.GetEnvironmentVariable("FIREBASE_User_X509_CERT_URL");
 
-            _client = new FirebaseClient("https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app", new FirebaseOptions
+            _User = new FirebaseClient("https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app", new FirebaseOptions
             {
                 AuthTokenAsyncFactory = () => Task.FromResult(privateKey)
             });
         }
 
-        public async Task AddClient(Client client)
+        public async Task AddUser(User User)
         {
-            await _client
+            await _User
                 .Child("users")
-                .PutAsync(client);
+                .PutAsync(User);
         }
 
-        public async Task UpdateClient(KeyValuePair<string, Client> client)
+        public async Task UpdateUser(KeyValuePair<string, User> User)
         {
-            await _client
+            await _User
                 .Child("users")
-                .Child(client.Key)
-                .PutAsync(client.Value);
+                .Child(User.Key)
+                .PutAsync(User.Value);
         }
 
-        public async Task DeleteClient(string id)
+        public async Task DeleteUser(string id)
         {
-            await _client
+            await _User
                 .Child("users")
                 .Child(id)
                 .DeleteAsync();
         }
 
-        public async Task<Dictionary<string, Client>> GetClients()
+        public async Task<Dictionary<string, User>> GetUsers()
         {
-            using (var httpClient = new HttpClient())
+            using (var httpUser = new HttpClient())
             {
                 var firebaseUrl = "https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app/users.json";
-                var json = await httpClient.GetStringAsync(firebaseUrl);
+                var json = await httpUser.GetStringAsync(firebaseUrl);
                 
-                var clientsList = JsonConvert.DeserializeObject<List<Client>>(json);
+                var UsersList = JsonConvert.DeserializeObject<List<User>>(json);
                 
-                var clientsDict = new Dictionary<string, Client>();
+                var UsersDict = new Dictionary<string, User>();
                 int idCounter = 0;
-                foreach (var client in clientsList)
+                foreach (var User in UsersList)
                 {
-                    if (client != null)
+                    if (User != null)
                     {
-                        clientsDict.Add(idCounter.ToString(), client);
+                        UsersDict.Add(idCounter.ToString(), User);
                         
                     }
                     idCounter++;
                 }
 
-                return clientsDict;
+                return UsersDict;
             }
         }
 
         public async Task<bool> UsernameExists(string username)
         {
-            var clients = await GetClients();
-            return clients.Any(client => client.Value.Username == username);
+            var Users = await GetUsers();
+            return Users.Any(User => User.Value.Username == username);
         }
 
         public async Task<bool> EmailExists(string email)
         {
-            var clients = await GetClients();
-            return clients.Any(client => client.Value.Email == email);
+            var Users = await GetUsers();
+            return Users.Any(User => User.Value.Email == email);
         }
 
         public async Task<bool> PhoneNumberExists(string phoneNumber)
         {
-            var clients = await GetClients();
-            return clients.Any(client => client.Value.PhoneNumber == phoneNumber);
+            var Users = await GetUsers();
+            return Users.Any(User => User.Value.PhoneNumber == phoneNumber);
         }
 
         public async Task AddUser(string firstName, string lastName, string username, string password, string email, string phoneNumber)
         {
-            var client = new Client
+            var User = new User
             {
                 FirstName = firstName,
                 LastName = lastName,
@@ -103,41 +103,18 @@ namespace Namespace
                 PhoneNumber = phoneNumber
             };
 
-            await AddClient(client);
-        }
-
-
-        public async Task<bool> UpdateClientAppointment(AppointmentModel appointment)
-        {
-            var clients = await GetClients();
-        
-            var client = clients.FirstOrDefault(client => client.Key == appointment.Id);
-        
-            if (client.Value == null)
-            {
-                return false;
-            }
-        
-            client.Value.AppointmentDate += appointment.Date;
-            client.Value.AppointmentTime += appointment.Time;
-        
-            await UpdateClient(client);
-        
-            // Fetch the latest data from the server
-            clients = await GetClients();
-        
-            return true;
+            await AddUser(User);
         }
 
         public async Task<bool> UpdateUser(string userId, Dictionary<string, object> changes)
         {
             Console.WriteLine($"Updating user {userId}...");
         
-            var clients = await GetClients();
+            var Users = await GetUsers();
         
-            var client = clients.FirstOrDefault(client => client.Key == userId);
+            var User = Users.FirstOrDefault(User => User.Key == userId);
         
-            if (client.Value == null)
+            if (User.Value == null)
             {
                 Console.WriteLine($"User {userId} not found.");
                 return false;
@@ -146,31 +123,31 @@ namespace Namespace
             Console.WriteLine($"User {userId} found. Applying changes...");
         
             var change = changes.First();
-            List<string> ClientFieldNames = typeof(Client).GetProperties().Select(property => property.Name).ToList();
-            Console.WriteLine($"ClientFieldNames: {string.Join(", ", ClientFieldNames)}");
-            for (int i = 0; i < ClientFieldNames.Count; i++)
+            List<string> UserFieldNames = typeof(User).GetProperties().Select(property => property.Name).ToList();
+            Console.WriteLine($"UserFieldNames: {string.Join(", ", UserFieldNames)}");
+            for (int i = 0; i < UserFieldNames.Count; i++)
             {
-                if (string.Equals(change.Key, ClientFieldNames[i], StringComparison.OrdinalIgnoreCase))
+                if (string.Equals(change.Key, UserFieldNames[i], StringComparison.OrdinalIgnoreCase))
                 {
                     switch (change.Key.ToLower())
                     {
                         case "email":
-                            client.Value.Email = change.Value.ToString();
+                            User.Value.Email = change.Value.ToString();
                             break;
                         case "firstname":
-                            client.Value.FirstName = change.Value.ToString();
+                            User.Value.FirstName = change.Value.ToString();
                             break;
                         case "lastname":
-                            client.Value.LastName = change.Value.ToString();
+                            User.Value.LastName = change.Value.ToString();
                             break;
                         case "password":
-                            client.Value.Password = change.Value.ToString();
+                            User.Value.Password = change.Value.ToString();
                             break;
                         case "phonenumber":
-                            client.Value.PhoneNumber = change.Value.ToString();
+                            User.Value.PhoneNumber = change.Value.ToString();
                             break;
                         case "username":
-                            client.Value.Username = change.Value.ToString();
+                            User.Value.Username = change.Value.ToString();
                             break;
                         default:
                             Console.WriteLine($"No action defined for field {change.Key}.");
@@ -182,10 +159,13 @@ namespace Namespace
             }
 
         
-            await UpdateClient(client);
+            await _User
+                .Child("users")
+                .Child(User.Key)
+                .PutAsync(User.Value);
         
             // Fetch the latest data from the server
-            clients = await GetClients();
+            Users = await GetUsers();
         
             Console.WriteLine($"User {userId} updated successfully.");
         

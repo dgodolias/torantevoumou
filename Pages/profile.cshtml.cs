@@ -14,7 +14,7 @@ namespace Namespace
             _firebaseService = firebaseService;
         }
 
-        public Client? UserProfile { get; set; }
+        public User? UserProfile { get; set; }
 
         public async Task<IActionResult> OnGetAsync(string userId)
         {  
@@ -31,15 +31,15 @@ namespace Namespace
             return Page();
         }
         
-        private async Task<Client?> GetUserProfile(string userId)
+        private async Task<User?> GetUserProfile(string userId)
         {
-            // Get the list of clients from Firebase
-            var clients = await _firebaseService.GetClients();
+            // Get the list of Users from Firebase
+            var Users = await _firebaseService.GetUsers();
             
-            // Find the client with the matching userId
-            var client = clients.FirstOrDefault(c => c.Key == userId);
+            // Find the User with the matching userId
+            var User = Users.FirstOrDefault(c => c.Key == userId);
         
-            return client.Value;
+            return User.Value;
         }
     }
 }
