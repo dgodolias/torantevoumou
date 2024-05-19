@@ -32,8 +32,13 @@
 	list-style-type: disc;
 }
 
-.index .intro-text, .index .intro-text * {
+.index .intro-text * {
 	color: #636363;
+}
+
+.index .intro-text{
+	margin-left: 0%;
+	width: 100%;
 }
 
 .index, .index * {
@@ -63,11 +68,17 @@
 	align-items: center;
 }
 
+#searchBar {
+	border-radius: 10px;
+}
+
 #titleSearchBarContainer {
 	display: flex;
 	justify-content: center;
 	width: 100%;
 }
+
+
 
 .intro_index {
 	background: url(../img/whiteroom.jpg) center center no-repeat;
@@ -129,6 +140,12 @@
 .businessAlphIndex:active {
 	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
 }
+
+h2#titleService {
+    font-size: xx-large;
+}
+
+
 /*     */
 
 /*Flames*/
@@ -303,6 +320,10 @@ hr {
 	border: 0;
 }
 
+#serviceDescription {
+	text-align: left;
+}
+
 #alphindextitle {
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -314,8 +335,7 @@ hr {
 }
 
 .index #alphindex {
-	position: absolute;  /* Position the element absolutely within its parent */
-	bottom: 10%;  
+	position: absolute;  /* Position the element absolutely within its parent */ 
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -498,7 +518,7 @@ header .intro-text {
     margin-bottom: 250px;
 }
 
-#list1 {
+.list1 {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
