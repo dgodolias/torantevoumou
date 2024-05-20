@@ -25,13 +25,6 @@ namespace Namespace
             });
         }
 
-        public async Task AddUser(User User)
-        {
-            await _User
-                .Child("users")
-                .PutAsync(User);
-        }
-
         public async Task UpdateUser(KeyValuePair<string, User> User)
         {
             await _User
@@ -55,19 +48,7 @@ namespace Namespace
                 var firebaseUrl = "https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app/users.json";
                 var json = await httpUser.GetStringAsync(firebaseUrl);
                 
-                var UsersList = JsonConvert.DeserializeObject<List<User>>(json);
-                
-                var UsersDict = new Dictionary<string, User>();
-                int idCounter = 0;
-                foreach (var User in UsersList)
-                {
-                    if (User != null)
-                    {
-                        UsersDict.Add(idCounter.ToString(), User);
-                        
-                    }
-                    idCounter++;
-                }
+                var UsersDict = JsonConvert.DeserializeObject<Dictionary<string, User>>(json);
 
                 return UsersDict;
             }
@@ -100,10 +81,13 @@ namespace Namespace
                 Username = username,
                 Password = password,
                 Email = email,
-                PhoneNumber = phoneNumber
+                PhoneNumber = phoneNumber,
+                serviceswithappointmentkey = ""
             };
 
-            await AddUser(User);
+            await _User
+                .Child("users")
+                .PostAsync(User);
         }
 
         public async Task<bool> UpdateUser(string userId, Dictionary<string, object> changes)

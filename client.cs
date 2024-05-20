@@ -3,9 +3,10 @@ namespace Namespace{
     {
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
-        public string? Username { get; set; } // Add this line
-        public string? Password { get; set; } // Add this line
-        public string? Email { get; set; } // Add this line
-        public string? PhoneNumber { get; set; } // Add this line
+        public string? Username { get; set; } 
+        public string? Password { get; set; }
+        public string? Email { get; set; } 
+        public string? PhoneNumber { get; set; } 
+        public string? serviceswithappointmentkey { get; set; } 
     }
 }
