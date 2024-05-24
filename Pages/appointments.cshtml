@@ -29,8 +29,19 @@
             <p>You don't have any appointments.</p>
         }
 
+        <h2>Select Service</h2>
+        <select id="serviceSelect">
+            <option value="">--Please choose a service--</option>
+            @foreach (var serviceName in Model.ServiceNames)
+            {
+                <option value="@serviceName">@serviceName</option>
+            }
+        </select>
+
+        <input type="hidden" id="selectedService" />
+
         <h2>Select Date</h2>
-        <div id="datepickerappointments" class="datepicker"></div>
+        <div id="datepickerappointments" class="datepicker" style="display: none;"></div>
         <div id="appointments"></div> <!-- Div where the table will be inserted -->
     </section>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
@@ -42,5 +53,6 @@
         var users = @Html.Raw(Json.Serialize(Model.Users));
     </script>
     <script src="~/js/calendar.js"></script> <!-- Link to the JavaScript file -->
+    <script src="~/js/appointments.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>

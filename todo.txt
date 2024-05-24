@@ -4,3 +4,4 @@ SHMANTIKO: OLOI EXOUN ACCESS STON SERVER MOU
 -οταν ειμαι σε ενα σεκσιον μπλεδιζει αυτοματα ο τιτλος του ναβμπαρ, να το φτιαξω να μπλεδιζει ο σωστος τιτλος
 -signout button
 -na dw ti tha kanw otan exw dyo login anoixta, mpw sto ena kai meta to allo exei meinei anoixto kai prospathiso na mpw me neo account
+-overlapping appointments an den exei ananewhei h selida tou user1 kai o user2 kleisei rantevou

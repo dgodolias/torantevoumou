@@ -39,18 +39,17 @@ namespace Namespace
 
             bool usernameNotEmpty = !string.IsNullOrEmpty(Username);
             bool validDashboardUser = HttpContext.Session.GetString("validDashboarduser") == "True";
-            Console.WriteLine($"validDashboardUser: {validDashboardUser}");
 
             bool passwordNotEmpty = !string.IsNullOrEmpty(Password);
             bool validSession = usernameNotEmpty && validDashboardUser && passwordNotEmpty && ButtonClickedInsideTimespan;
             HttpContext.Session.SetString("validSessionDashboard", validSession.ToString());
 
             // Get the user's ID from the Firebase service
-            var clients = await _firebaseService.GetUsers();
-            var client = clients.FirstOrDefault(c => (c.Value.Email == Username || c.Value.Username == Username) && c.Value.Password == Password);
-            if (client.Value != null)
+            var users = await _firebaseService.GetUsers();
+            var user = users.FirstOrDefault(c => (c.Value.Email == Username || c.Value.Username == Username) && c.Value.Password == Password);
+            if (user.Value != null)
             {
-                UserId = client.Key;
+                UserId = user.Key;
                 HttpContext.Session.SetString("UserId", UserId);
             }
 

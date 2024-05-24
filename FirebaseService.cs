@@ -166,5 +166,22 @@ namespace Namespace
                 return appointmentData;
             }
         }
+
+        public async Task<List<string>> GetServiceNames()
+        {
+            using (var httpClient = new HttpClient())
+            {
+                var firebaseUrl = "https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app/services.json";
+                var json = await httpClient.GetStringAsync(firebaseUrl);
+                
+                // Assuming that the services are stored as key-value pairs where the key is the service name
+                var servicesDict = JsonConvert.DeserializeObject<Dictionary<string, object>>(json);
+        
+                // Extract the keys (service names) and convert them to a list
+                var serviceNames = servicesDict.Keys.ToList();
+        
+                return serviceNames;
+            }
+        }
     }
 }

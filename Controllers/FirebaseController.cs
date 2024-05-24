@@ -48,6 +48,15 @@ namespace Namespace
                 return BadRequest("Update failed. Please try again.");
             }
         }
+
+        [HttpPost("SetSelectedService")]
+        public IActionResult SetSelectedService([FromBody] string service)
+        {
+            // Store the selected service in a session variable
+            HttpContext.Session.SetString("selectedService", service);
+        
+            return Ok(new { success = true });
+        }
     }
 
     

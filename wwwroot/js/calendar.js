@@ -163,11 +163,10 @@ function fetchUsersAppointments(date) {
     $("#appointments").html(html);
 
     $(".appointment-button").click(function() {
-    console.log("selectedate",selectedDate);
     var futureDate = selectedDate.format("YYYY-MM-DD") + "#";
     var futureTime = moment($(this).data("time"), "HH:mm").format("HH:mm:ss") + "#";
-    console.log("futuredate",futureDate);
-    console.log("futuretime",futureTime);
+    var selectedService;
+    console.log("CHECK");
     $.ajax({
         url: '/api/UpdateClientAppointment',
         type: 'POST',
@@ -185,5 +184,21 @@ function fetchUsersAppointments(date) {
             console.error("Error adding appointment: ", error);
         }
     });
+
+    $.ajax({
+    url: '/api/GetSelectedService',
+    type: 'GET',
+    success: function(service) {
+        console.log("Selected service: ", service);
+        // Store the value in a variable
+        selectedService = service;
+        // Now you can use `service` inside this function
+    },
+    error: function(error) {
+        console.error("Error getting selected service: ", error);
+    }
+});
+
+    console.log(futureDate, futureTime, selectedDate)
 });
 }

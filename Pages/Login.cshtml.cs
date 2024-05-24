@@ -80,11 +80,10 @@ namespace Namespace
 
         private async Task<bool> UserExists(string username, string password)
         {
-            var clients = await _firebaseService.GetUsers();
-            Console.WriteLine($"check");
-            // Print all clients to the console
+            var users = await _firebaseService.GetUsers();
+            // Print all users to the console
         
-            var user = clients.FirstOrDefault(client => client.Value.Username == username && client.Value.Password == password);
+            var user = users.FirstOrDefault(user => user.Value.Username == username && user.Value.Password == password);
             
             return user.Value != null;
         }

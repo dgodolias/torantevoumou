@@ -16,6 +16,7 @@ namespace Namespace
         }
 
         public List<User>? Users { get; set; }
+        public List<string> ServiceNames { get; set; }
         
 
         // Change the Users property to a single Appointment
@@ -28,13 +29,16 @@ namespace Namespace
             {
                 return RedirectToPage("/Login");
             }
-
+        
             Appointments = await GetUserAppointments(userId);
             var UsersDictionary = await _firebaseService.GetUsers();
             Users = UsersDictionary.Values.ToList();
-
+        
+            ServiceNames = await _firebaseService.GetServiceNames();  
+        
             return Page();
         }
+
 
         private async Task<List<AppointmentModel>> GetUserAppointments(string userId)
         {
@@ -67,7 +71,6 @@ namespace Namespace
 
                         if (appointment != null)
                         {
-                            Console.WriteLine($"Appointment found: {JsonConvert.SerializeObject(appointment)}");
                             appointments.Add(appointment);
                         }
                     }
