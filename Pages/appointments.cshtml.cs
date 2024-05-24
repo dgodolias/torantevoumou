@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Newtonsoft.Json;
 
 namespace Namespace
 {
@@ -15,10 +16,11 @@ namespace Namespace
         }
 
         public List<User>? Users { get; set; }
+        
 
         // Change the Users property to a single Appointment
-        public AppointmentModel? Appointment { get; set; }
-        /*
+        public List<AppointmentModel>? Appointments { get; set; }
+        
         public async Task<IActionResult> OnGetAsync(string userId)
         {
             var validSessionDashboard = HttpContext.Session.GetString("validSessionDashboard");
@@ -27,56 +29,54 @@ namespace Namespace
                 return RedirectToPage("/Login");
             }
 
-            Appointment = await GetUserAppointment(userId);
+            Appointments = await GetUserAppointments(userId);
             var UsersDictionary = await _firebaseService.GetUsers();
             Users = UsersDictionary.Values.ToList();
 
             return Page();
         }
 
-        private async Task<AppointmentModel?> GetUserAppointment(string userId)
+        private async Task<List<AppointmentModel>> GetUserAppointments(string userId)
         {
+        
             // Get the list of Users from Firebase
             var Users = await _firebaseService.GetUsers();
         
             // Find the User with the matching ID
             var User = Users.FirstOrDefault(c => c.Key == userId);
         
+            var appointments = new List<AppointmentModel>();
+        
             if (User.Value != null)
             {
-                var appointment = new AppointmentModel
-                {
-                    Id = User.Key,
-                    Date = User.Value.AppointmentDate,
-                    Time = User.Value.AppointmentTime
-                };
-                Console.WriteLine(appointment.Id);
-                var dates = appointment.Date?.Split('#').Where(date => !string.IsNullOrWhiteSpace(date)).ToArray();
-                var times = appointment.Time?.Split('#').Where(time => !string.IsNullOrWhiteSpace(time)).ToArray();
+                var servicesWithAppointmentKey = User.Value.serviceswithappointmentkey;
+                // Split the servicesWithAppointmentKey string into individual services
+                var services = servicesWithAppointmentKey.Split('#');
         
-                // Initialize the DateTime list
-                appointment.DateTime = new List<DateTime>();
-                Console.WriteLine($"check11");
-                // Combine each date and time into a single DateTime and add it to the list
-                if (dates != null && times != null)
+                foreach (var service in services)
                 {
-                    for (int i = 0; i < dates.Length; i++)
+                    // Split the service string into the service name and the appointment keys
+                    var serviceParts = service.Split('(');
+                    var serviceName = serviceParts[0];
+                    var appointmentKeys = serviceParts[1].TrimEnd(')').Split(',');
+        
+                    foreach (var appointmentKey in appointmentKeys)
                     {
-                        if (!string.IsNullOrWhiteSpace(dates[i]) && !string.IsNullOrWhiteSpace(times[i]) && dates[i] != "NULL" && times[i] != "NULL")
+                        // Get the appointment from the service table in Firebase
+                        var appointment = await _firebaseService.GetAppointment(serviceName, appointmentKey);
+
+                        if (appointment != null)
                         {
-                            Console.WriteLine($"Date: {dates[i]}, Time: {times[i]}"); // Print the date and time
-        
-                            var date = DateTime.Parse(dates[i]);
-                            var time = TimeSpan.Parse(times[i]);
-                            appointment.DateTime.Add(date.Date + time);
+                            Console.WriteLine($"Appointment found: {JsonConvert.SerializeObject(appointment)}");
+                            appointments.Add(appointment);
                         }
                     }
                 }
-                return appointment;
             }
         
-            return null;
+            return appointments;
         }
-        */
+
+        
     }
 }

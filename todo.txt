@@ -1,3 +1,5 @@
+SHMANTIKO: OLOI EXOUN ACCESS STON SERVER MOU
+
 -otan kleino to width tou parathyrou, ta diplana stoixeia login, signup klp panw katw apo ton titlo px torantevoumou.gr kai an to meiwsw k allo ginontai se ena menu. thelo na ginontai se ayto to menu me to pou pane kato apton titlo.
 -οταν ειμαι σε ενα σεκσιον μπλεδιζει αυτοματα ο τιτλος του ναβμπαρ, να το φτιαξω να μπλεδιζει ο σωστος τιτλος
 -signout button

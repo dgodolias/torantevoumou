@@ -155,5 +155,16 @@ namespace Namespace
         
             return true;
         }
+
+        public async Task<AppointmentModel> GetAppointment(string serviceName, string appointmentKey)
+        {
+            using (var httpClient = new HttpClient())
+            {
+                var firebaseUrl = $"https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app/services/{serviceName}/{appointmentKey}.json";
+                var json = await httpClient.GetStringAsync(firebaseUrl);
+                var appointmentData = JsonConvert.DeserializeObject<AppointmentModel>(json);
+                return appointmentData;
+            }
+        }
     }
 }

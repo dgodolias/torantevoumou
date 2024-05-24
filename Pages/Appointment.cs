@@ -1,6 +1,6 @@
 public class AppointmentModel
 {
-    public string UId { get; set; }
-    public string? Date { get; set; }
-    public string? Time { get; set; }
+    public string UID { get; set; }
+    public string appointmentDate { get; set; }
+    public string appointmentTime { get; set; }
 }
