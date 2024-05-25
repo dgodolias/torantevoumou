@@ -16,6 +16,7 @@ namespace Namespace
         }
 
         public List<User>? Users { get; set; }
+        public List<User>? ServiceAppointments { get; set; }
         public List<string> ServiceNames { get; set; }
         
 

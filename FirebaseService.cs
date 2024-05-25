@@ -53,6 +53,18 @@ namespace Namespace
                 return UsersDict;
             }
         }
+        public async Task<List<User>> GetServiceAppointments(string serviceName)
+        {
+            using (var httpUser = new HttpClient())
+            {
+                var firebaseUrl = $"https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app/services/{serviceName}.json";
+                var json = await httpUser.GetStringAsync(firebaseUrl);
+                Console.WriteLine(json);
+                var ServiceList = JsonConvert.DeserializeObject<List<User>>(json);
+                Console.WriteLine(ServiceList);
+                return ServiceList;
+            }
+        }
 
         public async Task<bool> UsernameExists(string username)
         {

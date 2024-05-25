@@ -1,5 +1,6 @@
 using FirebaseAdmin.Auth;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace Namespace
 {
@@ -14,13 +15,13 @@ namespace Namespace
             _firebaseService = firebaseService;
         }
 
-        [HttpPost("UpdateClientAppointment")]
+        [HttpPost("UpdateUserAppointment")]
         /*
-        public async Task UpdateClientAppointment([FromBody] AppointmentModel appointment)
+        public async Task UpdateUserAppointment([FromBody] AppointmentModel appointment)
         {
             Console.WriteLine(appointment);
         
-            var result = await _firebaseService.UpdateClientAppointment(appointment);
+            var result = await _firebaseService.UpdateUserAppointment(appointment);
         
             if (result)
             {
@@ -28,7 +29,7 @@ namespace Namespace
             }
             else
             {
-                Console.WriteLine($"Error updating appointment for client with Id {appointment.Id}");
+                Console.WriteLine($"Error updating appointment for User with Id {appointment.Id}");
             }
         }
         */
@@ -56,6 +57,26 @@ namespace Namespace
             HttpContext.Session.SetString("selectedService", service);
         
             return Ok(new { success = true });
+        }
+
+        [HttpGet("GetServiceAppointments/{serviceName}")]
+        public async Task<List<AppointmentModel>> GetServiceAppointments(string serviceName)
+        {
+            using (var httpUser = new HttpClient())
+            {
+                var firebaseUrl = $"https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app/services/{serviceName}.json";
+                var json = await httpUser.GetStringAsync(firebaseUrl);
+                Console.WriteLine("Json:"+json);
+                var ServiceList = JsonConvert.DeserializeObject<List<AppointmentModel>>(json);
+
+                // Print each item in the list
+                foreach (var appointment in ServiceList)
+                {
+                    Console.WriteLine("Appointment: " + JsonConvert.SerializeObject(appointment));
+                }
+
+                return ServiceList;
+            }
         }
     }
 

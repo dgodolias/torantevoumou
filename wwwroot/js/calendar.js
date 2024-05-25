@@ -40,12 +40,13 @@ function fetchUsersForAdmin(date) {
     for (var i = 9; i <= 21; i += 0.5) {
         var time = moment({hour: Math.floor(i), minute: (i % 1) * 60}).format("HH:mm");
 
-        // Find the client for the current time period
-        var client = clients.find(function(client) {
-            if (client.appointmentDate !== null && client.appointmentDate !== ''
-                && client.appointmentTime !== null && client.appointmentTime !== '') {
-                var appointmentDates = client.appointmentDate.split('#'); // Split the appointment dates into an array
-                var appointmentTimes = client.appointmentTime.split('#'); // Split the appointment times into an array
+        // Find the user for the current time period
+        console.log(users);
+        var user = users.find(function(user) {
+            if (user.appointmentDate !== null && user.appointmentDate !== ''
+                && user.appointmentTime !== null && user.appointmentTime !== '') {
+                var appointmentDates = user.appointmentDate.split('#'); // Split the appointment dates into an array
+                var appointmentTimes = user.appointmentTime.split('#'); // Split the appointment times into an array
 
                 // Check if the appointment date is the same as the selected date and the appointment time is the same as the current time
                 for (var j = 0; j < appointmentDates.length; j++) {
@@ -61,17 +62,17 @@ function fetchUsersForAdmin(date) {
         });
 
         // Add a row to the table for the current time period
-        if (client) {
-            console.log(client);
+        if (user) {
+            console.log(user);
             html += `
                 <tr>
                     <td style='border: 1px solid black; padding: 5px;'>${time}</td>
-                    <td style='border: 1px solid black; padding: 5px;'>${client.id}</td>
-                    <td style='border: 1px solid black; padding: 5px;'>${client.firstName}</td>
-                    <td style='border: 1px solid black; padding: 5px;'>${client.lastName}</td>
-                    <td style='border: 1px solid black; padding: 5px;'>${client.username}</td>
-                    <td style='border: 1px solid black; padding: 5px;'>${client.email}</td>
-                    <td style='border: 1px solid black; padding: 5px;'>${client.phoneNumber}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>${user.id}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>${user.firstName}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>${user.lastName}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>${user.username}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>${user.email}</td>
+                    <td style='border: 1px solid black; padding: 5px;'>${user.phoneNumber}</td>
                 </tr>
             `;
         } else {
@@ -86,13 +87,12 @@ function fetchUsersForAdmin(date) {
 
     html += "</tbody></table>"; // Close the table
 
-    $("#matchingClients").html(html);
+    $("#matchingUsers").html(html);
 }
 
 function fetchUsersAppointments(date) {
     var selectedDate = moment(date, "MM/DD/YYYY");
-    var userId = document.getElementById('userId').value;
-    console.log(userId);
+    console.log("globalAppointments: ", globalAppointments);
 
     var html = `
         <table style='border-collapse: collapse; width: 100%;'>
@@ -108,26 +108,14 @@ function fetchUsersAppointments(date) {
     for (var i = 9; i <= 21; i += 0.5) {
         var time = moment({hour: Math.floor(i), minute: (i % 1) * 60}).format("HH:mm");
 
-        var client = clients.find(function(client) {
-            if (client.appointmentDate !== null && client.appointmentDate !== ''
-                && client.appointmentTime !== null && client.appointmentTime !== '') {
-                var appointmentDates = client.appointmentDate.split('#'); // Split the appointment dates into an array
-                var appointmentTimes = client.appointmentTime.split('#'); // Split the appointment times into an array
+        var appointment = globalAppointments.find(function(appointment) {
+            var appointmentDate = moment(appointment.appointmentDate);
+            var appointmentTime = moment(appointment.appointmentTime, "HH:mm").format("HH:mm");
 
-                for (var j = 0; j < appointmentDates.length; j++) {
-                    console.log(appointmentDates[j]);
-                    var appointmentDate = moment(appointmentDates[j]);
-                    var appointmentTime = moment(appointmentTimes[j], "HH:mm").format("HH:mm");
-
-                    if (appointmentDate.isSame(selectedDate, 'day') && appointmentTime === time) {
-                        return true;
-                    }
-                }
-            }
-            return false;
+            return appointmentDate.isSame(selectedDate, 'day') && appointmentTime === time;
         });
 
-        if (client) {
+        if (appointment) {
             html += `
                 <tr>
                     <td style='border: 1px solid black; padding: 5px;'>${time}</td>
@@ -160,6 +148,7 @@ function fetchUsersAppointments(date) {
 
     html += "</tbody></table>";
 
+
     $("#appointments").html(html);
 
     $(".appointment-button").click(function() {
@@ -168,11 +157,10 @@ function fetchUsersAppointments(date) {
     var selectedService;
     console.log("CHECK");
     $.ajax({
-        url: '/api/UpdateClientAppointment',
+        url: '/api/UpdateUserAppointment',
         type: 'POST',
         contentType: 'application/json', // Set the content type
         data: JSON.stringify({ // Convert the data to a JSON string
-            Id: userId,
             Date: futureDate,
             Time: futureTime
         }),
