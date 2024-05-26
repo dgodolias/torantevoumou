@@ -12,7 +12,7 @@
         <div class="bg-img">
             <div class="content">
                 <header>Φόρμα Σύνδεσης</header>
-                <form method="post">
+                <form method="post" id="login-form">
                     @Html.AntiForgeryToken()
                     <div class="field">
                         <span class="fa fa-user"></span>
@@ -54,5 +54,8 @@
         </script>
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+        <script src="~/js/login.js"></script> <!-- Link to the JS file -->
     </body>
 </html>

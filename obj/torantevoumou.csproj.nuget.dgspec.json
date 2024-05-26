@@ -46,6 +46,10 @@
               "target": "Package",
               "version": "[2.4.1, )"
             },
+            "FirebaseAuthentication.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "FirebaseDatabase.net": {
               "target": "Package",
               "version": "[4.2.0, )"

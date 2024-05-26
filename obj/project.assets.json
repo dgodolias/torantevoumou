@@ -77,6 +77,22 @@
           }
         }
       },
+      "FirebaseAuthentication.net/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Firebase.Auth.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Firebase.Auth.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "FirebaseDatabase.net/4.2.0": {
         "type": "package",
         "dependencies": {
@@ -1750,6 +1766,22 @@
         "lib/net461/FirebaseAdmin.xml",
         "lib/netstandard2.0/FirebaseAdmin.dll",
         "lib/netstandard2.0/FirebaseAdmin.xml"
+      ]
+    },
+    "FirebaseAuthentication.net/4.1.0": {
+      "sha512": "pShi5v9cvT5bUWZDm261lO4uxJHvzOvpj46YHrL3uCB1WBeyCIcpoVakAQ2xHTu1dpmV86/BzSNRpqIGNp860g==",
+      "type": "package",
+      "path": "firebaseauthentication.net/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "firebase.png",
+        "firebaseauthentication.net.4.1.0.nupkg.sha512",
+        "firebaseauthentication.net.nuspec",
+        "lib/netstandard2.0/Firebase.Auth.dll",
+        "lib/netstandard2.0/Firebase.Auth.xml"
       ]
     },
     "FirebaseDatabase.net/4.2.0": {
@@ -4705,6 +4737,7 @@
     "net7.0": [
       "Dapper >= 2.1.35",
       "FirebaseAdmin >= 2.4.1",
+      "FirebaseAuthentication.net >= 4.1.0",
       "FirebaseDatabase.net >= 4.2.0",
       "Google.Cloud.Firestore >= 3.7.0",
       "Grpc.AspNetCore >= 2.62.0",
@@ -4758,6 +4791,10 @@
           "FirebaseAdmin": {
             "target": "Package",
             "version": "[2.4.1, )"
+          },
+          "FirebaseAuthentication.net": {
+            "target": "Package",
+            "version": "[4.1.0, )"
           },
           "FirebaseDatabase.net": {
             "target": "Package",

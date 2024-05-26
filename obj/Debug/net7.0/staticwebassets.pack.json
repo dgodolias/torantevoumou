@@ -961,6 +961,10 @@
       "PackagePath": "staticwebassets\\js\\jquery.1.11.1.js"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\nivo-lightbox.js",
       "PackagePath": "staticwebassets\\js\\nivo-lightbox.js"
     },

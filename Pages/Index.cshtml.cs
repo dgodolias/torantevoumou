@@ -15,10 +15,7 @@ namespace Namespace
 
         public async Task OnGetAsync()
         {
-            var usersData = await _firebaseService.GetUsers();
-        
-            // Extract only the User objects to the Users list
-            Users = usersData.Values.ToList();
+
         }
     }
 }

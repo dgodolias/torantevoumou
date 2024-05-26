@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jM31ZZibofxv3uCNFGBAkeMsN2Mo8mSbDf1TlOmwhJZBkAKDcK0V5UgePVjSUMkNQUDBQkdzUQGsfWlvjoKGPw==",
+  "dgSpecHash": "UEFsiTqBfFYJUP66AEa51eFzGAHCCieFNXjb4+VK7GsgRLQOBb/GqE5huI00PhsbWotBtuxCLZuIslHEjV41AA==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\torantevoumou.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\USER\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\firebaseadmin\\2.4.1\\firebaseadmin.2.4.1.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\firebaseauthentication.net\\4.1.0\\firebaseauthentication.net.4.1.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\firebasedatabase.net\\4.2.0\\firebasedatabase.net.4.2.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\google.api.commonprotos\\2.15.0\\google.api.commonprotos.2.15.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\google.api.gax\\4.8.0\\google.api.gax.4.8.0.nupkg.sha512",

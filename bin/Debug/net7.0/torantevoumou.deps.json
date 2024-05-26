@@ -10,6 +10,7 @@
         "dependencies": {
           "Dapper": "2.1.35",
           "FirebaseAdmin": "2.4.1",
+          "FirebaseAuthentication.net": "4.1.0",
           "FirebaseDatabase.net": "4.2.0",
           "Google.Cloud.Firestore": "3.7.0",
           "Grpc.AspNetCore": "2.62.0",
@@ -74,6 +75,17 @@
           "lib/netstandard2.0/FirebaseAdmin.dll": {
             "assemblyVersion": "2.4.1.0",
             "fileVersion": "2.4.1.0"
+          }
+        }
+      },
+      "FirebaseAuthentication.net/4.1.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Firebase.Auth.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
           }
         }
       },
@@ -1018,6 +1030,13 @@
       "sha512": "sha512-BJLg+dZVZEozaqWdDEjKXPRwno8xz9RJyMC7WtaP2uns34LNoaYVX2IJnOlBfVA1sW2LSBOYusYNldD1qQwoZA==",
       "path": "firebaseadmin/2.4.1",
       "hashPath": "firebaseadmin.2.4.1.nupkg.sha512"
+    },
+    "FirebaseAuthentication.net/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pShi5v9cvT5bUWZDm261lO4uxJHvzOvpj46YHrL3uCB1WBeyCIcpoVakAQ2xHTu1dpmV86/BzSNRpqIGNp860g==",
+      "path": "firebaseauthentication.net/4.1.0",
+      "hashPath": "firebaseauthentication.net.4.1.0.nupkg.sha512"
     },
     "FirebaseDatabase.net/4.2.0": {
       "type": "package",
