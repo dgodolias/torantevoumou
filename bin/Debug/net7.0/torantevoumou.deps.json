@@ -12,6 +12,7 @@
           "FirebaseAdmin": "2.4.1",
           "FirebaseAuthentication.net": "4.1.0",
           "FirebaseDatabase.net": "4.2.0",
+          "Google.Apis.Auth": "1.68.0",
           "Google.Cloud.Firestore": "3.7.0",
           "Grpc.AspNetCore": "2.62.0",
           "Grpc.Net.Client": "2.62.0",
@@ -68,7 +69,7 @@
       "FirebaseAdmin/2.4.1": {
         "dependencies": {
           "Google.Api.Gax.Rest": "3.2.0",
-          "Google.Apis.Auth": "1.67.0",
+          "Google.Apis.Auth": "1.68.0",
           "System.Collections.Immutable": "6.0.0"
         },
         "runtime": {
@@ -129,7 +130,7 @@
         "dependencies": {
           "Google.Api.CommonProtos": "2.15.0",
           "Google.Api.Gax": "4.8.0",
-          "Google.Apis.Auth": "1.67.0",
+          "Google.Apis.Auth": "1.68.0",
           "Grpc.Auth": "2.60.0",
           "Grpc.Core.Api": "2.62.0",
           "Grpc.Net.Client": "2.62.0",
@@ -145,7 +146,7 @@
       "Google.Api.Gax.Rest/3.2.0": {
         "dependencies": {
           "Google.Api.Gax": "4.8.0",
-          "Google.Apis.Auth": "1.67.0"
+          "Google.Apis.Auth": "1.68.0"
         },
         "runtime": {
           "lib/netstandard2.0/Google.Api.Gax.Rest.dll": {
@@ -154,38 +155,38 @@
           }
         }
       },
-      "Google.Apis/1.67.0": {
+      "Google.Apis/1.68.0": {
         "dependencies": {
-          "Google.Apis.Core": "1.67.0"
+          "Google.Apis.Core": "1.68.0"
         },
         "runtime": {
           "lib/net6.0/Google.Apis.dll": {
-            "assemblyVersion": "1.67.0.0",
-            "fileVersion": "1.67.0.0"
+            "assemblyVersion": "1.68.0.0",
+            "fileVersion": "1.68.0.0"
           }
         }
       },
-      "Google.Apis.Auth/1.67.0": {
+      "Google.Apis.Auth/1.68.0": {
         "dependencies": {
-          "Google.Apis": "1.67.0",
-          "Google.Apis.Core": "1.67.0",
+          "Google.Apis": "1.68.0",
+          "Google.Apis.Core": "1.68.0",
           "System.Management": "7.0.2"
         },
         "runtime": {
           "lib/net6.0/Google.Apis.Auth.dll": {
-            "assemblyVersion": "1.67.0.0",
-            "fileVersion": "1.67.0.0"
+            "assemblyVersion": "1.68.0.0",
+            "fileVersion": "1.68.0.0"
           }
         }
       },
-      "Google.Apis.Core/1.67.0": {
+      "Google.Apis.Core/1.68.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "lib/net6.0/Google.Apis.Core.dll": {
-            "assemblyVersion": "1.67.0.0",
-            "fileVersion": "1.67.0.0"
+            "assemblyVersion": "1.68.0.0",
+            "fileVersion": "1.68.0.0"
           }
         }
       },
@@ -277,7 +278,7 @@
       },
       "Grpc.Auth/2.60.0": {
         "dependencies": {
-          "Google.Apis.Auth": "1.67.0",
+          "Google.Apis.Auth": "1.68.0",
           "Grpc.Core.Api": "2.62.0"
         },
         "runtime": {
@@ -1073,26 +1074,26 @@
       "path": "google.api.gax.rest/3.2.0",
       "hashPath": "google.api.gax.rest.3.2.0.nupkg.sha512"
     },
-    "Google.Apis/1.67.0": {
+    "Google.Apis/1.68.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XM8/fViJaB1pN61OdXy5RMZoQEqd3hKlWvA/K431gFSb5XtQ48BynfgrbBkUtFcPbSRa4BdjBHzSbkBh/skyMg==",
-      "path": "google.apis/1.67.0",
-      "hashPath": "google.apis.1.67.0.nupkg.sha512"
+      "sha512": "sha512-s2MymhdpH+ybZNBeZ2J5uFgFHApBp+QXf9FjZSdM1lk/vx5VqIknJwnaWiuAzXxPrLEkesX0Q+UsiWn39yZ9zw==",
+      "path": "google.apis/1.68.0",
+      "hashPath": "google.apis.1.68.0.nupkg.sha512"
     },
-    "Google.Apis.Auth/1.67.0": {
+    "Google.Apis.Auth/1.68.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Bs9BlbZ12Y4NXzMONjpzQhZr9VbwLUTGMHkcQRF36aYnk2fYrmj5HNVNh7PPHDDq1fcEQpCtPic2nSlpYQLKXw==",
-      "path": "google.apis.auth/1.67.0",
-      "hashPath": "google.apis.auth.1.67.0.nupkg.sha512"
+      "sha512": "sha512-hFx8Qz5bZ4w0hpnn4tSmZaaFpjAMsgVElZ+ZgVLUZ2r9i+AKcoVgwiNfv1pruNS5cCvpXqhKECbruBCfRezPHA==",
+      "path": "google.apis.auth/1.68.0",
+      "hashPath": "google.apis.auth.1.68.0.nupkg.sha512"
     },
-    "Google.Apis.Core/1.67.0": {
+    "Google.Apis.Core/1.68.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IPq0I3B01NYZraPoMl8muELFLg4Vr2sbfyZp4PR2Xe3MAhHkZCiKyV28Yh1L14zIKUb0X0snol1sR5/mx4S6Iw==",
-      "path": "google.apis.core/1.67.0",
-      "hashPath": "google.apis.core.1.67.0.nupkg.sha512"
+      "sha512": "sha512-pAqwa6pfu53UXCR2b7A/PAPXeuVg6L1OFw38WckN27NU2+mf+KTjoEg2YGv/f0UyKxzz7DxF1urOTKg/6dTP9g==",
+      "path": "google.apis.core/1.68.0",
+      "hashPath": "google.apis.core.1.68.0.nupkg.sha512"
     },
     "Google.Cloud.Firestore/3.7.0": {
       "type": "package",

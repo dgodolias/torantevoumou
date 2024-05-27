@@ -80,7 +80,14 @@ async Task CheckFirebaseConnection()
     process.WaitForExit();
     if (string.IsNullOrEmpty(error))
     {
-        Console.WriteLine("Successfully connected to Firebase: " + output);
+        if (output.Contains("Firebase Admin SDK initialized successfully"))
+        {
+            Console.WriteLine("Successfully authenticated with Firebase: " + output);
+        }
+        else
+        {
+            Console.WriteLine("Failed to authenticate with Firebase: " + output);
+        }
     }
     else
     {

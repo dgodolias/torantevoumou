@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "torantevoumou"
-  }
+    "default": "torantevoumou-86820",
+    "torantevoumou": "torantevoumou-86820"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }

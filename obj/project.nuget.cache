@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UEFsiTqBfFYJUP66AEa51eFzGAHCCieFNXjb4+VK7GsgRLQOBb/GqE5huI00PhsbWotBtuxCLZuIslHEjV41AA==",
+  "dgSpecHash": "cX5u8McIoszmqyzlMuL0XamOytC+VTniAFvhtavp4vVz+VkcTU9gB0W1QsgYlLokEg8CUok2TGOmoL4b+j2Ucg==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\torantevoumou.csproj",
   "expectedPackageFiles": [
@@ -14,9 +14,9 @@
     "C:\\Users\\USER\\.nuget\\packages\\google.api.gax\\4.8.0\\google.api.gax.4.8.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\google.api.gax.grpc\\4.8.0\\google.api.gax.grpc.4.8.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\google.api.gax.rest\\3.2.0\\google.api.gax.rest.3.2.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\google.apis\\1.67.0\\google.apis.1.67.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\google.apis.auth\\1.67.0\\google.apis.auth.1.67.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\google.apis.core\\1.67.0\\google.apis.core.1.67.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\google.apis.core\\1.68.0\\google.apis.core.1.68.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\google.cloud.firestore\\3.7.0\\google.cloud.firestore.3.7.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\google.cloud.firestore.v1\\3.7.0\\google.cloud.firestore.v1.3.7.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\google.cloud.location\\2.2.0\\google.cloud.location.2.2.0.nupkg.sha512",
