@@ -117,3 +117,5 @@ c:\Users\USER\Desktop\webapp\torantevoumou\bin\Debug\net7.0\Grpc.AspNetCore.Serv
 c:\Users\USER\Desktop\webapp\torantevoumou\bin\Debug\net7.0\Grpc.AspNetCore.Server.ClientFactory.dll
 c:\Users\USER\Desktop\webapp\torantevoumou\bin\Debug\net7.0\Grpc.Net.ClientFactory.dll
 c:\Users\USER\Desktop\webapp\torantevoumou\bin\Debug\net7.0\Firebase.Auth.dll
+c:\Users\USER\Desktop\webapp\torantevoumou\bin\Debug\net7.0\functions\package-lock.json
+c:\Users\USER\Desktop\webapp\torantevoumou\bin\Debug\net7.0\functions\package.json

@@ -55,6 +55,12 @@ namespace Namespace
 
             if (!ButtonClickedInsideTimespan || string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password) || !validSession)
             {   
+                Console.WriteLine("Redirecting to login page");
+                Console.WriteLine($"ButtonClickedInsideTimespan: {ButtonClickedInsideTimespan}");
+                Console.WriteLine($"Username: {Username}");
+                Console.WriteLine($"Password: {Password}");
+                Console.WriteLine($"validSession: {validSession}");
+                
                 return RedirectToPage("/Login");
             }
 
