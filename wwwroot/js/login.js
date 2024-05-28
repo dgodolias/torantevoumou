@@ -39,6 +39,11 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
                     console.log("Token and user ID sent successfully");
                     // Redirect to the Login page
                     if (response.success) {
+                        // If the login time is not set, set it to the current time
+                        var loginTime = new Date().getTime();
+                        sessionStorage.setItem('loginTime', loginTime);
+                        console.log('Login time: ', loginTime);
+
                         window.location.href = response.redirectUrl;
                     }
                 },

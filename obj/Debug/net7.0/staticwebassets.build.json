@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QqFo5xZrFPStMALd/aVHMD4keyygtBifauPzZ53miX8=",
+  "Hash": "r4MIWecDgrJbTVqZNFPKC6QOFdKDUUBCF9nR9OFhDDw=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -3959,6 +3959,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\carousel.js"
+    },
+    {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\checkLoginTime.js",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "js/checkLoginTime.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\checkLoginTime.js"
     },
     {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\contact_me.js",

@@ -24,16 +24,13 @@ namespace Namespace
         {
             // Get the user ID from the session
             UserIdToken = HttpContext.Session.GetString("IdToken");
+            UserId = HttpContext.Session.GetString("UserId");
 
             // If the user ID is null, redirect to the login page
-            if (UserIdToken == null)
+            if (UserIdToken == null || UserId == null)
             {
                 return RedirectToPage("/Login");
             }
-
-            // Get the user ID from the session
-            UserId = HttpContext.Session.GetString("UserId");
-
 
             return Page();
         }

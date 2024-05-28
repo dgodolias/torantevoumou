@@ -933,6 +933,10 @@
       "PackagePath": "staticwebassets\\js\\carousel.js"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\checkLoginTime.js",
+      "PackagePath": "staticwebassets\\js\\checkLoginTime.js"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\contact_me.js",
       "PackagePath": "staticwebassets\\js\\contact_me.js"
     },
