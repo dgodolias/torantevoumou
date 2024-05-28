@@ -9,6 +9,6 @@ var elapsedTime = new Date().getTime() - loginTime;
 if (elapsedTime > 15000) {
     // Clear the session storage
     sessionStorage.clear();
-    // Redirect to the login page
+    sessionStorage.setItem('userLoggedIn', 'false');
     window.location.href = '/Login';
 }

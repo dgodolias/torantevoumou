@@ -10,6 +10,11 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 
+if (sessionStorage.getItem('userLoggedIn') === 'true') {
+    // Redirect to the dashboard page
+    window.location.href = '/Dashboard';
+}
+
 // Event listener for form submission
 document.querySelector('#login-form').addEventListener('submit', function(event) {
     // Prevent the form from being submitted normally
@@ -32,6 +37,8 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
             // Store the ID token and user ID in the session storage
             sessionStorage.setItem('IdToken', idToken);
             sessionStorage.setItem('UserId', user.uid);
+            // Set the userLoggedIn flag to true
+            sessionStorage.setItem('userLoggedIn', 'true');
 
             // If the login time is not set, set it to the current time
             var loginTime = new Date().getTime();
