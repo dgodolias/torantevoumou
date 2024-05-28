@@ -27,7 +27,9 @@ window.addEventListener('load', function() {
 
     // Embedding the appointments view in the dashboard view
     $(document).ready(function () {
-        var userId = $('#container').data('userId'); // Fetch the userId from the data attribute
+        var userId = "-NyMlxGFeUF0SefsPcbz"; // Fetch the userId from the session storage
+        //var userId = sessionStorage.getItem('UserId'); // Fetch the userId from the session storage
+        console.log('User ID: ', userId);
 
         $('#appointmentLink').click(function (e) {
             e.preventDefault();

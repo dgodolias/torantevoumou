@@ -25,12 +25,6 @@ namespace Namespace
         
         public async Task<IActionResult> OnGetAsync(string userId)
         {
-            var validSessionDashboard = HttpContext.Session.GetString("validSessionDashboard");
-            if (validSessionDashboard != "True")
-            {
-                return RedirectToPage("/Login");
-            }
-        
             Appointments = await GetUserAppointments(userId);
             var UsersDictionary = await _firebaseService.GetUsers();
             Users = UsersDictionary.Values.ToList();
@@ -39,16 +33,14 @@ namespace Namespace
         
             return Page();
         }
-
-
+        
         private async Task<List<AppointmentModel>> GetUserAppointments(string userId)
         {
-        
-            // Get the list of Users from Firebase
-            var Users = await _firebaseService.GetUsers();
+            // Get the dictionary of Users from Firebase
+            var UsersDictionary = await _firebaseService.GetUsers();
         
             // Find the User with the matching ID
-            var User = Users.FirstOrDefault(c => c.Key == userId);
+            var User = UsersDictionary.FirstOrDefault(c => c.Key == userId);
         
             var appointments = new List<AppointmentModel>();
         
@@ -69,7 +61,7 @@ namespace Namespace
                     {
                         // Get the appointment from the service table in Firebase
                         var appointment = await _firebaseService.GetAppointment(serviceName, appointmentKey);
-
+        
                         if (appointment != null)
                         {
                             appointments.Add(appointment);
