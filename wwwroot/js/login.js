@@ -29,28 +29,17 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
             console.log("Type of ID token: ", typeof idToken);
             console.log("User ID: ", user.uid);
 
-            // Send the ID token to the server
-            $.ajax({
-                url: '/api/SetUserToken',
-                type: 'POST',
-                contentType: 'application/json',
-                data: JSON.stringify({ idToken: idToken, userId: user.uid }),
-                success: function(response) {
-                    console.log("Token and user ID sent successfully");
-                    // Redirect to the Login page
-                    if (response.success) {
-                        // If the login time is not set, set it to the current time
-                        var loginTime = new Date().getTime();
-                        sessionStorage.setItem('loginTime', loginTime);
-                        console.log('Login time: ', loginTime);
+            // Store the ID token and user ID in the session storage
+            sessionStorage.setItem('IdToken', idToken);
+            sessionStorage.setItem('UserId', user.uid);
 
-                        window.location.href = response.redirectUrl;
-                    }
-                },
-                error: function(error) {
-                    console.log("Failed to send token and user ID");
-                }
-            });
+            // If the login time is not set, set it to the current time
+            var loginTime = new Date().getTime();
+            sessionStorage.setItem('loginTime', loginTime);
+            console.log('Login time: ', loginTime);
+
+            // Redirect to the Dashboard page
+            window.location.href = '/Dashboard';
         });
     })
     .catch((error) => {
