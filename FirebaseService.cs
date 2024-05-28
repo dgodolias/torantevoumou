@@ -42,6 +42,20 @@ namespace Namespace
             return JsonConvert.DeserializeObject<Dictionary<string, User>>(json);
         }
 
+        public async Task<User> GetUserInfo(string userId)
+        {
+            var response = await _client.GetAsync($"https://us-central1-torantevoumou-86820.cloudfunctions.net/getUserInfo?userId={userId}");
+            
+            if (!response.IsSuccessStatusCode)
+            {
+                // Handle error here
+                throw new Exception($"Server returned error code: {response.StatusCode}");
+            }
+            
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<User>(json);
+        }
+
         public async Task<List<User>> GetServiceAppointments(string serviceName)
         {
             var response = await _client.GetAsync($"https://us-central1-torantevoumou-86820.cloudfunctions.net/getServiceAppointments?serviceName={serviceName}");
@@ -69,5 +83,7 @@ namespace Namespace
             var json = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<List<string>>(json);
         }
+
+        
     }
 }

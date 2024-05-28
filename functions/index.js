@@ -13,6 +13,23 @@ exports.getUsers = functions.https.onRequest(async (req, res) => {
   }
 });
 
+exports.getUserInfo = functions.https.onRequest(async (req, res) => {
+  try {
+    const {userId} = req.query; // Changed from req.body to req.query
+    const snapshot=await admin.database().ref(`/users/${userId}`).once("value");
+    const user = snapshot.val();
+    if (user) {
+      res.json(user);
+      console.log("User info:", user);
+    } else {
+      res.status(404).send("User not found");
+    }
+  } catch (error) {
+    console.error("Error getting user info:", error);
+    res.status(500).send("Error getting user info");
+  }
+});
+
 exports.updateUser = functions.https.onRequest(async (req, res) => {
   try {
     const {userId, changes} = req.body;

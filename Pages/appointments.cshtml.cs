@@ -25,15 +25,18 @@ namespace Namespace
         
         public async Task<IActionResult> OnGetAsync(string userId)
         {
-            Appointments = await GetUserAppointments(userId);
-            var UsersDictionary = await _firebaseService.GetUsers();
-            Users = UsersDictionary.Values.ToList();
+            User user = await _firebaseService.GetUserInfo(userId);
         
-            ServiceNames = await _firebaseService.GetServiceNames();  
+            // Extract service names from the user's serviceswithappointmentkey
+            ServiceNames = user.serviceswithappointmentkey.Split('#')
+                .Select(s => s.Split('(')[0])
+                .ToList();
         
+            Console.WriteLine("Info: " + JsonConvert.SerializeObject(user)); 
+            Console.WriteLine("ServiceNames: " + JsonConvert.SerializeObject(ServiceNames));
             return Page();
         }
-        
+        /*
         private async Task<List<AppointmentModel>> GetUserAppointments(string userId)
         {
             // Get the dictionary of Users from Firebase
@@ -73,6 +76,6 @@ namespace Namespace
             return appointments;
         }
 
-        
+        */
     }
 }

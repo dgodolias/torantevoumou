@@ -34,21 +34,7 @@ namespace Namespace
         }
         */
 
-        [HttpPost("updateUser")]
-        public async Task<IActionResult> UpdateUser([FromBody] Dictionary<string, object> changes)
-        {
-            string? userId = HttpContext.Session.GetString("UserId");
-            var result = await _firebaseService.UpdateUser(userId, changes);
-        
-            if (result)
-            {
-                return Ok("Update successful!");
-            }
-            else
-            {
-                return BadRequest("Update failed. Please try again.");
-            }
-        }
+
 
         [HttpPost("SetSelectedService")]
         public IActionResult SetSelectedService([FromBody] string service)
