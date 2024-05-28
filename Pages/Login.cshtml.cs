@@ -7,21 +7,21 @@ namespace Namespace
     [AllowAnonymous]
     public class Login : PageModel
     {
-        public IActionResult OnGet()
+        public IActionResult OnPost()
         {
-            var validSessionDashboard = HttpContext.Session.GetString("validSessionDashboard");
+            var UserIdToken = HttpContext.Session.GetString("IdToken");
             var validSessionAdmin = HttpContext.Session.GetString("validSessionAdmin");
-
+            Console.WriteLine($"UserIdToken: {UserIdToken}");
             if (validSessionAdmin == "True")
             {
                 return RedirectToPage("/Admin");
             }
-            else if (validSessionDashboard == "True")
+            else if (UserIdToken != null)
             {
+                Console.WriteLine("Redirecting to dashboard");
                 return RedirectToPage("/Dashboard");
             }
             HttpContext.Session.SetString("validAdminuser", "False");
-            HttpContext.Session.SetString("validDashboarduser", "False");
             return Page();
         }
     }

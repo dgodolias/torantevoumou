@@ -1,9 +1,11 @@
 using FirebaseAdmin.Auth;
+using Google.Api;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace Namespace
 {
+
     [Route("api")]
     [ApiController]
     public class FirebaseController : ControllerBase
@@ -77,6 +79,20 @@ namespace Namespace
 
                 return ServiceList;
             }
+        }
+
+        public class TokenData
+        {
+            public string IdToken { get; set; }
+            public string UserId { get; set; }
+        }
+        
+        [HttpPost("setUserToken")]
+        public IActionResult SetToken([FromBody] TokenData data)
+        {
+            HttpContext.Session.SetString("IdToken", data.IdToken);
+            HttpContext.Session.SetString("UserId", data.UserId);
+            return Ok(new { success = true, redirectUrl = Url.Page("/Dashboard") });
         }
     }
 

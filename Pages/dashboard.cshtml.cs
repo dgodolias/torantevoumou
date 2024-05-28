@@ -1,8 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Namespace
 {
@@ -20,49 +17,23 @@ namespace Namespace
         public bool ButtonClickedInsideTimespan { get; set; }
 
         // Add a new property for the user ID
+        public string UserIdToken { get; set; }
         public string UserId { get; set; }
 
         public async Task<IActionResult> OnGetAsync()
         {
-            int time = 60 ;
-            var buttonClickedTime = DateTime.Parse(HttpContext.Session.GetString("ButtonClickedTime") ?? DateTime.MinValue.ToString());
-            ButtonClickedInsideTimespan = HttpContext.Session.GetString("ButtonClicked") == "True" && DateTime.UtcNow - buttonClickedTime < TimeSpan.FromSeconds(time);
-            
-            var Username = HttpContext.Session.GetString("Username");
-            var Password = HttpContext.Session.GetString("Password");
+            // Get the user ID from the session
+            UserIdToken = HttpContext.Session.GetString("IdToken");
 
-            if (DateTime.UtcNow - buttonClickedTime >= TimeSpan.FromSeconds(time))
+            // If the user ID is null, redirect to the login page
+            if (UserIdToken == null)
             {
-                HttpContext.Session.SetString("Username", string.Empty);
-                HttpContext.Session.SetString("Password", string.Empty);
-            }
-
-            bool usernameNotEmpty = !string.IsNullOrEmpty(Username);
-            bool validDashboardUser = HttpContext.Session.GetString("validDashboarduser") == "True";
-
-            bool passwordNotEmpty = !string.IsNullOrEmpty(Password);
-            bool validSession = usernameNotEmpty && validDashboardUser && passwordNotEmpty && ButtonClickedInsideTimespan;
-            HttpContext.Session.SetString("validSessionDashboard", validSession.ToString());
-
-            // Get the user's ID from the Firebase service
-            var users = await _firebaseService.GetUsers();
-            var user = users.FirstOrDefault(c => (c.Value.Email == Username || c.Value.Username == Username) && c.Value.Password == Password);
-            if (user.Value != null)
-            {
-                UserId = user.Key;
-                HttpContext.Session.SetString("UserId", UserId);
-            }
-
-            if (!ButtonClickedInsideTimespan || string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password) || !validSession)
-            {   
-                Console.WriteLine("Redirecting to login page");
-                Console.WriteLine($"ButtonClickedInsideTimespan: {ButtonClickedInsideTimespan}");
-                Console.WriteLine($"Username: {Username}");
-                Console.WriteLine($"Password: {Password}");
-                Console.WriteLine($"validSession: {validSession}");
-                
                 return RedirectToPage("/Login");
             }
+
+            // Get the user ID from the session
+            UserId = HttpContext.Session.GetString("UserId");
+
 
             return Page();
         }
