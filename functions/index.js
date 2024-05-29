@@ -30,46 +30,36 @@ exports.getUserInfo = functions.https.onRequest(async (req, res) => {
   }
 });
 
-exports.updateUser = functions.https.onRequest(async (req, res) => {
-  try {
-    const {userId, changes} = req.body;
-    await admin.database().ref(`/users/${userId}`).update(changes);
-    res.status(200).send("User updated successfully");
-  } catch (error) {
-    console.error("Error updating user:", error);
-    res.status(500).send("Error updating user");
-  }
-});
-
-exports.deleteUser = functions.https.onRequest(async (req, res) => {
-  try {
-    const {id} = req.body;
-    await admin.database().ref(`/users/${id}`).remove();
-    res.status(200).send("User deleted successfully");
-  } catch (error) {
-    console.error("Error deleting user:", error);
-    res.status(500).send("Error deleting user");
-  }
-});
-
-exports.getServiceAppointments = functions.https.onRequest(async (req, res) => {
-  try {
-    const {serviceId} = req.body;
-    const ref = admin.database().ref(`/appointments/${serviceId}`);
-    const snapshot = await ref.once("value");
-    const appointments = snapshot.val();
-    res.json(appointments);
-  } catch (error) {
-    console.error("Error getting service appointments:", error);
-    res.status(500).send("Error getting service appointments");
-  }
-});
-
 exports.addUser = functions.https.onRequest(async (req, res) => {
   try {
-    const {user} = req.body;
-    const newUserRef = await admin.database().ref("/users").push();
-    await newUserRef.set(user);
+    const {
+      FirstName,
+      LastName,
+      Username,
+      Password,
+      Email,
+      PhoneNumber,
+      serviceswithappointmentkey,
+    } = req.body;
+
+    // Create user in Firebase Authentication
+    const userCredential = await admin.auth().createUser({
+      email: Email,
+      password: Password,
+      phoneNumber: PhoneNumber,
+    });
+
+    // Get the uid of the newly created user
+    const uid = userCredential.uid;
+
+    // Store additional user data in the Realtime Database
+    await admin.database().ref(`/users/${uid}`).set({
+      FirstName,
+      LastName,
+      Username,
+      serviceswithappointmentkey,
+    });
+
     res.status(200).send("User added successfully");
   } catch (error) {
     console.error("Error adding user:", error);
@@ -77,27 +67,51 @@ exports.addUser = functions.https.onRequest(async (req, res) => {
   }
 });
 
-exports.getAppointment = functions.https.onRequest(async (req, res) => {
+exports.usernameExists = functions.https.onRequest(async (req, res) => {
   try {
-    const {appointmentId} = req.body;
-    const ref = admin.database().ref(`/appointments/${appointmentId}`);
-    const snapshot = await ref.once("value");
-    const appointment = snapshot.val();
-    res.json(appointment);
+    const {username} = req.query;
+    console.log(`Checking if username exists: ${username}`);
+    const usersRef = admin.database().ref("/users");
+    const userQuery = usersRef.orderByChild("username").equalTo(username);
+    const snapshot = await userQuery.once("value");
+    const userExists = snapshot.val() !== null;
+    res.json(userExists);
   } catch (error) {
-    console.error("Error getting appointment:", error);
-    res.status(500).send("Error getting appointment");
+    console.error("Error checking username:", error);
+    res.status(500).send("Error checking username");
   }
 });
 
-exports.getServiceNames = functions.https.onRequest(async (req, res) => {
+exports.emailExists = functions.https.onRequest(async (req, res) => {
   try {
-    const snapshot = await admin.database().ref("/services").once("value");
-    const services = snapshot.val();
-    const serviceNames = Object.values(services).map((service) => service.name);
-    res.json(serviceNames);
+    const {email} = req.query;
+    console.log(`Checking if email exists: ${email}`);
+    const userRecord = await admin.auth().getUserByEmail(email);
+    const emailExists = userRecord !== null;
+    res.json(emailExists);
   } catch (error) {
-    console.error("Error getting service names:", error);
-    res.status(500).send("Error getting service names");
+    if (error.code === "auth/user-not-found") {
+      res.json(false);
+    } else {
+      console.error("Error checking email:", error);
+      res.status(500).send("Error checking email");
+    }
+  }
+});
+
+exports.phoneNumberExists = functions.https.onRequest(async (req, res) => {
+  try {
+    const {phoneNumber} = req.query;
+    console.log(`Checking if phone number exists: ${phoneNumber}`);
+    const userRecord = await admin.auth().getUserByPhoneNumber(phoneNumber);
+    const phoneNumberExists = userRecord !== null;
+    res.json(phoneNumberExists);
+  } catch (error) {
+    if (error.code === "auth/user-not-found") {
+      res.json(false);
+    } else {
+      console.error("Error checking phone number:", error);
+      res.status(500).send("Error checking phone number");
+    }
   }
 });

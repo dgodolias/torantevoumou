@@ -119,3 +119,4 @@ c:\Users\USER\Desktop\webapp\torantevoumou\bin\Debug\net7.0\Grpc.Net.ClientFacto
 c:\Users\USER\Desktop\webapp\torantevoumou\bin\Debug\net7.0\Firebase.Auth.dll
 c:\Users\USER\Desktop\webapp\torantevoumou\bin\Debug\net7.0\functions\package-lock.json
 c:\Users\USER\Desktop\webapp\torantevoumou\bin\Debug\net7.0\functions\package.json
+c:\Users\USER\Desktop\webapp\torantevoumou\bin\Debug\net7.0\global.json

@@ -32,8 +32,6 @@ namespace Namespace
                 .Select(s => s.Split('(')[0])
                 .ToList();
         
-            Console.WriteLine("Info: " + JsonConvert.SerializeObject(user)); 
-            Console.WriteLine("ServiceNames: " + JsonConvert.SerializeObject(ServiceNames));
             return Page();
         }
         /*

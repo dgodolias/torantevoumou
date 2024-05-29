@@ -1,9 +1,8 @@
+using System.ComponentModel.DataAnnotations;
+using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Dapper;
-using System.Text.RegularExpressions;
-using System.ComponentModel.DataAnnotations;
 
 namespace Namespace
 {
@@ -35,6 +34,76 @@ namespace Namespace
             return Page();
         }
 
-        
+        public async Task<IActionResult> OnPostAsync()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            // Username can only contain Latin, Greek letters or numbers
+            var usernameRegex = new Regex(@"^[a-zA-Z0-9]{6,}$");
+            // Password must contain at least 8 characters, with at least one letter and one number
+            var passwordRegex = new Regex(@"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$");
+            // Phone number must only contain numbers
+            var phoneNumberRegex = new Regex(@"^\d+$");
+
+            bool isValid = true;
+    
+            if (!usernameRegex.IsMatch(Username))
+            {
+                ViewData["UsernameError"] = "Username can only contain Latin, Greek letters or numbers.";
+                isValid = false;
+            }
+
+            if (!passwordRegex.IsMatch(Password))
+            {
+                ViewData["PasswordError"] = "Password must contain at least 8 characters, with at least one letter and one number.";
+                isValid = false;
+            }
+
+            if (!phoneNumberRegex.IsMatch(PhoneNumber))
+            {
+                ViewData["PhoneNumberError"] = "Phone number must only contain numbers.";
+                isValid = false;
+            }
+
+            bool sthExists = false;
+            if (await _firebaseService.UsernameExists(Username))
+            {
+                ViewData["UsernameError"] = "Username already exists.";
+                sthExists = true;
+            }
+            if (await _firebaseService.EmailExists(Email)) // Check if the email exists regardless of whether the username exists
+            {
+                ViewData["EmailError"] = "Email already exists.";
+                sthExists = true;
+            }
+            if (await _firebaseService.PhoneNumberExists(PhoneNumber)) // Check if the phone number exists regardless of whether the username exists
+            {
+                ViewData["PhoneNumberError"] = "Phone number already exists.";
+                sthExists = true;
+            }
+
+            if (!isValid || sthExists)
+            {
+                return Page();
+            }
+
+            User newUser = new User
+            {
+                FirstName = FirstName,
+                LastName = LastName,
+                Username = Username,
+                Password = Password,
+                Email = Email,
+                PhoneNumber = PhoneNumber,
+                serviceswithappointmentkey = ""
+            };
+
+            // Pass the User object to the AddUser method
+            await _firebaseService.AddUser(newUser);
+            return RedirectToPage("/Login");
+        }
     }
 }
