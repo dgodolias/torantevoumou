@@ -40,7 +40,8 @@ namespace Namespace
             {
                 return Page();
             }
-
+            Console.WriteLine($"FirstName: {FirstName}");
+            Console.WriteLine($"LastName: {LastName}");
             // Username can only contain Latin, Greek letters or numbers
             var usernameRegex = new Regex(@"^[a-zA-Z0-9]{6,}$");
             // Password must contain at least 8 characters, with at least one letter and one number
@@ -52,41 +53,50 @@ namespace Namespace
     
             if (!usernameRegex.IsMatch(Username))
             {
+                Console.WriteLine("Username is invalid");
                 ViewData["UsernameError"] = "Username can only contain Latin, Greek letters or numbers.";
                 isValid = false;
             }
 
             if (!passwordRegex.IsMatch(Password))
             {
+                Console.WriteLine("Password is invalid");
                 ViewData["PasswordError"] = "Password must contain at least 8 characters, with at least one letter and one number.";
                 isValid = false;
             }
-
+        
             if (!phoneNumberRegex.IsMatch(PhoneNumber))
             {
+                Console.WriteLine("Phone number is invalid");
                 ViewData["PhoneNumberError"] = "Phone number must only contain numbers.";
                 isValid = false;
+            } else {
+                PhoneNumber = $"+30{PhoneNumber}";
             }
 
             bool sthExists = false;
             if (await _firebaseService.UsernameExists(Username))
             {
+                Console.WriteLine("Username exists");
                 ViewData["UsernameError"] = "Username already exists.";
                 sthExists = true;
             }
             if (await _firebaseService.EmailExists(Email)) // Check if the email exists regardless of whether the username exists
             {
+                Console.WriteLine("Email exists");
                 ViewData["EmailError"] = "Email already exists.";
                 sthExists = true;
             }
+            
             if (await _firebaseService.PhoneNumberExists(PhoneNumber)) // Check if the phone number exists regardless of whether the username exists
             {
                 ViewData["PhoneNumberError"] = "Phone number already exists.";
                 sthExists = true;
             }
-
+            
             if (!isValid || sthExists)
             {
+                Console.WriteLine("Invalid input");
                 return Page();
             }
 
@@ -102,7 +112,9 @@ namespace Namespace
             };
 
             // Pass the User object to the AddUser method
+
             await _firebaseService.AddUser(newUser);
+
             return RedirectToPage("/Login");
         }
     }

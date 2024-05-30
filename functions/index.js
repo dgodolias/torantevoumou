@@ -32,6 +32,8 @@ exports.getUserInfo = functions.https.onRequest(async (req, res) => {
 
 exports.addUser = functions.https.onRequest(async (req, res) => {
   try {
+    console.log("Request body:", req.body);
+
     const {
       FirstName,
       LastName,
@@ -42,17 +44,20 @@ exports.addUser = functions.https.onRequest(async (req, res) => {
       serviceswithappointmentkey,
     } = req.body;
 
-    // Create user in Firebase Authentication
+    console.log("Creating user in Firebase Authentication...");
+
     const userCredential = await admin.auth().createUser({
       email: Email,
       password: Password,
       phoneNumber: PhoneNumber,
     });
 
-    // Get the uid of the newly created user
+    console.log("User created in Firebase Authentication");
+
     const uid = userCredential.uid;
 
-    // Store additional user data in the Realtime Database
+    console.log("Storing user data in Realtime Database...");
+
     await admin.database().ref(`/users/${uid}`).set({
       FirstName,
       LastName,
@@ -60,7 +65,10 @@ exports.addUser = functions.https.onRequest(async (req, res) => {
       serviceswithappointmentkey,
     });
 
+    console.log("User data stored in Realtime Database");
+
     res.status(200).send("User added successfully");
+    console.log("User added successfully");
   } catch (error) {
     console.error("Error adding user:", error);
     res.status(500).send("Error adding user");
