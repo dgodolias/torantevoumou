@@ -13,7 +13,7 @@ exports.getUsers = functions.https.onRequest(async (req, res) => {
   }
 });
 
-exports.getUserInfo = functions.https.onRequest(async (req, res) => {
+exports.GetUserDBinfo = functions.https.onRequest(async (req, res) => {
   try {
     const {userId} = req.query; // Changed from req.body to req.query
     const snapshot=await admin.database().ref(`/users/${userId}`).once("value");
@@ -27,6 +27,34 @@ exports.getUserInfo = functions.https.onRequest(async (req, res) => {
   } catch (error) {
     console.error("Error getting user info:", error);
     res.status(500).send("Error getting user info");
+  }
+});
+
+exports.GetUserAUTHinfo = functions.https.onRequest(async (req, res) => {
+  try {
+    const {userId} = req.query;
+    const userRecord = await admin.auth().getUser(userId);
+
+    if (userRecord) {
+      const {email, phoneNumber} = userRecord;
+      let formattedPhoneNumber = "";
+      if (phoneNumber) {
+        formattedPhoneNumber = phoneNumber.replace("+30", "");
+      }
+
+      res.json({
+        email,
+        phoneNumber: formattedPhoneNumber,
+      });
+
+      const userInfo = {email, phoneNumber: formattedPhoneNumber};
+      console.log("User auth info:", userInfo);
+    } else {
+      res.status(404).send("User not found");
+    }
+  } catch (error) {
+    console.error("Error getting user auth info:", error);
+    res.status(500).send("Error getting user auth info");
   }
 });
 
@@ -130,7 +158,7 @@ exports.getUserAppointments = functions.https.onRequest(async (req, res) => {
     const appointments = [];
 
     for (const service in serviceAppointments) {
-      if (serviceAppointments.hasOwnProperty(service)) {
+      if (Object.prototype.hasOwnProperty.call(serviceAppointments, service)) {
         for (const appointmentId of serviceAppointments[service]) {
           const db = await admin.database();
           const path = `/services/${service}/${appointmentId}`;

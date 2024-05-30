@@ -29,9 +29,9 @@ namespace Namespace
             return JsonConvert.DeserializeObject<Dictionary<string, User>>(json);
         }
 
-        public async Task<User> GetUserInfo(string userId)
+        public async Task<User> GetUserDBinfo(string userId)
         {
-            var response = await _client.GetAsync($"https://us-central1-torantevoumou-86820.cloudfunctions.net/getUserInfo?userId={userId}");
+            var response = await _client.GetAsync($"https://us-central1-torantevoumou-86820.cloudfunctions.net/GetUserDBinfo?userId={userId}");
             
             if (!response.IsSuccessStatusCode)
             {
@@ -40,6 +40,35 @@ namespace Namespace
             
             var json = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<User>(json);
+        }
+        public async Task<User> GetUserAUTHinfo(string userId)
+        {
+            var response = await _client.GetAsync($"https://us-central1-torantevoumou-86820.cloudfunctions.net/GetUserAUTHinfo?userId={userId}");
+            
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception($"Server returned error code: {response.StatusCode}");
+            }
+            
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<User>(json);
+        }
+
+        public async Task<User> GetUserGENERALinfo(string userId)
+        {
+            var userDbInfo = await GetUserDBinfo(userId);
+            var userAuthInfo = await GetUserAUTHinfo(userId);
+        
+            return new User
+            {
+                FirstName = userDbInfo.FirstName ?? userAuthInfo.FirstName,
+                LastName = userDbInfo.LastName ?? userAuthInfo.LastName,
+                Username = userDbInfo.Username ?? userAuthInfo.Username,
+                Password = userDbInfo.Password ?? userAuthInfo.Password,
+                Email = userDbInfo.Email ?? userAuthInfo.Email,
+                PhoneNumber = userDbInfo.PhoneNumber ?? userAuthInfo.PhoneNumber,
+                serviceswithappointmentkey = userDbInfo.serviceswithappointmentkey ?? userAuthInfo.serviceswithappointmentkey
+            };
         }
 
         public async Task<string> AddUser(User user)

@@ -25,8 +25,8 @@ namespace Namespace
         
         public async Task<IActionResult> OnGetAsync(string userId)
         {
-            User user = await _firebaseService.GetUserInfo(userId);
-        
+            User user = await _firebaseService.GetUserDBinfo(userId);
+
             // Extract service names from the user's serviceswithappointmentkey
             ServiceNames = user.serviceswithappointmentkey.Split('#')
                 .Where(s => !string.IsNullOrEmpty(s) && s.Contains('('))
