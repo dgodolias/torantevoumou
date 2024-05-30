@@ -123,3 +123,29 @@ exports.phoneNumberExists = functions.https.onRequest(async (req, res) => {
     }
   }
 });
+
+exports.getUserAppointments = functions.https.onRequest(async (req, res) => {
+  try {
+    const serviceAppointments = req.body;
+    const appointments = [];
+
+    for (const service in serviceAppointments) {
+      if (serviceAppointments.hasOwnProperty(service)) {
+        for (const appointmentId of serviceAppointments[service]) {
+          const db = await admin.database();
+          const path = `/services/${service}/${appointmentId}`;
+          const snapshot = await db.ref(path).once("value");
+          const appointment = snapshot.val();
+          if (appointment) {
+            appointments.push(appointment);
+          }
+        }
+      }
+    }
+
+    res.json(appointments);
+  } catch (error) {
+    console.error("Error getting appointments:", error);
+    res.status(500).send("Error getting appointments");
+  }
+});

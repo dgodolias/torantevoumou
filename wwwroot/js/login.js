@@ -20,7 +20,7 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
     // Prevent the form from being submitted normally
     event.preventDefault();
 
-    var email = document.querySelector('#username').value;
+    var email = document.querySelector('#email').value;
     var password = document.querySelector('#password').value;
 
     firebase.auth().signInWithEmailAndPassword(email, password)
@@ -29,10 +29,6 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
         var user = userCredential.user;
         // Get the ID token
         user.getIdToken().then((idToken) => {
-            // Print the ID token and its type
-            console.log("ID token: ", idToken);
-            console.log("Type of ID token: ", typeof idToken);
-            console.log("User ID: ", user.uid);
 
             // Store the ID token and user ID in the session storage
             sessionStorage.setItem('IdToken', idToken);

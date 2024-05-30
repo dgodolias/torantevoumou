@@ -29,51 +29,31 @@ namespace Namespace
         
             // Extract service names from the user's serviceswithappointmentkey
             ServiceNames = user.serviceswithappointmentkey.Split('#')
+                .Where(s => !string.IsNullOrEmpty(s) && s.Contains('('))
                 .Select(s => s.Split('(')[0])
                 .ToList();
         
-            return Page();
-        }
-        /*
-        private async Task<List<AppointmentModel>> GetUserAppointments(string userId)
-        {
-            // Get the dictionary of Users from Firebase
-            var UsersDictionary = await _firebaseService.GetUsers();
-        
-            // Find the User with the matching ID
-            var User = UsersDictionary.FirstOrDefault(c => c.Key == userId);
-        
-            var appointments = new List<AppointmentModel>();
-        
-            if (User.Value != null)
+            // Extract service names and appointment IDs from the user's serviceswithappointmentkey
+            Dictionary<string, List<int>> serviceAppointments = new Dictionary<string, List<int>>();
+            string[] services = user.serviceswithappointmentkey.Split('#');
+            foreach (string service in services)
             {
-                var servicesWithAppointmentKey = User.Value.serviceswithappointmentkey;
-                // Split the servicesWithAppointmentKey string into individual services
-                var services = servicesWithAppointmentKey.Split('#');
-        
-                foreach (var service in services)
+                if (!string.IsNullOrEmpty(service) && service.Contains('('))
                 {
-                    // Split the service string into the service name and the appointment keys
-                    var serviceParts = service.Split('(');
-                    var serviceName = serviceParts[0];
-                    var appointmentKeys = serviceParts[1].TrimEnd(')').Split(',');
-        
-                    foreach (var appointmentKey in appointmentKeys)
-                    {
-                        // Get the appointment from the service table in Firebase
-                        var appointment = await _firebaseService.GetAppointment(serviceName, appointmentKey);
-        
-                        if (appointment != null)
-                        {
-                            appointments.Add(appointment);
-                        }
-                    }
+                    string[] parts = service.Split('(');
+                    string serviceName = parts[0];
+                    string[] appointmentIds = parts[1].TrimEnd(')').Split(',');
+                    List<int> appointmentIdList = appointmentIds.Select(int.Parse).ToList();
+                    serviceAppointments.Add(serviceName, appointmentIdList);
                 }
             }
         
-            return appointments;
+            // Pass the dictionary to the GetUserAppointments method
+            Appointments = await _firebaseService.GetUserAppointments(serviceAppointments);
+        
+            return Page();
         }
 
-        */
+        
     }
 }
