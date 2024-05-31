@@ -1,3 +1,4 @@
+using Google.Api;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
@@ -17,15 +18,17 @@ namespace Namespace
 
         public async Task<IActionResult> OnGetAsync(string userId)
         {  
-            var userdbinfo = await _firebaseService.GetUserDBinfo(userId); 
-            await _firebaseService.GetUserDBinfo(userId); 
-            var userauthinfo = await _firebaseService.GetUserAUTHinfo(userId);
-            var usergeneralinfo = await _firebaseService.GetUserGENERALinfo(userId);
-            Console.WriteLine($"User info: {JsonConvert.SerializeObject(userdbinfo)}");
-            Console.WriteLine($"User auth info: {JsonConvert.SerializeObject(userauthinfo)}");
-            Console.WriteLine($"User general info: {JsonConvert.SerializeObject(usergeneralinfo)}");
             
-        
+            if (HttpContext.Session.GetString("UserGeneralInfo") != null)
+            {
+                // Deserialize the session storage string into a User object
+                UserProfile = JsonConvert.DeserializeObject<User>(HttpContext.Session.GetString("UserGeneralInfo"));
+            }
+            else
+            {
+                // Get the user's general info from Firebase
+                UserProfile = await _firebaseService.GetUserGENERALinfo(userId);
+            }
             return Page();
         }
         

@@ -41,8 +41,7 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
             sessionStorage.setItem('loginTime', loginTime);
             console.log('Login time: ', loginTime);
 
-            // Redirect to the Dashboard page
-            window.location.href = '/Dashboard';
+            window.location.href = '/Dashboard?userId=' + user.uid;
         });
     })
     .catch((error) => {
