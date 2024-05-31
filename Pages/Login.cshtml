@@ -4,9 +4,7 @@
 <script>
     if (sessionStorage.getItem('userLoggedIn') == 'true') {
         // Redirect to the dashboard page
-        console.log("check1");
-        window.location.href = '/Dashboard?userId=' + sessionStorage.getItem('UserId');
-        console.log("check2");
+        window.location.href = '/Dashboard?userId=' + sessionStorage.getItem('UserId');;
     } else {
         $.ajax({
             url: '/api/ClearSession',

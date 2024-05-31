@@ -1366,7 +1366,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\appointments.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1948"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00220iep7wyVpM8Q3OgqdzcVlDl6EbAPdsXh8LP8FJjKPl0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 May 2024 08:53:47 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"265"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022tNdzWQSbiI72U/2bvFI0ojWBJd07GPpD\u002B9BBTminLbM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 31 May 2024 16:58:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/bootstrap.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\bootstrap.js))</AssetFile>
@@ -1384,7 +1384,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\calendar.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"7818"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00227bALchvIQoYw3npai0OD0Aw3q/RK4YzVxLD\u002B8BI/vlI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 May 2024 08:47:24 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"685"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022\u002BA/3iKbBXDz7iirSHPdhaW5DFriL4bwNYDmqi72THrw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 31 May 2024 16:43:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/carousel.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\carousel.js))</AssetFile>

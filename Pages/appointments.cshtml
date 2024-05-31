@@ -30,13 +30,12 @@
         }
 
         <h2>Select Service</h2>
-        <select id="serviceSelect">
-            <option value="">--Please choose a service--</option>
+        <ul id="serviceList">
             @foreach (var serviceName in Model.ServiceNames)
             {
-                <option value="@serviceName">@serviceName</option>
+                <li id="@serviceName" class="serviceItem" style = "cursor:pointer;">@serviceName</li>
             }
-        </select>
+        </ul>
 
         <input type="hidden" id="selectedService" />
 
