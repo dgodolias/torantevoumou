@@ -65,7 +65,13 @@ namespace Namespace
             }
         }
 
-    
+        [HttpPost("ClearSession")]
+        public IActionResult ClearSession()
+        {
+            HttpContext.Session.Clear();
+            Console.WriteLine("Session cleared");
+            return Ok(new { message = "Session cleared" });
+        }
     }
 
     

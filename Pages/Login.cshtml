@@ -1,6 +1,26 @@
 @page
 @model Namespace.Login
 <!DOCTYPE html>
+<script>
+    if (sessionStorage.getItem('userLoggedIn') == 'true') {
+        // Redirect to the dashboard page
+        console.log("check1");
+        window.location.href = '/Dashboard?userId=' + sessionStorage.getItem('UserId');
+        console.log("check2");
+    } else {
+        $.ajax({
+            url: '/api/ClearSession',
+            type: 'POST',
+            success: function(result) {
+                console.log(result);
+                sessionStorage.clear();
+            },
+            error: function(error) {
+                console.error('Error:', error);
+            }
+        });
+    }
+</script>
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">

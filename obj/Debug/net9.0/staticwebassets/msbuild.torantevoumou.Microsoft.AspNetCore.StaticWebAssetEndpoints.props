@@ -1408,7 +1408,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\dashboard.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1579"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hZ8h28dSqGJjx3jSdgVUxuhunThNZxXs/1uM1yot3Pg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 May 2024 17:31:21 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1583"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002265VzCUAJ\u002BEs/seSk5YVPaJ1EDfjJea5uw0jEQwn/1F0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 31 May 2024 12:58:44 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/flames.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\flames.js))</AssetFile>
@@ -1444,7 +1444,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\login.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2095"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00223OcVNUQwu9mbrP6D6T0Av5Cov4K0FMwmdMzDtmWxdpg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 31 May 2024 06:12:10 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2182"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022pZJlWIvMspmY05kfsAiJZuFYHM\u002BR9pvuBC8jO\u002B\u002BgW6w=\u0022"},{"Name":"Last-Modified","Value":"Fri, 31 May 2024 15:32:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/nivo-lightbox.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\nivo-lightbox.js))</AssetFile>

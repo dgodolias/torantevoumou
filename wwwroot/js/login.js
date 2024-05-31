@@ -10,11 +10,6 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 
-if (sessionStorage.getItem('userLoggedIn') === 'true') {
-    // Redirect to the dashboard page
-    window.location.href = '/Dashboard';
-}
-
 // Event listener for form submission
 document.querySelector('#login-form').addEventListener('submit', function(event) {
     // Prevent the form from being submitted normally
@@ -23,6 +18,7 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
     var email = document.querySelector('#email').value;
     var password = document.querySelector('#password').value;
 
+    // Sign in with email and password
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
         // Signed in 
@@ -41,7 +37,12 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
             sessionStorage.setItem('loginTime', loginTime);
             console.log('Login time: ', loginTime);
 
-            window.location.href = '/Dashboard?userId=' + user.uid;
+            // Check if user.uid has a value before redirecting
+            if (user.uid) {
+                window.location.href = '/Dashboard?userId=' + user.uid;
+            } else {
+                console.log('User ID is not defined');
+            }
         });
     })
     .catch((error) => {
