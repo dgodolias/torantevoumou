@@ -1,3 +1,4 @@
+using Google.Api;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
@@ -15,8 +16,7 @@ namespace Namespace
             _firebaseService = firebaseService;
         }
 
-        public List<User>? Users { get; set; }
-        public List<User>? ServiceAppointments { get; set; }
+        public Dictionary<string, List<int>> ServiceAppointments { get; set; }
         public List<string> ServiceNames { get; set; }
         
 
@@ -25,31 +25,21 @@ namespace Namespace
         
         public async Task<IActionResult> OnGetAsync(string userId)
         {
-            User user = await _firebaseService.GetUserDBinfo(userId);
+            ServiceNames = HttpContext.Session.GetString("ServiceNames") != null
+                ? JsonConvert.DeserializeObject<List<string>>(HttpContext.Session.GetString("ServiceNames"))
+                : new List<string>();
+            
+            Console.WriteLine("serviceappointments" + HttpContext.Session.GetString("ServiceAppointments"));
+            
+            ServiceAppointments = HttpContext.Session.GetString("ServiceAppointments") != null
+                ? JsonConvert.DeserializeObject<Dictionary<string, List<int>>>(HttpContext.Session.GetString("ServiceAppointments"))
+                : new Dictionary<string, List<int>>();
+            
+            
 
-            // Extract service names from the user's serviceswithappointmentkey
-            ServiceNames = user.serviceswithappointmentkey.Split('#')
-                .Where(s => !string.IsNullOrEmpty(s) && s.Contains('('))
-                .Select(s => s.Split('(')[0])
-                .ToList();
-        
-            // Extract service names and appointment IDs from the user's serviceswithappointmentkey
-            Dictionary<string, List<int>> serviceAppointments = new Dictionary<string, List<int>>();
-            string[] services = user.serviceswithappointmentkey.Split('#');
-            foreach (string service in services)
-            {
-                if (!string.IsNullOrEmpty(service) && service.Contains('('))
-                {
-                    string[] parts = service.Split('(');
-                    string serviceName = parts[0];
-                    string[] appointmentIds = parts[1].TrimEnd(')').Split(',');
-                    List<int> appointmentIdList = appointmentIds.Select(int.Parse).ToList();
-                    serviceAppointments.Add(serviceName, appointmentIdList);
-                }
-            }
-        
-            // Pass the dictionary to the GetUserAppointments method
-            Appointments = await _firebaseService.GetUserAppointments(serviceAppointments);
+            Appointments = HttpContext.Session.GetString("UserAppointments") != null
+                ? JsonConvert.DeserializeObject<List<AppointmentModel>>(HttpContext.Session.GetString("UserAppointments"))
+                : new List<AppointmentModel>();
         
             return Page();
         }
