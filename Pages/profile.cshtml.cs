@@ -1,16 +1,16 @@
+using Google.Api;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Newtonsoft.Json;
 
 namespace Namespace
 {
     public class profile : PageModel
     {
-        private readonly IConfiguration _configuration;
         private readonly FirebaseService _firebaseService;
         
-        public profile(IConfiguration configuration, FirebaseService firebaseService)
+        public profile(FirebaseService firebaseService)
         {
-            _configuration = configuration;
             _firebaseService = firebaseService;
         }
 
@@ -18,28 +18,20 @@ namespace Namespace
 
         public async Task<IActionResult> OnGetAsync(string userId)
         {  
-            // Use the userId in your method
-        
-            if (HttpContext.Session.GetString("validDashboarduser") != "True")
-            {   
-                return RedirectToPage("/Login");
+            
+            if (HttpContext.Session.GetString("UserGeneralInfo") != null)
+            {
+                // Deserialize the session storage string into a User object
+                UserProfile = JsonConvert.DeserializeObject<User>(HttpContext.Session.GetString("UserGeneralInfo"));
             }
-        
-            // Populate the User property with the necessary data
-            UserProfile = await GetUserProfile(userId);
-        
+            else
+            {
+                // Get the user's general info from Firebase
+                UserProfile = await _firebaseService.GetUserGENERALinfo(userId);
+            }
             return Page();
         }
         
-        private async Task<User?> GetUserProfile(string userId)
-        {
-            // Get the list of Users from Firebase
-            var Users = await _firebaseService.GetUsers();
-            
-            // Find the User with the matching userId
-            var User = Users.FirstOrDefault(c => c.Key == userId);
-        
-            return User.Value;
-        }
+
     }
 }

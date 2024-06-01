@@ -1,6 +1,24 @@
 @page
 @model Namespace.Login
 <!DOCTYPE html>
+<script>
+    if (sessionStorage.getItem('userLoggedIn') == 'true') {
+        // Redirect to the dashboard page
+        window.location.href = '/Dashboard?userId=' + sessionStorage.getItem('UserId');;
+    } else {
+        $.ajax({
+            url: '/api/ClearSession',
+            type: 'POST',
+            success: function(result) {
+                console.log(result);
+                sessionStorage.clear();
+            },
+            error: function(error) {
+                console.error('Error:', error);
+            }
+        });
+    }
+</script>
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
@@ -12,11 +30,11 @@
         <div class="bg-img">
             <div class="content">
                 <header>Φόρμα Σύνδεσης</header>
-                <form method="post">
+                <form method="post" id="login-form">
                     @Html.AntiForgeryToken()
                     <div class="field">
                         <span class="fa fa-user"></span>
-                        <input id="username" name="Username" type="text" required placeholder="Όνομα Χρήστη ή Email">
+                        <input id="email" name="Username" type="text" required placeholder="Email">
                     </div>
                     <div class="field space">
                         <span class="fa fa-lock"></span>
@@ -54,5 +72,9 @@
         </script>
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="~/js/login.js"></script> <!-- Link to the JS file -->
     </body>
 </html>

@@ -1,199 +1,155 @@
-using Firebase.Database;
-using Firebase.Database.Query;
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace Namespace
 {
     public class FirebaseService
     {
-        private readonly FirebaseClient _User;
+        private readonly HttpClient _client;
 
         public FirebaseService()
         {
-            var privateKey = Environment.GetEnvironmentVariable("FIREBASE_PRIVATE_KEY");
-            var privateKeyId = Environment.GetEnvironmentVariable("FIREBASE_PRIVATE_KEY_ID");
-            var UserEmail = Environment.GetEnvironmentVariable("FIREBASE_User_EMAIL");
-            var UserId = Environment.GetEnvironmentVariable("FIREBASE_User_ID");
-            var authUri = Environment.GetEnvironmentVariable("FIREBASE_AUTH_URI");
-            var tokenUri = Environment.GetEnvironmentVariable("FIREBASE_TOKEN_URI");
-            var authProviderX509CertUrl = Environment.GetEnvironmentVariable("FIREBASE_AUTH_PROVIDER_X509_CERT_URL");
-            var UserX509CertUrl = Environment.GetEnvironmentVariable("FIREBASE_User_X509_CERT_URL");
-
-            _User = new FirebaseClient("https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app", new FirebaseOptions
-            {
-                AuthTokenAsyncFactory = () => Task.FromResult(privateKey)
-            });
-        }
-
-        public async Task UpdateUser(KeyValuePair<string, User> User)
-        {
-            await _User
-                .Child("users")
-                .Child(User.Key)
-                .PutAsync(User.Value);
-        }
-
-        public async Task DeleteUser(string id)
-        {
-            await _User
-                .Child("users")
-                .Child(id)
-                .DeleteAsync();
+            _client = new HttpClient();
         }
 
         public async Task<Dictionary<string, User>> GetUsers()
         {
-            using (var httpUser = new HttpClient())
+            var response = await _client.GetAsync("https://us-central1-torantevoumou-86820.cloudfunctions.net/getUsers");
+        
+            if (!response.IsSuccessStatusCode)
             {
-                var firebaseUrl = "https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app/users.json";
-                var json = await httpUser.GetStringAsync(firebaseUrl);
-                
-                var UsersDict = JsonConvert.DeserializeObject<Dictionary<string, User>>(json);
-
-                return UsersDict;
+                throw new Exception($"Server returned error code: {response.StatusCode}");
             }
+        
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<Dictionary<string, User>>(json);
         }
-        public async Task<List<User>> GetServiceAppointments(string serviceName)
+
+        public async Task<User> GetUserDBinfo(string userId)
         {
-            using (var httpUser = new HttpClient())
+            var response = await _client.GetAsync($"https://us-central1-torantevoumou-86820.cloudfunctions.net/GetUserDBinfo?userId={userId}");
+            
+            if (!response.IsSuccessStatusCode)
             {
-                var firebaseUrl = $"https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app/services/{serviceName}.json";
-                var json = await httpUser.GetStringAsync(firebaseUrl);
-                Console.WriteLine(json);
-                var ServiceList = JsonConvert.DeserializeObject<List<User>>(json);
-                Console.WriteLine(ServiceList);
-                return ServiceList;
+                throw new Exception($"Server returned error code: {response.StatusCode}");
             }
+            
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<User>(json);
+        }
+        public async Task<User> GetUserAUTHinfo(string userId)
+        {
+            var response = await _client.GetAsync($"https://us-central1-torantevoumou-86820.cloudfunctions.net/GetUserAUTHinfo?userId={userId}");
+            
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception($"Server returned error code: {response.StatusCode}");
+            }
+            
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<User>(json);
+        }
+
+        public async Task<User> GetUserGENERALinfo(string userId)
+        {
+            var userDbInfo = await GetUserDBinfo(userId);
+            var userAuthInfo = await GetUserAUTHinfo(userId);
+        
+            return new User
+            {
+                FirstName = userDbInfo.FirstName ?? userAuthInfo.FirstName,
+                LastName = userDbInfo.LastName ?? userAuthInfo.LastName,
+                Username = userDbInfo.Username ?? userAuthInfo.Username,
+                Password = userDbInfo.Password ?? userAuthInfo.Password,
+                Email = userDbInfo.Email ?? userAuthInfo.Email,
+                PhoneNumber = userDbInfo.PhoneNumber ?? userAuthInfo.PhoneNumber,
+                serviceswithappointmentkey = userDbInfo.serviceswithappointmentkey ?? userAuthInfo.serviceswithappointmentkey
+            };
+        }
+
+        public async Task<string> AddUser(User user)
+        {
+            Console.WriteLine($"Adding user: {JsonConvert.SerializeObject(user)}");
+            var content = new StringContent(JsonConvert.SerializeObject(user), Encoding.UTF8, "application/json");
+            var response = await _client.PostAsync("https://us-central1-torantevoumou-86820.cloudfunctions.net/addUser", content);
+            
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception($"Server returned error code: {response.StatusCode}");
+            }
+            
+            var json = await response.Content.ReadAsStringAsync();
+            return json;
         }
 
         public async Task<bool> UsernameExists(string username)
         {
-            var Users = await GetUsers();
-            return Users.Any(User => User.Value.Username == username);
+            Console.WriteLine($"Checking if username {username} exists");
+            var response = await _client.GetAsync($"https://us-central1-torantevoumou-86820.cloudfunctions.net/usernameExists?username={username}");
+            
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception($"Server returned error code: {response.StatusCode}");
+            }
+
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<bool>(json);
         }
 
         public async Task<bool> EmailExists(string email)
         {
-            var Users = await GetUsers();
-            return Users.Any(User => User.Value.Email == email);
+            Console.WriteLine($"Email: {email}");
+            var response = await _client.GetAsync($"https://us-central1-torantevoumou-86820.cloudfunctions.net/emailExists?email={email}");
+            
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception($"Server returned error code: {response.StatusCode}");
+            }
+            
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<bool>(json);
         }
 
         public async Task<bool> PhoneNumberExists(string phoneNumber)
         {
-            var Users = await GetUsers();
-            return Users.Any(User => User.Value.PhoneNumber == phoneNumber);
+            // URL encode the phone number
+            string encodedPhoneNumber = System.Net.WebUtility.UrlEncode(phoneNumber);
+        
+            Console.WriteLine($"PhoneNumber: {encodedPhoneNumber}");
+            var response = await _client.GetAsync($"https://us-central1-torantevoumou-86820.cloudfunctions.net/phoneNumberExists?phoneNumber={encodedPhoneNumber}");
+            
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception($"Server returned error code: {response.StatusCode}");
+            }
+            
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<bool>(json);
         }
 
-        public async Task AddUser(string firstName, string lastName, string username, string password, string email, string phoneNumber)
+        public async Task<List<AppointmentModel>> GetUserAppointments(Dictionary<string, List<int>> serviceAppointments)
         {
-            var User = new User
+            List<AppointmentModel> appointments = new List<AppointmentModel>();
+            Console.WriteLine($"Getting user appointments");
+            Console.WriteLine($"Service appointments: {JsonConvert.SerializeObject(serviceAppointments)}");
+        
+            var content = new StringContent(JsonConvert.SerializeObject(serviceAppointments), Encoding.UTF8, "application/json");
+            var response = await _client.PostAsync("https://us-central1-torantevoumou-86820.cloudfunctions.net/getUserAppointments", content);
+        
+            if (!response.IsSuccessStatusCode)
             {
-                FirstName = firstName,
-                LastName = lastName,
-                Username = username,
-                Password = password,
-                Email = email,
-                PhoneNumber = phoneNumber,
-                serviceswithappointmentkey = ""
-            };
-
-            await _User
-                .Child("users")
-                .PostAsync(User);
-        }
-
-        public async Task<bool> UpdateUser(string userId, Dictionary<string, object> changes)
-        {
-            Console.WriteLine($"Updating user {userId}...");
-        
-            var Users = await GetUsers();
-        
-            var User = Users.FirstOrDefault(User => User.Key == userId);
-        
-            if (User.Value == null)
-            {
-                Console.WriteLine($"User {userId} not found.");
-                return false;
+                throw new Exception($"Server returned error code: {response.StatusCode}");
             }
         
-            Console.WriteLine($"User {userId} found. Applying changes...");
+            var json = await response.Content.ReadAsStringAsync();
+            var appointmentsResponse = JsonConvert.DeserializeObject<List<AppointmentModel>>(json);
+            appointments.AddRange(appointmentsResponse);
         
-            var change = changes.First();
-            List<string> UserFieldNames = typeof(User).GetProperties().Select(property => property.Name).ToList();
-            Console.WriteLine($"UserFieldNames: {string.Join(", ", UserFieldNames)}");
-            for (int i = 0; i < UserFieldNames.Count; i++)
-            {
-                if (string.Equals(change.Key, UserFieldNames[i], StringComparison.OrdinalIgnoreCase))
-                {
-                    switch (change.Key.ToLower())
-                    {
-                        case "email":
-                            User.Value.Email = change.Value.ToString();
-                            break;
-                        case "firstname":
-                            User.Value.FirstName = change.Value.ToString();
-                            break;
-                        case "lastname":
-                            User.Value.LastName = change.Value.ToString();
-                            break;
-                        case "password":
-                            User.Value.Password = change.Value.ToString();
-                            break;
-                        case "phonenumber":
-                            User.Value.PhoneNumber = change.Value.ToString();
-                            break;
-                        case "username":
-                            User.Value.Username = change.Value.ToString();
-                            break;
-                        default:
-                            Console.WriteLine($"No action defined for field {change.Key}.");
-                            break;
-                    }
-                    Console.WriteLine($"Set {change.Key} to {change.Value}.");
-                    break;
-                }
-            }
-
-        
-            await _User
-                .Child("users")
-                .Child(User.Key)
-                .PutAsync(User.Value);
-        
-            // Fetch the latest data from the server
-            Users = await GetUsers();
-        
-            Console.WriteLine($"User {userId} updated successfully.");
-        
-            return true;
-        }
-
-        public async Task<AppointmentModel> GetAppointment(string serviceName, string appointmentKey)
-        {
-            using (var httpClient = new HttpClient())
-            {
-                var firebaseUrl = $"https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app/services/{serviceName}/{appointmentKey}.json";
-                var json = await httpClient.GetStringAsync(firebaseUrl);
-                var appointmentData = JsonConvert.DeserializeObject<AppointmentModel>(json);
-                return appointmentData;
-            }
-        }
-
-        public async Task<List<string>> GetServiceNames()
-        {
-            using (var httpClient = new HttpClient())
-            {
-                var firebaseUrl = "https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app/services.json";
-                var json = await httpClient.GetStringAsync(firebaseUrl);
-                
-                // Assuming that the services are stored as key-value pairs where the key is the service name
-                var servicesDict = JsonConvert.DeserializeObject<Dictionary<string, object>>(json);
-        
-                // Extract the keys (service names) and convert them to a list
-                var serviceNames = servicesDict.Keys.ToList();
-        
-                return serviceNames;
-            }
+            return appointments;
         }
     }
 }

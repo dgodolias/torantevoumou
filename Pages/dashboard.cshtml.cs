@@ -1,8 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Namespace
 {
@@ -16,47 +14,47 @@ namespace Namespace
             _configuration = configuration;
             _firebaseService = firebaseService;
         }
-
-        public bool ButtonClickedInsideTimespan { get; set; }
-
+    
         // Add a new property for the user ID
-        public string UserId { get; set; }
+        public string? UserIdToken { get; set; }
+        public string? UserId { get; set; }
+        public User? UserInfo { get; set; }
+        public List<User>? ServiceAppointments { get; set; }
+        public List<string> ServiceNames { get; set; }
+        public List<AppointmentModel>? Appointments { get; set; }
 
-        public async Task<IActionResult> OnGetAsync()
-        {
-            int time = 60 ;
-            var buttonClickedTime = DateTime.Parse(HttpContext.Session.GetString("ButtonClickedTime") ?? DateTime.MinValue.ToString());
-            ButtonClickedInsideTimespan = HttpContext.Session.GetString("ButtonClicked") == "True" && DateTime.UtcNow - buttonClickedTime < TimeSpan.FromSeconds(time);
-            
-            var Username = HttpContext.Session.GetString("Username");
-            var Password = HttpContext.Session.GetString("Password");
+        public async Task<IActionResult> OnGetAsync(string userId)
+        {  
+            UserId = userId;
+            UserInfo = await _firebaseService.GetUserGENERALinfo(userId);
+            HttpContext.Session.SetString("UserGeneralInfo", JsonConvert.SerializeObject(UserInfo));
 
-            if (DateTime.UtcNow - buttonClickedTime >= TimeSpan.FromSeconds(time))
+            // Extract service names from the user's serviceswithappointmentkey
+            ServiceNames = UserInfo.serviceswithappointmentkey.Split('#')
+                .Where(s => !string.IsNullOrEmpty(s) && s.Contains('('))
+                .Select(s => s.Split('(')[0])
+                .ToList();
+            HttpContext.Session.SetString("ServiceNames", JsonConvert.SerializeObject(ServiceNames));
+
+            // Extract service names and appointment IDs from the user's serviceswithappointmentkey
+            Dictionary<string, List<int>> serviceAppointments = new Dictionary<string, List<int>>();
+            string[] services = UserInfo.serviceswithappointmentkey.Split('#');
+            foreach (string service in services)
             {
-                HttpContext.Session.SetString("Username", string.Empty);
-                HttpContext.Session.SetString("Password", string.Empty);
+                if (!string.IsNullOrEmpty(service) && service.Contains('('))
+                {
+                    string[] parts = service.Split('(');
+                    string serviceName = parts[0];
+                    string[] appointmentIds = parts[1].TrimEnd(')').Split(',');
+                    List<int> appointmentIdList = appointmentIds.Select(int.Parse).ToList();
+                    serviceAppointments.Add(serviceName, appointmentIdList);
+                }
             }
+            HttpContext.Session.SetString("ServiceAppointments", JsonConvert.SerializeObject(serviceAppointments));
 
-            bool usernameNotEmpty = !string.IsNullOrEmpty(Username);
-            bool validDashboardUser = HttpContext.Session.GetString("validDashboarduser") == "True";
-
-            bool passwordNotEmpty = !string.IsNullOrEmpty(Password);
-            bool validSession = usernameNotEmpty && validDashboardUser && passwordNotEmpty && ButtonClickedInsideTimespan;
-            HttpContext.Session.SetString("validSessionDashboard", validSession.ToString());
-
-            // Get the user's ID from the Firebase service
-            var users = await _firebaseService.GetUsers();
-            var user = users.FirstOrDefault(c => (c.Value.Email == Username || c.Value.Username == Username) && c.Value.Password == Password);
-            if (user.Value != null)
-            {
-                UserId = user.Key;
-                HttpContext.Session.SetString("UserId", UserId);
-            }
-
-            if (!ButtonClickedInsideTimespan || string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password) || !validSession)
-            {   
-                return RedirectToPage("/Login");
-            }
+            // Pass the dictionary to the GetUserAppointments method
+            Appointments = await _firebaseService.GetUserAppointments(serviceAppointments);
+            HttpContext.Session.SetString("UserAppointments", JsonConvert.SerializeObject(Appointments));
 
             return Page();
         }

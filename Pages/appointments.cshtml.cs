@@ -1,3 +1,4 @@
+using Google.Api;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
@@ -15,8 +16,7 @@ namespace Namespace
             _firebaseService = firebaseService;
         }
 
-        public List<User>? Users { get; set; }
-        public List<User>? ServiceAppointments { get; set; }
+        public Dictionary<string, List<int>> ServiceAppointments { get; set; }
         public List<string> ServiceNames { get; set; }
         
 
@@ -25,60 +25,23 @@ namespace Namespace
         
         public async Task<IActionResult> OnGetAsync(string userId)
         {
-            var validSessionDashboard = HttpContext.Session.GetString("validSessionDashboard");
-            if (validSessionDashboard != "True")
-            {
-                return RedirectToPage("/Login");
-            }
-        
-            Appointments = await GetUserAppointments(userId);
-            var UsersDictionary = await _firebaseService.GetUsers();
-            Users = UsersDictionary.Values.ToList();
-        
-            ServiceNames = await _firebaseService.GetServiceNames();  
+            ServiceNames = HttpContext.Session.GetString("ServiceNames") != null
+                ? JsonConvert.DeserializeObject<List<string>>(HttpContext.Session.GetString("ServiceNames"))
+                : new List<string>();
+            
+            Console.WriteLine("serviceappointments" + HttpContext.Session.GetString("ServiceAppointments"));
+            
+            ServiceAppointments = HttpContext.Session.GetString("ServiceAppointments") != null
+                ? JsonConvert.DeserializeObject<Dictionary<string, List<int>>>(HttpContext.Session.GetString("ServiceAppointments"))
+                : new Dictionary<string, List<int>>();
+            
+            
+
+            Appointments = HttpContext.Session.GetString("UserAppointments") != null
+                ? JsonConvert.DeserializeObject<List<AppointmentModel>>(HttpContext.Session.GetString("UserAppointments"))
+                : new List<AppointmentModel>();
         
             return Page();
-        }
-
-
-        private async Task<List<AppointmentModel>> GetUserAppointments(string userId)
-        {
-        
-            // Get the list of Users from Firebase
-            var Users = await _firebaseService.GetUsers();
-        
-            // Find the User with the matching ID
-            var User = Users.FirstOrDefault(c => c.Key == userId);
-        
-            var appointments = new List<AppointmentModel>();
-        
-            if (User.Value != null)
-            {
-                var servicesWithAppointmentKey = User.Value.serviceswithappointmentkey;
-                // Split the servicesWithAppointmentKey string into individual services
-                var services = servicesWithAppointmentKey.Split('#');
-        
-                foreach (var service in services)
-                {
-                    // Split the service string into the service name and the appointment keys
-                    var serviceParts = service.Split('(');
-                    var serviceName = serviceParts[0];
-                    var appointmentKeys = serviceParts[1].TrimEnd(')').Split(',');
-        
-                    foreach (var appointmentKey in appointmentKeys)
-                    {
-                        // Get the appointment from the service table in Firebase
-                        var appointment = await _firebaseService.GetAppointment(serviceName, appointmentKey);
-
-                        if (appointment != null)
-                        {
-                            appointments.Add(appointment);
-                        }
-                    }
-                }
-            }
-        
-            return appointments;
         }
 
         
