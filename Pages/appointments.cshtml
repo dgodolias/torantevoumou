@@ -7,10 +7,12 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="~/css/dashboard.css"> <!-- Link to the CSS file -->
 </head>
+
 <body id="appointmentsPage">
     <h1>@ViewData["Title"]</h1>
 
@@ -33,20 +35,20 @@
         <ul id="serviceList">
             @foreach (var serviceName in Model.ServiceNames)
             {
-                <li id="@serviceName" class="serviceItem" style = "cursor:pointer;">@serviceName</li>
+                <li id="@serviceName" class="serviceItem" style="cursor:pointer;">@serviceName</li>
             }
         </ul>
 
         <input type="hidden" id="selectedService" />
     </section>
-
+    <div id="blurOverlay"></div>
     <div id="dialog" title="Select a date" style="display:none;">
     </div>
-
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="~/js/calendar.js"></script> <!-- Link to the JavaScript file -->
     <script src="~/js/appointments.js"></script> <!-- Link to the JavaScript file -->
 </body>
+
 </html>

@@ -16,7 +16,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6405"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022dr2jy9oh2IrkQIM8EAMFXYa8XdFVtCyFo62R8WFXqWY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Apr 2024 21:58:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6724"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00224Gg0v3CEYw7dbeTunBbBTMg3GxDb0dfLb7CNubjpaUE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Jun 2024 11:23:11 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/login.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\login.css))</AssetFile>
@@ -1366,7 +1366,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\appointments.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN/XKdLCPjaYaY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Jun 2024 06:09:12 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1012"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022dtCw4O1XWkHr/UO5CesqxhDwxdQV1J3eNHtISs1J6Qk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Jun 2024 11:21:37 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/bootstrap.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\bootstrap.js))</AssetFile>

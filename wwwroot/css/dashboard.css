@@ -319,3 +319,15 @@ body.dark .switch::before{
 body.dark .home .text{
     color: var(--text-color);
 }
+
+#blurOverlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
+    z-index: 100; /* Adjust this value to ensure the overlay is above the other elements in the embedded page */
+}
