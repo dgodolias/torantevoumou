@@ -206,3 +206,4 @@ c:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\refint\torantevoumou
 c:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\torantevoumou.pdb
 C:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\torantevoumou.genruntimeconfig.cache
 C:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\ref\torantevoumou.dll
+c:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\compressed\ptjj0ctuuq.gz

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rWblUV6E8V1dqeiof7P2V7tkVQgtu2BhcG5rCFAIe/k=",
+  "Hash": "6JmdI8RqWLdPWwAOo2hy5FNtVuo3NJ4Az5CoxVsUMA4=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -388,8 +388,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\appointments.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "n3ikllvw7b",
-      "Integrity": "Xc7Zn8E+0M/uccWEbrHVkHWF5cLN+wbICXeUj45mUx0=",
+      "Fingerprint": "7d8au31a8w",
+      "Integrity": "JV3iFNzD6+CIAXNseT7I4gIedvRVguSq7sJKPbEWuNQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\appointments.js"
@@ -1277,6 +1277,27 @@
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\index.js"
     },
     {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\ptjj0ctuuq.gz",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "css/dialogpopup.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dialogpopup.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "1s6qcimewf",
+      "Integrity": "L2ergMaXFEjKv13FEb8/LUWN2wujVvwIuAdJ5+BqSuo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dialogpopup.css"
+    },
+    {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\qofxak1jbt.gz",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
@@ -1989,6 +2010,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
+    },
+    {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dialogpopup.css",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "css/dialogpopup.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "koh9g6ebv0",
+      "Integrity": "xElPZaQfeYIoU+1w2QxlcIh+RMom51PXXSus6xrmJII=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dialogpopup.css"
     },
     {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\login.css",
@@ -6709,8 +6751,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "e0z1goekgi",
-      "Integrity": "frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN/XKdLCPjaYaY=",
+      "Fingerprint": "4rtc4f2mhh",
+      "Integrity": "YB7k0KkXYQbHUVF11MVSJChWEMgOqfhHVuzY4YIRLDQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\appointments.js"
@@ -7134,6 +7176,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\mail\\contact_me.php"
+    },
+    {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\scss\\dialogpopup.scss",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "scss/dialogpopup.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fg3wgxztdo",
+      "Integrity": "f33p1tyDqOpX7ytmIzKKC/kprMWFPm5++OqPZTyW6D0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scss\\dialogpopup.scss"
     }
   ],
   "Endpoints": [
@@ -7455,6 +7518,116 @@
         {
           "Name": "Last-Modified",
           "Value": "Fri, 26 Apr 2024 21:58:39 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/dialogpopup.css",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\ptjj0ctuuq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001011122346"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "988"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L2ergMaXFEjKv13FEb8/LUWN2wujVvwIuAdJ5+BqSuo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Jun 2024 06:22:20 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xElPZaQfeYIoU+1w2QxlcIh+RMom51PXXSus6xrmJII=\""
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/dialogpopup.css",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dialogpopup.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xElPZaQfeYIoU+1w2QxlcIh+RMom51PXXSus6xrmJII=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Jun 2024 06:22:20 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/dialogpopup.css.gz",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\ptjj0ctuuq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L2ergMaXFEjKv13FEb8/LUWN2wujVvwIuAdJ5+BqSuo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Jun 2024 06:22:20 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -19322,7 +19495,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.043478260870"
+          "Quality": "0.003039513678"
         }
       ],
       "ResponseHeaders": [
@@ -19332,15 +19505,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22"
+          "Value": "328"
         },
         {
           "Name": "ETag",
-          "Value": "\"Xc7Zn8E+0M/uccWEbrHVkHWF5cLN+wbICXeUj45mUx0=\""
+          "Value": "\"JV3iFNzD6+CIAXNseT7I4gIedvRVguSq7sJKPbEWuNQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Jun 2024 06:09:12 GMT"
+          "Value": "Sat, 01 Jun 2024 06:11:25 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -19356,7 +19529,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN/XKdLCPjaYaY=\""
+          "Value": "W/\"YB7k0KkXYQbHUVF11MVSJChWEMgOqfhHVuzY4YIRLDQ=\""
         }
       ],
       "EndpointProperties": []
@@ -19372,7 +19545,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2"
+          "Value": "748"
         },
         {
           "Name": "Content-Type",
@@ -19380,11 +19553,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN/XKdLCPjaYaY=\""
+          "Value": "\"YB7k0KkXYQbHUVF11MVSJChWEMgOqfhHVuzY4YIRLDQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Jun 2024 06:09:12 GMT"
+          "Value": "Sat, 01 Jun 2024 06:11:25 GMT"
         }
       ],
       "EndpointProperties": []
@@ -19400,7 +19573,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22"
+          "Value": "328"
         },
         {
           "Name": "Content-Type",
@@ -19408,11 +19581,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Xc7Zn8E+0M/uccWEbrHVkHWF5cLN+wbICXeUj45mUx0=\""
+          "Value": "\"JV3iFNzD6+CIAXNseT7I4gIedvRVguSq7sJKPbEWuNQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Jun 2024 06:09:12 GMT"
+          "Value": "Sat, 01 Jun 2024 06:11:25 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -21539,6 +21712,34 @@
         {
           "Name": "Last-Modified",
           "Value": "Mon, 15 Apr 2024 19:34:47 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "scss/dialogpopup.scss",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\scss\\dialogpopup.scss",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2098"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f33p1tyDqOpX7ytmIzKKC/kprMWFPm5++OqPZTyW6D0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Jun 2024 06:19:30 GMT"
         }
       ],
       "EndpointProperties": []

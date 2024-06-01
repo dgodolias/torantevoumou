@@ -10,6 +10,7 @@
 <head>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="~/css/dashboard.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="~/css/dialogpopup.css"> <!-- Link to the CSS file -->
 </head>
 <body id="appointmentsPage">
     <h1>@ViewData["Title"]</h1>
@@ -40,13 +41,40 @@
         <input type="hidden" id="selectedService" />
     </section>
 
-    <div id="dialog" title="Select a date" style="display:none;">
+    <dialog id="dialog">
+        <h2>Hello.</h2>
+        <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+    </dialog>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery library -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="~/js/calendar.js"></script> <!-- Link to the JavaScript file -->
     <script src="~/js/appointments.js"></script> <!-- Link to the JavaScript file -->
+    <script>
+        $(document).ready(function() {
+            // Initialize the dialog
+            $('#dialog').dialog({
+                autoOpen: false,
+                modal: true,
+                open: function() {
+                    // Fade the appointments page when the dialog is opened
+                    $('#appointmentsPage').fadeTo('slow', 0.5);
+                },
+                close: function() {
+                    // Restore the opacity of the appointments page when the dialog is closed
+                    $('#appointmentsPage').fadeTo('slow', 1);
+                }
+            });
+
+            $('#serviceList .serviceItem').on('click', function() {
+                var serviceName = $(this).attr('id');
+                console.log('You clicked on service: ' + serviceName);
+                // Open the dialog
+                $('#dialog').dialog('open');
+            });
+        });
+    </script>
 </body>
 </html>

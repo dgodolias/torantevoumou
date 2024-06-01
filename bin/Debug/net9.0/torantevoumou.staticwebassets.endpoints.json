@@ -332,6 +332,116 @@
       "EndpointProperties": []
     },
     {
+      "Route": "css/dialogpopup.css",
+      "AssetFile": "css/dialogpopup.css.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001011122346"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L2ergMaXFEjKv13FEb8/LUWN2wujVvwIuAdJ5+BqSuo=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xElPZaQfeYIoU+1w2QxlcIh+RMom51PXXSus6xrmJII=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Jun 2024 06:22:20 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/dialogpopup.css",
+      "AssetFile": "css/dialogpopup.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xElPZaQfeYIoU+1w2QxlcIh+RMom51PXXSus6xrmJII=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Jun 2024 06:22:20 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/dialogpopup.css.gz",
+      "AssetFile": "css/dialogpopup.css.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L2ergMaXFEjKv13FEb8/LUWN2wujVvwIuAdJ5+BqSuo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Jun 2024 06:22:20 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
       "Route": "css/login.css",
       "AssetFile": "css/login.css.gz",
       "Selectors": [
@@ -12296,7 +12406,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.043478260870"
+          "Quality": "0.003039513678"
         }
       ],
       "ResponseHeaders": [
@@ -12310,7 +12420,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22"
+          "Value": "328"
         },
         {
           "Name": "Content-Type",
@@ -12318,15 +12428,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Xc7Zn8E+0M/uccWEbrHVkHWF5cLN+wbICXeUj45mUx0=\""
+          "Value": "\"JV3iFNzD6+CIAXNseT7I4gIedvRVguSq7sJKPbEWuNQ=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN/XKdLCPjaYaY=\""
+          "Value": "W/\"YB7k0KkXYQbHUVF11MVSJChWEMgOqfhHVuzY4YIRLDQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Jun 2024 06:09:12 GMT"
+          "Value": "Sat, 01 Jun 2024 06:11:25 GMT"
         },
         {
           "Name": "Vary",
@@ -12346,7 +12456,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2"
+          "Value": "748"
         },
         {
           "Name": "Content-Type",
@@ -12354,11 +12464,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN/XKdLCPjaYaY=\""
+          "Value": "\"YB7k0KkXYQbHUVF11MVSJChWEMgOqfhHVuzY4YIRLDQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Jun 2024 06:09:12 GMT"
+          "Value": "Sat, 01 Jun 2024 06:11:25 GMT"
         }
       ],
       "EndpointProperties": []
@@ -12378,7 +12488,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22"
+          "Value": "328"
         },
         {
           "Name": "Content-Type",
@@ -12386,11 +12496,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Xc7Zn8E+0M/uccWEbrHVkHWF5cLN+wbICXeUj45mUx0=\""
+          "Value": "\"JV3iFNzD6+CIAXNseT7I4gIedvRVguSq7sJKPbEWuNQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Jun 2024 06:09:12 GMT"
+          "Value": "Sat, 01 Jun 2024 06:11:25 GMT"
         },
         {
           "Name": "Vary",
@@ -14403,6 +14513,34 @@
         {
           "Name": "Last-Modified",
           "Value": "Mon, 15 Apr 2024 19:34:47 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "scss/dialogpopup.scss",
+      "AssetFile": "scss/dialogpopup.scss",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2098"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f33p1tyDqOpX7ytmIzKKC/kprMWFPm5++OqPZTyW6D0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Jun 2024 06:19:30 GMT"
         }
       ],
       "EndpointProperties": []

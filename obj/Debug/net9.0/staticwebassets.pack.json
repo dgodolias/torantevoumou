@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\dashboard.css"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dialogpopup.css",
+      "PackagePath": "staticwebassets\\css\\dialogpopup.css"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
@@ -991,6 +995,10 @@
     {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\mail\\contact_me.php",
       "PackagePath": "staticwebassets\\mail\\contact_me.php"
+    },
+    {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\scss\\dialogpopup.scss",
+      "PackagePath": "staticwebassets\\scss\\dialogpopup.scss"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.torantevoumou.props",
