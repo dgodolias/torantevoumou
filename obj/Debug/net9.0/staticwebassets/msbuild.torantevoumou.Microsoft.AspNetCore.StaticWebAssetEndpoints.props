@@ -16,7 +16,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6724"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00224Gg0v3CEYw7dbeTunBbBTMg3GxDb0dfLb7CNubjpaUE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Jun 2024 11:23:11 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6805"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022G244C6Or\u002BBmGtkFnW7k0DrDebnDQ4pvePT8c5fOH8G0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Jun 2024 13:27:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/login.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\login.css))</AssetFile>

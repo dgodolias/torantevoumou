@@ -49,12 +49,10 @@ body.dark{
 
 /* ===== Sidebar ===== */
 .sidebar{
-    position: absolute;
     bottom: 0;
     left: 0;
     height: 100%;
     width: 235px;
-    margin-right: 15px; /* add this line */
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
@@ -64,6 +62,15 @@ body.dark{
 }
 
 /* ===== Reusable code - Here ===== */
+.flex-container {
+    display: flex;
+}
+
+#pagetobeembedded {
+    flex-grow: 1; /* This will make the content take up the rest of the space in the container */
+    margin-left: 15px;
+}
+
 .sidebar li{
     height: 50px;
     list-style: none;
@@ -162,7 +169,7 @@ header .image-text .profession{
     font-size: 22px;
     cursor: pointer;
     transition: var(--tran-05);
-    z-index: 9999;
+    z-index: 100;
 }
 
 body.dark .sidebar header .toggle{
@@ -295,10 +302,8 @@ body.dark .switch::before{
 }
 
 .home{
-    position: absolute;
     top: 0;
     top: 0;
-    left: 265px;
     height: 100vh;
     width: calc(100% - 265px);
     background-color: var(--body-color);
