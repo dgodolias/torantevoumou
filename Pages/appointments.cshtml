@@ -42,6 +42,20 @@
     </section>
     <div id="blurOverlay"></div>
     <div id="dialog" title="Select a date" style="display:none;">
+        <div id="dialog-content">
+            <div id="datepicker"></div>
+            <table id="myTable">
+                <tbody>
+                    @for (int i = 0; i < 24; i++)
+                    {
+                        <tr>
+                            <td></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

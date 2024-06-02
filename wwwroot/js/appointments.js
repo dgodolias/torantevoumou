@@ -1,10 +1,19 @@
 $(document).ready(function() {
+    // Initialize the datepicker
+    $('#datepicker').datepicker({
+        minDate: 0,
+        onSelect: function(dateText, inst) {
+            console.log('You selected: ' + dateText);
+        }
+    });
+    var viewportHeight = $(window).height();
+    var dialogHeight = viewportHeight * 0.8; // 80% of the viewport height
     // Initialize the dialog
     $('#dialog').dialog({
         autoOpen: false,
         modal: true,
         width: '80%',
-        height: '80%',
+        height: dialogHeight,
         draggable: false,
         resizable: false,
         modal: false,
@@ -33,3 +42,5 @@ $(document).ready(function() {
         $('#dialog').dialog('open');
     });
 });
+
+
