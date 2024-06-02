@@ -177,3 +177,50 @@ exports.getUserAppointments = functions.https.onRequest(async (req, res) => {
     res.status(500).send("Error getting appointments");
   }
 });
+
+exports.updateUser = functions.https.onRequest(async (req, res) => {
+  const allowedOrigins = [
+    "https://localhost:7177",
+    "https://www.torantevoumou.gr",
+    "https://torantevoumou.gr",
+  ];
+  const origin = req.headers.origin;
+
+  if (allowedOrigins.includes(origin)) {
+    res.set("Access-Control-Allow-Origin", origin);
+  }
+
+  res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
+  res.set("Access-Control-Allow-Headers", "*");
+
+  // Respond to OPTIONS requests (required by CORS preflight)
+  if (req.method === "OPTIONS") {
+    res.status(200).send();
+    return;
+  }
+
+  console.log("updateUser function called");
+
+  try {
+    const {UserId, ...updates} = req.body;
+
+    console.log(`Received data: UserId=${UserId}`);
+    console.log(`Updates: ${JSON.stringify(updates)}`);
+
+    if (!UserId || Object.keys(updates).length !== 1) {
+      console.log("Invalid request");
+      res.status(400).send("Invalid request");
+      return;
+    }
+
+    console.log(`Updating user ${UserId} with data:`, updates);
+
+    await admin.database().ref(`/users/${UserId}`).update(updates);
+
+    console.log("User updated successfully");
+    res.status(200).json({message: "User updated successfully"});
+  } catch (error) {
+    console.error("Error updating user:", error);
+    res.status(500).send("Error updating user");
+  }
+});

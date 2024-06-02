@@ -36,20 +36,34 @@ function toggleReadonly(selector) {
             var data = {};
             data[selector.slice(1)] = newValue; // Remove the '#' from the selector to get the field name
 
-            $.ajax({
-                url: '/api/updateUser',
-                type: 'POST',
-                data: JSON.stringify(data),
-                contentType: 'application/json',
-                success: function (response) {
-                    console.log(response);
-                    alert('Update successful!');
+            // Get UserId from session
+            var UserId = sessionStorage.getItem('UserId');
+
+            // Create JSON object
+            var json = {
+                "UserId": UserId,
+                [selector.slice(1)]: newValue
+            };
+
+            // Call Firebase Cloud Function
+            fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/updateUser', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
                 },
-                error: function (error) {
-                    console.log(error);
-                    alert('Update failed. Please try again.');
-                }
+                body: JSON.stringify(json),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data.message);
+                alert('User updated successfully');
+                location.reload();
+            })
+            .catch((error) => {
+                console.error('Error:', error);
             });
+
+            //Does sth with the data
         }
 
         // Store the new value as the old value for the next time

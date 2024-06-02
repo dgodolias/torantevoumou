@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GDElRhMVeLV0/UJn2BLEz0B601YyPs/p/3ZQ+6A8pg0=",
+  "Hash": "yDhn012ZAj3iuGBpWHBRGIU5/r0pVenh5IjEH09/kKY=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -766,8 +766,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\profile.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "cpgs9kv62i",
-      "Integrity": "kCxSejgCdgUzx+GukP+hpnR4dAG3r9LkF7LPGgVSFPU=",
+      "Fingerprint": "vs22gb5e80",
+      "Integrity": "UZkUBQ5SxNKXV4d/w8MgZjRelz0QPHvjsuFMquWOb/U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\profile.js"
@@ -981,27 +981,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.css"
-    },
-    {
-      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\kif2lfvfry.gz",
-      "SourceId": "torantevoumou",
-      "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/torantevoumou",
-      "RelativePath": "js/calendar.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\calendar.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "pw3im7ec6u",
-      "Integrity": "SRY38SGTQ2In6YPFxEzzv97/DtVXQJkOk+cwxBqzQXg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\calendar.js"
     },
     {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\kl6afb8xrt.gz",
@@ -1585,8 +1564,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dashboard.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "iebc7hu5wy",
-      "Integrity": "ui9EHC9I6vts+sIcLAnPuCTs1qwGnpCeuBCvzcxwSP8=",
+      "Fingerprint": "cqubopavoz",
+      "Integrity": "rBMyUfzUuOf2x/eRoKHXH6vOMr+E9PKOyQspugGUUuA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dashboard.css"
@@ -1984,8 +1963,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "64c06kamxv",
-      "Integrity": "qgx03Hn7ChaEkORrp8JPmlx5rbt7+375xOCIw0hLFaI=",
+      "Fingerprint": "othwd6vn5i",
+      "Integrity": "xCjkfAuoW97fDHGJSVY/HecBGCji8Ns2gUaJbC56xO4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
@@ -6758,27 +6737,6 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\calendar.js",
-      "SourceId": "torantevoumou",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
-      "BasePath": "_content/torantevoumou",
-      "RelativePath": "js/calendar.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "o81na8qala",
-      "Integrity": "+A/3iKbBXDz7iirSHPdhaW5DFriL4bwNYDmqi72THrw=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\calendar.js"
-    },
-    {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\carousel.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
@@ -7024,8 +6982,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xhfqq1jg3u",
-      "Integrity": "CwHb4fhFCKHB828wiE9TcfBnqQtGhwYHAfZdJI3V3Vg=",
+      "Fingerprint": "domui349hv",
+      "Integrity": "s3NzPWf7Z1ubo3n5VBndodz/o2O8O2m4MCzLIR0SwLM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\profile.js"
@@ -7364,7 +7322,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000549752611"
+          "Quality": "0.000549450549"
         }
       ],
       "ResponseHeaders": [
@@ -7374,15 +7332,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1818"
+          "Value": "1819"
         },
         {
           "Name": "ETag",
-          "Value": "\"ui9EHC9I6vts+sIcLAnPuCTs1qwGnpCeuBCvzcxwSP8=\""
+          "Value": "\"rBMyUfzUuOf2x/eRoKHXH6vOMr+E9PKOyQspugGUUuA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Jun 2024 07:59:48 GMT"
+          "Value": "Sun, 02 Jun 2024 08:01:56 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -7398,7 +7356,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"qgx03Hn7ChaEkORrp8JPmlx5rbt7+375xOCIw0hLFaI=\""
+          "Value": "W/\"xCjkfAuoW97fDHGJSVY/HecBGCji8Ns2gUaJbC56xO4=\""
         }
       ],
       "EndpointProperties": []
@@ -7414,7 +7372,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7217"
+          "Value": "7237"
         },
         {
           "Name": "Content-Type",
@@ -7422,11 +7380,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qgx03Hn7ChaEkORrp8JPmlx5rbt7+375xOCIw0hLFaI=\""
+          "Value": "\"xCjkfAuoW97fDHGJSVY/HecBGCji8Ns2gUaJbC56xO4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Jun 2024 07:59:48 GMT"
+          "Value": "Sun, 02 Jun 2024 08:01:56 GMT"
         }
       ],
       "EndpointProperties": []
@@ -7442,7 +7400,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1818"
+          "Value": "1819"
         },
         {
           "Name": "Content-Type",
@@ -7450,11 +7408,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ui9EHC9I6vts+sIcLAnPuCTs1qwGnpCeuBCvzcxwSP8=\""
+          "Value": "\"rBMyUfzUuOf2x/eRoKHXH6vOMr+E9PKOyQspugGUUuA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Jun 2024 07:59:48 GMT"
+          "Value": "Sun, 02 Jun 2024 08:01:56 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -19646,116 +19604,6 @@
       "EndpointProperties": []
     },
     {
-      "Route": "js/calendar.js",
-      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\kif2lfvfry.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.003412969283"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "292"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SRY38SGTQ2In6YPFxEzzv97/DtVXQJkOk+cwxBqzQXg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Jun 2024 13:52:45 GMT"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"+A/3iKbBXDz7iirSHPdhaW5DFriL4bwNYDmqi72THrw=\""
-        }
-      ],
-      "EndpointProperties": []
-    },
-    {
-      "Route": "js/calendar.js",
-      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\calendar.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "685"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+A/3iKbBXDz7iirSHPdhaW5DFriL4bwNYDmqi72THrw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Jun 2024 13:52:45 GMT"
-        }
-      ],
-      "EndpointProperties": []
-    },
-    {
-      "Route": "js/calendar.js.gz",
-      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\kif2lfvfry.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "292"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SRY38SGTQ2In6YPFxEzzv97/DtVXQJkOk+cwxBqzQXg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Jun 2024 13:52:45 GMT"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": []
-    },
-    {
       "Route": "js/carousel.js",
       "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\l974duickj.gz",
       "Selectors": [
@@ -20972,7 +20820,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001533742331"
+          "Quality": "0.001189060642"
         }
       ],
       "ResponseHeaders": [
@@ -20982,15 +20830,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "651"
+          "Value": "840"
         },
         {
           "Name": "ETag",
-          "Value": "\"kCxSejgCdgUzx+GukP+hpnR4dAG3r9LkF7LPGgVSFPU=\""
+          "Value": "\"UZkUBQ5SxNKXV4d/w8MgZjRelz0QPHvjsuFMquWOb/U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 May 2024 16:49:09 GMT"
+          "Value": "Sun, 02 Jun 2024 10:20:23 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -21006,7 +20854,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"CwHb4fhFCKHB828wiE9TcfBnqQtGhwYHAfZdJI3V3Vg=\""
+          "Value": "W/\"s3NzPWf7Z1ubo3n5VBndodz/o2O8O2m4MCzLIR0SwLM=\""
         }
       ],
       "EndpointProperties": []
@@ -21022,7 +20870,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1967"
+          "Value": "2410"
         },
         {
           "Name": "Content-Type",
@@ -21030,11 +20878,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CwHb4fhFCKHB828wiE9TcfBnqQtGhwYHAfZdJI3V3Vg=\""
+          "Value": "\"s3NzPWf7Z1ubo3n5VBndodz/o2O8O2m4MCzLIR0SwLM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 May 2024 16:49:09 GMT"
+          "Value": "Sun, 02 Jun 2024 10:20:23 GMT"
         }
       ],
       "EndpointProperties": []
@@ -21050,7 +20898,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "651"
+          "Value": "840"
         },
         {
           "Name": "Content-Type",
@@ -21058,11 +20906,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kCxSejgCdgUzx+GukP+hpnR4dAG3r9LkF7LPGgVSFPU=\""
+          "Value": "\"UZkUBQ5SxNKXV4d/w8MgZjRelz0QPHvjsuFMquWOb/U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 May 2024 16:49:09 GMT"
+          "Value": "Sun, 02 Jun 2024 10:20:23 GMT"
         },
         {
           "Name": "Content-Encoding",
