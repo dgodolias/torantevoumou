@@ -1450,7 +1450,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\profile.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2410"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022s3NzPWf7Z1ubo3n5VBndodz/o2O8O2m4MCzLIR0SwLM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 02 Jun 2024 10:20:23 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2419"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022x3d6xDymqyXmhB04ooZCGThBMyLNflGi3oUvd56XEQs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 04 Jun 2024 16:22:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/service-worker.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\service-worker.js))</AssetFile>

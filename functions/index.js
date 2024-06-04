@@ -213,9 +213,28 @@ exports.updateUser = functions.https.onRequest(async (req, res) => {
       return;
     }
 
-    console.log(`Updating user ${UserId} with data:`, updates);
+    // Check if user exists in Firebase Authentication
+    const userRecord = await admin.auth().getUser(UserId);
+    if (userRecord) {
+      console.log(`User ${UserId} exists in Firebase Authentication`);
+    } else {
+      console.log(`User ${UserId} does not exist in Firebase Authentication`);
+      res.status(404).send("User not found");
+      return;
+    }
 
-    await admin.database().ref(`/users/${UserId}`).update(updates);
+    if (Object.prototype.hasOwnProperty.call(updates, "email")) {
+      await admin.auth().updateUser(UserId, {email: updates.email});
+      console.log(`Updated email for user ${UserId} to ${updates.email}`);
+    }
+
+    // Create a copy of the updates object and remove the 'email' property
+    const updatesForDatabase = {...updates};
+    delete updatesForDatabase.email;
+
+    console.log(`Updating user ${UserId} with data:`, updatesForDatabase);
+
+    await admin.database().ref(`/users/${UserId}`).update(updatesForDatabase);
 
     console.log("User updated successfully");
     res.status(200).json({message: "User updated successfully"});

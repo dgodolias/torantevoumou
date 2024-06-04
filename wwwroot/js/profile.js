@@ -45,6 +45,7 @@ function toggleReadonly(selector) {
                 [selector.slice(1)]: newValue
             };
 
+            console.log('Sending JSON:', json);
             // Call Firebase Cloud Function
             fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/updateUser', {
                 method: 'POST',
@@ -62,8 +63,6 @@ function toggleReadonly(selector) {
             .catch((error) => {
                 console.error('Error:', error);
             });
-
-            //Does sth with the data
         }
 
         // Store the new value as the old value for the next time
