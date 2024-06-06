@@ -89,14 +89,14 @@ body {
 }
 
 .input-container input:focus {
-    border-color: #007bff;
+    border-color: #695cfe;
     outline: none;
 }
 
 .edit-button {
     background-color: transparent;
     border: none;
-    color: #007bff;
+    color: #695cfe;
     cursor: pointer;
     margin-left: 12px; /* Adjusted margin */
     transition: color 0.3s;
