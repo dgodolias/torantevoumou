@@ -64,6 +64,7 @@ body.dark{
 /* ===== Reusable code - Here ===== */
 .flex-container {
     display: flex;
+    height: 100vh;
 }
 
 #pagetobeembedded {
@@ -331,9 +332,6 @@ body.dark .switch::before{
 .home{
     top: 0;
     top: 0;
-    height: 100vh;
-    width: calc(100% - 265px);
-    background-color: var(--body-color);
     transition: var(--tran-05);
 }
 .home .text{

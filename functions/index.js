@@ -1,5 +1,7 @@
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
+const nodemailer = require('nodemailer');
+
 admin.initializeApp();
 
 exports.getUsers = functions.https.onRequest(async (req, res) => {
@@ -193,53 +195,150 @@ exports.updateUser = functions.https.onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
   res.set("Access-Control-Allow-Headers", "*");
 
-  // Respond to OPTIONS requests (required by CORS preflight)
   if (req.method === "OPTIONS") {
     res.status(200).send();
     return;
   }
 
-  console.log("updateUser function called");
-
   try {
     const {UserId, ...updates} = req.body;
 
-    console.log(`Received data: UserId=${UserId}`);
-    console.log(`Updates: ${JSON.stringify(updates)}`);
-
     if (!UserId || Object.keys(updates).length !== 1) {
-      console.log("Invalid request");
       res.status(400).send("Invalid request");
       return;
     }
 
-    // Check if user exists in Firebase Authentication
     const userRecord = await admin.auth().getUser(UserId);
-    if (userRecord) {
-      console.log(`User ${UserId} exists in Firebase Authentication`);
-    } else {
-      console.log(`User ${UserId} does not exist in Firebase Authentication`);
+    if (!userRecord) {
       res.status(404).send("User not found");
       return;
     }
 
-    if (Object.prototype.hasOwnProperty.call(updates, "email")) {
-      await admin.auth().updateUser(UserId, {email: updates.email});
-      console.log(`Updated email for user ${UserId} to ${updates.email}`);
-    }
-
-    // Create a copy of the updates object and remove the 'email' property
     const updatesForDatabase = {...updates};
     delete updatesForDatabase.email;
 
-    console.log(`Updating user ${UserId} with data:`, updatesForDatabase);
-
     await admin.database().ref(`/users/${UserId}`).update(updatesForDatabase);
 
-    console.log("User updated successfully");
     res.status(200).json({message: "User updated successfully"});
   } catch (error) {
-    console.error("Error updating user:", error);
     res.status(500).send("Error updating user");
   }
 });
+
+exports.requestEmailChange = functions.https.onRequest(async (req, res) => {
+  const allowedOrigins = [
+    "https://localhost:7177",
+    "https://www.torantevoumou.gr",
+    "https://torantevoumou.gr",
+  ];
+  const origin = req.headers.origin;
+
+  if (allowedOrigins.includes(origin)) {
+    res.set("Access-Control-Allow-Origin", origin);
+  }
+
+  res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
+  res.set("Access-Control-Allow-Headers", "*");
+
+  if (req.method === "OPTIONS") {
+    res.status(200).send();
+    return;
+  }
+
+  try {
+    const {UserId, email} = req.body;
+
+    const token = crypto.randomBytes(20).toString('hex');
+
+    await admin.database().ref(`/users/${UserId}`).update({
+      emailChangeToken: token,
+      newEmail: email
+    });
+
+    await sendVerificationEmail(email, token);
+
+    res.status(200).json({message: "Email change requested successfully"});
+  } catch (error) {
+    res.status(500).send("Error requesting email change");
+  }
+});
+
+const functions = require("firebase-functions");
+const admin = require("firebase-admin");
+const nodemailer = require('nodemailer');
+
+admin.initializeApp();
+
+exports.requestEmailChange = functions.https.onRequest(async (req, res) => {
+  const allowedOrigins = [
+    "https://localhost:7177",
+    "https://www.torantevoumou.gr",
+    "https://torantevoumou.gr",
+  ];
+  const origin = req.headers.origin;
+
+  if (allowedOrigins.includes(origin)) {
+    res.set("Access-Control-Allow-Origin", origin);
+  }
+
+  res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
+  res.set("Access-Control-Allow-Headers", "*");
+
+  if (req.method === "OPTIONS") {
+    res.status(200).send();
+    return;
+  }
+
+  try {
+    const { UserId, email } = req.body;
+
+    const token = crypto.randomBytes(20).toString('hex');
+
+    await admin.database().ref(`/users/${UserId}`).update({
+      emailChangeToken: token,
+      newEmail: email
+    });
+
+    await sendVerificationEmail(email, token);
+
+    res.status(200).json({ message: "Email change requested successfully" });
+  } catch (error) {
+    res.status(500).send("Error requesting email change");
+  }
+});
+
+async function sendVerificationEmail(email, token) {
+  const transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+      user: 'your_email@gmail.com',
+      pass: 'your_password'
+    }
+  });
+
+  const mailOptions = {
+    from: 'Torantevoumou <your_email@gmail.com>',
+    to: email,
+    subject: 'Email Change Verification',
+    html: `
+      <p>Hello,</p>
+      <p>You have requested to change your email address for your Torantevoumou account.</p>
+      <p>To confirm this change, please click on the following link:</p>
+      <p><a href="https://torantevoumou.gr/verify-email?token=${token}">Verify Email</a></p>
+      <p>This link will expire in 24 hours.</p>
+      <p>If you did not request this change, please ignore this email.</p>
+      <p>Sincerely,</p>
+      <p>The Torantevoumou Team</p>
+    `
+  };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully');
+  } catch (error) {
+    console.error('Error sending email:', error);
+  }
+}
+
+
+

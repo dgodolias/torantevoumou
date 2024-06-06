@@ -16,7 +16,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"7237"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022xCjkfAuoW97fDHGJSVY/HecBGCji8Ns2gUaJbC56xO4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 02 Jun 2024 08:01:56 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"7163"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225jK7G9Z9zmK1Nx3qCqFIXBhPlPe2lNVxqEExlLn/0CE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Jun 2024 20:14:52 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/login.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\login.css))</AssetFile>
@@ -83,6 +83,12 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"4224"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228zRWGhOcoXJMdIskWbT4\u002BCpyWvaSdnTrPqw8Vp0b9cE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 15 Apr 2024 19:34:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/torantevoumou/css/profile.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\profile.css))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2342"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jZjOT7B4D4e4VLGEQlHW5zTTBVNnVjyCffKvl4xiYiw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Jun 2024 20:24:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/signup.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\signup.css))</AssetFile>
@@ -1450,7 +1456,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\profile.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2419"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022x3d6xDymqyXmhB04ooZCGThBMyLNflGi3oUvd56XEQs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 04 Jun 2024 16:22:10 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1594"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022K21g8vABFlhBriClZCYAatsAicDOaH1Pmi6XYxzLLcs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Jun 2024 19:19:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/service-worker.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\service-worker.js))</AssetFile>
