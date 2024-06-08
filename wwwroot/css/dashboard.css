@@ -255,24 +255,6 @@ body.dark .sidebar li a:hover .text{
     width: fit-content;
 }
 
-#myTable {
-    border: 2px solid black;
-    border-radius: 5%;
-    margin-left: auto;
-    width: 60%;
-    margin-right: auto;
-}
-
-#myTable tr {
-    border: 1px solid black;
-}
-
-#myTable td {
-    border: 1px solid black;
-    /* Non-breaking space to ensure visibility of empty cells */
-    content: "\00a0";
-}
-
 .menu-bar .mode .sun-moon{
     height: 50px;
     width: 60px;

@@ -10,8 +10,10 @@
 
 <head>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="~/css/dashboard.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="~/css/appointments.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="~/css/datepicker.css"> <!-- Link to the CSS file -->
 </head>
+
 <body id="appointmentsPage">
     <h1>@ViewData["Title"]</h1>
 
@@ -44,16 +46,21 @@
     <div id="dialog" title="Select a date" style="display:none;">
         <div id="dialog-content">
             <div id="datepicker"></div>
-            <table id="myTable">
-                <tbody>
-                    @for (int i = 0; i < 24; i++)
-                    {
-                        <tr>
-                            <td></td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
+            <div id="table-container">
+                <table id="appointments-table">
+                    <tbody>
+                        @for (int i = 0; i < 24; i++)
+                        {
+                            <tr>
+                                <td>
+                                    <button>Action</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
     </div>

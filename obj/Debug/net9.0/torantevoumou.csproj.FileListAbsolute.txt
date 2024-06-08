@@ -206,3 +206,5 @@ c:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\torantevoumou.pdb
 C:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\torantevoumou.genruntimeconfig.cache
 C:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\ref\torantevoumou.dll
 c:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\compressed\hp52ryigwn.gz
+c:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\compressed\sfkrl42sej.gz
+c:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\compressed\fcmc53yivc.gz
