@@ -37,7 +37,7 @@ namespace Namespace
             HttpContext.Session.SetString("ServiceNames", JsonConvert.SerializeObject(ServiceNames));
 
             // Extract service names and appointment IDs from the user's serviceswithappointmentkey
-            Dictionary<string, List<int>> serviceAppointments = new Dictionary<string, List<int>>();
+            Dictionary<string, List<string>> serviceAppointments = new Dictionary<string, List<string>>();
             string[] services = UserInfo.serviceswithappointmentkey.Split('#');
             foreach (string service in services)
             {
@@ -46,7 +46,7 @@ namespace Namespace
                     string[] parts = service.Split('(');
                     string serviceName = parts[0];
                     string[] appointmentIds = parts[1].TrimEnd(')').Split(',');
-                    List<int> appointmentIdList = appointmentIds.Select(int.Parse).ToList();
+                    List<string> appointmentIdList = appointmentIds.ToList(); // Changed from Select(int.Parse).ToList()
                     serviceAppointments.Add(serviceName, appointmentIdList);
                 }
             }

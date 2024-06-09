@@ -1,11 +1,9 @@
 $(document).ready(function() {
     // Initialize the datepicker
     $('#datepicker').datepicker({
-        minDate: 0,
-        onSelect: function(dateText, inst) {
-            console.log('You selected: ' + dateText);
-        }
+        minDate: 0
     });
+
     var viewportHeight = $(window).height();
     var dialogHeight = viewportHeight * 0.8; // 80% of the viewport height
     // Initialize the dialog
@@ -38,9 +36,58 @@ $(document).ready(function() {
     $('#serviceList .serviceItem').on('click', function() {
         var serviceName = $(this).attr('id');
         console.log('You clicked on service: ' + serviceName);
+        sessionStorage.setItem('serviceName', serviceName);
         // Open the dialog
         $('#dialog').dialog('open');
     });
+
+    function calculateTimeSlot(index) {
+        // Starting time is 9:00 (9 hours from midnight)
+        const startTime = 9 * 60; // 9 hours in minutes
+        const timeInMinutes = startTime + (index * 30); // Add 30 minutes for each index
+        const hours = Math.floor(timeInMinutes / 60);
+        const minutes = timeInMinutes % 60;
+        return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+    }
+
+    // Attach click event listener to each button
+    $('#appointments-table button').on('click', function() {
+        const index = $(this).data('time-index');
+        const timeSlot = calculateTimeSlot(index);
+        console.log('Time slot:', timeSlot);
+        // Assuming UserId is available globally or from sessionStorage
+        var UserId = sessionStorage.getItem('UserId');
+        // Retrieve serviceName from sessionStorage
+        var serviceName = sessionStorage.getItem('serviceName');
+        // Retrieve selected date from datepicker
+        var selectedDate = $('#datepicker').datepicker('getDate');
+        selectedDate = $.datepicker.formatDate('yy/mm/dd', selectedDate);
+        // Construct the JSON object including the time
+        var appointmentData = {
+            UserId: UserId,
+            serviceName: serviceName,
+            appointmentDate: selectedDate,
+            appointmentTime: timeSlot
+        };
+        // Convert the object to JSON and send
+        var json = JSON.stringify(appointmentData);
+        console.log('Sending JSON:', json);
+        // Call Firebase Cloud Function
+        fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/addAppointment', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: json,
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data.message);
+            alert('Appointment booked successfully');
+            location.reload();
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    });
 });
-
-

@@ -16,7 +16,8 @@ namespace Namespace
             _firebaseService = firebaseService;
         }
 
-        public Dictionary<string, List<int>> ServiceAppointments { get; set; }
+        // Updated the type of ServiceAppointments to match the new function requirement
+        public Dictionary<string, List<string>> ServiceAppointments { get; set; }
         public List<string> ServiceNames { get; set; }
         
 
@@ -31,9 +32,10 @@ namespace Namespace
             
             Console.WriteLine("serviceappointments" + HttpContext.Session.GetString("ServiceAppointments"));
             
+            // Updated the deserialization to match the new type of ServiceAppointments
             ServiceAppointments = HttpContext.Session.GetString("ServiceAppointments") != null
-                ? JsonConvert.DeserializeObject<Dictionary<string, List<int>>>(HttpContext.Session.GetString("ServiceAppointments"))
-                : new Dictionary<string, List<int>>();
+                ? JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(HttpContext.Session.GetString("ServiceAppointments"))
+                : new Dictionary<string, List<string>>();
             
             
 

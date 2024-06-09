@@ -131,7 +131,7 @@ namespace Namespace
             return JsonConvert.DeserializeObject<bool>(json);
         }
 
-        public async Task<List<AppointmentModel>> GetUserAppointments(Dictionary<string, List<int>> serviceAppointments)
+        public async Task<List<AppointmentModel>> GetUserAppointments(Dictionary<string, List<string>> serviceAppointments)
         {
             List<AppointmentModel> appointments = new List<AppointmentModel>();
             Console.WriteLine($"Getting user appointments");
