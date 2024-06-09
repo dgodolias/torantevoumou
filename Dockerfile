@@ -1,5 +1,5 @@
 # Use the .NET 7 SDK image
-FROM mcr.microsoft.com/dotnet/sdk:9.0.100-preview.4.24267.66 AS build-env
+FROM mcr.microsoft.com/dotnet/sdk:9.0-preview-jammy AS build-env
 
 # Set the working directory
 WORKDIR /app
@@ -13,7 +13,7 @@ COPY . ./
 RUN dotnet publish -c Release -o out
 
 # Start new stage for .NET runtime
-FROM mcr.microsoft.com/dotnet/sdk:9.0.100-preview.4.24267.66
+FROM mcr.microsoft.com/dotnet/sdk:9.0-preview-jammy
 
 WORKDIR /app
 
