@@ -1,4 +1,4 @@
-# Use the .NET 7 SDK image
+# Use the .NET 9 SDK image
 FROM mcr.microsoft.com/dotnet/sdk:9.0-preview-jammy AS build-env
 
 # Set the working directory
@@ -10,7 +10,7 @@ RUN dotnet restore
 
 # Copy everything else and build
 COPY . ./
-RUN dotnet publish -c Release -o out
+RUN dotnet publish -c Release -o out -v n
 
 # Start new stage for .NET runtime
 FROM mcr.microsoft.com/dotnet/sdk:9.0-preview-jammy
