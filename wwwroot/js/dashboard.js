@@ -1,6 +1,3 @@
-// Add another event listener for the 'load' event
-
-
 window.addEventListener('load', function() {
     const body = document.querySelector('body'),
         sidebar = body.querySelector('nav'),

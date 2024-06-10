@@ -28,10 +28,12 @@ function toggleReadonly(selector) {
 
     // If the input field is becoming readonly, check if its value has changed
     if (!isReadonly) {
+        const loaderElement = document.querySelector('.loader');
         var newValue = $(selector).val();
         var oldValue = $(selector).data('oldValue');
 
         if (newValue !== oldValue) {
+            loaderElement.style.display = 'flex';
             // The value has changed, send an AJAX request
             var data = {};
             data[selector.slice(1)] = newValue; // Remove the '#' from the selector to get the field name
@@ -57,10 +59,14 @@ function toggleReadonly(selector) {
             .then(response => response.json())
             .then(data => {
                 console.log('Success:', data.message);
-                alert('User updated successfully');
-                location.reload();
+                loaderElement.style.display = 'none'; // Hide the loader element
+                setTimeout(() => {
+                    alert('User updated successfully'); // Show the alert after a 0.1s delay
+                    location.reload();
+                }, 100); // 100 milliseconds delay
             })
             .catch((error) => {
+                loaderElement.style.display = 'none';
                 console.error('Error:', error);
             });
         }

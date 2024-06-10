@@ -16,8 +16,8 @@ exports.getUsers = functions.https.onRequest(async (req, res) => {
 
 exports.GetUserDBinfo = functions.https.onRequest(async (req, res) => {
   try {
-    const {userId} = req.query; // Changed from req.body to req.query
-    const snapshot=await admin.database().ref(`/users/${userId}`).once("value");
+    const { userId } = req.query; // Changed from req.body to req.query
+    const snapshot = await admin.database().ref(`/users/${userId}`).once("value");
     const user = snapshot.val();
     if (user) {
       res.json(user);
@@ -33,11 +33,11 @@ exports.GetUserDBinfo = functions.https.onRequest(async (req, res) => {
 
 exports.GetUserAUTHinfo = functions.https.onRequest(async (req, res) => {
   try {
-    const {userId} = req.query;
+    const { userId } = req.query;
     const userRecord = await admin.auth().getUser(userId);
 
     if (userRecord) {
-      const {email, phoneNumber} = userRecord;
+      const { email, phoneNumber } = userRecord;
       let formattedPhoneNumber = "";
       if (phoneNumber) {
         formattedPhoneNumber = phoneNumber.replace("+30", "");
@@ -48,7 +48,7 @@ exports.GetUserAUTHinfo = functions.https.onRequest(async (req, res) => {
         phoneNumber: formattedPhoneNumber,
       });
 
-      const userInfo = {email, phoneNumber: formattedPhoneNumber};
+      const userInfo = { email, phoneNumber: formattedPhoneNumber };
       console.log("User auth info:", userInfo);
     } else {
       res.status(404).send("User not found");
@@ -106,7 +106,7 @@ exports.addUser = functions.https.onRequest(async (req, res) => {
 
 exports.usernameExists = functions.https.onRequest(async (req, res) => {
   try {
-    const {username} = req.query;
+    const { username } = req.query;
     console.log(`Checking if username exists: ${username}`);
     const usersRef = admin.database().ref("/users");
     const userQuery = usersRef.orderByChild("username").equalTo(username);
@@ -121,7 +121,7 @@ exports.usernameExists = functions.https.onRequest(async (req, res) => {
 
 exports.emailExists = functions.https.onRequest(async (req, res) => {
   try {
-    const {email} = req.query;
+    const { email } = req.query;
     console.log(`Checking if email exists: ${email}`);
     const userRecord = await admin.auth().getUserByEmail(email);
     const emailExists = userRecord !== null;
@@ -138,7 +138,7 @@ exports.emailExists = functions.https.onRequest(async (req, res) => {
 
 exports.phoneNumberExists = functions.https.onRequest(async (req, res) => {
   try {
-    const {phoneNumber} = req.query;
+    const { phoneNumber } = req.query;
     console.log(`Checking if phone number exists: ${phoneNumber}`);
     const userRecord = await admin.auth().getUserByPhoneNumber(phoneNumber);
     const phoneNumberExists = userRecord !== null;
@@ -186,40 +186,61 @@ exports.updateUser = functions.https.onRequest(async (req, res) => {
     "https://torantevoumou.gr",
   ];
   const origin = req.headers.origin;
-
   if (allowedOrigins.includes(origin)) {
     res.set("Access-Control-Allow-Origin", origin);
   }
-
   res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
   res.set("Access-Control-Allow-Headers", "*");
 
+  // Respond to OPTIONS requests (required by CORS preflight)
   if (req.method === "OPTIONS") {
     res.status(200).send();
     return;
   }
 
+  console.log("updateUser function called");
+
   try {
-    const {UserId, ...updates} = req.body;
+    const { UserId, ...updates } = req.body;
+
+    console.log(`Received data: UserId=${UserId}`);
+    console.log(`Updates: ${JSON.stringify(updates)}`);
 
     if (!UserId || Object.keys(updates).length !== 1) {
+      console.log("Invalid request");
       res.status(400).send("Invalid request");
       return;
     }
 
+    // Check if user exists in Firebase Authentication
     const userRecord = await admin.auth().getUser(UserId);
+    if (userRecord) {
+      console.log(`User ${UserId} exists in Firebase Authentication`);
+    } else {
+      console.log(`User ${UserId} does not exist in Firebase Authentication`);
+    }
     if (!userRecord) {
       res.status(404).send("User not found");
       return;
     }
 
-    const updatesForDatabase = {...updates};
+    if (Object.prototype.hasOwnProperty.call(updates, "email")) {
+      await admin.auth().updateUser(UserId, { email: updates.email });
+      console.log(`Updated email for user ${UserId} to ${updates.email}`);
+    }
+
+    // Create a copy of the updates object and remove the 'email' property
+    const updatesForDatabase = { ...updates };
     delete updatesForDatabase.email;
+
+    console.log(`Updating user ${UserId} with data:`, updatesForDatabase);
 
     await admin.database().ref(`/users/${UserId}`).update(updatesForDatabase);
 
-    res.status(200).json({message: "User updated successfully"});
+    console.log("User updated successfully");
+    res.status(200).json({ message: "User updated successfully" });
   } catch (error) {
+    console.error("Error updating user:", error);
     res.status(500).send("Error updating user");
   }
 });
@@ -251,7 +272,7 @@ exports.addAppointment = functions.https.onRequest(async (req, res) => {
     return;
   }
 
-  const {UserId, serviceName, appointmentDate, appointmentTime} = req.body;
+  const { UserId, serviceName, appointmentDate, appointmentTime } = req.body;
 
   // Validate input
   if (!UserId || !serviceName || !appointmentDate || !appointmentTime) {
@@ -266,7 +287,7 @@ exports.addAppointment = functions.https.onRequest(async (req, res) => {
 
   try {
     console.log(`Adding appointment for user ${UserId} with service ` +
-          `${serviceName} on ${appointmentDate} at ${appointmentTime}`);
+      `${serviceName} on ${appointmentDate} at ${appointmentTime}`);
     // Add the appointment to the services table
     const newAppointmentRef = servicesRef.child(serviceName).push();
     await newAppointmentRef.set({
@@ -290,9 +311,9 @@ exports.addAppointment = functions.https.onRequest(async (req, res) => {
       // Append the new appointment key
       const regex = new RegExp(`${serviceName}\\((.*?)\\)#`, "g");
       servicesWithAppointmentKey = servicesWithAppointmentKey.replace(regex,
-          (match, p1) => {
-            return `${serviceName}(${p1},${appointmentKey})#`;
-          });
+        (match, p1) => {
+          return `${serviceName}(${p1},${appointmentKey})#`;
+        });
     } else {
       // Add the new service with the appointment key
       servicesWithAppointmentKey += `${serviceName}(${appointmentKey})#`;
@@ -303,9 +324,9 @@ exports.addAppointment = functions.https.onRequest(async (req, res) => {
       serviceswithappointmentkey: servicesWithAppointmentKey,
     });
 
-    res.status(200).json({message: "Appointment added successfully"});
+    res.status(200).json({ message: "Appointment added successfully" });
   } catch (error) {
     console.error("Error adding appointment:", error);
-    res.status(500).json({message: "Internal Server Error"});
+    res.status(500).json({ message: "Internal Server Error" });
   }
 });

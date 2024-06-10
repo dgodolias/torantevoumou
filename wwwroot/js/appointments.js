@@ -4,6 +4,7 @@ $(document).ready(function() {
         minDate: 0
     });
 
+    const loaderElement = document.querySelector('.loader');
     var viewportHeight = $(window).height();
     var dialogHeight = viewportHeight * 0.8; // 80% of the viewport height
     // Initialize the dialog
@@ -52,6 +53,7 @@ $(document).ready(function() {
 
     // Attach click event listener to each button
     $('#appointments-table button').on('click', function() {
+        loaderElement.style.display = 'flex';
         const index = $(this).data('time-index');
         const timeSlot = calculateTimeSlot(index);
         console.log('Time slot:', timeSlot);
@@ -82,12 +84,16 @@ $(document).ready(function() {
         })
         .then(response => response.json())
         .then(data => {
-            console.log('Success:', data.message);
-            alert('Appointment booked successfully');
-            location.reload();
+            console.log('Επιτυχία:', data.message);
+
+            loaderElement.style.display = 'none'; // Hide the loader element
+            setTimeout(() => {
+                alert('Το ραντεβού σας καταχωρήθηκε επιτυχώς!'); // Show the alert after a 0.1s delay
+                location.reload();
+            }, 100);
         })
         .catch((error) => {
-            console.error('Error:', error);
+            console.error('Σφάλμα:', error);
         });
     });
 });
