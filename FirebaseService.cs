@@ -151,5 +151,17 @@ namespace Namespace
         
             return appointments;
         }
+        public async Task<List<string>> GetServices()
+        {
+            var response = await _client.GetAsync("https://us-central1-torantevoumou-86820.cloudfunctions.net/getServices");
+        
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception($"Server returned error code: {response.StatusCode}");
+            }
+        
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<List<string>>(json);
+        }
     }
 }
