@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+1gPRRI+GscUH9U38cITX2HtsuSdxM3hRYbANpxH2+g=",
+  "Hash": "izrQRE03KPLf9BltIXQOBYCCtJOwa7P0SUuvPeukntE=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -1186,8 +1186,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\style.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "xsaycrit5o",
-      "Integrity": "MaPsDInA689cIzRmTpiQP+oaIQ/b1qC+Rp+B+LTIWqc=",
+      "Fingerprint": "d9rvel9p27",
+      "Integrity": "wa02XJM99S8SNv0rgg/xdlhBjEQx/pmUFRdunVAPx4g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\style.css"
@@ -1627,8 +1627,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dashboard.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "3ffnwlz6fo",
-      "Integrity": "z/HX/b5+0cFhRlK/yRUQ+7U30tXIcyEQyahoiD6+cIU=",
+      "Fingerprint": "r6w2porqt2",
+      "Integrity": "jafvWTzPW0LkWnkEJckspku9nkKFmm1TIQB9Uq1zDRg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dashboard.css"
@@ -1886,6 +1886,27 @@
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-ThinItalic.html"
     },
     {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\yuflppqhkh.gz",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "js/jsCalendar.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jsCalendar.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jsCalendar.js"
+    },
+    {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\z3izjosa3v.gz",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
@@ -2047,8 +2068,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nadgrueaen",
-      "Integrity": "Tzoa/lGD998oldSN3WZMkgvxwTi5mC/N3TwZ1/aijuE=",
+      "Fingerprint": "iyuo6xr2nq",
+      "Integrity": "usyMqDCNv29TK4kg2EqXLT5NkepDx/rW3aR/lLAomEU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
@@ -2362,8 +2383,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "e5zl4nnk9r",
-      "Integrity": "MlX3Z3+Z1Nou2zLfn+tUGmRpNcNDvwPNy9gKBT1kMqk=",
+      "Fingerprint": "1p55nt8jbw",
+      "Integrity": "6whIWJ1dl1qEf2wKBQhb9QvjpVVJTFrCpeipoE6qdFU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
@@ -7052,6 +7073,27 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.1.11.1.js"
     },
     {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jsCalendar.js",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "js/jsCalendar.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jsCalendar.js"
+    },
+    {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\login.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
@@ -7558,7 +7600,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000499251123"
+          "Quality": "0.000498504487"
         }
       ],
       "ResponseHeaders": [
@@ -7568,15 +7610,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2002"
+          "Value": "2005"
         },
         {
           "Name": "ETag",
-          "Value": "\"z/HX/b5+0cFhRlK/yRUQ+7U30tXIcyEQyahoiD6+cIU=\""
+          "Value": "\"jafvWTzPW0LkWnkEJckspku9nkKFmm1TIQB9Uq1zDRg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Jun 2024 11:57:05 GMT"
+          "Value": "Mon, 10 Jun 2024 18:58:25 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -7592,7 +7634,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Tzoa/lGD998oldSN3WZMkgvxwTi5mC/N3TwZ1/aijuE=\""
+          "Value": "W/\"usyMqDCNv29TK4kg2EqXLT5NkepDx/rW3aR/lLAomEU=\""
         }
       ],
       "EndpointProperties": []
@@ -7608,7 +7650,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8005"
+          "Value": "8011"
         },
         {
           "Name": "Content-Type",
@@ -7616,11 +7658,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Tzoa/lGD998oldSN3WZMkgvxwTi5mC/N3TwZ1/aijuE=\""
+          "Value": "\"usyMqDCNv29TK4kg2EqXLT5NkepDx/rW3aR/lLAomEU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Jun 2024 11:57:05 GMT"
+          "Value": "Mon, 10 Jun 2024 18:58:25 GMT"
         }
       ],
       "EndpointProperties": []
@@ -7636,7 +7678,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2002"
+          "Value": "2005"
         },
         {
           "Name": "Content-Type",
@@ -7644,11 +7686,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z/HX/b5+0cFhRlK/yRUQ+7U30tXIcyEQyahoiD6+cIU=\""
+          "Value": "\"jafvWTzPW0LkWnkEJckspku9nkKFmm1TIQB9Uq1zDRg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Jun 2024 11:57:05 GMT"
+          "Value": "Mon, 10 Jun 2024 18:58:25 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -8552,7 +8594,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000278396437"
+          "Quality": "0.000276625173"
         }
       ],
       "ResponseHeaders": [
@@ -8562,15 +8604,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3591"
+          "Value": "3614"
         },
         {
           "Name": "ETag",
-          "Value": "\"MaPsDInA689cIzRmTpiQP+oaIQ/b1qC+Rp+B+LTIWqc=\""
+          "Value": "\"wa02XJM99S8SNv0rgg/xdlhBjEQx/pmUFRdunVAPx4g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 May 2024 12:54:18 GMT"
+          "Value": "Mon, 10 Jun 2024 21:52:23 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -8586,7 +8628,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"MlX3Z3+Z1Nou2zLfn+tUGmRpNcNDvwPNy9gKBT1kMqk=\""
+          "Value": "W/\"6whIWJ1dl1qEf2wKBQhb9QvjpVVJTFrCpeipoE6qdFU=\""
         }
       ],
       "EndpointProperties": []
@@ -8602,7 +8644,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15437"
+          "Value": "15472"
         },
         {
           "Name": "Content-Type",
@@ -8610,11 +8652,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MlX3Z3+Z1Nou2zLfn+tUGmRpNcNDvwPNy9gKBT1kMqk=\""
+          "Value": "\"6whIWJ1dl1qEf2wKBQhb9QvjpVVJTFrCpeipoE6qdFU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 May 2024 12:54:18 GMT"
+          "Value": "Mon, 10 Jun 2024 21:52:23 GMT"
         }
       ],
       "EndpointProperties": []
@@ -8630,7 +8672,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3591"
+          "Value": "3614"
         },
         {
           "Name": "Content-Type",
@@ -8638,11 +8680,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MaPsDInA689cIzRmTpiQP+oaIQ/b1qC+Rp+B+LTIWqc=\""
+          "Value": "\"wa02XJM99S8SNv0rgg/xdlhBjEQx/pmUFRdunVAPx4g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 May 2024 12:54:18 GMT"
+          "Value": "Mon, 10 Jun 2024 21:52:23 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -21037,6 +21079,116 @@
         {
           "Name": "Last-Modified",
           "Value": "Mon, 15 Apr 2024 19:34:47 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/jsCalendar.js",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\yuflppqhkh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Jun 2024 19:10:53 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/jsCalendar.js",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jsCalendar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Jun 2024 19:10:53 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/jsCalendar.js.gz",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\yuflppqhkh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Jun 2024 19:10:53 GMT"
         },
         {
           "Name": "Content-Encoding",
