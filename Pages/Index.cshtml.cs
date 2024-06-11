@@ -5,7 +5,7 @@ namespace Namespace
     public class Index : PageModel
     {
         private readonly FirebaseService _firebaseService;
-        private List<string> ServiceNames { get; set; }
+        public List<string> ServiceNames { get; set; }
 
         public Index(FirebaseService firebaseService)
         {
@@ -17,8 +17,10 @@ namespace Namespace
         {
             Console.WriteLine("Index OnGetAsync");
             ServiceNames = await _firebaseService.GetServices();
-            Console.WriteLine($"ServiceNames:{ServiceNames} ");
-            
+            foreach (var service in ServiceNames)
+            {
+                Console.WriteLine(service);
+            }
 
         }
     }

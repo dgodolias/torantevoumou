@@ -364,11 +364,11 @@ exports.getServices = functions.https.onRequest(async (req, res) => {
     }
 
     const services = servicesSnapshot.val();
-    const serviceNames = Object.keys(services).map((key) => services[key]);
+    const serviceNames = Object.keys(services);
 
     console.log("Services fetched successfully:", serviceNames);
 
-    res.json(serviceNames); // Directly return the array
+    res.json(serviceNames); // Return the array of service names
   } catch (error) {
     console.error("Error fetching services:", error);
     res.status(500).json({error: "Internal server error"});
