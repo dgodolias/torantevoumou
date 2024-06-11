@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y3U/Jkedm7bCJ9hirad5OcW0mgaoOmvYYb92bgwJ4dQ=",
+  "Hash": "sc2hU5H+ZnGGA0gSM2abUpO+J5BpklV228su4vJ/ERc=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -437,6 +437,27 @@
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-MediumItalic.html"
     },
     {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\95jqmtic58.gz",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "css/loader.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\loader.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "tziwiuf68n",
+      "Integrity": "190ACYPvvSXOvZuVBgszCg3CeqZEklofPlHwWi4+df0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\loader.css"
+    },
+    {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\9ei4l5zzo3.gz",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
@@ -640,8 +661,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\login.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "o5t41mi4bw",
-      "Integrity": "nEUayyvCngZywq+lnDy4l9kBe+ot9Ub6jBt1BfvGwNI=",
+      "Fingerprint": "saxa5fxrj0",
+      "Integrity": "7KdjqfheUrHDygsORWhxnaCcgNezoTY+kBaEYS8DZzY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\login.js"
@@ -1627,8 +1648,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dashboard.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "r6w2porqt2",
-      "Integrity": "jafvWTzPW0LkWnkEJckspku9nkKFmm1TIQB9Uq1zDRg=",
+      "Fingerprint": "2n70uvlo8l",
+      "Integrity": "Us9WmIqDaVjzHHfvfYY40Fxa6dh7jphj8n9HUNdWc3c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dashboard.css"
@@ -2068,8 +2089,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "iyuo6xr2nq",
-      "Integrity": "usyMqDCNv29TK4kg2EqXLT5NkepDx/rW3aR/lLAomEU=",
+      "Fingerprint": "b1mbr7s1vn",
+      "Integrity": "T7v14EWL9sxnjTSYdO5LamGt8mKzXvgke5sZ8TBt3ao=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
@@ -2094,6 +2115,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\datepicker.css"
+    },
+    {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\loader.css",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "css/loader.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e09d7xpi5f",
+      "Integrity": "IvbJkMi0yPDSP09BEkxjLfBfglKG2rrbkxLLPLiA/mc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\loader.css"
     },
     {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\login.css",
@@ -7108,8 +7150,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jm7n3xqtpc",
-      "Integrity": "pZJlWIvMspmY05kfsAiJZuFYHM+R9pvuBC8jO++gW6w=",
+      "Fingerprint": "0absvee14w",
+      "Integrity": "6EDnJfiDsQvou7aTdPNJlWHL0b6MwTU6HIK8DPEEZUM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\login.js"
@@ -7600,7 +7642,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000498504487"
+          "Quality": "0.000511770727"
         }
       ],
       "ResponseHeaders": [
@@ -7610,15 +7652,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2005"
+          "Value": "1953"
         },
         {
           "Name": "ETag",
-          "Value": "\"jafvWTzPW0LkWnkEJckspku9nkKFmm1TIQB9Uq1zDRg=\""
+          "Value": "\"Us9WmIqDaVjzHHfvfYY40Fxa6dh7jphj8n9HUNdWc3c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Jun 2024 18:58:25 GMT"
+          "Value": "Tue, 11 Jun 2024 10:42:43 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -7634,7 +7676,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"usyMqDCNv29TK4kg2EqXLT5NkepDx/rW3aR/lLAomEU=\""
+          "Value": "W/\"T7v14EWL9sxnjTSYdO5LamGt8mKzXvgke5sZ8TBt3ao=\""
         }
       ],
       "EndpointProperties": []
@@ -7650,7 +7692,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8011"
+          "Value": "7735"
         },
         {
           "Name": "Content-Type",
@@ -7658,11 +7700,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"usyMqDCNv29TK4kg2EqXLT5NkepDx/rW3aR/lLAomEU=\""
+          "Value": "\"T7v14EWL9sxnjTSYdO5LamGt8mKzXvgke5sZ8TBt3ao=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Jun 2024 18:58:25 GMT"
+          "Value": "Tue, 11 Jun 2024 10:42:43 GMT"
         }
       ],
       "EndpointProperties": []
@@ -7678,7 +7720,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2005"
+          "Value": "1953"
         },
         {
           "Name": "Content-Type",
@@ -7686,11 +7728,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jafvWTzPW0LkWnkEJckspku9nkKFmm1TIQB9Uq1zDRg=\""
+          "Value": "\"Us9WmIqDaVjzHHfvfYY40Fxa6dh7jphj8n9HUNdWc3c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Jun 2024 18:58:25 GMT"
+          "Value": "Tue, 11 Jun 2024 10:42:43 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -7801,6 +7843,116 @@
         {
           "Name": "Last-Modified",
           "Value": "Sat, 08 Jun 2024 13:50:56 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/loader.css",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\95jqmtic58.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002049180328"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "487"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"190ACYPvvSXOvZuVBgszCg3CeqZEklofPlHwWi4+df0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Jun 2024 10:39:37 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"IvbJkMi0yPDSP09BEkxjLfBfglKG2rrbkxLLPLiA/mc=\""
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/loader.css",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\loader.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IvbJkMi0yPDSP09BEkxjLfBfglKG2rrbkxLLPLiA/mc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Jun 2024 10:39:37 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/loader.css.gz",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\95jqmtic58.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "487"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"190ACYPvvSXOvZuVBgszCg3CeqZEklofPlHwWi4+df0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Jun 2024 10:39:37 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -21208,7 +21360,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001047120419"
+          "Quality": "0.000958772771"
         }
       ],
       "ResponseHeaders": [
@@ -21218,15 +21370,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "954"
+          "Value": "1042"
         },
         {
           "Name": "ETag",
-          "Value": "\"nEUayyvCngZywq+lnDy4l9kBe+ot9Ub6jBt1BfvGwNI=\""
+          "Value": "\"7KdjqfheUrHDygsORWhxnaCcgNezoTY+kBaEYS8DZzY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Jun 2024 13:52:45 GMT"
+          "Value": "Tue, 11 Jun 2024 10:45:50 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -21242,7 +21394,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"pZJlWIvMspmY05kfsAiJZuFYHM+R9pvuBC8jO++gW6w=\""
+          "Value": "W/\"6EDnJfiDsQvou7aTdPNJlWHL0b6MwTU6HIK8DPEEZUM=\""
         }
       ],
       "EndpointProperties": []
@@ -21258,7 +21410,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2182"
+          "Value": "2519"
         },
         {
           "Name": "Content-Type",
@@ -21266,11 +21418,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pZJlWIvMspmY05kfsAiJZuFYHM+R9pvuBC8jO++gW6w=\""
+          "Value": "\"6EDnJfiDsQvou7aTdPNJlWHL0b6MwTU6HIK8DPEEZUM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Jun 2024 13:52:45 GMT"
+          "Value": "Tue, 11 Jun 2024 10:45:50 GMT"
         }
       ],
       "EndpointProperties": []
@@ -21286,7 +21438,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "954"
+          "Value": "1042"
         },
         {
           "Name": "Content-Type",
@@ -21294,11 +21446,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nEUayyvCngZywq+lnDy4l9kBe+ot9Ub6jBt1BfvGwNI=\""
+          "Value": "\"7KdjqfheUrHDygsORWhxnaCcgNezoTY+kBaEYS8DZzY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Jun 2024 13:52:45 GMT"
+          "Value": "Tue, 11 Jun 2024 10:45:50 GMT"
         },
         {
           "Name": "Content-Encoding",

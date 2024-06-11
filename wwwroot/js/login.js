@@ -10,6 +10,8 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 
+// Get the loader element
+const loaderElement = document.querySelector('.loader');
 // Event listener for form submission
 document.querySelector('#login-form').addEventListener('submit', function(event) {
     // Prevent the form from being submitted normally
@@ -17,6 +19,8 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
 
     var email = document.querySelector('#email').value;
     var password = document.querySelector('#password').value;
+    // Show the loader
+    loaderElement.style.display = 'flex';
 
     // Sign in with email and password
     firebase.auth().signInWithEmailAndPassword(email, password)
@@ -36,7 +40,8 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
             var loginTime = new Date().getTime();
             sessionStorage.setItem('loginTime', loginTime);
             console.log('Login time: ', loginTime);
-
+            // Hide the loader
+            loaderElement.style.display = 'none';
             // Check if user.uid has a value before redirecting
             if (user.uid) {
                 window.location.href = '/Dashboard?userId=' + user.uid;
@@ -46,6 +51,9 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
         });
     })
     .catch((error) => {
+        // Hide the loader
+        loaderElement.style.display = 'none';
+        // Handle the error
         var errorCode = error.code;
         var errorMessage = error.message;
         // Print the error to the console

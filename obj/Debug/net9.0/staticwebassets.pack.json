@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\datepicker.css"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\loader.css",
+      "PackagePath": "staticwebassets\\css\\loader.css"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
