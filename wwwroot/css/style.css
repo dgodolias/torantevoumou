@@ -267,7 +267,7 @@
 
 #services {
 	position: relative;
-	height: 1000px;
+	height: 700px;
 }
 
 /*     */
@@ -366,6 +366,7 @@ hr {
 
 .index #services {
 	position: relative;
+	display: flex;
 	/* Ensure the parent is a positioned element */
 }
 
@@ -387,7 +388,7 @@ hr {
 .container {
 	width: 80%;
 	margin: 0 auto;
-	padding: 30px;
+	padding: 50px;
 	z-index: 2;
 	position: relative;
 }

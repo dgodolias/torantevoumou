@@ -95,6 +95,17 @@
     </header>
     <!-- Services Section -->
     <div id="services" class="text-center">
+
+      <div class="container">
+        <div class="floating-stack">
+          <dl>
+            <dt>b</dt>
+            <dd>barbershop</dd>
+            <dt>p</dt>
+            <dd>physiotherapy</dd>
+          </dl>
+        </div>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 intro-text ">
@@ -111,18 +122,8 @@
           </div>
         </div>
       </div>
-      <canvas class="banner_canvas" id="canvas_banner"></canvas>
-      <div class="container">
-        <div class="floating-stack">
-          <dl>
-            @foreach (var serviceName in Model.ServiceNames)
-            {
-              <dt>@serviceName.Substring(0, 1)</dt>
-              <dd>@serviceName</dd>
-            }
-          </dl>
-        </div>
-      </div>
+      <canvas class="banner_canvas" id="canvas_banner" width="1018" height="700"></canvas>
+
     </div>
     <!-- Contact Section -->
     <div id="contact">

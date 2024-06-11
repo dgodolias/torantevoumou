@@ -26,6 +26,7 @@ namespace Namespace
         public async Task<IActionResult> OnGetAsync(string userId)
         {  
             UserId = userId;
+            Console.WriteLine(userId);
             UserInfo = await _firebaseService.GetUserGENERALinfo(userId);
             HttpContext.Session.SetString("UserGeneralInfo", JsonConvert.SerializeObject(UserInfo));
 

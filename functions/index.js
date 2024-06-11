@@ -18,7 +18,8 @@ exports.GetUserDBinfo = functions.https.onRequest(async (req, res) => {
   try {
     const {userId} = req.query; // Changed from req.body to req.query
     const snapshotDB = await admin.database();
-    const snapshot = snapshotDB.ref(`/users/${userId}`).once("value");
+    const userRef = snapshotDB.ref(`/users/${userId}`);
+    const snapshot = await userRef.once("value");
     const user = snapshot.val();
     if (user) {
       res.json(user);

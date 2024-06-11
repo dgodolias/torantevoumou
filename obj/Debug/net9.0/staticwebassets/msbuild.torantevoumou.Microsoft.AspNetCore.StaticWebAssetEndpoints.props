@@ -112,7 +112,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\style.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"15472"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00226whIWJ1dl1qEf2wKBQhb9QvjpVVJTFrCpeipoE6qdFU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Jun 2024 21:52:23 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"15488"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022X9WhxA8TOHMm0jsYoztTV0\u002BAY0dBN77s//b2HpRpNXs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 11 Jun 2024 10:19:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/fonts/Aesthetic/AestheticRegular.otf">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\fonts\Aesthetic\AestheticRegular.otf))</AssetFile>
