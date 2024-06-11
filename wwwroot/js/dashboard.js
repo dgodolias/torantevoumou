@@ -1,3 +1,7 @@
+const loaderElement = document.querySelector('.loader');
+loaderElement.style.display = 'none';
+
+
 window.addEventListener('load', function() {
     const body = document.querySelector('body'),
         sidebar = body.querySelector('nav'),

@@ -40,8 +40,7 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
             var loginTime = new Date().getTime();
             sessionStorage.setItem('loginTime', loginTime);
             console.log('Login time: ', loginTime);
-            // Hide the loader
-            loaderElement.style.display = 'none';
+
             // Check if user.uid has a value before redirecting
             if (user.uid) {
                 window.location.href = '/Dashboard?userId=' + user.uid;

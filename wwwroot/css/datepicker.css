@@ -1,20 +1,29 @@
+.ui-datepicker * {
+    font-family: system-ui; /* Replace with your desired font */
+}
+
 .ui-datepicker {
-    background: #222;
-    border: 1px solid #333;
-    color: #eee;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #333;
     font-family: Arial, sans-serif;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .ui-datepicker-header {
-    background: #333;
-    border-bottom: 1px solid #444;
-    color: #fff;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    color: #333;
     padding: 10px;
     text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
 }
 
 .ui-datepicker-title {
-    color: #fff;
+    color: #333;
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -22,41 +31,56 @@
 .ui-datepicker th {
     color: #bbb;
     padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 0.75em;
 }
 
 .ui-datepicker td {
     padding: 5px;
+    text-align: center;
 }
 
 .ui-datepicker .ui-state-default {
-    background: #444;
-    border: 1px solid #555;
-    color: #eee;
-    text-align: center;
-    border-radius: 4px;
-    transition:color 0.3s;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    border-radius: 50%;
+    transition: background 0.3s, color 0.3s;
 }
 
 .ui-datepicker .ui-state-hover {
-    background: #666;
-    border: 1px solid #777;
-    color: #fff;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    color: #333;
 }
 
 .ui-datepicker .ui-state-active {
     background: #007bff;
     border: 1px solid #0056b3;
     color: #fff;
+    border-radius: 50%;
 }
 
 #datepicker {
     width: 300px;
     margin-top: 20px;
-    background-color: #222;
-    border: 1px solid #333;
-    color: #eee;
-    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    margin: 50px;
+    /* padding: 10px; */
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     height: fit-content;
     margin: 30px;
+}
+
+/* Additions */
+
+.ui-datepicker-calendar td span,
+.ui-datepicker-calendar td a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
 }

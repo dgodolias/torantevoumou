@@ -246,6 +246,15 @@ body.dark .sidebar li a:hover .text{
     transition: var(--tran-05);
 }
 
+#dialog{
+    position: relative;
+    border: 0;
+    padding: .5em 1em;
+    background: radial-gradient(#35ffdd, transparent);
+    overflow: auto;
+    border-radius: 30px;
+}
+
 #dialog-content {
     height: 100%;
     display: flex;
@@ -383,3 +392,13 @@ body.dark .home .text{
     transform: translateY(5px);
     margin: 0.2em;
 }
+
+.ui-dialog .ui-dialog-titlebar {
+    display: none;
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front {
+    background: transparent;
+    border: 0px;
+}
+

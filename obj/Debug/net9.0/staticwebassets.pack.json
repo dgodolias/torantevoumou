@@ -977,10 +977,6 @@
       "PackagePath": "staticwebassets\\js\\jquery.1.11.1.js"
     },
     {
-      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\jsCalendar.js",
-      "PackagePath": "staticwebassets\\js\\jsCalendar.js"
-    },
-    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\login.js",
       "PackagePath": "staticwebassets\\js\\login.js"
     },
