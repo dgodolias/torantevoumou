@@ -1,14 +1,14 @@
-/* Google Font Import - Poppins */
 @font-face {
-	font-family: 'Nasa';
-	src: url('../fonts/Nasa/nasalization-rg.otf') format('opentype');
-}
+    font-family: 'Peinirli';
+    src: url('../fonts/Peinirli/Peinirli.otf') format('opentype');
+  }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nasa';
+    font-size:19px;
+    font-family: 'Peinirli';
 }
 
 :root{

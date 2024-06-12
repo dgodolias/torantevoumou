@@ -10,7 +10,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\appointments.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1634"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gSxYav8UY\u002BOajlS8n\u002BITaQAPtPbdXkPwu3tpD3g0j6c=\u0022"},{"Name":"Last-Modified","Value":"Tue, 11 Jun 2024 21:29:12 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2178"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022f/gLeZjuDHj7SWPJ/6ZnHg5fOg\u002BhdQ/YwwVuTmxZPwU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Jun 2024 09:36:11 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/bootstrap.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\bootstrap.css))</AssetFile>
@@ -22,13 +22,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"8097"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LOvHT8zrA9rI2GtnEasYrxq6eOE0xVfGQv72gtn9z\u002BI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 11 Jun 2024 22:15:01 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"8096"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JETkam7dMJVG2MU6HIJLGo8ZNO\u002Bzx\u002B5ef7c2Hh7vGWo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Jun 2024 09:24:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/datepicker.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\datepicker.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1727"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SuH/WPWgke2\u002B1rsNMcQe/54BK6AzEcMTtktDY0WOjmw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 11 Jun 2024 21:16:26 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1753"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ScCdoT316n9120IuDCD4eotY19YZKFR9i8X9hbQj0xU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Jun 2024 09:14:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/loader.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\loader.css))</AssetFile>
@@ -106,7 +106,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\profile.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2342"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022A2Xu652mfZfKI6dVReETdIsAt2\u002Bxcv0YQXOdZdy7re0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Jun 2024 10:28:12 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2344"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022PiUcmQ5Aouni7wwmOM1/IsBcBnTauszfzP7rJiFujWU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Jun 2024 09:36:11 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/signup.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\signup.css))</AssetFile>
@@ -371,6 +371,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"145707"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022G7K0P/dwL1btqdsOGIkLz2XeYquT3bvlgQf83WKUm2g=\u0022"},{"Name":"Last-Modified","Value":"Mon, 15 Apr 2024 19:34:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/torantevoumou/fonts/Peinirli/Peinirli.otf">
+      <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\fonts\Peinirli\Peinirli.otf))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"146832"},{"Name":"Content-Type","Value":"font/otf"},{"Name":"ETag","Value":"\u0022PSL2TPNUw6JuYqcRgaaIOSnCckgeJS1uP5jJUzJwWX4=\u0022"},{"Name":"Last-Modified","Value":"Fri, 10 Feb 2023 07:26:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/torantevoumou/fonts/Peinirli/readme.txt">
+      <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\fonts\Peinirli\readme.txt))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"108"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00223EteTbsZOBDSU1Z1H\u002BM7gUeyaRUgCwQCspYPdm2lJJQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 11 Feb 2023 13:12:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/fonts/Rebeqa/Rebeqa Font/OpenType-PS/Rebeqa-Black.otf">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\fonts\Rebeqa\Rebeqa Font\OpenType-PS\Rebeqa-Black.otf))</AssetFile>

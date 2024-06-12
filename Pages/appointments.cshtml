@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="~/css/appointments.css"> <!-- Link to the CSS file -->
     <link rel="stylesheet" href="~/css/datepicker.css"> <!-- Link to the CSS file -->
-    <link rel="stylesheet" type="text/css" href="jsCalendar.css">
+    
     <script src="~js/jsCalendar.js"></script>
 </head>
 
@@ -51,14 +51,21 @@
             <div id="table-container">
                 <table id="appointments-table">
                     <tbody>
-                        @for (int i = 0; i < 24; i++)
-                        {
-                            <tr>
-                                <td>
-                                    <!-- Assign a data-time attribute to each button -->
-                                    <button data-time-index="@i">Action</button>
-                                </td>
-                            </tr>
+                        @{
+                            TimeSpan startTime = new TimeSpan(9, 0, 0); // Start time (9:00)
+                            TimeSpan endTime = new TimeSpan(21, 0, 0); // End time (21:00)
+                            TimeSpan interval = new TimeSpan(0, 30, 0); // Interval (30 minutes)
+                            for (TimeSpan time = startTime; time < endTime; time += interval)
+                            {
+                                var status = "free"; // Placeholder, replace with actual logic to determine if the slot is free or closed
+                                <tr>
+                                    <td>@time.ToString("hh\\:mm")</td>
+                                    <td>Διαθεσιμη ώρα για ραντεβού</td>
+                                    <td>
+                                        <button data-time-index="@time" class="@(status == "free" ? "free" : "closed")">Κλείνω ραντεβού</button>
+                                    </td>
+                                </tr>
+                            }
                         }
                     </tbody>
                 </table>

@@ -2,17 +2,16 @@
     width: 100%;
     max-height: 500px; /* Adjust as needed */
     overflow-y: auto;
-    border: 2px solid #555; /* Thick border around the container */
     border-radius: 8px; /* Rounded corners */
     padding: 10px; /* Add padding to the container for spacing */
     background-color: #f0f0f0; /* Background color for better contrast */
     margin: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Add shadow */
 }
-
 #appointments-table {
     width: 100%;
     border-collapse: separate; /* Separate borders for individual rows */
-    border-spacing: 0 10px; /* Space between rows */
+    border-spacing: 0 5px; /* Space between rows */
     font-family: Arial, sans-serif;
 }
 
@@ -24,18 +23,20 @@
     height: 50px; /* Fixed row height */
 }
 
-#appointments-table tbody tr:nth-child(odd) {
-    background-color: #f9f9f9; /* Slightly different color for odd rows */
-}
-
-#appointments-table tbody tr:nth-child(even) {
+#appointments-table tbody tr {
     background-color: #fff; /* White background for even rows */
 }
 
 #appointments-table td {
+    width: 33.33%; /* Divide the table row into three equal parts */
     padding: 10px;
     text-align: center;
     vertical-align: middle; /* Center content vertically */
+    border-right: 2px solid #f0f0f0; /* Add a border between the boxes */
+}
+
+#appointments-table td:last-child {
+    border-right: none; /* Remove the border for the last cell to maintain the design */
 }
 
 #appointments-table td button {
@@ -46,8 +47,24 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: inherit;
 }
 
-#appointments-table td button:hover {
+#appointments-table td button.free {
+    background-color: green;
+    color: white;
+}
+
+#appointments-table td button.closed {
+    background-color: #000000;
+    color: white;
+    cursor: not-allowed;
+}
+
+#appointments-table td button.free:hover {
     background-color: #0056b3;
+}
+
+#appointments-table td button.closed:hover {
+    background-color: #000000; /* Keep the same color on hover for closed buttons */
 }

@@ -93,6 +93,14 @@
       "PackagePath": "staticwebassets\\fonts\\Nasa\\nasalization-rg.otf"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Peinirli\\Peinirli.otf",
+      "PackagePath": "staticwebassets\\fonts\\Peinirli\\Peinirli.otf"
+    },
+    {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Peinirli\\readme.txt",
+      "PackagePath": "staticwebassets\\fonts\\Peinirli\\readme.txt"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.otf",
       "PackagePath": "staticwebassets\\fonts\\Rebeqa\\Rebeqa Font\\OpenType-PS\\Rebeqa-Black.otf"
     },

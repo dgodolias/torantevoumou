@@ -1,5 +1,6 @@
 .ui-datepicker * {
     font-family: system-ui; /* Replace with your desired font */
+    font-size: 17px;
 }
 
 .ui-datepicker {
@@ -55,10 +56,11 @@
 }
 
 .ui-datepicker .ui-state-active {
-    background: #007bff;
-    border: 1px solid #0056b3;
-    color: #fff;
+    background: #ffffff;
+    border: 1px solid #007fff;
+    color: #007fff;
     border-radius: 50%;
+    font-weight: 500;
 }
 
 #datepicker {
