@@ -40,6 +40,23 @@ $(document).ready(function() {
         sessionStorage.setItem('serviceName', serviceName);
         // Open the dialog
         $('#dialog').dialog('open');
+
+        // Make a fetch call to the cloud function
+        fetch(`https://us-central1-torantevoumou-86820.cloudfunctions.net/getServiceDetailedAppointments?service=${serviceName}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Service Appointments:', data);
+                sessionStorage.setItem('ServiceDetailedAppointments', JSON.stringify(data));
+
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            });
     });
 
     function calculateTimeSlot(index) {

@@ -51,11 +51,11 @@ namespace Namespace
                     serviceAppointments.Add(serviceName, appointmentIdList);
                 }
             }
-            HttpContext.Session.SetString("ServiceAppointments", JsonConvert.SerializeObject(serviceAppointments));
+            HttpContext.Session.SetString("ServiceJustKeysAppointments", JsonConvert.SerializeObject(serviceAppointments));
 
             // Pass the dictionary to the GetUserAppointments method
             Appointments = await _firebaseService.GetUserAppointments(serviceAppointments);
-            HttpContext.Session.SetString("UserAppointments", JsonConvert.SerializeObject(Appointments));
+            HttpContext.Session.SetString("UserDetailedAppointments", JsonConvert.SerializeObject(Appointments));
 
             return Page();
         }

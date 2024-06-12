@@ -61,6 +61,52 @@ exports.GetUserAUTHinfo = functions.https.onRequest(async (req, res) => {
   }
 });
 
+exports.getServiceDetailedAppointments =
+functions.https.onRequest(async (req, res) => {
+  const allowedOrigins = [
+    "https://localhost:7177",
+    "https://www.torantevoumou.gr",
+    "https://torantevoumou.gr",
+  ];
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.set("Access-Control-Allow-Origin", origin);
+  }
+  res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
+  res.set("Access-Control-Allow-Headers", "*");
+
+  // Respond to OPTIONS requests (required by CORS preflight)
+  if (req.method === "OPTIONS") {
+    res.status(200).send();
+    return;
+  }
+
+  console.log("getServiceDetiledAppointments function called");
+
+  // Declare serviceName outside of the try block
+  const serviceName = req.query.service;
+
+  try {
+    if (!serviceName) {
+      return res.status(400).send("Service name is required");
+    }
+
+    const snapshotDB = await admin.database();
+    const appRef = snapshotDB.ref(`/services/${serviceName}`);
+    const snapshot = await appRef.once("value");
+    const serviceAppointments = snapshot.val();
+
+    if (serviceAppointments) {
+      res.json({[serviceName]: serviceAppointments});
+    } else {
+      res.status(404).send(`No appointments found for service: ${serviceName}`);
+    }
+  } catch (error) {
+    console.error(`Error listing appointments: ${serviceName}`, error);
+    res.status(500).send(`Error listing appointments: ${serviceName}`);
+  }
+});
+
 exports.addUser = functions.https.onRequest(async (req, res) => {
   try {
     console.log("Request body:", req.body);

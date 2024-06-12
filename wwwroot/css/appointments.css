@@ -56,7 +56,7 @@
 }
 
 #appointments-table td button.closed {
-    background-color: #000000;
+    background-color: #757575;
     color: white;
     cursor: not-allowed;
 }
