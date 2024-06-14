@@ -50,13 +50,41 @@ $(document).ready(function() {
                 return response.json();
             })
             .then(data => {
-                console.log('Service Appointments:', data);
-                sessionStorage.setItem('ServiceDetailedAppointments', JSON.stringify(data));
+                const firstKey = Object.keys(data)[0];
+                const appointmentsData = data[firstKey];
 
+                if (Array.isArray(appointmentsData)) {
+                    processAppointmentsArray(appointmentsData);
+                } else if (typeof appointmentsData === 'object' && appointmentsData !== null) {
+                    // Initialize an empty object to hold the appointments grouped by date
+                    const appointmentsByDate = {};
+
+                    // Iterate over each appointment object
+                    Object.entries(appointmentsData).forEach(([key, appointment]) => {
+                        // Extract appointmentDate and appointmentTime from each appointment
+                        const { appointmentDate, appointmentTime } = appointment;
+
+                        // Check if the date already exists in appointmentsByDate
+                        if (!appointmentsByDate[appointmentDate]) {
+                            // If not, create an array for this date
+                            appointmentsByDate[appointmentDate] = [];
+                        }
+
+                        // Add the appointment time to the array for this date
+                        appointmentsByDate[appointmentDate].push(appointmentTime);
+                    });
+
+                    // Log or store the appointmentsByDate object
+                    console.log('Appointments by Date:', appointmentsByDate);
+                    sessionStorage.setItem('AppointmentsByDate', JSON.stringify(appointmentsByDate));
+                } else {
+                    console.log('Unexpected data structure:', appointmentsData);
+                }
             })
             .catch(error => {
                 console.error('There has been a problem with your fetch operation:', error);
             });
+    
     });
 
     function calculateTimeSlot(index) {
