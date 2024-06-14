@@ -1,7 +1,3 @@
-const loaderElement = document.querySelector('.loader');
-loaderElement.style.display = 'none';
-
-
 window.addEventListener('load', function() {
     const body = document.querySelector('body'),
         sidebar = body.querySelector('nav'),
@@ -12,11 +8,11 @@ window.addEventListener('load', function() {
 
     toggle.addEventListener("click" , () => {
         sidebar.classList.toggle("close");
-    })
+    });
 
     searchBtn.addEventListener("click" , () => {
         sidebar.classList.remove("close");
-    })
+    });
 
     modeSwitch.addEventListener("click" , () => {
         body.classList.toggle("dark");
@@ -30,8 +26,7 @@ window.addEventListener('load', function() {
 
     // Embedding the appointments view in the dashboard view
     $(document).ready(function () {
-        var userId = sessionStorage.getItem('UserId'); // Fetch the userId from the session storage
-        //var userId = sessionStorage.getItem('UserId'); // Fetch the userId from the session storage
+        var userId = sessionStorage.getItem('UserId');
         console.log('User ID: ', userId);
 
         $('#appointmentLink').click(function (e) {
@@ -44,4 +39,13 @@ window.addEventListener('load', function() {
             $("#container").load("/profile?userId=" + userId);
         });
     });
+
+    // Fetch call to cloud function after the page has fully loaded
+    fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/getServiceInfo')
+        .then(response => response.json())
+        .then(data => {
+            sessionStorage.setItem('ServicesInfo', JSON.stringify(data));
+            console.log('ServicesInfo saved to sessionStorage:', data);
+        })
+        .catch(error => console.error('Error fetching ServicesInfo:', error));
 });

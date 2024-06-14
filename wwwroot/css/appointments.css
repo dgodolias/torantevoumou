@@ -1,6 +1,5 @@
 #table-container {
     width: 100%;
-    max-height: 500px; /* Adjust as needed */
     overflow-y: auto;
     border-radius: 8px; /* Rounded corners */
     padding: 10px; /* Add padding to the container for spacing */

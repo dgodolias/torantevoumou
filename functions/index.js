@@ -107,6 +107,44 @@ functions.https.onRequest(async (req, res) => {
   }
 });
 
+exports.getServiceInfo = functions.https.onRequest(async (req, res) => {
+  const allowedOrigins = [
+    "https://localhost:7177",
+    "https://www.torantevoumou.gr",
+    "https://torantevoumou.gr",
+  ];
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.set("Access-Control-Allow-Origin", origin);
+  }
+  res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
+  res.set("Access-Control-Allow-Headers", "*");
+
+  // Respond to OPTIONS requests (required by CORS preflight)
+  if (req.method === "OPTIONS") {
+    res.status(200).send();
+    return;
+  }
+
+  console.log("getServiceInfo function called");
+
+  try {
+    const snapshotDB = await admin.database();
+    const infoRef = snapshotDB.ref("/info");
+    const snapshot = await infoRef.once("value");
+    const serviceInfo = snapshot.val();
+
+    if (serviceInfo) {
+      res.json(serviceInfo);
+    } else {
+      res.status(404).send("No service information found");
+    }
+  } catch (error) {
+    console.error("Error retrieving service information", error);
+    res.status(500).send("Error retrieving service information");
+  }
+});
+
 exports.addUser = functions.https.onRequest(async (req, res) => {
   try {
     console.log("Request body:", req.body);

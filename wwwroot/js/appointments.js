@@ -86,39 +86,72 @@ $(document).ready(function() {
         // Retrieve appointments data from session storage
         const appointmentsByDateJson = sessionStorage.getItem('AppointmentsByDate');
         const appointmentsByDate = appointmentsByDateJson ? JSON.parse(appointmentsByDateJson) : {};
-
-        // Define start and end times
-        const startTime = 9 * 60; // 9:00 AM in minutes
-        const endTime = 21 * 60; // 9:00 PM in minutes
-        const interval = 30; // 30 minutes
-
+    
+        // Retrieve service information from session storage
+        const servicesInfoJson = sessionStorage.getItem('ServicesInfo');
+        const servicesInfo = servicesInfoJson ? JSON.parse(servicesInfoJson) : {};
+    
+        // Get the selected service name
+        const serviceName = sessionStorage.getItem('serviceName');
+    
+        // Get the service's production hours
+        const serviceHours = servicesInfo[serviceName];
+        if (!serviceHours) {
+            console.error(`Service hours not found for service: ${serviceName}`);
+            return;
+        }
+    
+        // Parse starting and ending times
+        const startingTimes = serviceHours.startingTime.split('#').map(time => time.trim());
+        const endingTimes = serviceHours.endingTime.split('#').map(time => time.trim());
+        const appointmentDuration = parseInt(serviceHours.appointmentDuaration, 10);
+    
         // Get the table container
         const tableContainer = document.getElementById('appointments-table');
         tableContainer.innerHTML = ''; // Clear existing table content
-
-        // Generate time slots and table rows
-        for (let time = startTime; time < endTime; time += interval) {
-            const hours = Math.floor(time / 60);
-            const minutes = time % 60;
-            const timeFormatted = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
-
-            // Check if the time slot is booked
-            const isBooked = appointmentsByDate[selectedDate] && appointmentsByDate[selectedDate].includes(timeFormatted);
-            const status = isBooked ? 'closed' : 'free';
-            const statusText = isBooked ? 'Κλεισμένη ώρα' : 'Διαθεσιμη ώρα για ραντεβού';
-
-            // Create table row
-            // Create table row with updated button text for closed appointments
-            const row = `<tr>
-                <td>${timeFormatted}</td>
-                <td>${statusText}</td>
-                <td><button data-time-index="${(time - startTime) / interval}" class="${status}">${isBooked ? 'Μη διαθέσιμο' : 'Κλείνω ραντεβού'}</button></td>
-            </tr>`;
-
-            // Append row to table
-            tableContainer.innerHTML += row;
-        }
+    
+        // Generate time slots and table rows for each time range
+        startingTimes.forEach((startTime, index) => {
+            const endTime = endingTimes[index];
+    
+            // Convert times to minutes
+            const startTimeMinutes = convertTimeToMinutes(startTime);
+            const endTimeMinutes = convertTimeToMinutes(endTime);
+    
+            // Generate time slots
+            for (let time = startTimeMinutes; time < endTimeMinutes; time += appointmentDuration) {
+                const timeFormatted = convertMinutesToTime(time);
+    
+                // Check if the time slot is booked
+                const isBooked = appointmentsByDate[selectedDate] && appointmentsByDate[selectedDate].includes(timeFormatted);
+                const status = isBooked ? 'closed' : 'free';
+                const statusText = isBooked ? 'Κλεισμένη ώρα' : 'Διαθεσιμη ώρα για ραντεβού';
+    
+                // Create table row
+                const row = `<tr>
+                    <td>${timeFormatted}</td>
+                    <td>${statusText}</td>
+                    <td><button data-time-index="${(time - startTimeMinutes) / appointmentDuration}" class="${status}">${isBooked ? 'Μη διαθέσιμο' : 'Κλείνω ραντεβού'}</button></td>
+                </tr>`;
+    
+                // Append row to table
+                tableContainer.innerHTML += row;
+            }
+        });
     }
+    
+    // Helper functions to convert between time strings and minutes
+    function convertTimeToMinutes(timeString) {
+        const [hours, minutes] = timeString.split(':').map(Number);
+        return hours * 60 + minutes;
+    }
+    
+    function convertMinutesToTime(minutes) {
+        const hours = Math.floor(minutes / 60);
+        const minutesRemaining = minutes % 60;
+        return `${hours.toString().padStart(2, '0')}:${minutesRemaining.toString().padStart(2, '0')}`;
+    }
+    
 
     $(document).on('click', '#appointments-table button', function() {
         loaderElement.style.display = 'flex';
@@ -140,11 +173,38 @@ $(document).ready(function() {
     });
 
     function calculateTimeSlot(index) {
-        const startTime = 9 * 60; // 9:00 AM in minutes
-        const timeInMinutes = startTime + (index * 30);
-        const hours = Math.floor(timeInMinutes / 60);
-        const minutes = timeInMinutes % 60;
-        return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+        // Retrieve service information from session storage
+        const servicesInfoJson = sessionStorage.getItem('ServicesInfo');
+        const servicesInfo = servicesInfoJson ? JSON.parse(servicesInfoJson) : {};
+        const serviceName = sessionStorage.getItem('serviceName');
+        const serviceHours = servicesInfo[serviceName];
+        if (!serviceHours) {
+            console.error(`Service hours not found for service: ${serviceName}`);
+            return '';
+        }
+
+        const startingTimes = serviceHours.startingTime.split('#').map(time => time.trim());
+        const endingTimes = serviceHours.endingTime.split('#').map(time => time.trim());
+        const appointmentDuration = parseInt(serviceHours.appointmentDuaration, 10);
+
+        let accumulatedSlots = 0;
+        for (let i = 0; i < startingTimes.length; i++) {
+            const startTimeMinutes = convertTimeToMinutes(startingTimes[i]);
+            const endTimeMinutes = convertTimeToMinutes(endingTimes[i]);
+            const rangeSlots = (endTimeMinutes - startTimeMinutes) / appointmentDuration;
+
+            if (index < accumulatedSlots + rangeSlots) {
+                const timeInMinutes = startTimeMinutes + (index - accumulatedSlots) * appointmentDuration;
+                const hours = Math.floor(timeInMinutes / 60);
+                const minutes = timeInMinutes % 60;
+                return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+            }
+
+            accumulatedSlots += rangeSlots;
+        }
+
+        console.error('Index out of range for time slots');
+        return '';
     }
 
     function addAppointment(json) {
