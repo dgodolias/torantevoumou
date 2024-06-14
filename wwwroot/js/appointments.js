@@ -185,4 +185,8 @@ $(document).ready(function() {
             console.error('Error:', error);
         });
     }
+
+    $('.close-btn').click(function() {
+        $('#dialog').dialog('close'); // Using jQuery UI's dialog 'close' method
+    });
 });

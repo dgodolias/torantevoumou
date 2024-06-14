@@ -251,7 +251,7 @@ body.dark .sidebar li a:hover .text{
     border: 0;
     padding: .5em 1em;
     background: radial-gradient(#35ffdd, transparent);
-    overflow: auto;
+    overflow: hidden;
     border-radius: 30px;
 }
 

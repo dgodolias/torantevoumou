@@ -67,3 +67,20 @@
 #appointments-table td button.closed:hover {
     background-color: #000000; /* Keep the same color on hover for closed buttons */
 }
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    color: grey;
+    font-size: 20px;
+}
+
+.close-btn:hover {
+    color: black;
+}
+
+.close-btn:active {
+    color: red;
+}
