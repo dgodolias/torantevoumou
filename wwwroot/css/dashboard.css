@@ -250,7 +250,7 @@ body.dark .sidebar li a:hover .text{
     position: relative;
     border: 0;
     padding: .5em 1em;
-    background: radial-gradient(#35ffdd, transparent);
+    background: radial-gradient(#181919, transparent);
     overflow: hidden;
     border-radius: 30px;
 }

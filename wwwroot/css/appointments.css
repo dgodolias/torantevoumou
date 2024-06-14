@@ -73,8 +73,8 @@
     top: 5px;
     right: 10px;
     cursor: pointer;
-    color: grey;
-    font-size: 20px;
+    color: #ef0000;
+    font-size: 25px;
 }
 
 .close-btn:hover {
