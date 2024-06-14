@@ -1,7 +1,12 @@
 $(document).ready(function() {
     // Initialize the datepicker
     $('#datepicker').datepicker({
-        minDate: 0
+        minDate: 0,
+        onSelect: function(dateText) {
+            var selectedDate = $.datepicker.formatDate('yy/mm/dd', new Date(dateText));
+            sessionStorage.setItem('selectedDate', selectedDate);
+            updateAppointmentsForDate(selectedDate);
+        }
     });
 
     const loaderElement = document.querySelector('.loader');
@@ -15,7 +20,6 @@ $(document).ready(function() {
         height: dialogHeight,
         draggable: false,
         resizable: false,
-        modal: false,
         show: {
             effect: 'fade',
             duration: 1000
@@ -25,11 +29,9 @@ $(document).ready(function() {
             duration: 1000
         },
         open: function() {
-            // Show the overlay with the blur effect when the dialog is opened
             $('#blurOverlay').fadeIn(1000);
         },
         beforeClose: function() {
-            // Hide the overlay when the dialog is closed
             $('#blurOverlay').fadeOut(1000);
         }
     });
@@ -38,11 +40,12 @@ $(document).ready(function() {
         var serviceName = $(this).attr('id');
         console.log('You clicked on service: ' + serviceName);
         sessionStorage.setItem('serviceName', serviceName);
-        // Open the dialog
         $('#dialog').dialog('open');
+        fetchServiceAppointments(serviceName);
+    });
 
-        // Make a fetch call to the cloud function
-        fetch(`https://us-central1-torantevoumou-86820.cloudfunctions.net/getServiceDetailedAppointments?service=${serviceName}`)
+    function fetchServiceAppointments(serviceName) {
+        fetch(`https://us-central1-torantevoumou-86820.cloudfunctions.net/getServiceDetailedAppointments?service=${serviceName}&date=${sessionStorage.getItem('selectedDate')}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -50,76 +53,101 @@ $(document).ready(function() {
                 return response.json();
             })
             .then(data => {
-                const firstKey = Object.keys(data)[0];
-                const appointmentsData = data[firstKey];
-
-                if (Array.isArray(appointmentsData)) {
-                    processAppointmentsArray(appointmentsData);
-                } else if (typeof appointmentsData === 'object' && appointmentsData !== null) {
-                    // Initialize an empty object to hold the appointments grouped by date
-                    const appointmentsByDate = {};
-
-                    // Iterate over each appointment object
-                    Object.entries(appointmentsData).forEach(([key, appointment]) => {
-                        // Extract appointmentDate and appointmentTime from each appointment
-                        const { appointmentDate, appointmentTime } = appointment;
-
-                        // Check if the date already exists in appointmentsByDate
-                        if (!appointmentsByDate[appointmentDate]) {
-                            // If not, create an array for this date
-                            appointmentsByDate[appointmentDate] = [];
-                        }
-
-                        // Add the appointment time to the array for this date
-                        appointmentsByDate[appointmentDate].push(appointmentTime);
-                    });
-
-                    // Log or store the appointmentsByDate object
-                    console.log('Appointments by Date:', appointmentsByDate);
-                    sessionStorage.setItem('AppointmentsByDate', JSON.stringify(appointmentsByDate));
-                } else {
-                    console.log('Unexpected data structure:', appointmentsData);
-                }
+                processAppointmentData(data);
             })
             .catch(error => {
                 console.error('There has been a problem with your fetch operation:', error);
             });
-    
-    });
-
-    function calculateTimeSlot(index) {
-        // Starting time is 9:00 (9 hours from midnight)
-        const startTime = 9 * 60; // 9 hours in minutes
-        const timeInMinutes = startTime + (index * 30); // Add 30 minutes for each index
-        const hours = Math.floor(timeInMinutes / 60);
-        const minutes = timeInMinutes % 60;
-        return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
     }
 
-    // Attach click event listener to each button
-    $('#appointments-table button').on('click', function() {
+    function processAppointmentData(data) {
+        const firstKey = Object.keys(data)[0];
+        const appointmentsData = data[firstKey];
+
+        if (Array.isArray(appointmentsData)) {
+            // Process as array
+        } else if (typeof appointmentsData === 'object' && appointmentsData !== null) {
+            const appointmentsByDate = {};
+            Object.entries(appointmentsData).forEach(([key, appointment]) => {
+                const { appointmentDate, appointmentTime } = appointment;
+                if (!appointmentsByDate[appointmentDate]) {
+                    appointmentsByDate[appointmentDate] = [];
+                }
+                appointmentsByDate[appointmentDate].push(appointmentTime);
+            });
+            console.log('Appointments by Date:', appointmentsByDate);
+            sessionStorage.setItem('AppointmentsByDate', JSON.stringify(appointmentsByDate));
+        } else {
+            console.log('Unexpected data structure:', appointmentsData);
+        }
+    }
+
+    function updateAppointmentsForDate(selectedDate) {
+        // Retrieve appointments data from session storage
+        const appointmentsByDateJson = sessionStorage.getItem('AppointmentsByDate');
+        const appointmentsByDate = appointmentsByDateJson ? JSON.parse(appointmentsByDateJson) : {};
+
+        // Define start and end times
+        const startTime = 9 * 60; // 9:00 AM in minutes
+        const endTime = 21 * 60; // 9:00 PM in minutes
+        const interval = 30; // 30 minutes
+
+        // Get the table container
+        const tableContainer = document.getElementById('appointments-table');
+        tableContainer.innerHTML = ''; // Clear existing table content
+
+        // Generate time slots and table rows
+        for (let time = startTime; time < endTime; time += interval) {
+            const hours = Math.floor(time / 60);
+            const minutes = time % 60;
+            const timeFormatted = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+
+            // Check if the time slot is booked
+            const isBooked = appointmentsByDate[selectedDate] && appointmentsByDate[selectedDate].includes(timeFormatted);
+            const status = isBooked ? 'closed' : 'free';
+            const statusText = isBooked ? 'Κλεισμένη ώρα' : 'Διαθεσιμη ώρα για ραντεβού';
+
+            // Create table row
+            // Create table row with updated button text for closed appointments
+            const row = `<tr>
+                <td>${timeFormatted}</td>
+                <td>${statusText}</td>
+                <td><button data-time-index="${(time - startTime) / interval}" class="${status}">${isBooked ? 'Μη διαθέσιμο' : 'Κλείνω ραντεβού'}</button></td>
+            </tr>`;
+
+            // Append row to table
+            tableContainer.innerHTML += row;
+        }
+    }
+
+    $(document).on('click', '#appointments-table button', function() {
         loaderElement.style.display = 'flex';
         const index = $(this).data('time-index');
         const timeSlot = calculateTimeSlot(index);
         console.log('Time slot:', timeSlot);
-        // Assuming UserId is available globally or from sessionStorage
         var UserId = sessionStorage.getItem('UserId');
-        // Retrieve serviceName from sessionStorage
         var serviceName = sessionStorage.getItem('serviceName');
-        // Retrieve selected date from datepicker
-        var selectedDate = $('#datepicker').datepicker('getDate');
-        selectedDate = $.datepicker.formatDate('yy/mm/dd', selectedDate);
-        // Construct the JSON object including the time
+        var selectedDate = sessionStorage.getItem('selectedDate');
         var appointmentData = {
             UserId: UserId,
             serviceName: serviceName,
             appointmentDate: selectedDate,
             appointmentTime: timeSlot
         };
-        // Convert the object to JSON and send
         var json = JSON.stringify(appointmentData);
         console.log('Sending JSON:', json);
-        // Call Firebase Cloud Function
+        addAppointment(json);
+    });
+
+    function calculateTimeSlot(index) {
+        const startTime = 9 * 60; // 9:00 AM in minutes
+        const timeInMinutes = startTime + (index * 30);
+        const hours = Math.floor(timeInMinutes / 60);
+        const minutes = timeInMinutes % 60;
+        return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+    }
+
+    function addAppointment(json) {
         fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/addAppointment', {
             method: 'POST',
             headers: {
@@ -129,16 +157,15 @@ $(document).ready(function() {
         })
         .then(response => response.json())
         .then(data => {
-            console.log('Επιτυχία:', data.message);
-
-            loaderElement.style.display = 'none'; // Hide the loader element
+            console.log('Success:', data.message);
+            loaderElement.style.display = 'none';
             setTimeout(() => {
-                alert('Το ραντεβού σας καταχωρήθηκε επιτυχώς!'); // Show the alert after a 0.1s delay
+                alert('Your appointment has been successfully booked!');
                 location.reload();
             }, 100);
         })
         .catch((error) => {
-            console.error('Σφάλμα:', error);
+            console.error('Error:', error);
         });
-    });
+    }
 });
