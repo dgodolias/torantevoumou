@@ -95,17 +95,6 @@
     </header>
     <!-- Services Section -->
     <div id="services" class="text-center">
-
-      <div class="container">
-        <div class="floating-stack">
-          <dl>
-            <dt>b</dt>
-            <dd>barbershop</dd>
-            <dt>p</dt>
-            <dd>physiotherapy</dd>
-          </dl>
-        </div>
-      </div>
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 intro-text ">
@@ -122,8 +111,20 @@
           </div>
         </div>
       </div>
-      <canvas class="banner_canvas" id="canvas_banner" width="1018" height="700"></canvas>
-
+      <canvas class="banner_canvas" id="canvas_banner"></canvas>
+      <div class="container" id="alphindex">
+        <div id="parentContainer">
+          <div id="businessDictionary"></div>
+          <div id="searchBarContainer">
+            <div id="titleSearchBarContainer">
+              <input type="text" id="searchBar" placeholder="Αναζήτηση Υπηρεσίας...">
+            </div>
+            <div id="selectedBusinesses"></div>
+            <hr id="line">
+            <div id="results"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Contact Section -->
     <div id="contact">
@@ -132,7 +133,8 @@
           <div class="row">
             <div class="section-title">
               <h2>Get In Touch</h2>
-              <p>Please fill out the form below to send us an email and we will get back to you as soon as possible.</p>
+              <p>Please fill out the form below to send us an email and we will get back to you as soon as possible.
+              </p>
             </div>
             <form name="sentMessage" id="contactForm" novalidate>
               <div class="row">

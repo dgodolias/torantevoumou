@@ -28,11 +28,18 @@ $(document).ready(function() {
             effect: 'fade',
             duration: 1000
         },
-        open: function() {
+        open: function(event, ui) {
             $('#blurOverlay').fadeIn(1000);
+            $(document).on('mousedown.dialogCloseEvent', function(e) {
+                var container = $(".ui-dialog");
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    $('#dialog').dialog('close');
+                }
+            });
         },
-        beforeClose: function() {
+        beforeClose: function(event, ui) {
             $('#blurOverlay').fadeOut(1000);
+            $(document).off('mousedown.dialogCloseEvent'); // Unbind the event listener
         }
     });
 

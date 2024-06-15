@@ -53,11 +53,11 @@
 }
 
 #parentContainer {
-	border: 1px solid #bba8a8;
-	display: flex;
-	border-radius: 70px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-	background: rgba(233, 233, 233, 0.55) !important;
+    border: 1px solid #bba8a8;
+    display: flex;
+    border-radius: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    background: rgba(233,233,233, 0.55) !important;
 }
 
 #businessDictionary {
@@ -99,6 +99,56 @@
 	width: 100%;
 	align-self: center;
 	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+}
+
+.letterAlphIndex {
+	position: relative;
+}
+
+.businessAlphIndex {
+	position: relative;
+}
+
+.letterAlphIndex::after {
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	transition: width 0.2s;
+}
+.businessAlphIndex::after {
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	transition: width 0.2s;
+}
+
+.letterAlphIndex:hover::after {
+	width: 70%;
+	left: calc((100% - 70%) / 2);
+}
+
+.businessAlphIndex:hover::after {
+	width: 100%;
+}
+
+.letterAlphIndex:active {
+	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+}
+
+.businessAlphIndex:active {
+	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+}
+
+h2#titleService {
+    font-size: xx-large;
 }
 
 .floating-stack {
@@ -365,9 +415,10 @@ hr {
 }
 
 .index #services {
-	position: relative;
-	display: flex;
-	/* Ensure the parent is a positioned element */
+    position: relative;
+    display: inline-block;
+    height: 1000px;
+    width: 100%;
 }
 
 .index #alphindex {
