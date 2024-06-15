@@ -38,7 +38,7 @@ namespace Namespace
                 : new Dictionary<string, List<string>>();
             
             
-
+            
             Appointments = HttpContext.Session.GetString("UserDetailedAppointments") != null
                 ? JsonConvert.DeserializeObject<List<AppointmentModel>>(HttpContext.Session.GetString("UserDetailedAppointments"))
                 : new List<AppointmentModel>();

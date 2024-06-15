@@ -62,50 +62,51 @@ exports.GetUserAUTHinfo = functions.https.onRequest(async (req, res) => {
 });
 
 exports.getServiceDetailedAppointments =
-functions.https.onRequest(async (req, res) => {
-  const allowedOrigins = [
-    "https://localhost:7177",
-    "https://www.torantevoumou.gr",
-    "https://torantevoumou.gr",
-  ];
-  const origin = req.headers.origin;
-  if (allowedOrigins.includes(origin)) {
-    res.set("Access-Control-Allow-Origin", origin);
-  }
-  res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
-  res.set("Access-Control-Allow-Headers", "*");
+  functions.https.onRequest(async (req, res) => {
+    const allowedOrigins = [
+      "https://localhost:7177",
+      "https://www.torantevoumou.gr",
+      "https://torantevoumou.gr",
+    ];
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+      res.set("Access-Control-Allow-Origin", origin);
+    }
+    res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
+    res.set("Access-Control-Allow-Headers", "*");
 
-  // Respond to OPTIONS requests (required by CORS preflight)
-  if (req.method === "OPTIONS") {
-    res.status(200).send();
-    return;
-  }
-
-  console.log("getServiceDetiledAppointments function called");
-
-  // Declare serviceName outside of the try block
-  const serviceName = req.query.service;
-
-  try {
-    if (!serviceName) {
-      return res.status(400).send("Service name is required");
+    // Respond to OPTIONS requests (required by CORS preflight)
+    if (req.method === "OPTIONS") {
+      res.status(200).send();
+      return;
     }
 
-    const snapshotDB = await admin.database();
-    const appRef = snapshotDB.ref(`/services/${serviceName}`);
-    const snapshot = await appRef.once("value");
-    const serviceAppointments = snapshot.val();
+    console.log("getServiceDetiledAppointments function called");
 
-    if (serviceAppointments) {
-      res.json({[serviceName]: serviceAppointments});
-    } else {
-      res.status(404).send(`No appointments found for service: ${serviceName}`);
+    // Declare serviceName outside of the try block
+    const serviceName = req.query.service;
+
+    try {
+      if (!serviceName) {
+        return res.status(400).send("Service name is required");
+      }
+
+      const snapshotDB = await admin.database();
+      const appRef = snapshotDB.ref(`/services/${serviceName}/appointments`);
+      const snapshot = await appRef.once("value");
+      const serviceAppointments = snapshot.val();
+
+      if (serviceAppointments) {
+        res.json({[serviceName]: serviceAppointments});
+      } else {
+        res.status(404).send(`No appointments found for service:
+           ${serviceName}`);
+      }
+    } catch (error) {
+      console.error(`Error listing appointments: ${serviceName}`, error);
+      res.status(500).send(`Error listing appointments: ${serviceName}`);
     }
-  } catch (error) {
-    console.error(`Error listing appointments: ${serviceName}`, error);
-    res.status(500).send(`Error listing appointments: ${serviceName}`);
-  }
-});
+  });
 
 exports.getServiceInfo = functions.https.onRequest(async (req, res) => {
   const allowedOrigins = [
@@ -120,7 +121,6 @@ exports.getServiceInfo = functions.https.onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
   res.set("Access-Control-Allow-Headers", "*");
 
-  // Respond to OPTIONS requests (required by CORS preflight)
   if (req.method === "OPTIONS") {
     res.status(200).send();
     return;
@@ -130,12 +130,20 @@ exports.getServiceInfo = functions.https.onRequest(async (req, res) => {
 
   try {
     const snapshotDB = await admin.database();
-    const infoRef = snapshotDB.ref("/info");
-    const snapshot = await infoRef.once("value");
-    const serviceInfo = snapshot.val();
+    const servicesRef = snapshotDB.ref("/services");
+    const snapshot = await servicesRef.once("value");
+    const services = snapshot.val();
 
-    if (serviceInfo) {
-      res.json(serviceInfo);
+    if (services) {
+      // Assuming you want to return information for all services
+      const allServiceInfo = Object.keys(services)
+          .reduce((acc, serviceName) => {
+            const serviceInfo = services[serviceName].info;
+            acc[serviceName] = serviceInfo;
+            return acc;
+          }, {});
+
+      res.json(allServiceInfo);
     } else {
       res.status(404).send("No service information found");
     }
@@ -248,7 +256,8 @@ exports.getUserAppointments = functions.https.onRequest(async (req, res) => {
       if (Object.prototype.hasOwnProperty.call(serviceAppointments, service)) {
         for (const appointmentId of serviceAppointments[service]) {
           const db = await admin.database();
-          const path = `/services/${service}/${appointmentId}`;
+          const path = `/services/${service}/appointments/${appointmentId}`;
+          console.log(`Getting appointment from path: ${path}`);
           const snapshot = await db.ref(path).once("value");
           const appointment = snapshot.val();
           if (appointment) {
@@ -374,16 +383,18 @@ exports.addAppointment = functions.https.onRequest(async (req, res) => {
   try {
     console.log(`Adding appointment for user ${UserId} with service ` +
       `${serviceName} on ${appointmentDate} at ${appointmentTime}`);
-    // Add the appointment to the services table
-    const newAppointmentRef = servicesRef.child(serviceName).push();
-    await newAppointmentRef.set({
+    // Add the appointment to the services table under the "appointments" child
+    const appointmentsRef = servicesRef.child(
+        `${serviceName}/appointments`).push();
+
+    await appointmentsRef.set({
       UID: UserId,
       appointmentDate,
       appointmentTime,
     });
 
     // Get the generated key for the appointment
-    const appointmentKey = newAppointmentRef.key;
+    const appointmentKey = appointmentsRef.key;
 
     console.log(`Updating user ${UserId} with new appointment key ` +
       `${appointmentKey}`);
