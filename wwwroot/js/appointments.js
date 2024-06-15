@@ -1,13 +1,43 @@
 $(document).ready(function () {
-    // Initialize the datepicker
+
     $('#datepicker').datepicker({
-        minDate: 0,
-        onSelect: function (dateText) {
+        minDate: 0, // Allow selection from today onwards
+        maxDate: '+1y', // Allow selection up to one year from today
+        onSelect: function(dateText) {
             var selectedDate = $.datepicker.formatDate('yy/mm/dd', new Date(dateText));
             sessionStorage.setItem('selectedDate', selectedDate);
             updateAppointmentsForDate(selectedDate);
+        },
+        beforeShowDay: function(date) {
+            // Disable past dates
+            if (date < new Date()) {
+                return [false];
+            }
+
+            // Generate a unique ID for each date cell
+            const dateString = $.datepicker.formatDate('yy-mm-dd', date);
+            const cellId = `date-${dateString}`;
+
+            return [true, cellId, ''];
         }
     });
+
+    // Customization function to be called after datepicker renders
+    function customizeDateCells() {
+        // Example customization: Highlight a specific date
+        setTimeout(function() {
+            $('.date-2024-06-17 a').css('background-color', 'red');
+        }, 0);
+    }
+
+    // Initial call to ensure styles are applied when the Datepicker is first displayed
+    customizeDateCells();
+
+    // Ensure custom styles are reapplied every time the Datepicker is rendered
+    $('#datepicker').on('change', function() {
+        customizeDateCells();
+    });
+    
 
     const loaderElement = document.querySelector('.loader');
     var viewportHeight = $(window).height();
