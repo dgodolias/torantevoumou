@@ -15,7 +15,6 @@ namespace Namespace
 
         public async Task OnGetAsync()
         {
-            Console.WriteLine("Index OnGetAsync");
             ServiceNames = await _firebaseService.GetServices();
             foreach (var service in ServiceNames)
             {

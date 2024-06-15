@@ -1450,7 +1450,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\index.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"5570"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hteQIDS\u002BqG1dbheNx3yjzHUDtv5vyM7LVBelP8qfzJk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 15 May 2024 14:24:42 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6285"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022\u002BQZr23ILu7WzP4LFyzX8UzsiKnXVIwuLPdPFDDnNrD0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 15 Jun 2024 06:14:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/index2.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\index2.js))</AssetFile>
