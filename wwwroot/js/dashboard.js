@@ -41,7 +41,7 @@ window.addEventListener('load', function() {
     });
 
     // Fetch call to cloud function after the page has fully loaded
-    fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/getServiceInfo')
+    fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/getServicesInfo')
         .then(response => response.json())
         .then(data => {
             sessionStorage.setItem('ServicesInfo', JSON.stringify(data));

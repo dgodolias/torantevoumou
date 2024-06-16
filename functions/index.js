@@ -108,7 +108,7 @@ exports.getServiceDetailedAppointments =
     }
   });
 
-exports.getServiceInfo = functions.https.onRequest(async (req, res) => {
+exports.getServicesInfo = functions.https.onRequest(async (req, res) => {
   const allowedOrigins = [
     "https://localhost:7177",
     "https://www.torantevoumou.gr",
@@ -126,7 +126,7 @@ exports.getServiceInfo = functions.https.onRequest(async (req, res) => {
     return;
   }
 
-  console.log("getServiceInfo function called");
+  console.log("getServicesInfo function called");
 
   try {
     const snapshotDB = await admin.database();

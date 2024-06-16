@@ -3,12 +3,12 @@ $(document).ready(function () {
     $('#datepicker').datepicker({
         minDate: 0, // Allow selection from today onwards
         maxDate: '+1y', // Allow selection up to one year from today
-        onSelect: function(dateText) {
+        onSelect: function (dateText) {
             var selectedDate = $.datepicker.formatDate('yy/mm/dd', new Date(dateText));
             sessionStorage.setItem('selectedDate', selectedDate);
             updateAppointmentsForDate(selectedDate);
         },
-        beforeShowDay: function(date) {
+        beforeShowDay: function (date) {
             // Disable past dates
             if (date < new Date()) {
                 return [false];
@@ -25,7 +25,7 @@ $(document).ready(function () {
     // Customization function to be called after datepicker renders
     function customizeDateCells() {
         // Example customization: Highlight a specific date
-        setTimeout(function() {
+        setTimeout(function () {
             $('.date-2024-06-17 a').css('background-color', 'red');
         }, 0);
     }
@@ -34,10 +34,10 @@ $(document).ready(function () {
     customizeDateCells();
 
     // Ensure custom styles are reapplied every time the Datepicker is rendered
-    $('#datepicker').on('change', function() {
+    $('#datepicker').on('change', function () {
         customizeDateCells();
     });
-    
+
 
     const loaderElement = document.querySelector('.loader');
     var viewportHeight = $(window).height();
@@ -80,19 +80,45 @@ $(document).ready(function () {
         $('#dialog').dialog('open');
         fetchServiceAppointments(serviceName);
 
-        // Retrieve and parse the appointmentsByDate string from sessionStorage
+        const servicesInfoStr = sessionStorage.getItem('ServicesInfo');
+        const servicesNameStr = sessionStorage.getItem('serviceName');
+        const servicesInfo = servicesInfoStr ? JSON.parse(servicesInfoStr) : {};
+        const serviceNameVar = servicesNameStr ? servicesNameStr : "No Service Name";
+        const serviceValue = servicesInfo[serviceNameVar];
+
+        console.log('Services Info:', servicesInfo);
+        console.log('Service Name:', serviceNameVar);
+        console.log('Service Value:', JSON.stringify(serviceValue));
+
+        // Extract operational hours
+        const startingTimes = serviceValue.startingTime.split('#').filter(Boolean);
+        const endingTimes = serviceValue.endingTime.split('#').filter(Boolean);
+        const appointmentDuration = parseInt(serviceValue.appointmentDuaration, 10);
+
+        // Calculate total operational hours
+        let totalOperationalMinutes = 0;
+        for (let i = 0; i < startingTimes.length; i++) {
+            const startHour = parseInt(startingTimes[i].split(':')[0], 10);
+            const endHour = parseInt(endingTimes[i].split(':')[0], 10);
+            totalOperationalMinutes += (endHour - startHour) * 60;
+        }
+
+        // Calculate number of possible appointments per day
+        const maxAppointmentsPerDay = totalOperationalMinutes / appointmentDuration;
+
         const appointmentsByDateStr = sessionStorage.getItem('AppointmentsByDate');
         const appointmentsByDate = appointmentsByDateStr ? JSON.parse(appointmentsByDateStr) : {};
 
-        // Iterate over each date in the appointmentsByDate object
         Object.keys(appointmentsByDate).forEach(date => {
-            // Convert date format from "YYYY/MM/DD" to "YYYY-MM-DD" for cell ID
             const formattedDate = date.replace(/\//g, '-');
             const cellId = `date-${formattedDate}`;
             const appointments = appointmentsByDate[date];
+            const appointmentPercentage = (appointments.length / maxAppointmentsPerDay) * 100;
 
-            // Find the cell by its ID and change its background color
-            if (appointments.length > 2) {
+            // Change cell background color based on appointments percentage
+            if (appointmentPercentage > 15) {
+                $(`.${cellId} a`).css('background-color', 'blue');
+            } else if (appointments.length > 2) {
                 $(`.${cellId} a`).css('background-color', 'red');
             } else {
                 $(`.${cellId} a`).css('background-color', 'white');
