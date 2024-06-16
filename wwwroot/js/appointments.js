@@ -79,6 +79,25 @@ $(document).ready(function () {
         sessionStorage.setItem('serviceName', serviceName);
         $('#dialog').dialog('open');
         fetchServiceAppointments(serviceName);
+
+        // Retrieve and parse the appointmentsByDate string from sessionStorage
+        const appointmentsByDateStr = sessionStorage.getItem('AppointmentsByDate');
+        const appointmentsByDate = appointmentsByDateStr ? JSON.parse(appointmentsByDateStr) : {};
+
+        // Iterate over each date in the appointmentsByDate object
+        Object.keys(appointmentsByDate).forEach(date => {
+            // Convert date format from "YYYY/MM/DD" to "YYYY-MM-DD" for cell ID
+            const formattedDate = date.replace(/\//g, '-');
+            const cellId = `date-${formattedDate}`;
+            const appointments = appointmentsByDate[date];
+
+            // Find the cell by its ID and change its background color
+            if (appointments.length > 2) {
+                $(`.${cellId} a`).css('background-color', 'red');
+            } else {
+                $(`.${cellId} a`).css('background-color', 'white');
+            }
+        });
     });
 
     function fetchServiceAppointments(serviceName) {
