@@ -1,5 +1,75 @@
 $(document).ready(function () {
 
+    $('#datepicker').datepicker({
+        minDate: 0, // Allow selection from today onwards
+        maxDate: '+1y', // Allow selection up to one year from today
+        onSelect: function (dateText) {
+            var selectedDate = $.datepicker.formatDate('yy/mm/dd', new Date(dateText));
+            sessionStorage.setItem('selectedDate', selectedDate);
+            updateAppointmentsForDate(selectedDate);
+            handleDateOrServiceSelection();
+            $('#appointments-table').css('display', 'block');
+        },
+        beforeShowDay: function (date) {
+            // Disable past dates
+            if (date < new Date()) {
+                return [false];
+            }
+
+            // Generate a unique ID for each date cell
+            const dateString = $.datepicker.formatDate('yy-mm-dd', date);
+            const cellId = `date-${dateString}`;
+
+            return [true, cellId, ''];
+        },
+        onChangeMonthYear: function() {
+            // Format the month and year to your desired format, e.g., 'yy/mm/dd'
+            // Assuming you want to perform actions for the 1st day of the changed month
+            handleDateOrServiceSelection();
+        }
+    });
+
+
+    const loaderElement = document.querySelector('.loader');
+    var viewportHeight = $(window).height();
+    var dialogHeight = viewportHeight * 0.8; // 80% of the viewport height
+    // Initialize the dialog
+    $('#dialog').dialog({
+        autoOpen: false,
+        modal: true,
+        width: '80%',
+        height: dialogHeight,
+        draggable: false,
+        resizable: false,
+        show: {
+            effect: 'fade',
+            duration: 500
+        },
+        hide: {
+            effect: 'fade',
+            duration: 1000
+        },
+        open: function (event, ui) {
+            $('#blurOverlay').fadeIn(1000);
+            $(document).on('mousedown.dialogCloseEvent', function (e) {
+                var container = $(".ui-dialog");
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    $('#dialog').dialog('close');
+                }
+            });
+        },
+        beforeClose: function (event, ui) {
+            $('#blurOverlay').fadeOut(1000);
+            $(document).off('mousedown.dialogCloseEvent'); // Unbind the event listener
+
+            // Reset datepicker cells to default state by removing custom background classes
+            $('#datepicker').find('a').removeClass('blue-background red-background white-background');
+
+            // Set #appointments-table display to none
+            $('#appointments-table').css('display', 'none');
+        }
+    });
+
     // New function to encapsulate shared logic
     async function handleDateOrServiceSelection() {
 
@@ -56,77 +126,12 @@ $(document).ready(function () {
         });
     }
 
-    $('#datepicker').datepicker({
-        minDate: 0, // Allow selection from today onwards
-        maxDate: '+1y', // Allow selection up to one year from today
-        onSelect: function (dateText) {
-            var selectedDate = $.datepicker.formatDate('yy/mm/dd', new Date(dateText));
-            sessionStorage.setItem('selectedDate', selectedDate);
-            updateAppointmentsForDate(selectedDate);
-            handleDateOrServiceSelection();
-        },
-        beforeShowDay: function (date) {
-            // Disable past dates
-            if (date < new Date()) {
-                return [false];
-            }
-
-            // Generate a unique ID for each date cell
-            const dateString = $.datepicker.formatDate('yy-mm-dd', date);
-            const cellId = `date-${dateString}`;
-
-            return [true, cellId, ''];
-        },
-        onChangeMonthYear: function() {
-            // Format the month and year to your desired format, e.g., 'yy/mm/dd'
-            // Assuming you want to perform actions for the 1st day of the changed month
-            handleDateOrServiceSelection();
-        }
-    });
-
-
-    const loaderElement = document.querySelector('.loader');
-    var viewportHeight = $(window).height();
-    var dialogHeight = viewportHeight * 0.8; // 80% of the viewport height
-    // Initialize the dialog
-    $('#dialog').dialog({
-        autoOpen: false,
-        modal: true,
-        width: '80%',
-        height: dialogHeight,
-        draggable: false,
-        resizable: false,
-        show: {
-            effect: 'fade',
-            duration: 500
-        },
-        hide: {
-            effect: 'fade',
-            duration: 1000
-        },
-        open: function (event, ui) {
-            $('#blurOverlay').fadeIn(1000);
-            $(document).on('mousedown.dialogCloseEvent', function (e) {
-                var container = $(".ui-dialog");
-                if (!container.is(e.target) && container.has(e.target).length === 0) {
-                    $('#dialog').dialog('close');
-                }
-            });
-        },
-        beforeClose: function (event, ui) {
-            $('#blurOverlay').fadeOut(1000);
-            $(document).off('mousedown.dialogCloseEvent'); // Unbind the event listener
-
-            // Reset datepicker cells to default state by removing custom background classes
-            $('#datepicker').find('a').removeClass('blue-background red-background white-background');
-        }
-    });
-
-
     $('#serviceList .serviceItem').on('click', async function () { // Mark this function as async
         var serviceName = $(this).attr('id');
-        // Await the fetchServiceAppointments to ensure it completes before moving on
+
+        loaderElement.style.display = 'flex';
         await fetchServiceAppointments(serviceName);
+        loaderElement.style.display = 'none';
 
         console.log('You clicked on service: ' + serviceName);
         sessionStorage.setItem('serviceName', serviceName);

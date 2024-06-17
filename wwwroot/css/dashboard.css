@@ -247,6 +247,7 @@ body.dark .sidebar li a:hover .text{
 }
 
 #dialog{
+    width: fit-content;
     position: relative;
     border: 0;
     padding: .5em 1em;
@@ -256,6 +257,7 @@ body.dark .sidebar li a:hover .text{
 }
 
 #dialog-content {
+    justify-content: center;
     height: 100%;
     display: flex;
 }
