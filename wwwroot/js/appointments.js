@@ -1,14 +1,11 @@
 $(document).ready(function () {
 
     // New function to encapsulate shared logic
-    async function handleDateOrServiceSelection(serviceName, selectedDate) {
-        console.log('You clicked on service: ' + serviceName);
-        sessionStorage.setItem('serviceName', serviceName);
-        $('#dialog').dialog('open');
+    async function handleDateOrServiceSelection() {
 
         loaderElement.style.display = 'flex';
         // Await the fetchServiceAppointments to ensure it completes before moving on
-        await processAppointmentData(sessionStorage.getItem('AllDetailedAppointmentsForService'));
+        await processAppointmentData(JSON.parse(sessionStorage.getItem('AllDetailedAppointmentsForService')));
         loaderElement.style.display = 'none';
 
 
@@ -97,7 +94,7 @@ $(document).ready(function () {
         resizable: false,
         show: {
             effect: 'fade',
-            duration: 1000
+            duration: 500
         },
         hide: {
             effect: 'fade',
@@ -124,58 +121,14 @@ $(document).ready(function () {
 
     $('#serviceList .serviceItem').on('click', async function () { // Mark this function as async
         var serviceName = $(this).attr('id');
+        // Await the fetchServiceAppointments to ensure it completes before moving on
+        await fetchServiceAppointments(serviceName);
+
         console.log('You clicked on service: ' + serviceName);
         sessionStorage.setItem('serviceName', serviceName);
         $('#dialog').dialog('open');
 
-        // Await the fetchServiceAppointments to ensure it completes before moving on
-        await fetchServiceAppointments(serviceName);
-
-        // The rest of your code here will execute after fetchServiceAppointments has finished
-        const servicesInfoStr = sessionStorage.getItem('ServicesInfo');
-        const servicesNameStr = sessionStorage.getItem('serviceName');
-        const servicesInfo = servicesInfoStr ? JSON.parse(servicesInfoStr) : {};
-        const serviceNameVar = servicesNameStr ? servicesNameStr : "No Service Name";
-        const serviceValue = servicesInfo[serviceNameVar];
-
-        console.log('Services Info:', servicesInfo);
-        console.log('Service Name:', serviceNameVar);
-        console.log('Service Value:', JSON.stringify(serviceValue));
-
-        // Extract operational hours
-        const startingTimes = serviceValue.startingTime.split('#').filter(Boolean);
-        const endingTimes = serviceValue.endingTime.split('#').filter(Boolean);
-        const appointmentDuration = parseInt(serviceValue.appointmentDuaration, 10);
-
-        // Calculate total operational hours
-        let totalOperationalMinutes = 0;
-        for (let i = 0; i < startingTimes.length; i++) {
-            const startHour = parseInt(startingTimes[i].split(':')[0], 10);
-            const endHour = parseInt(endingTimes[i].split(':')[0], 10);
-            totalOperationalMinutes += (endHour - startHour) * 60;
-        }
-
-        // Calculate number of possible appointments per day
-        const maxAppointmentsPerDay = totalOperationalMinutes / appointmentDuration;
-
-        const appointmentsByDateStr = sessionStorage.getItem('AppointmentsByDate');
-        const appointmentsByDate = appointmentsByDateStr ? JSON.parse(appointmentsByDateStr) : {};
-
-        Object.keys(appointmentsByDate).forEach(date => {
-            const formattedDate = date.replace(/\//g, '-');
-            const cellId = `date-${formattedDate}`;
-            const appointments = appointmentsByDate[date];
-            const appointmentPercentage = (appointments.length / maxAppointmentsPerDay) * 100;
-
-            // Change cell background color based on appointments percentage using classes
-            if (appointmentPercentage > 15) {
-                $(`.${cellId} a`).addClass('blue-background').removeClass('red-background white-background');
-            } else if (appointments.length > 2) {
-                $(`.${cellId} a`).addClass('red-background').removeClass('blue-background white-background');
-            } else {
-                $(`.${cellId} a`).addClass('white-background').removeClass('blue-background red-background');
-            }
-        });
+        handleDateOrServiceSelection(serviceName);
     });
 
     function fetchServiceAppointments(serviceName) {
@@ -188,7 +141,6 @@ $(document).ready(function () {
             })
             .then(data => {
                 sessionStorage.setItem('AllDetailedAppointmentsForService', JSON.stringify(data));
-                processAppointmentData(data);
                 return data; // Ensure to return data if needed later
             })
             .catch(error => {
