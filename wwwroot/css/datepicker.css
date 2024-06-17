@@ -86,3 +86,15 @@
     text-align: center;
     text-decoration: none;
 }
+
+a.ui-state-default.blue-background {
+    background-color: blue;
+}
+
+a.ui-state-default.red-background {
+    background-color: red;
+}
+
+a.ui-state-default.white-background {
+    background-color: white;
+}

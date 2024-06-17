@@ -22,22 +22,6 @@ $(document).ready(function () {
         }
     });
 
-    // Customization function to be called after datepicker renders
-    function customizeDateCells() {
-        // Example customization: Highlight a specific date
-        setTimeout(function () {
-            $('.date-2024-06-17 a').css('background-color', 'red');
-        }, 0);
-    }
-
-    // Initial call to ensure styles are applied when the Datepicker is first displayed
-    customizeDateCells();
-
-    // Ensure custom styles are reapplied every time the Datepicker is rendered
-    $('#datepicker').on('change', function () {
-        customizeDateCells();
-    });
-
 
     const loaderElement = document.querySelector('.loader');
     var viewportHeight = $(window).height();
@@ -70,17 +54,24 @@ $(document).ready(function () {
         beforeClose: function (event, ui) {
             $('#blurOverlay').fadeOut(1000);
             $(document).off('mousedown.dialogCloseEvent'); // Unbind the event listener
+        
+            // Reset datepicker cells to default state by removing custom background classes
+            $('#datepicker').find('a').removeClass('blue-background red-background white-background');
         }
     });
 
-    $('#serviceList .serviceItem').on('click', function () {
+
+    $('#serviceList .serviceItem').on('click', async function () { // Mark this function as async
         var serviceName = $(this).attr('id');
         console.log('You clicked on service: ' + serviceName);
         sessionStorage.setItem('serviceName', serviceName);
         $('#dialog').dialog('open');
-        fetchServiceAppointments(serviceName);
-
-        const servicesInfoStr = sessionStorage.getItem('ServicesInfo');
+    
+        // Await the fetchServiceAppointments to ensure it completes before moving on
+        await fetchServiceAppointments(serviceName);
+    
+        // The rest of your code here will execute after fetchServiceAppointments has finished
+        const servicesInfoStr = sessionStorage.getItem('ServicesInfo');    
         const servicesNameStr = sessionStorage.getItem('serviceName');
         const servicesInfo = servicesInfoStr ? JSON.parse(servicesInfoStr) : {};
         const serviceNameVar = servicesNameStr ? servicesNameStr : "No Service Name";
@@ -115,19 +106,19 @@ $(document).ready(function () {
             const appointments = appointmentsByDate[date];
             const appointmentPercentage = (appointments.length / maxAppointmentsPerDay) * 100;
 
-            // Change cell background color based on appointments percentage
+            // Change cell background color based on appointments percentage using classes
             if (appointmentPercentage > 15) {
-                $(`.${cellId} a`).css('background-color', 'blue');
+                $(`.${cellId} a`).addClass('blue-background').removeClass('red-background white-background');
             } else if (appointments.length > 2) {
-                $(`.${cellId} a`).css('background-color', 'red');
+                $(`.${cellId} a`).addClass('red-background').removeClass('blue-background white-background');
             } else {
-                $(`.${cellId} a`).css('background-color', 'white');
+                $(`.${cellId} a`).addClass('white-background').removeClass('blue-background red-background');
             }
         });
     });
 
     function fetchServiceAppointments(serviceName) {
-        fetch(`https://us-central1-torantevoumou-86820.cloudfunctions.net/getServiceDetailedAppointments?service=${serviceName}&date=${sessionStorage.getItem('selectedDate')}`)
+        return fetch(`https://us-central1-torantevoumou-86820.cloudfunctions.net/getServiceDetailedAppointments?service=${serviceName}&date=${sessionStorage.getItem('selectedDate')}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -136,6 +127,7 @@ $(document).ready(function () {
             })
             .then(data => {
                 processAppointmentData(data);
+                return data; // Ensure to return data if needed later
             })
             .catch(error => {
                 console.error('There has been a problem with your fetch operation:', error);

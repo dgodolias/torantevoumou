@@ -6,7 +6,7 @@ console.log('Login time: ', loginTime);
 var elapsedTime = new Date().getTime() - loginTime;
 
 // If more than 15 seconds have passed since the login time
-if (elapsedTime > 15000) {
+if (elapsedTime > 1000 * 60 * 2) {
     // Clear the session storage
     sessionStorage.setItem('userLoggedIn', 'false');
     window.location.href = '/Login';
