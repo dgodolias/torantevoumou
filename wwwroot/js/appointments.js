@@ -63,8 +63,7 @@ $(document).ready(function () {
             var selectedDate = $.datepicker.formatDate('yy/mm/dd', new Date(dateText));
             sessionStorage.setItem('selectedDate', selectedDate);
             updateAppointmentsForDate(selectedDate);
-            const serviceNam = sessionStorage.getItem('serviceName');
-            handleDateOrServiceSelection(serviceNam, selectedDate);
+            handleDateOrServiceSelection();
         },
         beforeShowDay: function (date) {
             // Disable past dates
@@ -77,6 +76,11 @@ $(document).ready(function () {
             const cellId = `date-${dateString}`;
 
             return [true, cellId, ''];
+        },
+        onChangeMonthYear: function() {
+            // Format the month and year to your desired format, e.g., 'yy/mm/dd'
+            // Assuming you want to perform actions for the 1st day of the changed month
+            handleDateOrServiceSelection();
         }
     });
 
