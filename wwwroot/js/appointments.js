@@ -8,7 +8,7 @@ $(document).ready(function () {
 
         loaderElement.style.display = 'flex';
         // Await the fetchServiceAppointments to ensure it completes before moving on
-        await fetchServiceAppointments(serviceName);
+        await processAppointmentData(sessionStorage.getItem('AllDetailedAppointmentsForService'));
         loaderElement.style.display = 'none';
 
 
@@ -187,6 +187,7 @@ $(document).ready(function () {
                 return response.json();
             })
             .then(data => {
+                sessionStorage.setItem('AllDetailedAppointmentsForService', JSON.stringify(data));
                 processAppointmentData(data);
                 return data; // Ensure to return data if needed later
             })
