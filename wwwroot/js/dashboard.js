@@ -1,27 +1,12 @@
 window.addEventListener('load', function() {
+    checkLoginStatus();
+    
     const body = document.querySelector('body'),
         sidebar = body.querySelector('nav'),
-        toggle = body.querySelector(".toggle"),
-        searchBtn = body.querySelector(".search-box"),
-        modeSwitch = body.querySelector(".toggle-switch"),
-        modeText = body.querySelector(".mode-text");
+        toggle = body.querySelector(".toggle")
 
     toggle.addEventListener("click" , () => {
         sidebar.classList.toggle("close");
-    });
-
-    searchBtn.addEventListener("click" , () => {
-        sidebar.classList.remove("close");
-    });
-
-    modeSwitch.addEventListener("click" , () => {
-        body.classList.toggle("dark");
-
-        if(body.classList.contains("dark")){
-            modeText.innerText = "Light mode";
-        }else{
-            modeText.innerText = "Dark mode";
-        }
     });
 
     // Embedding the appointments view in the dashboard view
@@ -38,6 +23,20 @@ window.addEventListener('load', function() {
             e.preventDefault();
             $("#container").load("/profile?userId=" + userId);
         });
+
+        // Logout functionality
+        const logoutButton = Array.from(document.querySelectorAll('.nav-text')).find(el => el.textContent.trim() === 'Logout');
+        if (logoutButton) {
+            logoutButton.closest('a').addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent the default anchor action
+
+                // Clear the session storage
+                sessionStorage.clear();
+
+                sessionStorage.setItem('userLoggedIn', 'false');
+                window.location.href = '/Login';
+            });
+        }
     });
 
     // Fetch call to cloud function after the page has fully loaded
@@ -49,3 +48,18 @@ window.addEventListener('load', function() {
         })
         .catch(error => console.error('Error fetching ServicesInfo:', error));
 });
+
+// This function checks the login status
+function checkLoginStatus() {
+    if (sessionStorage.getItem('userLoggedIn') === 'false') {
+        window.location.href = '/Login';
+    }
+}
+
+// Use the onpageshow event to handle the back button scenario
+window.onpageshow = function(event) {
+    // This ensures the check is performed even when the page is loaded from the cache
+    if (event.persisted) {
+        checkLoginStatus();
+    }
+};
