@@ -380,3 +380,7 @@ body.dark .home .text{
     border: 0px;
 }
 
+span.name {
+    font-size: larger;
+    margin-top: 15px;
+}

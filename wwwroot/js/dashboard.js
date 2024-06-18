@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
     checkLoginStatus();
-    
+
     const body = document.querySelector('body'),
         sidebar = body.querySelector('nav'),
         toggle = body.querySelector(".toggle")
@@ -13,7 +13,8 @@ window.addEventListener('load', function() {
     $(document).ready(function () {
         var userId = sessionStorage.getItem('UserId');
         console.log('User ID: ', userId);
-
+        $('#container').load('/appointments?userId=' + userId);
+        
         $('#appointmentLink').click(function (e) {
             e.preventDefault();
             $('#container').load('/appointments?userId=' + userId);
