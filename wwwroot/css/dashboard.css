@@ -247,7 +247,7 @@ body.dark .sidebar li a:hover .text{
 }
 
 #dialog{
-    width: fit-content;
+    width: fit-content !important;
     position: relative;
     border: 0;
     padding: .5em 1em;
@@ -400,6 +400,8 @@ body.dark .home .text{
 }
 
 .ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front {
+    display: flex;
+    justify-content: center;
     background: transparent;
     border: 0px;
 }

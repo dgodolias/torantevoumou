@@ -113,3 +113,42 @@ a.ui-state-default.purple4 {
 a.ui-state-default.grey-background {
     background-color: rgb(129 129 129);
 }
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.purple1 {
+    background-color: rgb(241, 185, 255);
+}
+
+.purple2 {
+    background-color: rgb(229, 121, 255);
+}
+
+.purple3 {
+    background-color: rgb(144, 19, 176);
+}
+
+.purple4 {
+    background-color: #3d005a;
+}
+
+.grey-background {
+    background-color: rgb(129, 129, 129);
+}
+
+#ColorsExplainTable table {
+    min-width: 200px;
+    width: fit-content;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+#ColorsExplainTable {
+    min-width: auto;
+    width: fit-content;
+}

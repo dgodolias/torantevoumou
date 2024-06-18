@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="~/css/appointments.css"> <!-- Link to the CSS file -->
     <link rel="stylesheet" href="~/css/datepicker.css"> <!-- Link to the CSS file -->
-    
+
     <script src="~js/jsCalendar.js"></script>
 </head>
 
@@ -49,8 +49,44 @@
     <div id="dialog" title="Select a date" style="display:none;">
         <i class="fas fa-times close-btn" style="cursor:pointer;"></i>
         <div id="dialog-content">
-            <div id="datepicker"></div>
-            <div id="table-container">
+            <div class="container">
+                <div id="datepicker"></div>
+                <div class="table-container" id="ColorsExplainTable">
+                    <table>
+                        <tr>
+                            <th colspan="4" style="text-align:center;">Πληρότητα</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="circle purple1"></div>
+                            </td>
+                            <td>&lt; 25%</td>
+                            <td>
+                                <div class="circle purple2"></div>
+                            </td>
+                            <td>&lt; 50%</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="circle purple3"></div>
+                            </td>
+                            <td>&lt; 75%</td>
+                            <td>
+                                <div class="circle purple4"></div>
+                            </td>
+                            <td>&lt; 100%</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="circle grey-background"></div>
+                            </td>
+                            <td>100%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-container">
                 <table id="appointments-table"></table>
             </div>
         </div>
