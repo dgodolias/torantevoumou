@@ -19,6 +19,11 @@ window.addEventListener('load', function() {
             $('#container').load('/appointments?userId=' + userId);
         });
 
+        $('#pastappointmentLink').click(function (e) {
+            e.preventDefault();
+            $('#container').load('/pastappointments?userId=' + userId);
+        });
+
         $("#profileLink").click(function (e) {
             e.preventDefault();
             $("#container").load("/profile?userId=" + userId);

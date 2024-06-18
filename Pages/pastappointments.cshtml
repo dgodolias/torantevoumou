@@ -1,0 +1,41 @@
+@page
+@model Namespace.pastAppointments
+
+@{
+    ViewData["Title"] = "Past appointments";
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body id="appointmentsPage">
+    <h1>@ViewData["Title"]</h1>
+
+    <section>
+        <h2>My Appointments</h2>
+
+        @if (Model.PastAppointments != null && Model.PastAppointments.Any())
+        {
+            foreach (var appointment in Model.PastAppointments)
+            {
+                <p>@appointment.appointmentDate: @appointment.appointmentTime</p>
+            }
+        }
+        else
+        {
+            <p>You don't have any appointments.</p>
+        }
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</body>
+
+</html>
