@@ -29,8 +29,20 @@ namespace Namespace
             ServiceNames = HttpContext.Session.GetString("ServiceNames") != null
                 ? JsonConvert.DeserializeObject<List<string>>(HttpContext.Session.GetString("ServiceNames"))
                 : new List<string>();
-            Console.WriteLine(ServiceNames);
-                
+            Console.WriteLine("ServiceNames" + HttpContext.Session.GetString("ServiceNames"));
+
+            
+            // Updated the deserialization to match the new type of ServiceAppointments
+            ServicepastAppointments = HttpContext.Session.GetString("ServiceJustKeysAppointments") != null
+                ? JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(HttpContext.Session.GetString("ServiceJustKeysAppointments"))
+                : new Dictionary<string, List<string>>();
+            Console.WriteLine("ServiceJustKeysAppointments" + HttpContext.Session.GetString("ServiceJustKeysAppointments"));
+            
+            
+            PastAppointments = HttpContext.Session.GetString("UserDetailedAppointments") != null
+                ? JsonConvert.DeserializeObject<List<AppointmentModel>>(HttpContext.Session.GetString("UserDetailedAppointments"))
+                : new List<AppointmentModel>();
+            Console.WriteLine("appointments" + HttpContext.Session.GetString("UserDetailedAppointments"));
         
             return Page();
         }

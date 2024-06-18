@@ -19,20 +19,6 @@
     <h1>@ViewData["Title"]</h1>
 
     <section>
-        <h2>My Appointments</h2>
-
-        @if (Model.Appointments != null && Model.Appointments.Any())
-        {
-            foreach (var appointment in Model.Appointments)
-            {
-                <p>@appointment.appointmentDate: @appointment.appointmentTime</p>
-            }
-        }
-        else
-        {
-            <p>You don't have any appointments.</p>
-        }
-
         <h2>Select Service</h2>
         <ul id="serviceList">
             @foreach (var serviceName in Model.ServiceNames)
