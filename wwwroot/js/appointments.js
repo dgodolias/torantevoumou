@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    cellColours = [ 'purple1', 'purple2', 'purple3', 'purple4','grey-background'];
+
     $('#datepicker').datepicker({
         minDate: 0, // Allow selection from today onwards
         maxDate: '+1y', // Allow selection up to one year from today
@@ -63,8 +65,7 @@ $(document).ready(function () {
             $(document).off('mousedown.dialogCloseEvent'); // Unbind the event listener
 
             // Reset datepicker cells to default state by removing custom background classes
-            $('#datepicker').find('a').removeClass('blue-background red-background white-background');
-
+            $('#datepicker').find('a').removeClass(cellColours.join(' '));
             // Set #appointments-table display to none
             $('#appointments-table').css('display', 'none');
         }
@@ -116,12 +117,18 @@ $(document).ready(function () {
             const appointmentPercentage = (appointments.length / maxAppointmentsPerDay) * 100;
 
             // Change cell background color based on appointments percentage using classes
-            if (appointmentPercentage > 15) {
-                $(`.${cellId} a`).addClass('blue-background').removeClass('red-background white-background');
-            } else if (appointments.length > 2) {
-                $(`.${cellId} a`).addClass('red-background').removeClass('blue-background white-background');
+            if (appointmentPercentage === 0) {
+            }
+            else if (appointmentPercentage < 25) {
+                $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[0]);
+            } else if (appointmentPercentage < 50) {
+                $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[1]);
+            } else if (appointmentPercentage < 75){
+                $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[2]);
+            } else if (appointmentPercentage < 100){
+                $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[3]);
             } else {
-                $(`.${cellId} a`).addClass('white-background').removeClass('blue-background red-background');
+                $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[4]);
             }
         });
     }

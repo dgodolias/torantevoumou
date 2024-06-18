@@ -42,9 +42,10 @@
 }
 
 .ui-datepicker .ui-state-default {
-    background: #fff;
+    background: #ffffff;
+    font-weight: 600;
     border: 1px solid #ddd;
-    color: #333;
+    color: #f9f9f9;
     border-radius: 50%;
     transition: background 0.3s, color 0.3s;
 }
@@ -81,20 +82,34 @@
 
 .ui-datepicker-calendar td span,
 .ui-datepicker-calendar td a {
+text-shadow: 
+        -0.7px -0.7px 0 #000,  
+         0.7px -0.7px 0 #000,
+        -0.7px  0.7px 0 #000,
+         0.7px  0.7px 0 #000;
+    color:white;
     display: block;
     width: 100%;
     text-align: center;
     text-decoration: none;
 }
 
-a.ui-state-default.blue-background {
-    background-color: blue;
+a.ui-state-default.purple1 {
+    background-color: rgb(241, 185, 255);
 }
 
-a.ui-state-default.red-background {
-    background-color: red;
+a.ui-state-default.purple2 {
+    background-color: rgb(220 77 255);
 }
 
-a.ui-state-default.white-background {
-    background-color: white;
+a.ui-state-default.purple3 {
+    background-color: rgb(155 26 188);
+}
+
+a.ui-state-default.purple4 {
+    background-color: #530c74;
+}
+
+a.ui-state-default.grey-background {
+    background-color: rgb(129 129 129);
 }
