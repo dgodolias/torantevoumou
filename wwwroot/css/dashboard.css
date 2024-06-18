@@ -69,7 +69,6 @@ body.dark{
 
 #pagetobeembedded {
     flex-grow: 1; /* This will make the content take up the rest of the space in the container */
-    margin-left: 15px;
 }
 
 .sidebar li{

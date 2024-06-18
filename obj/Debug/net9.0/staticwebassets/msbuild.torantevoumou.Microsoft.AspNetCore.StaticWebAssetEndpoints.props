@@ -28,7 +28,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\datepicker.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2943"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022coCZqJOHqhQYtz1Sops4w9B/gBjFvYCVBmZxpD7OYwk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 18 Jun 2024 09:46:57 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2950"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223rcSqCwtqAu/XUDU/api7FZLyqg\u002BYVy68Wzv5pU9jac=\u0022"},{"Name":"Last-Modified","Value":"Tue, 18 Jun 2024 10:06:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/loader.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\loader.css))</AssetFile>
@@ -106,7 +106,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\profile.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2344"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022PiUcmQ5Aouni7wwmOM1/IsBcBnTauszfzP7rJiFujWU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Jun 2024 09:36:11 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2502"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228AwPmh/cOgTE7YRWwbbIvpF33vFmzkxirdEMsBsZt6k=\u0022"},{"Name":"Last-Modified","Value":"Tue, 18 Jun 2024 12:37:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/signup.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\signup.css))</AssetFile>
