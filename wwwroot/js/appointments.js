@@ -252,46 +252,37 @@ $(document).ready(function () {
         });
 
         tableContainer.innerHTML = tableContent; // Set innerHTML once after building the entire string
+
+        // Detach existing event handler before attaching a new one to avoid multiple bindings
+        $(document).off('click', '#appointments-table button');
+        $(document).on('click', '#appointments-table button', function () {
+            if ($(this).hasClass('closed')) {
+                console.log('This appointment slot is not available.');
+                return;
+            }
+
+            loaderElement.style.display = 'flex';
+
+            const buttonId = $(this).attr('id');
+            const idParts = buttonId.split('_');
+            const selectedDate = `${idParts[1]}-${idParts[2]}-${idParts[3]}`;
+            const timeSlot = `${idParts[4]}:${idParts[5]}`;
+
+            console.log('Selected date:', selectedDate, 'Time slot:', timeSlot);
+
+            var UserId = sessionStorage.getItem('UserId');
+            var serviceName = sessionStorage.getItem('serviceName');
+            var appointmentData = {
+                UserId: UserId,
+                serviceName: serviceName,
+                appointmentDate: selectedDate,
+                appointmentTime: timeSlot
+            };
+            var json = JSON.stringify(appointmentData);
+            console.log('Sending JSON:', json);
+            addAppointment(json);
+        });
     }
-
-    function convertTimeToMinutes(timeString) {
-        const [hours, minutes] = timeString.split(':').map(Number);
-        return hours * 60 + minutes;
-    }
-
-    function convertMinutesToTime(minutes) {
-        const hours = Math.floor(minutes / 60);
-        const minutesRemaining = minutes % 60;
-        return `${hours.toString().padStart(2, '0')}:${minutesRemaining.toString().padStart(2, '0')}`;
-    }
-
-    $(document).on('click', '#appointments-table button', function () {
-        if ($(this).hasClass('closed')) {
-            console.log('This appointment slot is not available.');
-            return;
-        }
-
-        loaderElement.style.display = 'flex';
-
-        const buttonId = $(this).attr('id');
-        const idParts = buttonId.split('_');
-        const selectedDate = `${idParts[1]}-${idParts[2]}-${idParts[3]}`;
-        const timeSlot = `${idParts[4]}:${idParts[5]}`;
-
-        console.log('Selected date:', selectedDate, 'Time slot:', timeSlot);
-
-        var UserId = sessionStorage.getItem('UserId');
-        var serviceName = sessionStorage.getItem('serviceName');
-        var appointmentData = {
-            UserId: UserId,
-            serviceName: serviceName,
-            appointmentDate: selectedDate,
-            appointmentTime: timeSlot
-        };
-        var json = JSON.stringify(appointmentData);
-        console.log('Sending JSON:', json);
-        addAppointment(json);
-    });
 
     function addAppointment(json) {
         fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/addAppointment', {
@@ -319,3 +310,14 @@ $(document).ready(function () {
         $('#dialog').dialog('close');
     });
 });
+
+function convertTimeToMinutes(timeString) {
+    const [hours, minutes] = timeString.split(':').map(Number);
+    return hours * 60 + minutes;
+}
+
+function convertMinutesToTime(minutes) {
+    const hours = Math.floor(minutes / 60);
+    const minutesRemaining = minutes % 60;
+    return `${hours.toString().padStart(2, '0')}:${minutesRemaining.toString().padStart(2, '0')}`;
+}
