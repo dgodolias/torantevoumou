@@ -83,29 +83,6 @@ $(document).ready(function () {
         console.log('Service Name:', serviceNameVar);
         console.log('Service Value:', JSON.stringify(serviceValue));
 
-        // Extract operational hours for the selected day of the week
-        const selectedDate = new Date(sessionStorage.getItem('selectedDate'));
-        const dayOfWeek = selectedDate.getDay(); // 0 = Sunday, 1 = Monday, etc.
-
-        const hoursArray = serviceValue.hours.split(')(');
-        const dayHours = hoursArray[dayOfWeek - 1] ? hoursArray[dayOfWeek - 1].replace('(', '').replace(')', '') : '';
-
-
-        const timePeriods = dayHours.split('#').filter(Boolean);
-        const appointmentDuration = parseInt(serviceValue.appointmentDuaration, 10);
-
-        // Calculate total operational minutes
-        let totalOperationalMinutes = 0;
-        timePeriods.forEach(period => {
-            const [start, end] = period.split('-');
-            const startHour = parseInt(start.split(':')[0], 10);
-            const endHour = parseInt(end.split(':')[0], 10);
-            totalOperationalMinutes += (endHour - startHour) * 60;
-        });
-
-        // Calculate number of possible appointments per day
-        const maxAppointmentsPerDay = totalOperationalMinutes / appointmentDuration;
-
         const appointmentsByDateStr = sessionStorage.getItem('AppointmentsByDate');
         const appointmentsByDate = appointmentsByDateStr ? JSON.parse(appointmentsByDateStr) : {};
 
@@ -113,12 +90,33 @@ $(document).ready(function () {
             const formattedDate = date.replace(/\//g, '-');
             const cellId = `date-${formattedDate}`;
             const appointments = appointmentsByDate[date];
+
+            const currentDate = new Date(date);
+            const dayOfWeek = currentDate.getDay(); // 0 = Sunday, 1 = Monday, etc.
+
+            const hoursArray = serviceValue.hours.split(')(');
+            const dayHours = hoursArray[dayOfWeek - 1] ? hoursArray[dayOfWeek - 1].replace('(', '').replace(')', '') : '';
+            const timePeriods = dayHours.split('#').filter(Boolean);
+            const appointmentDuration = parseInt(serviceValue.appointmentDuaration, 10);
+
+            // Calculate total operational minutes
+            let totalOperationalMinutes = 0;
+            timePeriods.forEach(period => {
+                const [start, end] = period.split('-');
+                const startTime = new Date(`${formattedDate}T${start}`);
+                const endTime = new Date(`${formattedDate}T${end}`);
+                totalOperationalMinutes += (endTime - startTime) / (1000 * 60); // Convert ms to minutes
+            });
+
+            // Calculate number of possible appointments per day
+            const maxAppointmentsPerDay = totalOperationalMinutes / appointmentDuration;
+
             const appointmentPercentage = (appointments.length / maxAppointmentsPerDay) * 100;
 
             // Change cell background color based on appointments percentage using classes
             if (appointmentPercentage === 0) {
-            }
-            else if (appointmentPercentage < 25) {
+                $(`.${cellId} a`).removeClass(cellColours.join(' '));
+            } else if (appointmentPercentage < 25) {
                 $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[0]);
             } else if (appointmentPercentage < 50) {
                 $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[1]);
