@@ -1,8 +1,8 @@
 $(document).ready(function () {
-
-    cellColours = [ 'purple1', 'purple2', 'purple3', 'purple4','grey-background'];
+    cellColours = ['purple1', 'purple2', 'purple3', 'purple4', 'grey-background'];
 
     $('#datepicker').datepicker({
+        firstDay: 1, // Monday as the first day of the week
         minDate: 0, // Allow selection from today onwards
         maxDate: '+1y', // Allow selection up to one year from today
         onSelect: function (dateText) {
@@ -24,13 +24,10 @@ $(document).ready(function () {
 
             return [true, cellId, ''];
         },
-        onChangeMonthYear: function() {
-            // Format the month and year to your desired format, e.g., 'yy/mm/dd'
-            // Assuming you want to perform actions for the 1st day of the changed month
+        onChangeMonthYear: function () {
             handleDateOrServiceSelection();
         }
     });
-
 
     const loaderElement = document.querySelector('.loader');
     var viewportHeight = $(window).height();
@@ -71,16 +68,11 @@ $(document).ready(function () {
         }
     });
 
-    // New function to encapsulate shared logic
     async function handleDateOrServiceSelection() {
-
         loaderElement.style.display = 'flex';
-        // Await the fetchServiceAppointments to ensure it completes before moving on
         await processAppointmentData(JSON.parse(sessionStorage.getItem('AllDetailedAppointmentsForService')));
         loaderElement.style.display = 'none';
 
-
-        // The rest of your code here will execute after fetchServiceAppointments has finished
         const servicesInfoStr = sessionStorage.getItem('ServicesInfo');
         const servicesNameStr = sessionStorage.getItem('serviceName');
         const servicesInfo = servicesInfoStr ? JSON.parse(servicesInfoStr) : {};
@@ -91,18 +83,25 @@ $(document).ready(function () {
         console.log('Service Name:', serviceNameVar);
         console.log('Service Value:', JSON.stringify(serviceValue));
 
-        // Extract operational hours
-        const startingTimes = serviceValue.startingTime.split('#').filter(Boolean);
-        const endingTimes = serviceValue.endingTime.split('#').filter(Boolean);
+        // Extract operational hours for the selected day of the week
+        const selectedDate = new Date(sessionStorage.getItem('selectedDate'));
+        const dayOfWeek = selectedDate.getDay(); // 0 = Sunday, 1 = Monday, etc.
+
+        const hoursArray = serviceValue.hours.split(')(');
+        const dayHours = hoursArray[dayOfWeek - 1] ? hoursArray[dayOfWeek - 1].replace('(', '').replace(')', '') : '';
+
+
+        const timePeriods = dayHours.split('#').filter(Boolean);
         const appointmentDuration = parseInt(serviceValue.appointmentDuaration, 10);
 
-        // Calculate total operational hours
+        // Calculate total operational minutes
         let totalOperationalMinutes = 0;
-        for (let i = 0; i < startingTimes.length; i++) {
-            const startHour = parseInt(startingTimes[i].split(':')[0], 10);
-            const endHour = parseInt(endingTimes[i].split(':')[0], 10);
+        timePeriods.forEach(period => {
+            const [start, end] = period.split('-');
+            const startHour = parseInt(start.split(':')[0], 10);
+            const endHour = parseInt(end.split(':')[0], 10);
             totalOperationalMinutes += (endHour - startHour) * 60;
-        }
+        });
 
         // Calculate number of possible appointments per day
         const maxAppointmentsPerDay = totalOperationalMinutes / appointmentDuration;
@@ -123,9 +122,9 @@ $(document).ready(function () {
                 $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[0]);
             } else if (appointmentPercentage < 50) {
                 $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[1]);
-            } else if (appointmentPercentage < 75){
+            } else if (appointmentPercentage < 75) {
                 $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[2]);
-            } else if (appointmentPercentage < 100){
+            } else if (appointmentPercentage < 100) {
                 $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[3]);
             } else {
                 $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[4]);
@@ -133,7 +132,7 @@ $(document).ready(function () {
         });
     }
 
-    $('#serviceList .serviceItem').on('click', async function () { // Mark this function as async
+    $('#serviceList .serviceItem').on('click', async function () {
         var serviceName = $(this).attr('id');
 
         loaderElement.style.display = 'flex';
@@ -157,7 +156,7 @@ $(document).ready(function () {
             })
             .then(data => {
                 sessionStorage.setItem('AllDetailedAppointmentsForService', JSON.stringify(data));
-                return data; // Ensure to return data if needed later
+                return data;
             })
             .catch(error => {
                 console.error('There has been a problem with your fetch operation:', error);
@@ -169,7 +168,6 @@ $(document).ready(function () {
         const appointmentsData = data[firstKey];
 
         if (Array.isArray(appointmentsData)) {
-            // Process as array
         } else if (typeof appointmentsData === 'object' && appointmentsData !== null) {
             const appointmentsByDate = {};
             Object.entries(appointmentsData).forEach(([key, appointment]) => {
@@ -200,20 +198,40 @@ $(document).ready(function () {
             return;
         }
 
-        const startingTimes = serviceHours.startingTime.split('#').map(time => time.trim());
-        const endingTimes = serviceHours.endingTime.split('#').map(time => time.trim());
+        const selectedDateObj = new Date(selectedDate);
+        const dayOfWeek = selectedDateObj.getDay(); // 0 = Sunday, 1 = Monday, etc.
+        const dayHours = serviceHours.hours.split(')(')[dayOfWeek - 1]?.replace('(', '').replace(')', '') || '';
+        const timePeriods = dayHours.split('#').filter(Boolean);
         const appointmentDuration = parseInt(serviceHours.appointmentDuaration, 10);
         const tableContainer = document.getElementById('appointments-table');
         let tableContent = ''; // Initialize an empty string to build HTML
+
+        if (!dayHours || !timePeriods.length) {
+            tableContent = `
+                <tr><td colspan="3">&nbsp;</td></tr>
+                <tr><td colspan="3">&nbsp;</td></tr>
+                <tr><td colspan="3">&nbsp;</td></tr>
+                <tr><td colspan="3">&nbsp;</td></tr>
+                <tr><td colspan="3">&nbsp;</td></tr>
+                <tr><td colspan="3" style="text-align:center;">Δεν υπάρχουν διαθέσιμα ραντεβου</td></tr>
+                <tr><td colspan="3">&nbsp;</td></tr>
+                <tr><td colspan="3">&nbsp;</td></tr>
+                <tr><td colspan="3">&nbsp;</td></tr>
+                <tr><td colspan="3">&nbsp;</td></tr>
+                <tr><td colspan="3">&nbsp;</td></tr>
+            `;
+            tableContainer.innerHTML = tableContent;
+            return;
+        }
 
         // Get current date and time in Unix timestamp
         const currentDate = new Date();
         const currentUnixTime = Math.floor(currentDate.getTime() / 1000);
 
-        startingTimes.forEach((startTime, index) => {
-            const endTime = endingTimes[index];
-            const startTimeMinutes = convertTimeToMinutes(startTime);
-            const endTimeMinutes = convertTimeToMinutes(endTime);
+        timePeriods.forEach(period => {
+            const [start, end] = period.split('-');
+            const startTimeMinutes = convertTimeToMinutes(start);
+            const endTimeMinutes = convertTimeToMinutes(end);
 
             for (let time = startTimeMinutes; time < endTimeMinutes; time += appointmentDuration) {
                 const timeFormatted = convertMinutesToTime(time);
@@ -228,17 +246,16 @@ $(document).ready(function () {
                 const timeForId = timeFormatted.replace(/:/g, '_');
 
                 tableContent += `<tr>
-                <td>${timeFormatted}</td>
-                <td>${statusText}</td>
-                <td><button id="appointment_${dateForId}_${timeForId}" data-time-index="${(time - startTimeMinutes) / appointmentDuration}" class="${status}">${isBooked ? 'Μη διαθέσιμο' : 'Κλείνω ραντεβού'}</button></td>
-            </tr>`;
+                    <td>${timeFormatted}</td>
+                    <td>${statusText}</td>
+                    <td><button id="appointment_${dateForId}_${timeForId}" data-time-index="${(time - startTimeMinutes) / appointmentDuration}" class="${status}">${isBooked ? 'Μη διαθέσιμο' : 'Κλείνω ραντεβού'}</button></td>
+                </tr>`;
             }
         });
 
         tableContainer.innerHTML = tableContent; // Set innerHTML once after building the entire string
     }
 
-    // Helper functions to convert between time strings and minutes
     function convertTimeToMinutes(timeString) {
         const [hours, minutes] = timeString.split(':').map(Number);
         return hours * 60 + minutes;
@@ -250,24 +267,18 @@ $(document).ready(function () {
         return `${hours.toString().padStart(2, '0')}:${minutesRemaining.toString().padStart(2, '0')}`;
     }
 
-
     $(document).on('click', '#appointments-table button', function () {
-        // Check if the clicked button has the 'closed' class
         if ($(this).hasClass('closed')) {
-            // If the button is closed, do not proceed with the booking
             console.log('This appointment slot is not available.');
-            return; // Exit the function early
+            return;
         }
 
         loaderElement.style.display = 'flex';
-        // The rest of your existing code for handling the click event...
 
-        // Extract date and time directly from the button's ID
         const buttonId = $(this).attr('id');
         const idParts = buttonId.split('_');
-        // Assemble selectedDate and timeSlot from parts
-        const selectedDate = `${idParts[1]}-${idParts[2]}-${idParts[3]}`; // YYYY-MM-DD format
-        const timeSlot = `${idParts[4]}:${idParts[5]}`; // HH:mm format
+        const selectedDate = `${idParts[1]}-${idParts[2]}-${idParts[3]}`;
+        const timeSlot = `${idParts[4]}:${idParts[5]}`;
 
         console.log('Selected date:', selectedDate, 'Time slot:', timeSlot);
 
@@ -307,6 +318,6 @@ $(document).ready(function () {
     }
 
     $('.close-btn').click(function () {
-        $('#dialog').dialog('close'); // Using jQuery UI's dialog 'close' method
+        $('#dialog').dialog('close');
     });
 });
