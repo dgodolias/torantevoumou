@@ -30,9 +30,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
     <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <!-- Eurethrio -->
+    <link rel="stylesheet" type="text/css" href="css/eurethrio.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -112,20 +116,34 @@
           </div>
         </div>
       </div>
-      <canvas class="banner_canvas" id="canvas_banner"></canvas>
-      <div class="container" id="alphindex">
-        <div id="parentContainer">
-          <div id="businessDictionary"></div>
-          <div id="searchBarContainer">
-            <div id="titleSearchBarContainer">
-              <input type="text" id="searchBar" placeholder="Αναζήτηση Υπηρεσίας...">
-            </div>
-            <div id="selectedBusinesses"></div>
-            <hr id="line">
-            <div id="results"></div>
+      <div class="flex-container">
+        <div class="flex-container">
+          <div class="table-container" id="alphabetButtons"></div>
+          <div class="table-container" id="service-container">
+            <table id="services-table">
+              <thead>
+                <tr>
+                  <th>Υπηρεσία</th>
+                  <th>Διεύθυνση</th>
+                  <th>Ώρες Λειτουργίας</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Rows will be dynamically inserted here by JavaScript -->
+              </tbody>
+            </table>
           </div>
+          <div>
+            <div id="refresh-button">
+              <i class="fas fa-sync-alt"></i> <!-- This is the FontAwesome icon for refresh -->
+            </div>
+          </div>
+
         </div>
+        <div class="flex-container"></div>
       </div>
+
+
     </div>
     <!-- Contact Section -->
     <div id="contact">
@@ -207,7 +225,7 @@
     <script type="text/javascript" src="~/js/index2.js"></script>
     <script type="text/javascript" src="~/js/carousel.js"></script>
     <script src="~/js/index.js"></script>
-    <script src="~/js/flames.js"></script>
+    <script src="~/js/eurethrio.js"></script>
   </body>
 </div>
 

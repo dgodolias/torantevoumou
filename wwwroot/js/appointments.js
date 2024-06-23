@@ -40,16 +40,12 @@ $(document).ready(function () {
         height: dialogHeight,
         draggable: false,
         resizable: false,
-        show: {
-            effect: 'fade',
-            duration: 500
-        },
         hide: {
             effect: 'fade',
             duration: 1000
         },
         open: function (event, ui) {
-            $('#blurOverlay').fadeIn(1000);
+            $('#blurOverlay').show();
             $(document).on('mousedown.dialogCloseEvent', function (e) {
                 var container = $(".ui-dialog");
                 if (!container.is(e.target) && container.has(e.target).length === 0) {
@@ -79,7 +75,7 @@ $(document).ready(function () {
         const serviceNameVar = servicesNameStr ? servicesNameStr : "No Service Name";
         const serviceValue = servicesInfo[serviceNameVar];
 
-        console.log('Services Info:', servicesInfo);
+        console.log('Services Info:', JSON.stringify(servicesInfo));
         console.log('Service Name:', serviceNameVar);
         console.log('Service Value:', JSON.stringify(serviceValue));
 
@@ -97,7 +93,7 @@ $(document).ready(function () {
             const hoursArray = serviceValue.hours.split(')(');
             const dayHours = hoursArray[dayOfWeek - 1] ? hoursArray[dayOfWeek - 1].replace('(', '').replace(')', '') : '';
             const timePeriods = dayHours.split('#').filter(Boolean);
-            const appointmentDuration = parseInt(serviceValue.appointmentDuaration, 10);
+            const appointmentDuration = parseInt(serviceValue.appointmentduration, 10);
 
             // Calculate total operational minutes
             let totalOperationalMinutes = 0;
@@ -200,7 +196,7 @@ $(document).ready(function () {
         const dayOfWeek = selectedDateObj.getDay(); // 0 = Sunday, 1 = Monday, etc.
         const dayHours = serviceHours.hours.split(')(')[dayOfWeek - 1]?.replace('(', '').replace(')', '') || '';
         const timePeriods = dayHours.split('#').filter(Boolean);
-        const appointmentDuration = parseInt(serviceHours.appointmentDuaration, 10);
+        const appointmentDuration = parseInt(serviceHours.appointmentduration, 10);
         const tableContainer = document.getElementById('appointments-table');
         let tableContent = ''; // Initialize an empty string to build HTML
 

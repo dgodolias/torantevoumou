@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\datepicker.css"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\eurethrio.css",
+      "PackagePath": "staticwebassets\\css\\eurethrio.css"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\loader.css",
       "PackagePath": "staticwebassets\\css\\loader.css"
     },
@@ -785,6 +789,10 @@
       "PackagePath": "staticwebassets\\img\\ai-generated-8256457.png"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\arrow-down.png",
+      "PackagePath": "staticwebassets\\img\\arrow-down.png"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\intro-bg.jpg",
       "PackagePath": "staticwebassets\\img\\intro-bg.jpg"
     },
@@ -965,8 +973,8 @@
       "PackagePath": "staticwebassets\\js\\dashboard.js"
     },
     {
-      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\flames.js",
-      "PackagePath": "staticwebassets\\js\\flames.js"
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\eurethrio.js",
+      "PackagePath": "staticwebassets\\js\\eurethrio.js"
     },
     {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\index.js",
