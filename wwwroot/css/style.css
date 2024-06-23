@@ -65,7 +65,6 @@
     display: flex;
     width: 80%;
     margin: 0 auto;
-    padding: 50px;
     z-index: 2;
     position: relative;
     min-height: 700px;
@@ -706,3 +705,127 @@ label {
 		margin: 50px 0;
 	}
 }
+
+#service-short-gallery {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    min-height: 100vh;
+}
+  
+  #service-short-gallery ul {
+	height: fit-content;
+	width: 20vh;
+	display: grid;
+	grid-template-rows: repeat(4, 1fr 2fr 1fr);
+	overflow: hidden;
+  }
+  
+  #service-short-gallery li {
+	width: 100%;
+	height: 100%;
+	grid-column: 1 / span 1;
+	--offsetX: 50%;
+  }
+  
+  #service-short-gallery a {
+	display: block;
+	width: 100%;
+	height: 100%;
+  }
+  
+  #service-short-gallery img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  #service-short-gallery li:first-of-type {
+	grid-row: 1 / span 4;
+	clip-path: polygon(100% calc(20% * -1), 0 calc(20%), 0 100%, 100% calc(20%*3));
+  }
+  
+  #service-short-gallery li:nth-of-type(2) {
+	grid-row: 3 / span 5;
+	clip-path: polygon(100% 0, 0 calc(16.6%*2), 0 100%, 100% calc(16.6%*4));
+  }
+  
+  #service-short-gallery li:nth-of-type(3) {
+	grid-row: 6 / span 5;
+	clip-path: polygon(100% 0, 0 calc(16.6%*2), 0 100%, 100% calc(16.6%*4));
+  }
+  
+  #service-short-gallery li:last-of-type {
+	grid-row: -5 / span 4;
+	clip-path: polygon(100% 0, 0 calc(20%*2), 0 calc(20%*6), 100% calc(20%*4));
+  }
+  
+  @keyframes o {
+	from {
+	  transform: translate(0);
+	}
+  }
+  
+  #service-short-gallery li:nth-of-type(odd) a {
+	transform: translate(var(--offsetX), calc(var(--offsetX) * 0.166 * -2));
+	animation: o 2s;
+  }
+  
+  #service-short-gallery li:nth-of-type(even) a {
+	transform: translate(calc(var(--offsetX) * -1), calc(var(--offsetX) * 0.166 * 2));
+	animation: o 2s;
+  }
+  
+  #service-short-gallery li:first-of-type a {
+	transform: translate(var(--offsetX), calc(var(--offsetX) * 0.200 * -2));
+  }
+  
+  #service-short-gallery li:last-of-type a {
+	transform: translate(calc(var(--offsetX) * -1), calc(var(--offsetX) * 0.200 * 2));
+  }
+  
+  #service-short-gallery img {
+	animation: blr 2s;
+	filter: blur(10px);
+  }
+  
+  @keyframes blr {
+	from {
+	  filter: blur(0);
+	}
+  }
+  
+  #service-short-gallery li {
+	transition: opacity 0.3s;
+  }
+  
+  #service-short-gallery li a {
+	transition: all 0.15s;
+  }
+  
+  #service-short-gallery li:hover a {
+	transition: transform 0.3s;
+	transform: translate(0);
+  }
+  
+  #service-short-gallery ul:hover li {
+	opacity: 0.1;
+  }
+  
+  #service-short-gallery ul:hover li:hover {
+	opacity: 1;
+	transition: clip-path 0.4s 0.3s;
+	clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+	z-index: 10;
+  }
+  
+  #service-short-gallery img {
+	filter: blur(10px);
+	transition: filter 0.7s;
+  }
+  
+  #service-short-gallery li:hover img {
+	filter: blur(0);
+  }
+  

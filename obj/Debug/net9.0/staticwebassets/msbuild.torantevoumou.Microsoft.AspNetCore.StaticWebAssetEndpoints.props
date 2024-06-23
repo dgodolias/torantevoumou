@@ -34,7 +34,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\eurethrio.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"5486"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ixPhm8oZlEBMrtw6m2RxHv1JAxJ9ndoYOU3OdZbFmC4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Jun 2024 21:28:24 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"5320"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022/NL2lG040/qfs0ZnydGYyntU5udZorMmNTHF4VijwyM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Jun 2024 22:08:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/loader.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\loader.css))</AssetFile>
@@ -124,7 +124,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\style.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"11821"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022D1Il\u002BHi2SbHFq57N0F/RZ8lz58jHk\u002BV\u002BCeMqv6yvJAo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Jun 2024 20:44:27 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"14483"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022lrru2l5uWCP1r7nsSraP9zncVBCRbQtyqlMnx3uzTIo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Jun 2024 22:08:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/fonts/Aesthetic/AestheticRegular.otf">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\fonts\Aesthetic\AestheticRegular.otf))</AssetFile>
@@ -1456,7 +1456,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\eurethrio.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6130"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022EKv9UlC9MZUj08OzHatd93ZqxvZTlAs95jLFw2MiT4o=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Jun 2024 21:38:18 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6214"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222og6nHiXk3awQ6I5R9YBUuJpWRQBojCZPISQ3145FUY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Jun 2024 22:05:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/index.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\index.js))</AssetFile>

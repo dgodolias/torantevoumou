@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const alphabetButtons = document.getElementById('alphabetButtons');
     const tableBody = document.querySelector('#services-table tbody');
     const refreshButton = document.getElementById('refresh-button');
-    ServicesInfo = null;
+    let ServicesInfo = null;
 
     // Async function to handle fetch call
     async function fetchServicesInfo() {
@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
             sessionStorage.setItem('ServicesInfo', JSON.stringify(data));
             console.log('ServicesInfo saved to sessionStorage:', data);
             ServicesInfo = data;
+
+            // After fetching data, create table rows
+            const services = convertToServicesList(ServicesInfo);
+            createTableRows(services);
         } catch (error) {
             console.error('Error fetching ServicesInfo:', error);
         }
@@ -20,10 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Call the async function after the page has fully loaded
     fetchServicesInfo();
-
-    const data = JSON.parse(sessionStorage.getItem('ServicesInfo')) || ServicesInfo;
-
-    const services = convertToServicesList(data);
 
     function createTableRows(filteredServices) {
         // Clear existing rows
@@ -86,9 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Initially display all services
-    createTableRows(services);
-
     alphabet.forEach(letter => {
         const button = document.createElement('button');
         const buttonTop = document.createElement('div');
@@ -99,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Add event listener to filter services by letter
         button.addEventListener('click', () => {
+            const services = convertToServicesList(ServicesInfo);
             const filteredServices = services.filter(service => {
                 const serviceNameWords = service[0].split(' ');
                 return serviceNameWords.some(word => word.startsWith(letter));
@@ -118,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { once: true });
 
         // Refresh the table (show all services)
+        const services = convertToServicesList(ServicesInfo);
         createTableRows(services);
     });
 });
