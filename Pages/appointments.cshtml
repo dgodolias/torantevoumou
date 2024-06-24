@@ -1,10 +1,6 @@
 @page
 @model Namespace.appointments
 
-@{
-    ViewData["Title"] = "Appointments";
-}
-
 <!DOCTYPE html>
 <html>
 
@@ -12,6 +8,8 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="~/css/appointments.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="~/css/eurethrio.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="~/css/selector.css"> <!-- Link to the CSS file -->
     <link rel="stylesheet" href="~/css/datepicker.css"> <!-- Link to the CSS file -->
 </head>
 
@@ -19,13 +17,32 @@
     <h1>@ViewData["Title"]</h1>
 
     <section>
-        <h2>Select Service</h2>
-        <ul id="serviceList">
-            @foreach (var serviceName in Model.ServiceNames)
-            {
-                <li id="@serviceName" class="serviceItem" style="cursor:pointer;">@serviceName</li>
-            }
-        </ul>
+        <div class="flex-container" id="appointment-flex-container">
+            <div class="flex-container">
+                <div class="table-container" id="alphabetButtons"></div>
+                <div class="table-container" id="service-container">
+                    <table id="services-table">
+                        <thead>
+                            <tr>
+                                <th>Υπηρεσία</th>
+                                <th>Διεύθυνση</th>
+                                <th>Ώρες Λειτουργίας</th>
+                                <th>Κλεισε ραντεβού</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be dynamically inserted here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <div id="refresh-button">
+                        <i class="fas fa-sync-alt"></i> <!-- This is the FontAwesome icon for refresh -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
         <input type="hidden" id="selectedService" />
     </section>
@@ -79,6 +96,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="~/js/appointments.js"></script> <!-- Link to the JavaScript file -->
+    <script src="~/js/selector.js"></script> <!-- Link to the JavaScript file -->
 </body>
 
 </html>

@@ -60,15 +60,6 @@
     background: rgba(233,233,233, 0.55) !important;
 }
 
-.flex-container {
-    justify-content: center;
-    display: flex;
-    margin: 0 auto;
-    z-index: 2;
-    position: relative;
-    min-height: 700px;
-}
-
 .intro_index {
 	background: url(../img/whiteroom.jpg) center center no-repeat;
 	background-color: #dfdfdf;

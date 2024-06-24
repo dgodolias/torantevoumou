@@ -13,11 +13,20 @@ window.addEventListener('load', function() {
     $(document).ready(function () {
         var userId = sessionStorage.getItem('UserId');
         console.log('User ID: ', userId);
-        $('#container').load('/appointments?userId=' + userId);
+
+        // Load appointments.js before loading the appointments.cshtml content
+        $.getScript('/js/appointments.js', function() {
+            // Now you can safely use functions from appointments.js
+            $('#container').load('/appointments?userId=' + userId);
+        });
         
         $('#appointmentLink').click(function (e) {
             e.preventDefault();
-            $('#container').load('/appointments?userId=' + userId);
+            // Load appointments.js before loading the appointments.cshtml content
+            $.getScript('selector.js', function() {
+                // Now you can safely use functions from appointments.js
+                $('#container').load('/appointments?userId=' + userId);
+            });
         });
 
         $('#pastappointmentLink').click(function (e) {

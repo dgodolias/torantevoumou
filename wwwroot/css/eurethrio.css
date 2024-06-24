@@ -1,3 +1,12 @@
+.flex-container {
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+    min-height: 700px;
+}
+
 
 .table-container {
     min-width: 700px;

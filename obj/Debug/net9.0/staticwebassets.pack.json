@@ -77,6 +77,10 @@
       "PackagePath": "staticwebassets\\css\\profile.css"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\selector.css",
+      "PackagePath": "staticwebassets\\css\\selector.css"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\signup.css",
       "PackagePath": "staticwebassets\\css\\signup.css"
     },
@@ -941,6 +945,10 @@
       "PackagePath": "staticwebassets\\img\\testimonials\\06.jpg"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\tick.png",
+      "PackagePath": "staticwebassets\\img\\tick.png"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\whiteroom.jpg",
       "PackagePath": "staticwebassets\\img\\whiteroom.jpg"
     },
@@ -1007,6 +1015,10 @@
     {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\profile.js",
       "PackagePath": "staticwebassets\\js\\profile.js"
+    },
+    {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\selector.js",
+      "PackagePath": "staticwebassets\\js\\selector.js"
     },
     {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\service-worker.js",

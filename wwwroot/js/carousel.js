@@ -1,8 +1,8 @@
 const carouselContainer = document.querySelector('.carousel');
 const imageSources = [
-  'img/ai-generated-8256457.png',
-  'img/ai-generated-8256458.png', // Assuming different images for demonstration
-  'img/ai-generated-8256459.png'
+  '/img/medic.jpg',
+  '/img/mypic1.jpg', // Assuming different images for demonstration
+  '/img/mypic2.jpg'
 ];
 
 // Dynamically create and append images to the carousel

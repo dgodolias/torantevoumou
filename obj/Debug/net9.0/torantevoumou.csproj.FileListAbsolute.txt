@@ -212,3 +212,5 @@ c:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\compressed\gt3c1bs9t
 c:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\compressed\wwraxvbrzp.gz
 c:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\compressed\v2cy33gibm.gz
 c:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\compressed\ado8zg6szf.gz
+c:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\compressed\6m3lhbrv9f.gz
+c:\Users\USER\Desktop\webapp\torantevoumou\obj\Debug\net9.0\compressed\fgyr44r978.gz
