@@ -793,6 +793,10 @@
       "PackagePath": "staticwebassets\\img\\arrow-down.png"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\arrow-right.png",
+      "PackagePath": "staticwebassets\\img\\arrow-right.png"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\img\\intro-bg.jpg",
       "PackagePath": "staticwebassets\\img\\intro-bg.jpg"
     },

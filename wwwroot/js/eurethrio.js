@@ -76,11 +76,47 @@ document.addEventListener('DOMContentLoaded', () => {
                             arrowImage.classList.add('arrow-down');
                         }
                     });
+                    } else if (index === 3) { // Check if it's the 4th column
+                    // Create a button and set its id
+                    const button = document.createElement('button');
+                    button.id = 'site-redirect';
+
+                    // Create a div, add class, and set its content
+                    const div = document.createElement('div');
+                    div.classList.add('button_top');
+                    div.textContent = 'Α'; // Assuming you want the text 'Α' inside the div
+
+                    // Append the div to the button
+                    button.appendChild(div);
+
+                    // Add the button to the cell
+                    cell.appendChild(button);
                 } else {
                     cell.textContent = detail;
                 }
                 row.appendChild(cell);
             });
+
+                        // Create a new cell for the "Κλεισε ραντεβού" button
+            const appointmentCell = document.createElement('td');
+            const appointmentButton = document.createElement('button');
+            appointmentButton.id = 'site-redirect'; // Set the id of the button
+
+            // Create a div, add class, and then create an image for the arrow icon
+            const div = document.createElement('div');
+            div.classList.add('button_top'); // Add class to div
+
+            const arrowIcon = document.createElement('img');
+            arrowIcon.src = 'img/arrow-right.png'; // Path to your arrow right icon image
+            arrowIcon.alt = 'Book Appointment';
+
+            // Append the image to the div, and the div to the button
+            div.appendChild(arrowIcon);
+            appointmentButton.appendChild(div);
+
+            // Append the button to the cell, and the cell to the row
+            appointmentCell.appendChild(appointmentButton);
+            row.appendChild(appointmentCell);
 
             tableBody.appendChild(row);
         });
@@ -109,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
     refreshButton.addEventListener('click', () => {
         // Trigger the rotate animation
         refreshButton.classList.add('rotate');
-        
+
         // Remove the rotate class after the animation ends to allow re-triggering
         refreshButton.addEventListener('animationend', () => {
             refreshButton.classList.remove('rotate');
@@ -123,12 +159,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function convertToServicesList(data) {
     const services = [];
-    const daysOfWeek = ["ΔΕΥΤΕΡΑ", "ΤΡΙΤΗ", "ΤΕΤΑΡΤΗ", "ΠΕΜΠΤΗ", "ΠΑΡΑΣΚΕΥΗ", "ΣΑΒΒΑΤΟ", "ΚΥΡΙΑΚΗ"]; 
+    const daysOfWeek = ["ΔΕΥΤΕΡΑ", "ΤΡΙΤΗ", "ΤΕΤΑΡΤΗ", "ΠΕΜΠΤΗ", "ΠΑΡΑΣΚΕΥΗ", "ΣΑΒΒΑΤΟ", "ΚΥΡΙΑΚΗ"];
 
     for (const [name, details] of Object.entries(data)) {
-        const hours = details.hours.split('(').slice(1).map((day, index) => { 
+        const hours = details.hours.split('(').slice(1).map((day, index) => {
             const [time] = day.split(')');
-            return time ? `${daysOfWeek[index]}: ${time.trim().replace(/#/g, ' & ')}` : `${daysOfWeek[index]}: -`; 
+            return time ? `${daysOfWeek[index]}: ${time.trim().replace(/#/g, ' & ')}` : `${daysOfWeek[index]}: -`;
         }).join('#');
         services.push([name, details.location, hours]);
     }

@@ -102,14 +102,16 @@ button:active .button_top {
     padding: 10px;
     text-align: center;
     vertical-align: middle; /* Center content vertically */
-    border-right: 2px solid #f0f0f0; /* Add a border between the boxes */
+    border-right: 2px solid #f0f0f0; /* Keep the border to maintain a gap */
     font-size: inherit; /* Ensure the font size is inherited */
 }
 
-#services-table td:last-child {
+/* If you want to specifically style the 3rd column differently but still maintain a gap, you can adjust here */
+#services-table tr td:nth-child(3) {
     font-size: 15px;
     font-weight: 700;
-    border-right: none; /* Remove the border for the last cell to maintain the design */
+    /* Keep or adjust the border-right as needed to maintain consistency with other gaps */
+    border-right: 2px solid #f0f0f0; /* Adjust this line if you want a different style but still want a gap */
 }
 
 #services-table td button {

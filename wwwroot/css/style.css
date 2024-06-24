@@ -828,4 +828,20 @@ label {
   #service-short-gallery li:hover img {
 	filter: blur(0);
   }
+
+ #site-redirect button {
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.75em;
+    background: #000000;
+    margin: 5px; /* Adjust margin as needed */
+    padding: 0;
+    width: 80%;
+    height: 60px; /* Keeps height consistent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
   
