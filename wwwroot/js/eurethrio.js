@@ -76,47 +76,39 @@ document.addEventListener('DOMContentLoaded', () => {
                             arrowImage.classList.add('arrow-down');
                         }
                     });
-                    } else if (index === 3) { // Check if it's the 4th column
-                    // Create a button and set its id
-                    const button = document.createElement('button');
-                    button.id = 'site-redirect';
+                } else if (index === 3) {
+                    // Create a button for the "Κλεισε ραντεβού" column
+                    const appointmentButton = document.createElement('button');
+                    appointmentButton.id = 'site-redirect'; // Set the id of the button
 
-                    // Create a div, add class, and set its content
+                    // Create a div, add class, and then create an image for the arrow icon
                     const div = document.createElement('div');
-                    div.classList.add('button_top');
-                    div.textContent = 'Α'; // Assuming you want the text 'Α' inside the div
+                    div.classList.add('button_top'); // Add class to div
 
-                    // Append the div to the button
-                    button.appendChild(div);
+                    const arrowIcon = document.createElement('img');
+                    arrowIcon.src = 'img/arrow-right.png'; // Path to your arrow right icon image
+                    arrowIcon.alt = 'Book Appointment';
 
-                    // Add the button to the cell
-                    cell.appendChild(button);
+                    // Append the image to the div, and the div to the button
+                    div.appendChild(arrowIcon);
+                    appointmentButton.appendChild(div);
+
+                    // Add click event listener to the appointment button
+                    appointmentButton.addEventListener('click', () => {
+                        const serviceName = service[0];
+                        const serviceDetails = ServicesInfo[serviceName];
+                        if (serviceDetails && serviceDetails.website) {
+                            window.location.href = `/services${serviceDetails.website}`;
+                        }
+                    });
+
+                    // Append the button to the cell
+                    cell.appendChild(appointmentButton);
                 } else {
                     cell.textContent = detail;
                 }
                 row.appendChild(cell);
             });
-
-                        // Create a new cell for the "Κλεισε ραντεβού" button
-            const appointmentCell = document.createElement('td');
-            const appointmentButton = document.createElement('button');
-            appointmentButton.id = 'site-redirect'; // Set the id of the button
-
-            // Create a div, add class, and then create an image for the arrow icon
-            const div = document.createElement('div');
-            div.classList.add('button_top'); // Add class to div
-
-            const arrowIcon = document.createElement('img');
-            arrowIcon.src = 'img/arrow-right.png'; // Path to your arrow right icon image
-            arrowIcon.alt = 'Book Appointment';
-
-            // Append the image to the div, and the div to the button
-            div.appendChild(arrowIcon);
-            appointmentButton.appendChild(div);
-
-            // Append the button to the cell, and the cell to the row
-            appointmentCell.appendChild(appointmentButton);
-            row.appendChild(appointmentCell);
 
             tableBody.appendChild(row);
         });
@@ -166,7 +158,7 @@ function convertToServicesList(data) {
             const [time] = day.split(')');
             return time ? `${daysOfWeek[index]}: ${time.trim().replace(/#/g, ' & ')}` : `${daysOfWeek[index]}: -`;
         }).join('#');
-        services.push([name, details.location, hours]);
+        services.push([name, details.location, hours, details.website]);
     }
     return services;
 }

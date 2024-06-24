@@ -63,7 +63,6 @@
 .flex-container {
     justify-content: center;
     display: flex;
-    width: 80%;
     margin: 0 auto;
     z-index: 2;
     position: relative;
