@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    const loaderElement = document.querySelector('.loader');
 
     console.log('DOM loaded');
 

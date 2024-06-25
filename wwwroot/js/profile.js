@@ -28,7 +28,6 @@ function toggleReadonly(selector) {
 
     // If the input field is becoming readonly, check if its value has changed
     if (!isReadonly) {
-        const loaderElement = document.querySelector('.loader');
         var newValue = $(selector).val();
         var oldValue = $(selector).data('oldValue');
 

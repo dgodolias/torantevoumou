@@ -1,3 +1,5 @@
+const loaderElement = document.querySelector('.loader');
+
 window.addEventListener('load', function() {
     checkLoginStatus();
 
@@ -22,11 +24,8 @@ window.addEventListener('load', function() {
         
         $('#appointmentLink').click(function (e) {
             e.preventDefault();
-            // Load appointments.js before loading the appointments.cshtml content
-            $.getScript('selector.js', function() {
-                // Now you can safely use functions from appointments.js
-                $('#container').load('/appointments?userId=' + userId);
-            });
+            $('#container').load('/appointments?userId=' + userId);
+
         });
 
         $('#pastappointmentLink').click(function (e) {
