@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    const loaderElement = document.querySelector('.loader');
+
     console.log('DOM loaded');
 
     const alphabet = ['Α', 'Β', 'Γ', 'Δ', 'Ε', 'Ζ', 'Η', 'Θ', 'Ι', 'Κ', 'Λ', 'Μ', 'Ν', 'Ξ', 'Ο', 'Π', 'Ρ', 'Σ', 'Τ', 'Υ', 'Φ', 'Χ', 'Ψ', 'Ω', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -97,12 +99,18 @@ $(document).ready(function () {
                     appointmentButton.appendChild(div);
 
                     // Add click event listener to the appointment button
-                    appointmentButton.addEventListener('click', () => {
+                    appointmentButton.addEventListener('click', async () => {
                         const serviceName = service[0];
-                        const serviceDetails = ServicesInfo[serviceName];
-                        if (serviceDetails && serviceDetails.website) {
-                            window.location.href = `/services${serviceDetails.website}`;
-                        }
+
+                        loaderElement.style.display = 'flex';
+                        await fetchServiceAppointments(serviceName);
+                        loaderElement.style.display = 'none';
+
+                        console.log('You clicked on service: ' + serviceName);
+                        sessionStorage.setItem('serviceName', serviceName);
+                        $('#dialog').dialog('open');
+
+                        handleDateOrServiceSelection(serviceName);
                     });
 
                     // Append the button to the cell
