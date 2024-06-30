@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ECjEIGVh1hUdiXkXidJCkSvKT/XSR7jrz026IG4EAds=",
+  "Hash": "mx135/ZzsP2f1mKC4YbROTvJy7Qe8PG3dWe7zMhAHRE=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -183,6 +183,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\font-awesome\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\5lr2il81tu.gz",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "js/pastappointments.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\pastappointments.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "n0m4qxthu8",
+      "Integrity": "d9bhvqpBuDUJE7Q0OSxgX8c4WMvDh6mwqaMGpqx9dko=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\pastappointments.js"
     },
     {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\6guqul58j4.gz",
@@ -960,6 +981,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-SemiBold.css"
+    },
+    {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\hdyj37416d.gz",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "css/pastappointments.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\pastappointments.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "3ygyki3nxd",
+      "Integrity": "S5bynZe/QAUhOsLDse4GEkrR/DAyDWvKhF7GH29xTmo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\pastappointments.css"
     },
     {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\hj2oz5n625.gz",
@@ -1753,8 +1795,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dashboard.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "q9f1wwkrri",
-      "Integrity": "clxl0zaPrK7PfNauRONOP3ERXUq0wgACI7p9CrfFWPQ=",
+      "Fingerprint": "mcb1v3t8kr",
+      "Integrity": "StUN+LLpaYnFuoqlwC0bg28BoQRMS6BIq4tWxJiAPX4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\dashboard.css"
@@ -2173,8 +2215,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "16h1fct2yt",
-      "Integrity": "KXzY/x5u795+cl2DMBMtPcyH8IDZcptameeUHs4judY=",
+      "Fingerprint": "561clvsycp",
+      "Integrity": "Ex5Z2POWZdjqkJmt3mJebWfCeUNyO6Ny8muzkO+d+OM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
@@ -2472,6 +2514,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\nivo-lightbox\\prev@2x.png"
+    },
+    {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\pastappointments.css",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "css/pastappointments.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6ihd573bqf",
+      "Integrity": "3ipEWjKpyF8MGscVmXc7/febcIxZDAOre5Qy6uEI/ss=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\pastappointments.css"
     },
     {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\profile.css",
@@ -7388,6 +7451,27 @@
       "OriginalItemSpec": "wwwroot\\js\\nivo-lightbox.js"
     },
     {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\pastappointments.js",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "js/pastappointments.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rxg053xwrw",
+      "Integrity": "v3ZUXaBr56hIIJotPnrApQSTOUlQr+Snlnh0/CRA/8k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\pastappointments.js"
+    },
+    {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\profile.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
@@ -7873,7 +7957,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000502512563"
+          "Quality": "0.000507872016"
         }
       ],
       "ResponseHeaders": [
@@ -7883,15 +7967,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1989"
+          "Value": "1968"
         },
         {
           "Name": "ETag",
-          "Value": "\"clxl0zaPrK7PfNauRONOP3ERXUq0wgACI7p9CrfFWPQ=\""
+          "Value": "\"StUN+LLpaYnFuoqlwC0bg28BoQRMS6BIq4tWxJiAPX4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Jun 2024 10:48:14 GMT"
+          "Value": "Sat, 29 Jun 2024 19:26:25 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -7907,7 +7991,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"KXzY/x5u795+cl2DMBMtPcyH8IDZcptameeUHs4judY=\""
+          "Value": "W/\"Ex5Z2POWZdjqkJmt3mJebWfCeUNyO6Ny8muzkO+d+OM=\""
         }
       ],
       "EndpointProperties": []
@@ -7923,7 +8007,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7812"
+          "Value": "7825"
         },
         {
           "Name": "Content-Type",
@@ -7931,11 +8015,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KXzY/x5u795+cl2DMBMtPcyH8IDZcptameeUHs4judY=\""
+          "Value": "\"Ex5Z2POWZdjqkJmt3mJebWfCeUNyO6Ny8muzkO+d+OM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Jun 2024 10:48:14 GMT"
+          "Value": "Sat, 29 Jun 2024 19:26:25 GMT"
         }
       ],
       "EndpointProperties": []
@@ -7951,7 +8035,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1989"
+          "Value": "1968"
         },
         {
           "Name": "Content-Type",
@@ -7959,11 +8043,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"clxl0zaPrK7PfNauRONOP3ERXUq0wgACI7p9CrfFWPQ=\""
+          "Value": "\"StUN+LLpaYnFuoqlwC0bg28BoQRMS6BIq4tWxJiAPX4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Jun 2024 10:48:14 GMT"
+          "Value": "Sat, 29 Jun 2024 19:26:25 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -8856,6 +8940,116 @@
         {
           "Name": "Last-Modified",
           "Value": "Mon, 15 Apr 2024 19:34:47 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/pastappointments.css",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\hdyj37416d.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001076426265"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "928"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S5bynZe/QAUhOsLDse4GEkrR/DAyDWvKhF7GH29xTmo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Jun 2024 19:49:24 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3ipEWjKpyF8MGscVmXc7/febcIxZDAOre5Qy6uEI/ss=\""
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/pastappointments.css",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\pastappointments.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3154"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3ipEWjKpyF8MGscVmXc7/febcIxZDAOre5Qy6uEI/ss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Jun 2024 19:49:24 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/pastappointments.css.gz",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\hdyj37416d.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "928"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S5bynZe/QAUhOsLDse4GEkrR/DAyDWvKhF7GH29xTmo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Jun 2024 19:49:24 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
         }
       ],
       "EndpointProperties": []
@@ -20703,7 +20897,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Jun 2024 11:31:01 GMT"
+          "Value": "Fri, 28 Jun 2024 12:27:48 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -20747,7 +20941,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Jun 2024 11:31:01 GMT"
+          "Value": "Fri, 28 Jun 2024 12:27:48 GMT"
         }
       ],
       "EndpointProperties": []
@@ -20775,7 +20969,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Jun 2024 11:31:01 GMT"
+          "Value": "Fri, 28 Jun 2024 12:27:48 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -22206,6 +22400,116 @@
         {
           "Name": "Last-Modified",
           "Value": "Mon, 15 Apr 2024 19:34:47 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/pastappointments.js",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\5lr2il81tu.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000491400491"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2034"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d9bhvqpBuDUJE7Q0OSxgX8c4WMvDh6mwqaMGpqx9dko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Jun 2024 19:51:41 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"v3ZUXaBr56hIIJotPnrApQSTOUlQr+Snlnh0/CRA/8k=\""
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/pastappointments.js",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\pastappointments.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7388"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v3ZUXaBr56hIIJotPnrApQSTOUlQr+Snlnh0/CRA/8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Jun 2024 19:51:41 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/pastappointments.js.gz",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\5lr2il81tu.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2034"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d9bhvqpBuDUJE7Q0OSxgX8c4WMvDh6mwqaMGpqx9dko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Jun 2024 19:51:41 GMT"
         },
         {
           "Name": "Content-Encoding",

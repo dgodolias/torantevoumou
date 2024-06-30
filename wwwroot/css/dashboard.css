@@ -112,8 +112,11 @@ body.dark{
 }
 /* =========================== */
 .embedded-page {
-    max-height: 100vh; /* Adjust this value as needed */
-    overflow: auto; /* Enables scroll if needed */
+    justify-content: center;
+    display: flex;
+    max-height: 100vh;
+    overflow: hidden;
+    align-items: center;
 }
 input[readonly] {
     background-color: #ccc;

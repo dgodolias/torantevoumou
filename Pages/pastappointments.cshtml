@@ -9,33 +9,43 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link rel="stylesheet" href="~/css/pastappointments.css">
 </head>
-
-<body id="appointmentsPage">
-    <h1>@ViewData["Title"]</h1>
-
-    <section>
-        <h2>My Appointments</h2>
-
-        @if (Model.PastAppointments != null && Model.PastAppointments.Any())
-        {
-            foreach (var appointment in Model.PastAppointments)
-            {
-                <p>@appointment.appointmentDate: @appointment.appointmentTime</p>
-            }
-        }
-        else
-        {
-            <p>You don't have any appointments.</p>
-        }
-
+<body>
+    <div id="big-container">
+        <div class="solid-container">
+            <div class="solid-container" id="search-services-bar">
+                <div class="year-navigation">
+                    <button id="prev-year"><img src="~/img/arrow-down.png" alt="Previous Year" class="arrow-icon rotate-left"></button>
+                    <div id="current-year">2024</div>
+                    <button id="next-year"><img src="~/img/arrow-down.png" alt="Next Year" class="arrow-icon rotate-right"></button>
+                    <div class="filter-container">
+                        <select id="service-filter">
+                            <!-- Options will be dynamically populated here -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="solid-container">
+                <div class="outside-calendar-container" id="outside-calendar-container">
+                    <div class="calendar-container" id="calendar-container">
+                        <!-- Month calendars will be generated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="appointment-dialog" class="appointment-dialog" title="Appointments">
+            <p id="appointment-times"></p>
+        </div>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="~/js/pastappointments.js"></script>
 </body>
-
 </html>

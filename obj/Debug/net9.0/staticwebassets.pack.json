@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\css\\nivo-lightbox\\prev@2x.png"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\pastappointments.css",
+      "PackagePath": "staticwebassets\\css\\pastappointments.css"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\profile.css",
       "PackagePath": "staticwebassets\\css\\profile.css"
     },
@@ -1011,6 +1015,10 @@
     {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\nivo-lightbox.js",
       "PackagePath": "staticwebassets\\js\\nivo-lightbox.js"
+    },
+    {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\pastappointments.js",
+      "PackagePath": "staticwebassets\\js\\pastappointments.js"
     },
     {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\profile.js",

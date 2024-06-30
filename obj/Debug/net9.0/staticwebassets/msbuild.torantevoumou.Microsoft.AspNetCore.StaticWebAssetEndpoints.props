@@ -22,7 +22,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"7812"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KXzY/x5u795\u002Bcl2DMBMtPcyH8IDZcptameeUHs4judY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 19 Jun 2024 10:48:14 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"7825"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Ex5Z2POWZdjqkJmt3mJebWfCeUNyO6Ny8muzkO\u002Bd\u002BOM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 29 Jun 2024 19:26:25 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/datepicker.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\datepicker.css))</AssetFile>
@@ -107,6 +107,12 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"4224"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228zRWGhOcoXJMdIskWbT4\u002BCpyWvaSdnTrPqw8Vp0b9cE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 15 Apr 2024 19:34:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/torantevoumou/css/pastappointments.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\pastappointments.css))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"3154"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223ipEWjKpyF8MGscVmXc7/febcIxZDAOre5Qy6uEI/ss=\u0022"},{"Name":"Last-Modified","Value":"Sun, 30 Jun 2024 19:49:24 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/profile.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\profile.css))</AssetFile>
@@ -1432,7 +1438,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\appointments.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"13707"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022kGQWbpV2jbMfnK7jiQ6a1ASO80kU3cyHGvsqBLJG14o=\u0022"},{"Name":"Last-Modified","Value":"Tue, 25 Jun 2024 11:31:01 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"13707"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022kGQWbpV2jbMfnK7jiQ6a1ASO80kU3cyHGvsqBLJG14o=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Jun 2024 12:27:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/bootstrap.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\bootstrap.js))</AssetFile>
@@ -1511,6 +1517,12 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"14185"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228xyH3nBdimVakCp1HnES3ebCidToeUogRjx12ktUiuE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 15 Apr 2024 19:34:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/torantevoumou/js/pastappointments.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\pastappointments.js))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"7388"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022v3ZUXaBr56hIIJotPnrApQSTOUlQr\u002BSnlnh0/CRA/8k=\u0022"},{"Name":"Last-Modified","Value":"Sun, 30 Jun 2024 19:51:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/profile.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\profile.js))</AssetFile>

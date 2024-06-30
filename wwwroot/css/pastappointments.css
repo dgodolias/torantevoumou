@@ -1,0 +1,159 @@
+
+#big-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.solid-container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+#search-services-bar {
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+#current-year {
+    font-size: 38px;
+    text-shadow: 3px 1px 5px rgb(97 148 155 / 90%);
+    color: rgb(255 255 255 / 50%);
+    font-family: fantasy;
+}
+
+.year-navigation {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.year-navigation button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.rotate-left {
+    transform: rotate(90deg);
+}
+
+.rotate-right {
+    transform: rotate(-90deg);
+}
+
+.filter-container {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.calendar-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 90%;
+}
+
+.month-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+
+.calendar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+a.ui-state-default {
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    background: rgb(181 255 252);
+}
+
+.ui-datepicker {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.ui-datepicker-header {
+    background-color: #f0f0f0;
+    border: none;
+}
+
+.ui-datepicker-calendar {
+    width: 100%;
+}
+
+.calendar.hasDatepicker {
+    width: 100%;
+}
+
+.ui-datepicker td a {
+    border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
+}
+
+.ui-datepicker td a.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight, .highlight a {
+    border: 1px solid #000000 !important;
+    background: #ffa7d9 !important;
+    color: #000000 !important;
+}
+
+.ui-datepicker .ui-datepicker-today a, .ui-datepicker .ui-datepicker-current-day a, .ui-datepicker .ui-state-active {
+    border: 1px solid #c5c5c5 !important;
+    background: #f6f6f6 !important;
+    color: #454545 !important;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    display: none;
+}
+
+.appointment-dialog {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+select#service-filter {
+    width: 100%;
+    box-shadow: 3px 1px 5px rgb(97 148 155 / 90%);
+    border: transparent;
+}
