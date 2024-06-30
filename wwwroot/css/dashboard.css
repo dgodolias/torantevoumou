@@ -49,6 +49,7 @@ body.dark{
 
 /* ===== Sidebar ===== */
 .sidebar{
+    position: fixed;
     bottom: 0;
     left: 0;
     height: 100%;
@@ -58,6 +59,7 @@ body.dark{
     transition: var(--tran-05);
 }
 .sidebar.close{
+    position: fixed;
     width: 88px;
 }
 
