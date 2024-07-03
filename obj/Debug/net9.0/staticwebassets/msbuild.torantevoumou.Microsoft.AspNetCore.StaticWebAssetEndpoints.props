@@ -1522,7 +1522,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\pastappointments.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"8064"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222AUGNMNIK1KgHkilP88RoVDL9pLMv8Zdwtyd85bjcJI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 03 Jul 2024 17:18:33 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"9056"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022C4eWYY6v9VrNIv6ZL3XuWw\u002BT3OIBdbfeY3xmiW7MJCY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 03 Jul 2024 19:07:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/profile.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\profile.js))</AssetFile>
