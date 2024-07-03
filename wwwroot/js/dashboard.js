@@ -1,13 +1,13 @@
 const loaderElement = document.querySelector('.loader');
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     checkLoginStatus();
 
     const body = document.querySelector('body'),
         sidebar = body.querySelector('nav'),
-        toggle = body.querySelector(".toggle")
+        toggle = body.querySelector(".toggle");
 
-    toggle.addEventListener("click" , () => {
+    toggle.addEventListener("click", () => {
         sidebar.classList.toggle("close");
     });
 
@@ -17,15 +17,14 @@ window.addEventListener('load', function() {
         console.log('User ID: ', userId);
 
         // Load appointments.js before loading the appointments.cshtml content
-        $.getScript('/js/appointments.js', function() {
+        $.getScript('/js/appointments.js', function () {
             // Now you can safely use functions from appointments.js
             $('#container').load('/appointments?userId=' + userId);
         });
-        
+
         $('#appointmentLink').click(function (e) {
             e.preventDefault();
             $('#container').load('/appointments?userId=' + userId);
-
         });
 
         $('#pastappointmentLink').click(function (e) {
@@ -39,11 +38,12 @@ window.addEventListener('load', function() {
         });
 
         // Logout functionality
-        const logoutButton = Array.from(document.querySelectorAll('.nav-text')).find(el => el.textContent.trim() === 'Logout');
+        const logoutButton = document.querySelector('.bottom-content a');
         if (logoutButton) {
             console.log('Logout button found:', logoutButton);
-            logoutButton.closest('a').addEventListener('click', function(e) {
+            logoutButton.addEventListener('click', function (e) {
                 e.preventDefault(); // Prevent the default anchor action
+                console.log('Logout button clicked');
 
                 // Clear the session storage
                 sessionStorage.clear();
@@ -52,6 +52,7 @@ window.addEventListener('load', function() {
                 window.location.href = '/Login';
             });
         }
+
     });
 
     // Fetch call to cloud function after the page has fully loaded
@@ -72,7 +73,7 @@ function checkLoginStatus() {
 }
 
 // Use the onpageshow event to handle the back button scenario
-window.onpageshow = function(event) {
+window.onpageshow = function (event) {
     // This ensures the check is performed even when the page is loaded from the cache
     if (event.persisted) {
         checkLoginStatus();
