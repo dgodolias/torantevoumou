@@ -68,6 +68,7 @@ body.dark{
 }
 
 #pagetobeembedded {
+    overflow: hidden;
     flex-grow: 1; /* This will make the content take up the rest of the space in the container */
 }
 
@@ -112,11 +113,13 @@ body.dark{
 }
 /* =========================== */
 .embedded-page {
-    justify-content: center;
+    flex-grow: 1;
     display: flex;
-    max-height: 100vh;
-    overflow: hidden;
+    justify-content: center;
     align-items: center;
+    padding: 20px;
+    overflow: auto;
+    position: relative;
 }
 input[readonly] {
     background-color: #ccc;

@@ -1,3 +1,4 @@
+
 section.home {
     background: linear-gradient(to left, rgba(156, 165, 255, 0.7) 0%, rgb(0 255 114 / 60%) 100%);
     height: -webkit-fill-available;
@@ -7,41 +8,42 @@ section.home {
     min-width: 700px;
     width: fit-content;
     overflow-y: auto;
-    border-radius: 8px; /* Rounded corners */
-    padding: 10px; /* Add padding to the container for spacing */
-    background-color: #f0f0f0; /* Background color for better contrast */
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f0f0f0;
     margin: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Add shadow */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 #appointments-table {
     width: 100%;
-    border-collapse: separate; /* Separate borders for individual rows */
-    border-spacing: 0 5px; /* Space between rows */
+    border-collapse: separate;
+    border-spacing: 0 5px;
     font-family: Arial, sans-serif;
 }
 
 #appointments-table tbody tr {
-    background-color: #fff; /* White background for rows */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for 3D effect */
-    border-radius: 8px; /* Rounded corners for rows */
-    overflow: hidden; /* Ensure content doesn't overflow the rounded corners */
-    height: 50px; /* Fixed row height */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 50px;
 }
 
 #appointments-table tbody tr {
-    background-color: #fff; /* White background for even rows */
+    background-color: #fff;
 }
 
 #appointments-table td {
-    width: 33.33%; /* Divide the table row into three equal parts */
+    width: 33.33%;
     padding: 10px;
     text-align: center;
-    vertical-align: middle; /* Center content vertically */
-    border-right: 2px solid #f0f0f0; /* Add a border between the boxes */
+    vertical-align: middle;
+    border-right: 2px solid #f0f0f0;
 }
 
 #appointments-table td:last-child {
-    border-right: none; /* Remove the border for the last cell to maintain the design */
+    border-right: none;
 }
 
 #appointments-table td button {
@@ -71,7 +73,7 @@ section.home {
 }
 
 #appointments-table td button.closed:hover {
-    background-color: #000000; /* Keep the same color on hover for closed buttons */
+    background-color: #000000;
 }
 
 .close-btn {
@@ -89,4 +91,31 @@ section.home {
 
 .close-btn:active {
     color: red;
+}
+
+/* Added styles for zoom controls */
+.zoom-controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.zoom-controls button {
+    background: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inside-appointment-flex-container {
+    transition: transform 0.3s ease;
 }

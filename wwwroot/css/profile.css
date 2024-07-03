@@ -28,16 +28,6 @@ body {
     height: calc(100% - 48px);
 }
 
-.embedded-page {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    overflow: auto;
-    position: relative;
-}
-
 .profile-header {
     position: relative;
     margin-bottom: 24px;
@@ -118,7 +108,7 @@ i#profile-pic-default {
 }
 
 .zoom-controls {
-    padding: 30px;
+    padding: 50px;
     position: absolute;
     top: 20px;
     left: 20px;

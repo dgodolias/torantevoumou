@@ -41,6 +41,7 @@ window.addEventListener('load', function() {
         // Logout functionality
         const logoutButton = Array.from(document.querySelectorAll('.nav-text')).find(el => el.textContent.trim() === 'Logout');
         if (logoutButton) {
+            console.log('Logout button found:', logoutButton);
             logoutButton.closest('a').addEventListener('click', function(e) {
                 e.preventDefault(); // Prevent the default anchor action
 
