@@ -1,3 +1,33 @@
+(function() {
+    let currentProfileScale = parseFloat(localStorage.getItem('profilePageScale')) || 1;
+
+    document.getElementById('profile-page').style.transform = `scale(${currentProfileScale})`;
+
+    document.getElementById('zoom-in').addEventListener('click', function() {
+        if (currentProfileScale < 2) {
+            currentProfileScale += 0.1;
+            document.getElementById('profile-page').style.transform = `scale(${currentProfileScale})`;
+            localStorage.setItem('profilePageScale', currentProfileScale);
+        }
+    });
+
+    document.getElementById('zoom-out').addEventListener('click', function() {
+        if (currentProfileScale > 0.5) {
+            currentProfileScale -= 0.1;
+            document.getElementById('profile-page').style.transform = `scale(${currentProfileScale})`;
+            localStorage.setItem('profilePageScale', currentProfileScale);
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const savedScale = localStorage.getItem('profilePageScale');
+        if (savedScale) {
+            currentProfileScale = parseFloat(savedScale);
+            document.getElementById('profile-page').style.transform = `scale(${currentProfileScale})`;
+        }
+    });
+})();
+
 $("#changeEmail").click(function () {
     toggleReadonly("#email");
 });

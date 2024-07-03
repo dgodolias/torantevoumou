@@ -20,12 +20,12 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 360px; /* Increased by 20% from 300px */
-    padding: 24px; /* Adjusted padding to keep proportions */
+    width: 360px;
+    padding: 24px;
     text-align: center;
     margin: 24px;
     flex-shrink: 0;
-    height: calc(100% - 48px); /* Adjusted for increased height */
+    height: calc(100% - 48px);
 }
 
 .embedded-page {
@@ -35,28 +35,29 @@ body {
     align-items: center;
     padding: 20px;
     overflow: auto;
+    position: relative;
 }
 
 .profile-header {
     position: relative;
-    margin-bottom: 24px; /* Adjusted margin */
+    margin-bottom: 24px;
 }
 
 .profile-picture {
     background-color: #695cfe;
     border-radius: 50%;
-    width: 96px; /* Increased by 20% from 80px */
-    height: 96px; /* Increased by 20% from 80px */
+    width: 96px;
+    height: 96px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px; /* Increased by 20% from 40px */
+    font-size: 48px;
     color: #fff;
-    margin: 0 auto 12px; /* Adjusted margin */
+    margin: 0 auto 12px;
 }
 
 .profile-header h1 {
-    font-size: 21.6px; /* Increased by 20% from 18px */
+    font-size: 21.6px;
     color: #333;
 }
 
@@ -65,13 +66,13 @@ body {
 }
 
 .form-group {
-    margin-bottom: 18px; /* Adjusted margin */
+    margin-bottom: 18px;
 }
 
 .form-group label {
     display: block;
     font-weight: bold;
-    margin-bottom: 6px; /* Adjusted margin */
+    margin-bottom: 6px;
     color: #555;
 }
 
@@ -82,10 +83,10 @@ body {
 }
 
 .input-container input {
-    width: calc(100% - 48px); /* Adjusted width calculation */
-    padding: 12px; /* Adjusted padding */
+    width: calc(100% - 48px);
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 6px; /* Adjusted border radius */
+    border-radius: 6px;
     transition: all 0.3s;
 }
 
@@ -99,7 +100,7 @@ body {
     border: none;
     color: #695cfe;
     cursor: pointer;
-    margin-left: 12px; /* Adjusted margin */
+    margin-left: 12px;
     transition: color 0.3s;
 }
 
@@ -114,4 +115,38 @@ section.home {
 
 i#profile-pic-default {
     font-size: 50px;
+}
+
+.zoom-controls {
+    padding: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zoom-controls button {
+    background: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-page-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-page {
+    transition: transform 0.3s ease;
 }

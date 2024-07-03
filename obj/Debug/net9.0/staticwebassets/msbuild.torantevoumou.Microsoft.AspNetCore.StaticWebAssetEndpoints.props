@@ -118,7 +118,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\profile.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2554"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BdHI\u002BGZvz1\u002BPQx6PzKczlSGO3GepwcPUrqnLO0hiePU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 18 Jun 2024 12:42:41 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2754"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FWlNukqyv54LJ9/nEl4Y0cesh6jjd/N5MyL9p9mPSIY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 03 Jul 2024 19:18:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/selector.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\selector.css))</AssetFile>
@@ -1528,7 +1528,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\profile.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2740"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Zc9imgc9cJ6XFL5oFt6ePavsXRLMWV40aI/rG\u002B4ADKw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 25 Jun 2024 11:39:42 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"4025"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022FY8hHIsLqQnbmcwc\u002BnawE3SVMMjN1/N4hLHTAW2WnWs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 03 Jul 2024 19:19:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/selector.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\selector.js))</AssetFile>
