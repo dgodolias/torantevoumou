@@ -1,19 +1,37 @@
-console.log(sessionStorage.getItem("ServiceJustKeysAppointments"));
-console.log(sessionStorage.getItem("UserDetailedAppointments"));
+let currentScale = parseFloat(localStorage.getItem('PastAppointmentsScale')) || 1;
+
+document.getElementById('big-container').style.transform = `scale(${currentScale})`;
+
+document.getElementById('zoom-in').addEventListener('click', function () {
+    if (currentScale < 2) {
+        currentScale += 0.1;
+        document.getElementById('big-container').style.transform = `scale(${currentScale})`;
+        localStorage.setItem('PastAppointmentsScale', currentScale);
+    }
+});
+
+document.getElementById('zoom-out').addEventListener('click', function () {
+    if (currentScale > 0.5) {
+        currentScale -= 0.1;
+        document.getElementById('big-container').style.transform = `scale(${currentScale})`;
+        localStorage.setItem('PastAppointmentsScale', currentScale);
+    }
+});
+
 // Set the desired current date to January 1, 2000
 const desiredDate = new Date(2000, 0, 1); // Note: months are 0-indexed, so 0 is January
 
 // Override the built-in Date function to always return the desired date
-(function() {
+(function () {
     const OriginalDate = Date;
-    Date = function(...args) {
+    Date = function (...args) {
         if (args.length === 0) {
             return new OriginalDate(desiredDate);
         }
         return new OriginalDate(...args);
     };
     Date.prototype = OriginalDate.prototype;
-    Date.now = function() {
+    Date.now = function () {
         return desiredDate.getTime();
     };
     Date.parse = OriginalDate.parse;
@@ -75,7 +93,7 @@ function generateCalendars(year) {
             changeYear: false,
             dateFormat: 'yy-mm-dd',
             defaultDate: new Date(year, month, 1),
-            beforeShowDay: function(date) {
+            beforeShowDay: function (date) {
                 const selectedService = $('#service-filter').val();
                 const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
                 let isHighlighted = false;
@@ -93,13 +111,13 @@ function generateCalendars(year) {
                 }
                 return [true, isHighlighted ? 'highlight' : ''];
             },
-            onChangeMonthYear: function(year, month, inst) {
+            onChangeMonthYear: function (year, month, inst) {
                 setTimeout(() => {
                     $(`#calendar-${month} .ui-datepicker-current-day`).removeClass('ui-datepicker-current-day');
                     $(`#calendar-${month} .ui-state-active`).removeClass('ui-state-active').attr('aria-current', 'false');
                 }, 1);
             },
-            onSelect: function(dateText, inst) {
+            onSelect: function (dateText, inst) {
                 setTimeout(() => {
                     $(`#calendar-${month} .ui-datepicker-current-day`).removeClass('ui-datepicker-current-day');
                     $(`#calendar-${month} .ui-state-active`).removeClass('ui-state-active').attr('aria-current', 'false');
@@ -115,20 +133,20 @@ function generateCalendars(year) {
     }
 
     // Add hover event listener to highlighted cells
-    $(document).on('mouseenter', '.highlight a', function(event) {
+    $(document).on('mouseenter', '.highlight a', function (event) {
         if (!$(this).data('clicked')) {
             showAppointmentDialog($(this), event);
         }
     });
 
-    $(document).on('mouseleave', '.highlight a', function() {
+    $(document).on('mouseleave', '.highlight a', function () {
         if (!$(this).data('clicked')) {
             hideAppointmentDialog();
         }
     });
 
     // Add click event listener to highlighted cells
-    $(document).on('click', '.highlight a', function(event) {
+    $(document).on('click', '.highlight a', function (event) {
         event.stopPropagation();
         $('.highlight a').data('clicked', false); // Reset all click states
         $(this).data('clicked', true);
@@ -138,7 +156,7 @@ function generateCalendars(year) {
     });
 
     // Hide the dialog on clicking outside
-    $(document).on('click', function() {
+    $(document).on('click', function () {
         hideAppointmentDialog();
     });
 }

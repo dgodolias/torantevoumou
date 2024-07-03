@@ -1,9 +1,40 @@
-
-#big-container {
-    font-family: Arial, sans-serif;
+.zoom-controls {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 50px;
+}
+
+#zoom-controls-container {
+    height: 100vh;
+}
+
+.zoom-controls button {
+    background: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#big-container-wrapper {
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#big-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
 }
 
 .solid-container {
@@ -18,6 +49,7 @@
     width: 100%;
     align-items: center;
     display: flex;
+    justify-content: center;
 }
 
 #current-year {
@@ -32,7 +64,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .year-navigation button {
@@ -40,7 +72,6 @@
     padding: 5px 10px;
     background: none;
     border: none;
-    padding: 0;
     cursor: pointer;
 }
 
@@ -156,4 +187,9 @@ select#service-filter {
     width: 100%;
     box-shadow: 3px 1px 5px rgb(97 148 155 / 90%);
     border: transparent;
+}
+
+section.home {
+    height: -webkit-fill-available;
+    background: linear-gradient(to right, rgba(156, 165, 255, 0.7) 0%, rgb(0 255 114 / 60%) 100%);
 }

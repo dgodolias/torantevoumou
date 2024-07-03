@@ -19,29 +19,36 @@
     <link rel="stylesheet" href="~/css/pastappointments.css">
 </head>
 <body>
-    <div id="big-container">
-        <div class="solid-container">
-            <div class="solid-container" id="search-services-bar">
-                <div class="year-navigation">
-                    <button id="prev-year"><img src="~/img/arrow-down.png" alt="Previous Year" class="arrow-icon rotate-left"></button>
-                    <div id="current-year">2024</div>
-                    <button id="next-year"><img src="~/img/arrow-down.png" alt="Next Year" class="arrow-icon rotate-right"></button>
-                    <div class="filter-container">
-                        <select id="service-filter">
-                            <!-- Options will be dynamically populated here -->
-                        </select>
+    <div id="zoom-controls-container">
+        <div class="zoom-controls">
+            <button id="zoom-in">➕</button>
+            <button id="zoom-out">➖</button>
+        </div>
+    </div>
+    <div id="big-container-wrapper">
+        <div id="big-container">
+            <div class="solid-container">
+                <div class="solid-container" id="search-services-bar">
+                    <div class="year-navigation">
+                        <button id="prev-year"><img src="img/arrow-down.png" alt="Previous Year" class="arrow-icon rotate-left"></button>
+                        <div id="current-year">2024</div>
+                        <button id="next-year"><img src="img/arrow-down.png" alt="Next Year" class="arrow-icon rotate-right"></button>
+                        <div class="filter-container">
+                            <select id="service-filter">
+                                <!-- Options will be dynamically populated here -->
+                            </select>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="solid-container">
-                <div class="outside-calendar-container" id="outside-calendar-container">
-                    <div class="calendar-container" id="calendar-container">
-                        <!-- Month calendars will be generated here -->
+                <div class="solid-container">
+                    <div class="outside-calendar-container" id="outside-calendar-container">
+                        <div class="calendar-container" id="calendar-container">
+                            <!-- Month calendars will be generated here -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    
         <div id="appointment-dialog" class="appointment-dialog" title="Appointments">
             <p id="appointment-times"></p>
         </div>
