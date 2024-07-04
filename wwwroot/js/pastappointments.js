@@ -23,43 +23,19 @@
         }
     });
 
-    // Set the desired current date to January 1, 2000
-    const desiredDate = new Date(2000, 0, 1); // Note: months are 0-indexed, so 0 is January
-
-    // Override the built-in Date function to always return the desired date
-    (function() {
-        const OriginalDate = Date;
-        Date = function(...args) {
-            if (args.length === 0) {
-                return new OriginalDate(desiredDate);
-            }
-            return new OriginalDate(...args);
-        };
-        Date.prototype = OriginalDate.prototype;
-        Date.now = function() {
-            return desiredDate.getTime();
-        };
-        Date.parse = OriginalDate.parse;
-        Date.UTC = OriginalDate.UTC;
-    })();
-
     const data = {
         "barbershop": {
             "2024-06-10": ["09:00"],
             "2024-06-13": ["09:00", "09:30"],
             "2024-06-12": ["10:30"],
-            // ... other dates
         },
         "physiotherapy": {
             "2024-07-11": ["09:30"],
             "2024-06-13": ["08:00", "15:30"],
             "2024-06-25": ["10:30"],
-            // ... other dates
         }
-        // Add more services as needed
     };
 
-    // Populate the service filter dropdown
     function populateServiceFilter() {
         const serviceFilter = $('#service-filter');
         serviceFilter.empty();
@@ -70,7 +46,6 @@
         for (const service of services) {
             serviceFilter.append(`<option value="${service}">${service.charAt(0).toUpperCase() + service.slice(1)}</option>`);
         }
-        // If no services exist, add a default option
         if (services.length === 0) {
             serviceFilter.append('<option value="none">No services available</option>');
         }
@@ -88,7 +63,7 @@
         $('#calendar-container').empty();
         for (let month = 0; month < 12; month++) {
             const monthContainer = $('<div>').addClass('month-container');
-            const calendar = $('<div>').addClass('calendar').attr('id', `calendar-${month}`);
+            const calendar = $('<div>').addClass('calendar past-appointments-calendar').attr('id', `calendar-${month}`);
             monthContainer.append(calendar);
             $('#calendar-container').append(monthContainer);
 
@@ -130,38 +105,34 @@
                 }
             });
 
-            // Ensure no cells have ui-state-active class after rendering
             setTimeout(() => {
                 $(`#calendar-${month} .ui-datepicker-current-day`).removeClass('ui-datepicker-current-day');
                 $(`#calendar-${month} .ui-state-active`).removeClass('ui-state-active').attr('aria-current', 'false');
             }, 1);
         }
 
-        // Add hover event listener to highlighted cells
-        $(document).on('mouseenter', '.highlight a', function(event) {
+        $(document).on('mouseenter.pastappointments', '.highlight a', function(event) {
             if (!$(this).data('clicked')) {
                 showAppointmentDialog($(this), event);
             }
         });
 
-        $(document).on('mouseleave', '.highlight a', function() {
+        $(document).on('mouseleave.pastappointments', '.highlight a', function() {
             if (!$(this).data('clicked')) {
                 hideAppointmentDialog();
             }
         });
 
-        // Add click event listener to highlighted cells
-        $(document).on('click', '.highlight a', function(event) {
+        $(document).on('click.pastappointments', '.highlight a', function(event) {
             event.stopPropagation();
-            $('.highlight a').data('clicked', false); // Reset all click states
+            $('.highlight a').data('clicked', false);
             $(this).data('clicked', true);
             clearTimeout(dialogTimeout);
             showAppointmentDialog($(this), event);
             dialogTimeout = setTimeout(hideAppointmentDialog, 3000);
         });
 
-        // Hide the dialog on clicking outside
-        $(document).on('click', function() {
+        $(document).on('click.pastappointments', function() {
             hideAppointmentDialog();
         });
     }
@@ -208,17 +179,17 @@
         $('.highlight a').data('clicked', false);
     }
 
-    $('#prev-year').on('click', () => {
+    $('#prev-year').on('click.pastappointments', () => {
         currentYear--;
         updateYear();
     });
 
-    $('#next-year').on('click', () => {
+    $('#next-year').on('click.pastappointments', () => {
         currentYear++;
         updateYear();
     });
 
-    $('#service-filter').on('change', () => {
+    $('#service-filter').on('change.pastappointments', () => {
         generateCalendars(currentYear);
     });
 

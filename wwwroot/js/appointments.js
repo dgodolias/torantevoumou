@@ -23,9 +23,9 @@ $(document).ready(function () {
     cellColours = ['purple1', 'purple2', 'purple3', 'purple4', 'grey-background'];
 
     $('#datepicker').datepicker({
-        firstDay: 1, // Monday as the first day of the week
-        minDate: 0, // Allow selection from today onwards
-        maxDate: '+1y', // Allow selection up to one year from today
+        firstDay: 1,
+        minDate: 0,
+        maxDate: '+1y',
         onSelect: function (dateText) {
             var selectedDate = $.datepicker.formatDate('yy/mm/dd', new Date(dateText));
             sessionStorage.setItem('selectedDate', selectedDate);
@@ -34,15 +34,11 @@ $(document).ready(function () {
             $('#appointments-table').css('display', 'block');
         },
         beforeShowDay: function (date) {
-            // Disable past dates
             if (date < new Date()) {
                 return [false];
             }
-
-            // Generate a unique ID for each date cell
             const dateString = $.datepicker.formatDate('yy-mm-dd', date);
             const cellId = `date-${dateString}`;
-
             return [true, cellId, ''];
         },
         onChangeMonthYear: function () {
@@ -51,8 +47,8 @@ $(document).ready(function () {
     });
 
     var viewportHeight = $(window).height();
-    var dialogHeight = viewportHeight * 0.8; // 80% of the viewport height
-    // Initialize the dialog
+    var dialogHeight = viewportHeight * 0.8;
+
     $('#dialog').dialog({
         autoOpen: false,
         modal: true,
@@ -75,20 +71,19 @@ $(document).ready(function () {
         },
         beforeClose: function (event, ui) {
             $('#blurOverlay').fadeOut(1000);
-            $(document).off('mousedown.dialogCloseEvent'); // Unbind the event listener
+            $(document).off('mousedown.dialogCloseEvent');
 
-            // Reset datepicker cells to default state by removing custom background classes
             $('#datepicker').find('a').removeClass(cellColours.join(' '));
-            // Set #appointments-table display to none
             $('#appointments-table').css('display', 'none');
         }
     });
 
-
-    $('.close-btn').click(function () {
+    $('.close-btn').on('click.appointments', function () {
         $('#dialog').dialog('close');
     });
 });
+
+
 
 async function handleDateOrServiceSelection() {
     loaderElement.style.display = 'flex';
