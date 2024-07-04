@@ -3,8 +3,8 @@
     document.getElementById('inside-appointment-flex-container').style.transform = `scale(${currentAppointmentsScale})`;
 
     document.getElementById('zoom-in').addEventListener('click', function () {
-        if (currentAppointmentsScale < 2) {
-            currentAppointmentsScale += 0.1;
+        if (currentAppointmentsScale < 1.3) {
+            currentAppointmentsScale += 0.07;
             document.getElementById('inside-appointment-flex-container').style.transform = `scale(${currentAppointmentsScale})`;
             localStorage.setItem('appointmentsPageScale', currentAppointmentsScale);
         }
@@ -12,7 +12,7 @@
 
     document.getElementById('zoom-out').addEventListener('click', function () {
         if (currentAppointmentsScale > 0.5) {
-            currentAppointmentsScale -= 0.1;
+            currentAppointmentsScale -= 0.07;
             document.getElementById('inside-appointment-flex-container').style.transform = `scale(${currentAppointmentsScale})`;
             localStorage.setItem('appointmentsPageScale', currentAppointmentsScale);
         }
@@ -52,7 +52,7 @@ $(document).ready(function () {
     $('#dialog').dialog({
         autoOpen: false,
         modal: true,
-        width: '80%',
+        width: "fit-content",
         height: dialogHeight,
         draggable: false,
         resizable: false,

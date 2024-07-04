@@ -131,7 +131,7 @@ i#profile-pic-default {
 
 #profile-page-wrapper {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;

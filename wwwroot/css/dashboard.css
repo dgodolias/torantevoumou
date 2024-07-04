@@ -120,6 +120,7 @@ body.dark{
     padding: 20px;
     overflow: auto;
     position: relative;
+    height: 100%;
 }
 input[readonly] {
     background-color: #ccc;
@@ -250,7 +251,7 @@ body.dark .sidebar li a:hover .text{
     position: relative;
     border: 0;
     padding: .5em 1em;
-    background: radial-gradient(#181919, transparent);
+    background: aliceblue;
     overflow: hidden;
     border-radius: 30px;
 }

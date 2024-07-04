@@ -4,8 +4,8 @@
     document.getElementById('profile-page').style.transform = `scale(${currentProfileScale})`;
 
     document.getElementById('zoom-in').addEventListener('click', function() {
-        if (currentProfileScale < 2) {
-            currentProfileScale += 0.1;
+        if (currentProfileScale < 1.3) {
+            currentProfileScale += 0.07;
             document.getElementById('profile-page').style.transform = `scale(${currentProfileScale})`;
             localStorage.setItem('profilePageScale', currentProfileScale);
         }
@@ -13,7 +13,7 @@
 
     document.getElementById('zoom-out').addEventListener('click', function() {
         if (currentProfileScale > 0.5) {
-            currentProfileScale -= 0.1;
+            currentProfileScale -= 0.07;
             document.getElementById('profile-page').style.transform = `scale(${currentProfileScale})`;
             localStorage.setItem('profilePageScale', currentProfileScale);
         }

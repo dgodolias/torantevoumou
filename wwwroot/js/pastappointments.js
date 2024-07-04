@@ -7,8 +7,8 @@
 
     // Zoom in button click event
     document.getElementById('zoom-in').addEventListener('click', function() {
-        if (currentScale < 2) {
-            currentScale += 0.1;
+        if (currentScale < 1.3) {
+            currentScale += 0.07;
             document.getElementById('big-container').style.transform = `scale(${currentScale})`;
             localStorage.setItem('PastAppointmentsScale', currentScale);
         }
@@ -17,7 +17,7 @@
     // Zoom out button click event
     document.getElementById('zoom-out').addEventListener('click', function() {
         if (currentScale > 0.5) {
-            currentScale -= 0.1;
+            currentScale -= 0.07;
             document.getElementById('big-container').style.transform = `scale(${currentScale})`;
             localStorage.setItem('PastAppointmentsScale', currentScale);
         }
