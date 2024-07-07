@@ -14,6 +14,27 @@ window.addEventListener('load', function () {
     // Embedding the appointments view in the dashboard view
     $(document).ready(function () {
         var userId = sessionStorage.getItem('UserId');
+        
+        fetch(`https://us-central1-torantevoumou-86820.cloudfunctions.net/getUserGeneralInfo?userId=${userId}`, {
+          // mode: 'no-cors' // Remove this line after enabling CORS
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json(); // Now you can access response.json()
+        })
+        .then(data => {
+          sessionStorage.setItem('UserGeneralInfo', JSON.stringify(data));
+          console.log('UserGeneralInfo saved to sessionStorage:', data);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+        
+        
+        
+
         console.log('User ID: ', userId);
 
         // Load appointments.js before loading the appointments.cshtml content

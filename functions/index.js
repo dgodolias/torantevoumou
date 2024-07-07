@@ -33,6 +33,97 @@ exports.GetUserDBinfo = functions.https.onRequest(async (req, res) => {
   }
 });
 
+
+exports.getUserGeneralInfo = functions.https.onRequest(async (req, res) => {
+  const allowedOrigins = [
+    "https://localhost:7177",
+    "https://www.torantevoumou.gr",
+    "https://torantevoumou.gr",
+  ];
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.set("Access-Control-Allow-Origin", origin);
+  }
+  res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
+  res.set("Access-Control-Allow-Headers", "*");
+
+  // Respond to OPTIONS requests (required by CORS preflight)
+  if (req.method === "OPTIONS") {
+    res.status(200).send();
+    return;
+  }
+  try {
+    const {userId} = req.query; // Get userId from the request query
+
+    // Call the internal functions to get user data
+    const userDbInfo = await getUserDbInfo(userId);
+    const userAuthInfo = await getUserAuthInfo(userId);
+
+    // Combine the data into a single object
+    const userGeneralInfo = {
+      FirstName: userDbInfo.FirstName || userAuthInfo.firstName,
+      LastName: userDbInfo.LastName || userAuthInfo.lastName,
+      Username: userDbInfo.Username || userAuthInfo.username,
+      Password: userDbInfo.Password || userAuthInfo.password,
+      Email: userDbInfo.Email || userAuthInfo.email,
+      PhoneNumber: userDbInfo.PhoneNumber || userAuthInfo.phoneNumber,
+      serviceswithappointmentkey: userDbInfo.serviceswithappointmentkey ||
+      userAuthInfo.serviceswithappointmentkey,
+    };
+
+    // Send the combined data as a JSON response
+    console.log("User general info:", userGeneralInfo);
+    res.json(userGeneralInfo);
+  } catch (error) {
+    console.error("Error getting user general info:", error);
+    res.status(500).send("Error getting user general info");
+  }
+});
+
+/**
+ * Retrieves user information from the Realtime Database.
+ *
+ * @param {string} userId The user's ID.
+ * @return {Promise<object>} A promise that resolves with the
+ *  user's data from the Realtime Database, or throws an error
+ * if the user is not found.
+ */
+async function getUserDbInfo(userId) {
+  try {
+    const response = await fetch(`https://us-central1-torantevoumou-86820.cloudfunctions.net/GetUserDBinfo?userId=${userId}`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  } catch (error) {
+    console.error("Error getting user info:", error);
+    throw error; // Rethrow or handle as needed
+  }
+}
+
+
+/**
+ * Retrieves authentication information for a user.
+ *
+ * @param {string} userId The user's ID.
+ * @return {Promise<{email: string, phoneNumber: string}>}
+ * A promise that resolves with an object containing the user's
+ *  email and phone number, or throws an error if the user is not found.
+ */
+async function getUserAuthInfo(userId) {
+  try {
+    const response = await fetch(`https://us-central1-torantevoumou-86820.cloudfunctions.net/GetUserAUTHinfo?userId=${userId}`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  } catch (error) {
+    console.error("Error getting user auth info:", error);
+    throw error; // Rethrow or handle as needed
+  }
+}
+
+
 exports.GetUserAUTHinfo = functions.https.onRequest(async (req, res) => {
   try {
     const {userId} = req.query;
@@ -60,6 +151,7 @@ exports.GetUserAUTHinfo = functions.https.onRequest(async (req, res) => {
     res.status(500).send("Error getting user auth info");
   }
 });
+
 
 exports.getServiceDetailedAppointments =
   functions.https.onRequest(async (req, res) => {

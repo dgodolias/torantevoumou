@@ -1438,7 +1438,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\appointments.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"14354"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022rm/6Gl3XIiheDnCOIMO83i7T342gN3F1njZ81PGng/c=\u0022"},{"Name":"Last-Modified","Value":"Thu, 04 Jul 2024 09:40:47 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"14354"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022tRa7Hd7oueziIBnlWLBqlO3IDGSwjfozb\u002BbJIGvf8fQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 04 Jul 2024 09:43:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/bootstrap.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\bootstrap.js))</AssetFile>
@@ -1474,7 +1474,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\dashboard.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2949"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022UsdRpl\u002Br0NeJVyeYg1IoZuEQhEF9zNTUcih0Ckc09fc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 04 Jul 2024 08:38:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6222"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022uceCPqwsMUN/7R4cRZYa6NCmdueAThrFHSqFeSthXp0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 07 Jul 2024 07:05:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/eurethrio.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\eurethrio.js))</AssetFile>
@@ -1522,13 +1522,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\pastappointments.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"8018"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022kkgrD0wMGXsY7q8VPPsYePXr2mE5jiPTlwcCSeFVNqI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 04 Jul 2024 09:41:02 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"8018"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yQMj3hu/sc\u002BPJWOwBpmYAB1pwuNtM\u002BcJ5PKL8ZX4lH4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 04 Jul 2024 09:43:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/profile.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\profile.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"4029"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022IpGGGE7aj\u002BeD6zVnhDGU8Q\u002Bdv4h8/5uAglaGhBh2iuo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 04 Jul 2024 09:41:02 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"4029"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ExiDD9ZzjfcNef8/IRCv2ybsxJXy9Pu5f7Q6Bpv2UP8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 04 Jul 2024 09:43:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/selector.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\selector.js))</AssetFile>
