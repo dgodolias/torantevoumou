@@ -1,3 +1,22 @@
+// Assuming UserGeneralInfo is a JSON string with user information
+var userGeneralInfo = JSON.parse(sessionStorage.getItem("UserGeneralInfo"));
+
+// Function to fill the form with user information
+function fillProfileForm() {
+    if (userGeneralInfo) {
+        document.getElementById("email").value = userGeneralInfo.Email || '';
+        document.getElementById("firstName").value = userGeneralInfo.FirstName || '';
+        document.getElementById("lastName").value = userGeneralInfo.LastName || '';
+        document.getElementById("phoneNumber").value = userGeneralInfo.PhoneNumber || '';
+        document.getElementById("username").value = userGeneralInfo.Username || '';
+        // Password is not typically stored in session for security reasons
+        // document.getElementById("password").value = userGeneralInfo.Password || '';
+    }
+}
+
+// Call the function to fill the form when the page loads or when appropriate
+fillProfileForm();
+
 (function() {
     let currentProfileScale = parseFloat(localStorage.getItem('profilePageScale')) || 1;
 

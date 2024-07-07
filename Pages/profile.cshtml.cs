@@ -24,11 +24,6 @@ namespace Namespace
                 // Deserialize the session storage string into a User object
                 UserProfile = JsonConvert.DeserializeObject<User>(HttpContext.Session.GetString("UserGeneralInfo"));
             }
-            else
-            {
-                // Get the user's general info from Firebase
-                UserProfile = await _firebaseService.GetUserGENERALinfo(userId);
-            }
             return Page();
         }
         
