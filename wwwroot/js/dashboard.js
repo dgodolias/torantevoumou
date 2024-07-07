@@ -142,7 +142,7 @@ async function Init(userId) {
             appointments.push(...serviceAppointmentsData);
 
             sessionStorage.setItem('UserDetailedAppointments', JSON.stringify(appointments));
-            console.log('UserDetailedAppointments:', appointments);
+            console.log('UserDetailedAppointments:', JSON.stringify(appointments));
         })
         .catch(error => {
             console.error('Error fetching UserGeneralInfo:', error);

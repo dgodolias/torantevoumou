@@ -23,18 +23,11 @@
         }
     });
 
-    const data = {
-        "barbershop": {
-            "2024-06-10": ["09:00"],
-            "2024-06-13": ["09:00", "09:30"],
-            "2024-06-12": ["10:30"],
-        },
-        "physiotherapy": {
-            "2024-07-11": ["09:30"],
-            "2024-06-13": ["08:00", "15:30"],
-            "2024-06-25": ["10:30"],
-        }
-    };
+    
+
+    const data = getAppointmentsData();
+    console.log("Heatmap:"+data);
+
 
     function populateServiceFilter() {
         const serviceFilter = $('#service-filter');
@@ -177,6 +170,29 @@
     function hideAppointmentDialog() {
         $('#appointment-dialog').css('display', 'none');
         $('.highlight a').data('clicked', false);
+    }
+
+    function getAppointmentsData() {
+        const serviceJustKeysAppointments = JSON.parse(sessionStorage.getItem('ServiceJustKeysAppointments'));
+        const UserDetailedAppointments = JSON.parse(sessionStorage.getItem('UserDetailedAppointments'));
+
+        const appointmentsData = {};
+
+        for (const service in serviceJustKeysAppointments) {
+            appointmentsData[service] = {};
+            for (const appointmentId of serviceJustKeysAppointments[service]) {
+                const appointment = UserDetailedAppointments.find(a => a.AID === appointmentId);
+                if (appointment) {
+                    const { appointmentDate, appointmentTime } = appointment;
+                    if (!appointmentsData[service][appointmentDate]) {
+                        appointmentsData[service][appointmentDate] = [];
+                    }
+                    appointmentsData[service][appointmentDate].push(appointmentTime);
+                }
+            }
+        }
+
+        return appointmentsData;
     }
 
     $('#prev-year').on('click.pastappointments', () => {

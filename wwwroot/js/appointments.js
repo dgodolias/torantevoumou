@@ -20,7 +20,7 @@
                 localStorage.setItem('appointmentsPageScale', currentAppointmentsScale);
             }
         });
-
+        
     }
 })();
 
