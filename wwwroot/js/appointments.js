@@ -31,6 +31,10 @@ $(document).ready(function () {
         firstDay: 1,
         minDate: 0,
         maxDate: '+1y',
+        // Add the language setting here
+        dateFormat: 'dd/mm/yy', // Use Greek date format
+        dayNamesMin: ['Κυρ', 'Δευ', 'Τρι', 'Τετ', 'Πεμ', 'Παρ', 'Σαβ'], // Greek day names
+        monthNames: ['Ιανουάριος', 'Φεβρουάριος', 'Μάρτιος', 'Απρίλιος', 'Μάιος', 'Ιούνιος', 'Ιούλιος', 'Αύγουστος', 'Σεπτέμβριος', 'Οκτώβριος', 'Νοέμβριος', 'Δεκέμβριος'], // Greek month names
         onSelect: function (dateText) {
             var selectedDate = $.datepicker.formatDate('yy/mm/dd', new Date(dateText));
             sessionStorage.setItem('selectedDate', selectedDate);
@@ -44,8 +48,31 @@ $(document).ready(function () {
             }
             const dateString = $.datepicker.formatDate('yy-mm-dd', date);
             const cellId = `date-${dateString}`;
-            return [true, cellId, ''];
+
+            // Check if the date is within the allowed range for the selected service
+            const serviceName = sessionStorage.getItem('serviceName');
+            const servicesInfo = JSON.parse(sessionStorage.getItem('ServicesInfo'));
+            const allowedDates = servicesInfo[serviceName].dates.split('/');
+
+            let isDateAllowed = false;
+            allowedDates.forEach(dateRange => {
+                const [startDate, endDate] = dateRange.split('...');
+                // Convert startDate to a Date object
+                const start = new Date(startDate);
+                const end = new Date(endDate);
+
+                // Remove time component from both dates
+                date.setHours(0, 0, 0, 0); // Set time to midnight
+                start.setHours(0, 0, 0, 0); // Set time to midnight
+
+                if (date >= start && date <= end) {
+                    isDateAllowed = true;
+                }
+            });
+
+            return [isDateAllowed, cellId, ''];
         },
+
         onChangeMonthYear: function () {
             handleDateOrServiceSelection();
         }

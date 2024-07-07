@@ -95,7 +95,10 @@
                         $(`#calendar-${month} .ui-datepicker-current-day`).removeClass('ui-datepicker-current-day');
                         $(`#calendar-${month} .ui-state-active`).removeClass('ui-state-active').attr('aria-current', 'false');
                     }, 1);
-                }
+                },
+                // Greek language settings
+                dayNamesMin: ['Κυρ', 'Δευ', 'Τρι', 'Τετ', 'Πεμ', 'Παρ', 'Σαβ'],
+                monthNames: ['Ιανουάριος', 'Φεβρουάριος', 'Μάρτιος', 'Απρίλιος', 'Μάιος', 'Ιούνιος', 'Ιούλιος', 'Αύγουστος', 'Σεπτέμβριος', 'Οκτώβριος', 'Νοέμβριος', 'Δεκέμβριος'],
             });
 
             setTimeout(() => {
