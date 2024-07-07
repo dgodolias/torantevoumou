@@ -1,4 +1,4 @@
-(function() {
+(async function() {
     // Load the current scale from localStorage or set it to 1
     let currentScale = parseFloat(localStorage.getItem('PastAppointmentsScale')) || 1;
 
@@ -24,9 +24,9 @@
     });
 
     
-
-    const data = getAppointmentsData();
-    console.log("Heatmap:"+data);
+    loaderElement.style.display = 'flex';
+    const data = await getAppointmentsData();
+    loaderElement.style.display = 'none';
 
 
     function populateServiceFilter() {
@@ -172,9 +172,20 @@
         $('.highlight a').data('clicked', false);
     }
 
-    function getAppointmentsData() {
-        const serviceJustKeysAppointments = JSON.parse(sessionStorage.getItem('ServiceJustKeysAppointments'));
-        const UserDetailedAppointments = JSON.parse(sessionStorage.getItem('UserDetailedAppointments'));
+    async function getAppointmentsData() {
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        
+        let serviceJustKeysAppointments = JSON.parse(sessionStorage.getItem('ServiceJustKeysAppointments'));
+        let UserDetailedAppointments = JSON.parse(sessionStorage.getItem('UserDetailedAppointments'));
+
+        // Wait until both strings are not null
+        while ((!serviceJustKeysAppointments || serviceJustKeysAppointments == "") || (!UserDetailedAppointments || UserDetailedAppointments == "")) {
+            await delay(1000); // Wait for 1 second before checking again
+            serviceJustKeysAppointments = JSON.parse(sessionStorage.getItem('ServiceJustKeysAppointments'));
+            UserDetailedAppointments = JSON.parse(sessionStorage.getItem('UserDetailedAppointments'));
+        }
 
         const appointmentsData = {};
 
