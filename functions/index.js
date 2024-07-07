@@ -341,6 +341,31 @@ exports.phoneNumberExists = functions.https.onRequest(async (req, res) => {
 
 exports.getUserAppointments = functions.https.onRequest(async (req, res) => {
   try {
+    const allowedOrigins = [
+      "https://localhost:7177",
+      "https://www.torantevoumou.gr",
+      "https://torantevoumou.gr",
+    ];
+    const origin = req.headers.origin;
+
+    if (allowedOrigins.includes(origin)) {
+      res.set("Access-Control-Allow-Origin", origin);
+    }
+
+    res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
+    res.set("Access-Control-Allow-Headers", "*");
+
+    if (req.method === "OPTIONS") {
+      res.status(200).send();
+      return;
+    }
+
+    // Ensure the request method is POST
+    if (req.method !== "POST") {
+      console.log("Attempt to use non-POST method");
+      res.status(405).send("Method Not Allowed");
+      return;
+    }
     const serviceAppointments = req.body;
     const appointments = [];
 
@@ -353,7 +378,13 @@ exports.getUserAppointments = functions.https.onRequest(async (req, res) => {
           const snapshot = await db.ref(path).once("value");
           const appointment = snapshot.val();
           if (appointment) {
-            appointments.push(appointment);
+            // Modify the appointment object to include AID
+            const modifiedAppointment = {
+              AID: appointmentId, // Add AID property
+              appointmentDate: appointment.appointmentDate,
+              appointmentTime: appointment.appointmentTime,
+            };
+            appointments.push(modifiedAppointment);
           }
         }
       }
@@ -365,6 +396,7 @@ exports.getUserAppointments = functions.https.onRequest(async (req, res) => {
     res.status(500).send("Error getting appointments");
   }
 });
+
 
 exports.updateUser = functions.https.onRequest(async (req, res) => {
   const allowedOrigins = [

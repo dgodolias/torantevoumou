@@ -28,7 +28,6 @@ namespace Namespace
             UserId = userId;
             Console.WriteLine(userId);
             UserInfo = await _firebaseService.GetUserGENERALinfo(userId);
-            HttpContext.Session.SetString("UserGeneralInfo", JsonConvert.SerializeObject(UserInfo));
 
             // Extract service names from the user's serviceswithappointmentkey
             ServiceNames = UserInfo.serviceswithappointmentkey.Split('#')
@@ -36,6 +35,7 @@ namespace Namespace
                 .Select(s => s.Split('(')[0])
                 .ToList();
             HttpContext.Session.SetString("ServiceNames", JsonConvert.SerializeObject(ServiceNames));
+            Console.WriteLine($"ServiceNames: {JsonConvert.SerializeObject(ServiceNames)}");
 
             // Extract service names and appointment IDs from the user's serviceswithappointmentkey
             Dictionary<string, List<string>> serviceAppointments = new Dictionary<string, List<string>>();
@@ -52,10 +52,13 @@ namespace Namespace
                 }
             }
             HttpContext.Session.SetString("ServiceJustKeysAppointments", JsonConvert.SerializeObject(serviceAppointments));
+            Console.WriteLine($"ServiceJustKeysAppointments: {JsonConvert.SerializeObject(serviceAppointments)}");
+
 
             // Pass the dictionary to the GetUserAppointments method
             Appointments = await _firebaseService.GetUserAppointments(serviceAppointments);
             HttpContext.Session.SetString("UserDetailedAppointments", JsonConvert.SerializeObject(Appointments));
+            Console.WriteLine($"UserDetailedAppointments: {JsonConvert.SerializeObject(Appointments)}");
 
             return Page();
         }

@@ -15,25 +15,9 @@ window.addEventListener('load', function () {
     $(document).ready(function () {
         var userId = sessionStorage.getItem('UserId');
         
-        fetch(`https://us-central1-torantevoumou-86820.cloudfunctions.net/getUserGeneralInfo?userId=${userId}`, {
-          // mode: 'no-cors' // Remove this line after enabling CORS
-        })
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          return response.json(); // Now you can access response.json()
-        })
-        .then(data => {
-          sessionStorage.setItem('UserGeneralInfo', JSON.stringify(data));
-          console.log('UserGeneralInfo saved to sessionStorage:', data);
-        })
-        .catch(error => {
-          console.error('Error:', error);
-        });
-        
-        
-        
+        if (userId) {
+            Init(userId); // Call the refactored function
+        }        
 
         console.log('User ID: ', userId);
 
@@ -92,6 +76,79 @@ function checkLoginStatus() {
         window.location.href = '/Login';
     }
 }
+
+async function Init(userId) {
+    const url = `https://us-central1-torantevoumou-86820.cloudfunctions.net/getUserGeneralInfo?userId=${userId}`;
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(async data => {
+            sessionStorage.setItem('UserGeneralInfo', JSON.stringify(data));
+            console.log('UserGeneralInfo:', data);
+
+            // Extract service names
+            let serviceNames = data.serviceswithappointmentkey.split('#')
+                .filter(s => s.trim() !== '' && s.includes('('))
+                .map(s => s.split('(')[0])
+                .filter(s => s.trim() !== '');
+
+            sessionStorage.setItem('ServiceNames', JSON.stringify(serviceNames));
+            console.log('ServiceNames:', serviceNames);
+
+            // Create the dictionary
+            let serviceAppointments = {};
+            serviceNames.forEach(serviceName => {
+                serviceAppointments[serviceName] = [];
+            });
+            
+            data.serviceswithappointmentkey.split('#')
+                .filter(s => s.trim() !== '' && s.includes('('))
+                .forEach(s => {
+                    let parts = s.split('(');
+                    let serviceName = parts[0];
+                    let appointmentIds = parts[1].slice(0, -1).split(','); // Remove the closing parenthesis and split
+                    serviceAppointments[serviceName] = appointmentIds;
+                });
+            
+
+            sessionStorage.setItem('ServiceJustKeysAppointments', JSON.stringify(serviceAppointments));
+            console.log('ServiceJustKeysAppointments:', serviceAppointments);
+
+            // Fetch detailed appointments
+            let appointments = [];
+            const appointmentUrl = `https://us-central1-torantevoumou-86820.cloudfunctions.net/getUserAppointments`;
+            console.log('Sending JSON OBJ:', JSON.stringify(serviceAppointments));
+            let serviceAppointmentsData = await fetch(appointmentUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(serviceAppointments) // Send the entire dictionary
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .catch(error => {
+                    console.error('Error fetching Service Appointments:', error);
+                    return []; // Handle error gracefully
+                });
+            appointments.push(...serviceAppointmentsData);
+
+            sessionStorage.setItem('UserDetailedAppointments', JSON.stringify(appointments));
+            console.log('UserDetailedAppointments:', appointments);
+        })
+        .catch(error => {
+            console.error('Error fetching UserGeneralInfo:', error);
+        });
+}
+
 
 // Use the onpageshow event to handle the back button scenario
 window.onpageshow = function (event) {

@@ -135,7 +135,7 @@ namespace Namespace
         {
             List<AppointmentModel> appointments = new List<AppointmentModel>();
             Console.WriteLine($"Getting user appointments");
-            Console.WriteLine($"Service appointments: {JsonConvert.SerializeObject(serviceAppointments)}");
+            Console.WriteLine($"Sending JSON  OBJ: {JsonConvert.SerializeObject(serviceAppointments)}");
         
             var content = new StringContent(JsonConvert.SerializeObject(serviceAppointments), Encoding.UTF8, "application/json");
             var response = await _client.PostAsync("https://us-central1-torantevoumou-86820.cloudfunctions.net/getUserAppointments", content);

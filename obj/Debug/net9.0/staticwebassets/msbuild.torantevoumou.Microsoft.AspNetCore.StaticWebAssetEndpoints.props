@@ -1474,7 +1474,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\dashboard.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6222"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022uceCPqwsMUN/7R4cRZYa6NCmdueAThrFHSqFeSthXp0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 07 Jul 2024 07:05:58 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6289"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022L1/vroareIFNqHJJByFz2FISNZrCfIqppUeeApMPHw8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 07 Jul 2024 09:11:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/eurethrio.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\eurethrio.js))</AssetFile>
