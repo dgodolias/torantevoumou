@@ -27,9 +27,20 @@
 $(document).ready(function () {
     let serviceName;
     let servicesInfo;
-    getServiceData().then(({ serviceName: retrievedServiceName, servicesInfo: retrievedServicesInfo }) => {
+    let AllDetailedAppointmentsForService;
+    let AppointmentsByDate;
+    let UserId;
+
+
+
+    getServiceData().then(({ serviceName: retrievedServiceName, servicesInfo: retrievedServicesInfo, AllDetailedAppointmentsForService: retrievedAllDetailedAppointmentsForService
+        , AppointmentsByDate: retrievedAppointmentsByDate, UserId: retrievedUserId
+     }) => {
         serviceName = retrievedServiceName; // Assign to global variable
         servicesInfo = retrievedServicesInfo; // Assign to global variable
+        AllDetailedAppointmentsForService = retrievedAllDetailedAppointmentsForService; // Assign to global variable
+        AppointmentsByDate = retrievedAppointmentsByDate; // Assign to global variable
+        UserId = retrievedUserId; // Assign to global variable
 
 
         cellColours = ['purple1', 'purple2', 'purple3', 'purple4', 'grey-background'];
@@ -56,9 +67,6 @@ $(document).ready(function () {
                 const dateString = $.datepicker.formatDate('yy-mm-dd', date);
                 const cellId = `date-${dateString}`;
 
-                // Check if the date is within the allowed range for the selected service
-                const serviceName = sessionStorage.getItem('serviceName');
-                const servicesInfo = JSON.parse(sessionStorage.getItem('ServicesInfo'));
                 const allowedDates = servicesInfo[serviceName].dates.split('/');
 
                 let isDateAllowed = false;
@@ -128,11 +136,11 @@ $(document).ready(function () {
 
 async function handleDateOrServiceSelection() {
     loaderElement.style.display = 'flex';
-    await processAppointmentData(JSON.parse(sessionStorage.getItem('AllDetailedAppointmentsForService')));
+    await processAppointmentData(JSON.parse(AllDetailedAppointmentsForService));
     loaderElement.style.display = 'none';
 
-    const servicesInfoStr = sessionStorage.getItem('ServicesInfo');
-    const servicesNameStr = sessionStorage.getItem('serviceName');
+    const servicesInfoStr = servicesInfo;
+    const servicesNameStr = serviceName;
     const servicesInfo = servicesInfoStr ? JSON.parse(servicesInfoStr) : {};
     const serviceNameVar = servicesNameStr ? servicesNameStr : "No Service Name";
     const serviceValue = servicesInfo[serviceNameVar];
@@ -141,7 +149,7 @@ async function handleDateOrServiceSelection() {
     console.log('Service Name:', serviceNameVar);
     console.log('Service Value:', JSON.stringify(serviceValue));
 
-    const appointmentsByDateStr = sessionStorage.getItem('AppointmentsByDate');
+    const appointmentsByDateStr = AppointmentsByDate;
     const appointmentsByDate = appointmentsByDateStr ? JSON.parse(appointmentsByDateStr) : {};
 
     Object.keys(appointmentsByDate).forEach(date => {
@@ -252,12 +260,12 @@ function addAppointment(json) {
 
 function updateAppointmentsForDate(selectedDate) {
     const formattedSelectedDate = selectedDate.replace(/\//g, '-');
-    const appointmentsByDateJson = sessionStorage.getItem('AppointmentsByDate');
+    const appointmentsByDateJson = AppointmentsByDate;
     console.log('Appointments by Date:', appointmentsByDateJson);
     const appointmentsByDate = appointmentsByDateJson ? JSON.parse(appointmentsByDateJson) : {};
-    const servicesInfoJson = sessionStorage.getItem('ServicesInfo');
+    const servicesInfoJson = servicesInfo;
     const servicesInfo = servicesInfoJson ? JSON.parse(servicesInfoJson) : {};
-    const serviceName = sessionStorage.getItem('serviceName');
+    const serviceName = serviceName;
     const serviceHours = servicesInfo[serviceName];
     if (!serviceHours) {
         console.error(`Service hours not found for service: ${serviceName}`);
@@ -338,8 +346,8 @@ function updateAppointmentsForDate(selectedDate) {
 
         console.log('Selected date:', selectedDate, 'Time slot:', timeSlot);
 
-        var UserId = sessionStorage.getItem('UserId');
-        var serviceName = sessionStorage.getItem('serviceName');
+        var UserId = UserId;
+        var serviceName = serviceName;
         var appointmentData = {
             UserId: UserId,
             serviceName: serviceName,
@@ -380,7 +388,11 @@ async function waitForStorageItem(key) {
 async function getServiceData() {
     return new Promise(async (resolve) => {
         const serviceName = await waitForStorageItem('serviceName');
-        const servicesInfo = JSON.parse(sessionStorage.getItem('ServicesInfo'));
-        resolve({ serviceName, servicesInfo });
+        const servicesInfo = JSON.parse(await waitForStorageItem(sessionStorage.getItem('ServicesInfo')));
+        const AllDetailedAppointmentsForService = await waitForStorageItem(sessionStorage.getItem('AllDetailedAppointmentsForService'));
+        const AppointmentsByDate = await waitForStorageItem(sessionStorage.getItem('AppointmentsByDate'));
+        const UserId = await waitForStorageItem(sessionStorage.getItem('UserId'));
+
+        resolve({ serviceName, servicesInfo, AllDetailedAppointmentsForService, AppointmentsByDate, UserId });
     });
 }
