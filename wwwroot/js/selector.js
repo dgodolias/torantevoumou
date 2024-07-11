@@ -107,7 +107,12 @@ $(document).ready(function () {
 
                         console.log('You clicked on service: ' + serviceName);
                         sessionStorage.setItem('serviceName', serviceName);
-                        $('#dialog').dialog('open');
+                        
+                        if ($('#dialog').hasClass('ui-dialog-content')) {
+                            $('#dialog').dialog('open');
+                        } else {
+                            console.log('Dialog has not been initialized.');
+                        }
 
                         handleDateOrServiceSelection(serviceName);
                     });

@@ -1,3 +1,11 @@
+var serviceName;
+var servicesInfo;
+var AllDetailedAppointmentsForService;
+var AppointmentsByDate;
+var UserId;
+
+
+
 (function () {
     let currentAppointmentsScale = parseFloat(localStorage.getItem('appointmentsPageScale')) || 1;
     let container = document.getElementById('inside-appointment-flex-container');
@@ -25,12 +33,6 @@
 })();
 
 $(document).ready(function () {
-    let serviceName;
-    let servicesInfo;
-    let AllDetailedAppointmentsForService;
-    let AppointmentsByDate;
-    let UserId;
-
 
 
     getServiceData().then(({ serviceName: retrievedServiceName, servicesInfo: retrievedServicesInfo, AllDetailedAppointmentsForService: retrievedAllDetailedAppointmentsForService
@@ -96,6 +98,8 @@ $(document).ready(function () {
         var viewportHeight = $(window).height();
         var dialogHeight = viewportHeight * 0.8;
 
+        console.log("Initializing dialog...")
+
         $('#dialog').dialog({
             autoOpen: false,
             modal: true,
@@ -129,6 +133,9 @@ $(document).ready(function () {
             $('#dialog').dialog('close');
         });
 
+        console.log("Dialog initialized")
+
+
     });
 });
 
@@ -136,16 +143,24 @@ $(document).ready(function () {
 
 async function handleDateOrServiceSelection() {
     loaderElement.style.display = 'flex';
-    await processAppointmentData(JSON.parse(AllDetailedAppointmentsForService));
+    
+    // 1. Wait for AllDetailedAppointmentsForService
+    const AllDetailedAppointmentsForService = await waitForStorageItem('AllDetailedAppointmentsForService');
+
+    // 2. Parse the data
+    const AllDetailedAppointmentsForServiceJSON = JSON.parse(AllDetailedAppointmentsForService);
+
+    // 3. Process the appointment data
+    await processAppointmentData(AllDetailedAppointmentsForServiceJSON);
+
     loaderElement.style.display = 'none';
 
     const servicesInfoStr = servicesInfo;
     const servicesNameStr = serviceName;
-    const servicesInfo = servicesInfoStr ? JSON.parse(servicesInfoStr) : {};
     const serviceNameVar = servicesNameStr ? servicesNameStr : "No Service Name";
-    const serviceValue = servicesInfo[serviceNameVar];
+    const serviceValue = servicesInfoStr[serviceNameVar];
 
-    console.log('Services Info:', JSON.stringify(servicesInfo));
+    console.log('Services Info:', JSON.stringify(servicesInfoStr));
     console.log('Service Name:', serviceNameVar);
     console.log('Service Value:', JSON.stringify(serviceValue));
 
@@ -265,7 +280,6 @@ function updateAppointmentsForDate(selectedDate) {
     const appointmentsByDate = appointmentsByDateJson ? JSON.parse(appointmentsByDateJson) : {};
     const servicesInfoJson = servicesInfo;
     const servicesInfo = servicesInfoJson ? JSON.parse(servicesInfoJson) : {};
-    const serviceName = serviceName;
     const serviceHours = servicesInfo[serviceName];
     if (!serviceHours) {
         console.error(`Service hours not found for service: ${serviceName}`);
@@ -388,11 +402,29 @@ async function waitForStorageItem(key) {
 async function getServiceData() {
     return new Promise(async (resolve) => {
         const serviceName = await waitForStorageItem('serviceName');
-        const servicesInfo = JSON.parse(await waitForStorageItem(sessionStorage.getItem('ServicesInfo')));
-        const AllDetailedAppointmentsForService = await waitForStorageItem(sessionStorage.getItem('AllDetailedAppointmentsForService'));
-        const AppointmentsByDate = await waitForStorageItem(sessionStorage.getItem('AppointmentsByDate'));
-        const UserId = await waitForStorageItem(sessionStorage.getItem('UserId'));
+        const servicesInfo = JSON.parse(await waitForStorageItem('servicesInfo'));
+        const AllDetailedAppointmentsForService = await waitForStorageItem('AllDetailedAppointmentsForService');
+        const AppointmentsByDate = await waitForStorageItem('AppointmentsByDate');
+        const UserId = await waitForStorageItem('UserId');
 
         resolve({ serviceName, servicesInfo, AllDetailedAppointmentsForService, AppointmentsByDate, UserId });
     });
 }
+
+async function waitForAllData() {
+    return new Promise(async (resolve) => {
+      const intervalId = setInterval(async () => {
+        const serviceName = sessionStorage.getItem('serviceName');
+        const servicesInfo = sessionStorage.getItem('ServicesInfo');
+        const AllDetailedAppointmentsForService = sessionStorage.getItem('AllDetailedAppointmentsForService');
+        const AppointmentsByDate = sessionStorage.getItem('AppointmentsByDate');
+        const UserId = sessionStorage.getItem('UserId');
+  
+        if (serviceName && servicesInfo && AllDetailedAppointmentsForService && AppointmentsByDate && UserId) {
+          clearInterval(intervalId);
+          resolve(true); // All data is available
+        }
+      }, 100); // Check every 100ms
+    });
+  }
+  
