@@ -2,7 +2,7 @@
     let currentAppointmentsScale = parseFloat(localStorage.getItem('appointmentsPageScale')) || 1;
     let container = document.getElementById('inside-appointment-flex-container');
     console.log(container);
-    if (container){
+    if (container) {
         container.style.transform = `scale(${currentAppointmentsScale})`;
 
         document.getElementById('zoom-in').addEventListener('click', function () {
@@ -20,98 +20,107 @@
                 localStorage.setItem('appointmentsPageScale', currentAppointmentsScale);
             }
         });
-        
+
     }
 })();
 
 $(document).ready(function () {
-    cellColours = ['purple1', 'purple2', 'purple3', 'purple4', 'grey-background'];
+    let serviceName;
+    let servicesInfo;
+    getServiceData().then(({ serviceName: retrievedServiceName, servicesInfo: retrievedServicesInfo }) => {
+        serviceName = retrievedServiceName; // Assign to global variable
+        servicesInfo = retrievedServicesInfo; // Assign to global variable
 
-    $('#datepicker').datepicker({
-        firstDay: 1,
-        minDate: 0,
-        maxDate: '+1y',
-        // Add the language setting here
-        dateFormat: 'dd/mm/yy', // Use Greek date format
-        dayNamesMin: ['Κυρ', 'Δευ', 'Τρι', 'Τετ', 'Πεμ', 'Παρ', 'Σαβ'], // Greek day names
-        monthNames: ['Ιανουάριος', 'Φεβρουάριος', 'Μάρτιος', 'Απρίλιος', 'Μάιος', 'Ιούνιος', 'Ιούλιος', 'Αύγουστος', 'Σεπτέμβριος', 'Οκτώβριος', 'Νοέμβριος', 'Δεκέμβριος'], // Greek month names
-        onSelect: function (dateText) {
-            var selectedDate = $.datepicker.formatDate('yy/mm/dd', new Date(dateText));
-            sessionStorage.setItem('selectedDate', selectedDate);
-            updateAppointmentsForDate(selectedDate);
-            handleDateOrServiceSelection();
-            $('#appointments-table').css('display', 'block');
-        },
-        beforeShowDay: function (date) {
-            if (date < new Date()) {
-                return [false];
+
+        cellColours = ['purple1', 'purple2', 'purple3', 'purple4', 'grey-background'];
+
+        $('#datepicker').datepicker({
+            firstDay: 1,
+            minDate: 0,
+            maxDate: '+1y',
+            // Add the language setting here
+            dateFormat: 'dd/mm/yy', // Use Greek date format
+            dayNamesMin: ['Κυρ', 'Δευ', 'Τρι', 'Τετ', 'Πεμ', 'Παρ', 'Σαβ'], // Greek day names
+            monthNames: ['Ιανουάριος', 'Φεβρουάριος', 'Μάρτιος', 'Απρίλιος', 'Μάιος', 'Ιούνιος', 'Ιούλιος', 'Αύγουστος', 'Σεπτέμβριος', 'Οκτώβριος', 'Νοέμβριος', 'Δεκέμβριος'], // Greek month names
+            onSelect: function (dateText) {
+                var selectedDate = $.datepicker.formatDate('yy/mm/dd', new Date(dateText));
+                sessionStorage.setItem('selectedDate', selectedDate);
+                updateAppointmentsForDate(selectedDate);
+                handleDateOrServiceSelection();
+                $('#appointments-table').css('display', 'block');
+            },
+            beforeShowDay: function (date) {
+                if (date < new Date()) {
+                    return [false];
+                }
+                const dateString = $.datepicker.formatDate('yy-mm-dd', date);
+                const cellId = `date-${dateString}`;
+
+                // Check if the date is within the allowed range for the selected service
+                const serviceName = sessionStorage.getItem('serviceName');
+                const servicesInfo = JSON.parse(sessionStorage.getItem('ServicesInfo'));
+                const allowedDates = servicesInfo[serviceName].dates.split('/');
+
+                let isDateAllowed = false;
+                allowedDates.forEach(dateRange => {
+                    const [startDate, endDate] = dateRange.split('...');
+                    // Convert startDate to a Date object
+                    const start = new Date(startDate);
+                    const end = new Date(endDate);
+
+                    // Remove time component from both dates
+                    date.setHours(0, 0, 0, 0); // Set time to midnight
+                    start.setHours(0, 0, 0, 0); // Set time to midnight
+
+                    if (date >= start && date <= end) {
+                        isDateAllowed = true;
+                    }
+                });
+
+                return [isDateAllowed, cellId, ''];
+            },
+
+            onChangeMonthYear: function () {
+                handleDateOrServiceSelection();
             }
-            const dateString = $.datepicker.formatDate('yy-mm-dd', date);
-            const cellId = `date-${dateString}`;
+        });
 
-            // Check if the date is within the allowed range for the selected service
-            const serviceName = sessionStorage.getItem('serviceName');
-            const servicesInfo = JSON.parse(sessionStorage.getItem('ServicesInfo'));
-            const allowedDates = servicesInfo[serviceName].dates.split('/');
+        var viewportHeight = $(window).height();
+        var dialogHeight = viewportHeight * 0.8;
 
-            let isDateAllowed = false;
-            allowedDates.forEach(dateRange => {
-                const [startDate, endDate] = dateRange.split('...');
-                // Convert startDate to a Date object
-                const start = new Date(startDate);
-                const end = new Date(endDate);
+        $('#dialog').dialog({
+            autoOpen: false,
+            modal: true,
+            width: "fit-content",
+            height: dialogHeight,
+            draggable: false,
+            resizable: false,
+            hide: {
+                effect: 'fade',
+                duration: 1000
+            },
+            open: function (event, ui) {
+                $('#blurOverlay').show();
+                $(document).on('mousedown.dialogCloseEvent', function (e) {
+                    var container = $(".ui-dialog");
+                    if (!container.is(e.target) && container.has(e.target).length === 0) {
+                        $('#dialog').dialog('close');
+                    }
+                });
+            },
+            beforeClose: function (event, ui) {
+                $('#blurOverlay').fadeOut(1000);
+                $(document).off('mousedown.dialogCloseEvent');
 
-                // Remove time component from both dates
-                date.setHours(0, 0, 0, 0); // Set time to midnight
-                start.setHours(0, 0, 0, 0); // Set time to midnight
+                $('#datepicker').find('a').removeClass(cellColours.join(' '));
+                $('#appointments-table').css('display', 'none');
+            }
+        });
 
-                if (date >= start && date <= end) {
-                    isDateAllowed = true;
-                }
-            });
+        $('.close-btn').on('click.appointments', function () {
+            $('#dialog').dialog('close');
+        });
 
-            return [isDateAllowed, cellId, ''];
-        },
-
-        onChangeMonthYear: function () {
-            handleDateOrServiceSelection();
-        }
-    });
-
-    var viewportHeight = $(window).height();
-    var dialogHeight = viewportHeight * 0.8;
-
-    $('#dialog').dialog({
-        autoOpen: false,
-        modal: true,
-        width: "fit-content",
-        height: dialogHeight,
-        draggable: false,
-        resizable: false,
-        hide: {
-            effect: 'fade',
-            duration: 1000
-        },
-        open: function (event, ui) {
-            $('#blurOverlay').show();
-            $(document).on('mousedown.dialogCloseEvent', function (e) {
-                var container = $(".ui-dialog");
-                if (!container.is(e.target) && container.has(e.target).length === 0) {
-                    $('#dialog').dialog('close');
-                }
-            });
-        },
-        beforeClose: function (event, ui) {
-            $('#blurOverlay').fadeOut(1000);
-            $(document).off('mousedown.dialogCloseEvent');
-
-            $('#datepicker').find('a').removeClass(cellColours.join(' '));
-            $('#appointments-table').css('display', 'none');
-        }
-    });
-
-    $('.close-btn').on('click.appointments', function () {
-        $('#dialog').dialog('close');
     });
 });
 
@@ -217,7 +226,7 @@ function processAppointmentData(data) {
     }
 }
 
-    
+
 function addAppointment(json) {
     fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/addAppointment', {
         method: 'POST',
@@ -353,4 +362,25 @@ function convertMinutesToTime(minutes) {
     const hours = Math.floor(minutes / 60);
     const minutesRemaining = minutes % 60;
     return `${hours.toString().padStart(2, '0')}:${minutesRemaining.toString().padStart(2, '0')}`;
+}
+
+async function waitForStorageItem(key) {
+    return new Promise(resolve => {
+        const intervalId = setInterval(() => {
+            const value = sessionStorage.getItem(key);
+            if (value !== null) {
+                clearInterval(intervalId);
+                resolve(value);
+            }
+        }, 100); // Check every 100ms
+    });
+}
+
+
+async function getServiceData() {
+    return new Promise(async (resolve) => {
+        const serviceName = await waitForStorageItem('serviceName');
+        const servicesInfo = JSON.parse(sessionStorage.getItem('ServicesInfo'));
+        resolve({ serviceName, servicesInfo });
+    });
 }
