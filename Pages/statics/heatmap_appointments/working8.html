@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yearly Calendar</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <style>
+
+
+        .solid-container {
+            display: block;
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        #search-services-bar {
+            width: 100%;
+            /* width: 117%; */
+            align-items: center;
+            /* justify-content: center; */
+            display: flex;
+        }
+
+        #current-year {
+            font-size: 38px;
+            text-shadow: 3px 1px 5px rgb(97 148 155 / 90%);
+            color: rgb(255 255 255 / 50%);
+            font-family: fantasy;
+        }
+
+        .year-navigation {
+            justify-content: center;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .year-navigation button {
+            margin: 0 10px;
+            padding: 5px 10px;
+            background: none; /* Remove default button styling */
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .arrow-icon {
+            width: 30px; /* Adjust the size as needed */
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        .rotate-left {
+            transform: rotate(90deg); /* Rotate the image 90 degrees to the left */
+        }
+
+        .rotate-right {
+            transform: rotate(-90deg); /* Rotate the image 90 degrees to the right */
+        }
+
+        .filter-container {
+            /* height: 3%; */
+            width: 25%;
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        .calendar-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            width: 90%;
+        }
+
+        .month-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            width: 100%;
+        }
+
+        .calendar {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        a.ui-state-default {
+            border-radius: 6px;
+        }
+
+        .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+            background: rgb(181 255 252);
+        }
+
+        .ui-datepicker {
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            color: #333;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+
+        .ui-datepicker-header {
+            background-color: #f0f0f0;
+            border: none;
+        }
+
+        .ui-datepicker-calendar {
+            width: 100%;
+        }
+
+        .calendar.hasDatepicker {
+            width: 100%;
+        }
+
+        .ui-datepicker td a {
+            border: 1px solid #c5c5c5;
+            background: #f6f6f6;
+            font-weight: normal;
+            color: #454545;
+        }
+
+        .ui-datepicker td a.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight, .highlight a {
+            border: 1px solid #000000 !important;
+            background: #ffa7d9 !important ;
+            color: #000000 !important;
+        }
+
+        .ui-datepicker .ui-datepicker-today a, .ui-datepicker .ui-datepicker-current-day a, .ui-datepicker .ui-state-active {
+            border: 1px solid #c5c5c5 !important;
+            background: #f6f6f6 !important;
+            color: #454545 !important;
+        }
+
+        .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+            display: none; /* Hide the navigation buttons */
+        }
+
+        .appointment-dialog {
+            display: none;
+        }
+
+        select#service-filter{
+            width: 100%;
+            box-shadow: 3px 1px 5px rgb(97 148 155 / 90%);
+            border: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="solid-container">
+        <div class="solid-container" id="search-services-bar">
+            <div class="year-navigation">
+                <button id="prev-year"><img src="arrow-down.png" alt="Previous Year" class="arrow-icon rotate-left"></button>
+                <div id="current-year">2024</div>
+                <button id="next-year"><img src="arrow-down.png" alt="Next Year" class="arrow-icon rotate-right"></button>
+                <div class="filter-container">
+                    <select id="service-filter">
+                        <!-- Options will be dynamically populated here -->
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="solid-container">
+            <div class="outside-calendar-container" id="outside-calendar-container">
+                <div class="calendar-container" id="calendar-container">
+                    <!-- Month calendars will be generated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="appointment-dialog" class="appointment-dialog" title="Appointments">
+        <p id="appointment-times"></p>
+    </div>
+
+    <script>
+        // Set the desired current date to January 1, 2000
+        const desiredDate = new Date(2000, 0, 1); // Note: months are 0-indexed, so 0 is January
+
+        // Override the built-in Date function to always return the desired date
+        (function() {
+            const OriginalDate = Date;
+            Date = function(...args) {
+                if (args.length === 0) {
+                    return new OriginalDate(desiredDate);
+                }
+                return new OriginalDate(...args);
+            };
+            Date.prototype = OriginalDate.prototype;
+            Date.now = function() {
+                return desiredDate.getTime();
+            };
+            Date.parse = OriginalDate.parse;
+            Date.UTC = OriginalDate.UTC;
+        })();
+
+        const data = {
+            "barbershop": {
+                "2024-06-10": ["09:00"],
+                "2024-06-13": ["09:00", "09:30"],
+                "2024-06-12": ["10:30"],
+                // ... other dates
+            },
+            "physiotherapy": {
+                "2024-07-11": ["09:30"],
+                "2024-06-13": ["08:00", "15:30"],
+                "2024-06-25": ["10:30"],
+                // ... other dates
+            }
+            // Add more services as needed
+        };
+
+        // Populate the service filter dropdown
+        function populateServiceFilter() {
+            const serviceFilter = $('#service-filter');
+            serviceFilter.empty();
+            const services = Object.keys(data);
+            if (services.length > 0) {
+                serviceFilter.append('<option value="all">Ολες οι υπηρεσιες</option>');
+            }
+            for (const service of services) {
+                serviceFilter.append(`<option value="${service}">${service.charAt(0).toUpperCase() + service.slice(1)}</option>`);
+            }
+            // If no services exist, add a default option
+            if (services.length === 0) {
+                serviceFilter.append('<option value="none">No services available</option>');
+            }
+        }
+
+        let currentYear = 2024;
+
+        function updateYear() {
+            $('#current-year').text(currentYear);
+            generateCalendars(currentYear);
+        }
+
+        function generateCalendars(year) {
+            $('#calendar-container').empty();
+            for (let month = 0; month < 12; month++) {
+                const monthContainer = $('<div>').addClass('month-container');
+                const calendar = $('<div>').addClass('calendar').attr('id', `calendar-${month}`);
+                monthContainer.append(calendar);
+                $('#calendar-container').append(monthContainer);
+
+                $(`#calendar-${month}`).datepicker({
+                    showButtonPanel: false,
+                    changeMonth: false,
+                    changeYear: false,
+                    dateFormat: 'yy-mm-dd',
+                    defaultDate: new Date(year, month, 1),
+                    beforeShowDay: function(date) {
+                        const selectedService = $('#service-filter').val();
+                        const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+                        let isHighlighted = false;
+                        if (selectedService === "all") {
+                            for (let service in data) {
+                                if (data[service][dateStr]) {
+                                    isHighlighted = true;
+                                    break;
+                                }
+                            }
+                        } else if (selectedService !== "none") {
+                            if (data[selectedService][dateStr]) {
+                                isHighlighted = true;
+                            }
+                        }
+                        return [true, isHighlighted ? 'highlight' : ''];
+                    },
+                    onChangeMonthYear: function(year, month, inst) {
+                        setTimeout(() => {
+                            $(`#calendar-${month} .ui-datepicker-current-day`).removeClass('ui-datepicker-current-day');
+                            $(`#calendar-${month} .ui-state-active`).removeClass('ui-state-active').attr('aria-current', 'false');
+                        }, 1);
+                    },
+                    onSelect: function(dateText, inst) {
+                        setTimeout(() => {
+                            $(`#calendar-${month} .ui-datepicker-current-day`).removeClass('ui-datepicker-current-day');
+                            $(`#calendar-${month} .ui-state-active`).removeClass('ui-state-active').attr('aria-current', 'false');
+                        }, 1);
+                    }
+                });
+
+                // Ensure no cells have ui-state-active class after rendering
+                setTimeout(() => {
+                    $(`#calendar-${month} .ui-datepicker-current-day`).removeClass('ui-datepicker-current-day');
+                    $(`#calendar-${month} .ui-state-active`).removeClass('ui-state-active').attr('aria-current', 'false');
+                }, 1);
+            }
+
+            // Add hover event listener to highlighted cells
+            $(document).on('mouseenter', '.highlight a', function() {
+                const date = $(this).data('date');
+                const month = $(this).closest('.calendar').attr('id').split('-')[1];
+                const dateStr = `${currentYear}-${String(parseInt(month) + 1).padStart(2, '0')}-${String(date).padStart(2, '0')}`;
+                let appointmentTimes = [];
+                const selectedService = $('#service-filter').val();
+
+                if (selectedService === "all") {
+                    for (let service in data) {
+                        if (data[service][dateStr]) {
+                            appointmentTimes = appointmentTimes.concat(data[service][dateStr]);
+                        }
+                    }
+                } else {
+                    if (data[selectedService][dateStr]) {
+                        appointmentTimes = data[selectedService][dateStr];
+                    }
+                }
+
+                if (appointmentTimes.length > 0) {
+                    $('#appointment-times').text(appointmentTimes.join(', '));
+                    $('#appointment-dialog').dialog('open');
+                }
+            });
+
+            $(document).on('mouseleave', '.highlight a', function() {
+                $('#appointment-dialog').dialog('close');
+            });
+        }
+
+        $('#prev-year').on('click', () => {
+            currentYear--;
+            updateYear();
+        });
+
+        $('#next-year').on('click', () => {
+            currentYear++;
+            updateYear();
+        });
+
+        $('#service-filter').on('change', () => {
+            generateCalendars(currentYear);
+        });
+
+        $(document).ready(() => {
+            populateServiceFilter();
+            updateYear();
+
+            // Initialize the dialog
+            $('#appointment-dialog').dialog({
+                autoOpen: false,
+                modal: true,
+                resizable: false,
+                draggable: false,
+                closeOnEscape: true
+            });
+        });
+    </script>
+</body>
+</html>

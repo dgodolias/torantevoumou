@@ -112,7 +112,7 @@ body.dark{
 }
 /* =========================== */
 .embedded-page {
-    max-height: 100vh; /* Adjust this value as needed */
+    height: 100%;
     overflow: auto; /* Enables scroll if needed */
 }
 input[readonly] {
@@ -297,8 +297,7 @@ body.dark .switch::before{
 }
 
 .home{
-    top: 0;
-    top: 0;
+    height: 100%;
     transition: var(--tran-05);
 }
 .home .text{

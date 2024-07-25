@@ -15,6 +15,8 @@ window.addEventListener('load', function() {
     $(document).ready(function () {
         var userId = sessionStorage.getItem('UserId');
         console.log('User ID: ', userId);
+        sessionStorage.setItem('pastappointments', userId);
+
 
         // Load appointments.js before loading the appointments.cshtml content
         $.getScript('/js/appointments.js', function() {
@@ -30,8 +32,9 @@ window.addEventListener('load', function() {
 
         $('#pastappointmentLink').click(function (e) {
             e.preventDefault();
-            $('#container').load('/pastappointments?userId=' + userId);
+            $('#container').html('<iframe src="/heatmap_appointments/index.html" style="width:100%; height:100%; border:none;"></iframe>');
         });
+        
 
         $("#profileLink").click(function (e) {
             e.preventDefault();
