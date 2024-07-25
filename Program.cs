@@ -1,6 +1,4 @@
-using Microsoft.Extensions.FileProviders;
 using System.Diagnostics;
-using System.IO;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,14 +32,7 @@ else
 
 app.UseHttpsRedirection();
 
-app.UseStaticFiles(); // Serve files from wwwroot
-
-// Enable serving static files from statics/alphindex_ready
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(app.Environment.ContentRootPath, "Pages/statics")),
-});
+app.UseStaticFiles();
 
 app.UseRouting();
 

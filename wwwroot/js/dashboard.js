@@ -15,7 +15,11 @@ window.addEventListener('load', function() {
     $(document).ready(function () {
         var userId = sessionStorage.getItem('UserId');
         console.log('User ID: ', userId);
-        sessionStorage.setItem('pastappointments', userId);
+
+        const pastappointments = { "Κουρείο TheFriendsBarbershop": { "2024-06-13": ["09:00", "09:30"], "2024-06-12": ["10:30"], "2024-06-28": ["10:30", "10:00", "16:00", "15:30", "18:30"], "2024-06-17": ["16:00", "11:00", "10:00"], "2024-06-15": ["18:00", "11:30", "09:30"], "2024-06-29": ["10:00"], "2024-07-13": ["11:30"] }, "Φυσιοθεραπευτήριο Παπαγιάννης": { "2024-07-19": ["18:00"] } };
+        
+        // Stringify and store in sessionStorage
+        sessionStorage.setItem('pastappointments', JSON.stringify(pastappointments));
 
 
         // Load appointments.js before loading the appointments.cshtml content
@@ -32,7 +36,7 @@ window.addEventListener('load', function() {
 
         $('#pastappointmentLink').click(function (e) {
             e.preventDefault();
-            $('#container').html('<iframe src="/heatmap_appointments/index.html" style="width:100%; height:100%; border:none;"></iframe>');
+            $('#container').html('<iframe src="/heatmap" style="width:100%; height:100%; border:none;"></iframe>');
         });
         
 
