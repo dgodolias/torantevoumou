@@ -1,3 +1,52 @@
+// Assuming UserGeneralInfo is a JSON string with user information
+var userGeneralInfo = JSON.parse(sessionStorage.getItem("UserGeneralInfo"));
+
+// Function to fill the form with user information
+function fillProfileForm() {
+    if (userGeneralInfo) {
+        document.getElementById("email").value = userGeneralInfo.Email || '';
+        document.getElementById("firstName").value = userGeneralInfo.FirstName || '';
+        document.getElementById("lastName").value = userGeneralInfo.LastName || '';
+        document.getElementById("phoneNumber").value = userGeneralInfo.PhoneNumber || '';
+        document.getElementById("username").value = userGeneralInfo.Username || '';
+        // Password is not typically stored in session for security reasons
+        // document.getElementById("password").value = userGeneralInfo.Password || '';
+    }
+}
+
+// Call the function to fill the form when the page loads or when appropriate
+fillProfileForm();
+
+(function() {
+    let currentProfileScale = parseFloat(localStorage.getItem('profilePageScale')) || 1;
+
+    document.getElementById('profile-page').style.transform = `scale(${currentProfileScale})`;
+
+    document.getElementById('zoom-in').addEventListener('click', function() {
+        if (currentProfileScale < 1.3) {
+            currentProfileScale += 0.07;
+            document.getElementById('profile-page').style.transform = `scale(${currentProfileScale})`;
+            localStorage.setItem('profilePageScale', currentProfileScale);
+        }
+    });
+
+    document.getElementById('zoom-out').addEventListener('click', function() {
+        if (currentProfileScale > 0.5) {
+            currentProfileScale -= 0.07;
+            document.getElementById('profile-page').style.transform = `scale(${currentProfileScale})`;
+            localStorage.setItem('profilePageScale', currentProfileScale);
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const savedScale = localStorage.getItem('profilePageScale');
+        if (savedScale) {
+            currentProfileScale = parseFloat(savedScale);
+            document.getElementById('profile-page').style.transform = `scale(${currentProfileScale})`;
+        }
+    });
+})();
+
 $("#changeEmail").click(function () {
     toggleReadonly("#email");
 });

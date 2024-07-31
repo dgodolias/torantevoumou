@@ -14,24 +14,27 @@
 </head>
 
 <body>
-    <div id="profile-page">
-        <div class="flex-container">
-            <div class="profile-sidebar">
-                <div class="profile-header">
-                    <div class="profile-picture">
-                        <i class="fas fa-user" id="profile-pic-default"></i>
+    <div id="profile-page-wrapper">
+        <div class="zoom-controls">
+            <button id="zoom-in">➕</button>
+            <button id="zoom-out">➖</button>
+        </div>
+        <div id="profile-page">
+            <div class="flex-container">
+                <div class="profile-sidebar">
+                    <div class="profile-header">
+                        <div class="profile-picture">
+                            <i class="fas fa-user" id="profile-pic-default"></i>
+                        </div>
+                        <h1>Profile</h1>
                     </div>
-                    <h1>Profile</h1>
-                </div>
 
-                @if (Model.UserProfile != null)
-                {
                     <div class="profile-form">
                         <form>
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <div class="input-container">
-                                    <input type="email" id="email" value="@Model.UserProfile.Email" readonly />
+                                    <input type="email" id="email" readonly />
                                     <button type="button" id="changeEmail" class="edit-button"><i
                                             class="fas fa-pencil-alt"></i></button>
                                 </div>
@@ -39,7 +42,7 @@
                             <div class="form-group">
                                 <label for="firstName">First Name</label>
                                 <div class="input-container">
-                                    <input type="text" id="firstName" value="@Model.UserProfile.FirstName" readonly />
+                                    <input type="text" id="firstName" readonly />
                                     <button type="button" id="changeFirstName" class="edit-button"><i
                                             class="fas fa-pencil-alt"></i></button>
                                 </div>
@@ -47,7 +50,7 @@
                             <div class="form-group">
                                 <label for="lastName">Last Name</label>
                                 <div class="input-container">
-                                    <input type="text" id="lastName" value="@Model.UserProfile.LastName" readonly />
+                                    <input type="text" id="lastName" readonly />
                                     <button type="button" id="changeLastName" class="edit-button"><i
                                             class="fas fa-pencil-alt"></i></button>
                                 </div>
@@ -55,7 +58,7 @@
                             <div class="form-group">
                                 <label for="phoneNumber">Phone Number</label>
                                 <div class="input-container">
-                                    <input type="text" id="phoneNumber" value="@Model.UserProfile.PhoneNumber" readonly />
+                                    <input type="text" id="phoneNumber" readonly />
                                     <button type="button" id="changePhoneNumber" class="edit-button"><i
                                             class="fas fa-pencil-alt"></i></button>
                                 </div>
@@ -63,7 +66,7 @@
                             <div class="form-group">
                                 <label for="username">Username</label>
                                 <div class="input-container">
-                                    <input type="text" id="username" value="@Model.UserProfile.Username" readonly />
+                                    <input type="text" id="username" readonly />
                                     <button type="button" id="changeUsername" class="edit-button"><i
                                             class="fas fa-pencil-alt"></i></button>
                                 </div>
@@ -71,18 +74,14 @@
                             <div class="form-group">
                                 <label for="password">Password</label>
                                 <div class="input-container">
-                                    <input type="password" id="password" value="@Model.UserProfile.Password" readonly />
+                                    <input type="password" id="password" readonly />
                                     <button type="button" id="changePassword" class="edit-button"><i
                                             class="fas fa-pencil-alt"></i></button>
                                 </div>
                             </div>
                         </form>
                     </div>
-                }
-                else
-                {
-                    <p>No user information available.</p>
-                }
+                </div>
             </div>
         </div>
     </div>
