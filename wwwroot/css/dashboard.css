@@ -29,7 +29,7 @@
 
 body{
     min-height: 100vh;
-    background-color: var(--body-color);
+    background: linear-gradient(to right, rgba(156, 165, 255, 0.7) 0%, rgb(0 255 114 / 60%) 100%);
     transition: var(--tran-05);
 }
 
@@ -304,6 +304,7 @@ body.dark .switch::before{
 }
 
 .home{
+    height: 100%;
     top: 0;
     top: 0;
     transition: var(--tran-05);
