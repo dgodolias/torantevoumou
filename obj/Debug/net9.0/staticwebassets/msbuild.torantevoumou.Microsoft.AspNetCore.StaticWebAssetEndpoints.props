@@ -1432,7 +1432,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\appointments.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"14838"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022vhAqCeF/gx6v0X5iKheItD7AO2A2ciRlP9vFy9MxDMM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 31 Jul 2024 18:39:59 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"14935"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ucUsz0TvIlj6Ot/th\u002BTmSgHg8i3SPhKgrJAGFf6oAyA=\u0022"},{"Name":"Last-Modified","Value":"Wed, 31 Jul 2024 20:22:45 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/bootstrap.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\bootstrap.js))</AssetFile>

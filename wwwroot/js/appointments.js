@@ -211,7 +211,11 @@ function addAppointment(json) {
             loaderElement.style.display = 'none';
             setTimeout(() => {
                 alert('Your appointment has been successfully booked!');
-                location.reload();
+                sessionStorage.setItem('UserDetailedAppointments', null);
+                sessionStorage.setItem('ServiceJustKeysAppointments', null);
+
+                // Reload the entire site
+                location.href = '/Dashboard?userId='+sessionStorage.getItem('UserId');
             }, 100);
         })
         .catch((error) => {
