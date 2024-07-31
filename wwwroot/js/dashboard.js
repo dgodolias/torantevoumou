@@ -16,6 +16,21 @@ window.addEventListener('load', function() {
         var userId = sessionStorage.getItem('UserId');
         console.log('User ID: ', userId);
 
+        // Fetch call to cloud function after the page has fully loaded
+        fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/getUserAppointments', {
+            method: 'POST', // Change to POST
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({}) // Include any required body data
+        })
+        .then(response => response.json())
+        .then(data => {
+            sessionStorage.setItem('UserAppointments', JSON.stringify(data));
+            console.log('UserAppointments saved to sessionStorage:', JSON.stringify(data));
+        })
+        .catch(error => console.error('Error fetching UserAppointments:', error));
+
         const pastappointments = { "Κουρείο TheFriendsBarbershop": { "2024-06-13": ["09:00", "09:30"], "2024-06-12": ["10:30"], "2024-06-28": ["10:30", "10:00", "16:00", "15:30", "18:30"], "2024-06-17": ["16:00", "11:00", "10:00"], "2024-06-15": ["18:00", "11:30", "09:30"], "2024-06-29": ["10:00"], "2024-07-13": ["11:30"] }, "Φυσιοθεραπευτήριο Παπαγιάννης": { "2024-07-19": ["18:00"] } };
         
         // Stringify and store in sessionStorage
