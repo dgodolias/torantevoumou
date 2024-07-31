@@ -1,7 +1,7 @@
 @page
 @model Namespace.Heatmap
 @{
-  ViewData["Title"] = "Όλα τα ραντεβού μου";
+    ViewData["Title"] = "Όλα τα ραντεβού μου";
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -223,7 +223,8 @@
 
         /* New style for ui-datepicker-today a */
         .ui-datepicker .ui-datepicker-today a {
-            background-color: lightgreen; /* Light green background */
+            background-color: lightgreen;
+            /* Light green background */
         }
     </style>
 </head>
@@ -291,218 +292,238 @@
             }
         });
 
-    let UserDetailedAppointments = sessionStorage.getItem('UserDetailedAppointments');
-    let ServiceJustKeysAppointments = sessionStorage.getItem('ServiceJustKeysAppointments');
+        waitForData().then(({ UserDetailedAppointments, ServiceJustKeysAppointments }) => {
+            console.log("UserDetailedAppointments=",UserDetailedAppointments);
+            console.log("ServiceJustKeysAppointments=",ServiceJustKeysAppointments);
 
-    // Parse the JSON strings from sessionStorage
-    UserDetailedAppointments = JSON.parse(UserDetailedAppointments);
-    ServiceJustKeysAppointments = JSON.parse(ServiceJustKeysAppointments);
-
-    // Create a mapping from appointment IDs to service names
-    const idToServiceNameMap = {};
-    for (const [serviceName, ids] of Object.entries(ServiceJustKeysAppointments)) {
-        ids.forEach(id => {
-            idToServiceNameMap[id] = serviceName;
-        });
-    }
-
-    // Add ServiceName to each appointment
-    UserDetailedAppointments.forEach(appointment => {
-        appointment.ServiceName = idToServiceNameMap[appointment.AID];
-    });
-
-    // Create a dictionary to store appointments by service and date
-    const data = {};
-
-    // Iterate through the appointments and group them by service and date
-    UserDetailedAppointments.forEach(appointment => {
-        const serviceName = appointment.ServiceName;
-        const appointmentDate = appointment.appointmentDate;
-        const appointmentTime = appointment.appointmentTime;
-
-        if (!data[serviceName]) {
-            data[serviceName] = {};
-        }
-
-        if (!data[serviceName][appointmentDate]) {
-            data[serviceName][appointmentDate] = [];
-        }
-
-        data[serviceName][appointmentDate].push(appointmentTime);
-    });
-
-    // Now the 'data' variable contains the appointments in the desired format
-    console.log(data);
-        
-
-
-        // Populate the service filter dropdown
-        function populateServiceFilter() {
-            const serviceFilter = $('#service-filter');
-            serviceFilter.empty();
-            const services = Object.keys(data);
-            if (services.length > 0) {
-                serviceFilter.append('<option value="all">Ολες οι υπηρεσιες</option>');
+            // Create a mapping from appointment IDs to service names
+            const idToServiceNameMap = {};
+            for (const [serviceName, ids] of Object.entries(ServiceJustKeysAppointments)) {
+                ids.forEach(id => {
+                    idToServiceNameMap[id] = serviceName;
+                });
             }
-            for (const service of services) {
-                serviceFilter.append(`<option value="${service}">${service.charAt(0).toUpperCase() + service.slice(1)}</option>`);
+
+            // Add ServiceName to each appointment
+            UserDetailedAppointments.forEach(appointment => {
+                appointment.ServiceName = idToServiceNameMap[appointment.AID];
+            });
+
+            // Create a dictionary to store appointments by service and date
+            const data = {};
+
+            // Iterate through the appointments and group them by service and date
+            UserDetailedAppointments.forEach(appointment => {
+                const serviceName = appointment.ServiceName;
+                const appointmentDate = appointment.appointmentDate;
+                const appointmentTime = appointment.appointmentTime;
+
+                if (!data[serviceName]) {
+                    data[serviceName] = {};
+                }
+
+                if (!data[serviceName][appointmentDate]) {
+                    data[serviceName][appointmentDate] = [];
+                }
+
+                data[serviceName][appointmentDate].push(appointmentTime);
+            });
+
+            // Now the 'data' variable contains the appointments in the desired format
+            console.log(data);
+
+
+
+            // Populate the service filter dropdown
+            function populateServiceFilter() {
+                const serviceFilter = $('#service-filter');
+                serviceFilter.empty();
+                const services = Object.keys(data);
+                if (services.length > 0) {
+                    serviceFilter.append('<option value="all">Ολες οι υπηρεσιες</option>');
+                }
+                for (const service of services) {
+                    serviceFilter.append(`<option value="${service}">${service.charAt(0).toUpperCase() + service.slice(1)}</option>`);
+                }
+                // If no services exist, add a default option
+                if (services.length === 0) {
+                    serviceFilter.append('<option value="none">No services available</option>');
+                }
             }
-            // If no services exist, add a default option
-            if (services.length === 0) {
-                serviceFilter.append('<option value="none">No services available</option>');
+
+            let currentYear = 2024;
+            let dialogTimeout;
+
+            function updateYear() {
+                $('#current-year').text(currentYear);
+                generateCalendars(currentYear);
             }
-        }
 
-        let currentYear = 2024;
-        let dialogTimeout;
+            function generateCalendars(year) {
+                $('#calendar-container').empty();
+                for (let month = 0; month < 12; month++) {
+                    const monthContainer = $('<div>').addClass('month-container');
+                    const calendar = $('<div>').addClass('calendar').attr('id', `calendar-${month}`);
+                    monthContainer.append(calendar);
+                    $('#calendar-container').append(monthContainer);
 
-        function updateYear() {
-            $('#current-year').text(currentYear);
-            generateCalendars(currentYear);
-        }
-
-        function generateCalendars(year) {
-            $('#calendar-container').empty();
-            for (let month = 0; month < 12; month++) {
-                const monthContainer = $('<div>').addClass('month-container');
-                const calendar = $('<div>').addClass('calendar').attr('id', `calendar-${month}`);
-                monthContainer.append(calendar);
-                $('#calendar-container').append(monthContainer);
-
-                $(`#calendar-${month}`).datepicker({
-                    showButtonPanel: false,
-                    changeMonth: false,
-                    changeYear: false,
-                    dateFormat: 'yy-mm-dd',
-                    defaultDate: new Date(year, month, 1),
-                    beforeShowDay: function (date) {
-                        const selectedService = $('#service-filter').val();
-                        const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-                        let isHighlighted = false;
-                        if (selectedService === "all") {
-                            for (let service in data) {
-                                if (data[service][dateStr]) {
+                    $(`#calendar-${month}`).datepicker({
+                        showButtonPanel: false,
+                        changeMonth: false,
+                        changeYear: false,
+                        dateFormat: 'yy-mm-dd',
+                        defaultDate: new Date(year, month, 1),
+                        beforeShowDay: function (date) {
+                            const selectedService = $('#service-filter').val();
+                            const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+                            let isHighlighted = false;
+                            if (selectedService === "all") {
+                                for (let service in data) {
+                                    if (data[service][dateStr]) {
+                                        isHighlighted = true;
+                                        break;
+                                    }
+                                }
+                            } else if (selectedService !== "none") {
+                                if (data[selectedService][dateStr]) {
                                     isHighlighted = true;
-                                    break;
                                 }
                             }
-                        } else if (selectedService !== "none") {
-                            if (data[selectedService][dateStr]) {
-                                isHighlighted = true;
-                            }
+                            return [true, isHighlighted ? 'highlight' : ''];
+                        },
+                        onChangeMonthYear: function (year, month, inst) {
+                            setTimeout(() => {
+                                $(`#calendar-${month} .ui-datepicker-current-day`).removeClass('ui-datepicker-current-day');
+                                $(`#calendar-${month} .ui-state-active`).removeClass('ui-state-active').attr('aria-current', 'false');
+                            }, 1);
+                        },
+                        onSelect: function (dateText, inst) {
+                            setTimeout(() => {
+                                $(`#calendar-${month} .ui-datepicker-current-day`).removeClass('ui-datepicker-current-day');
+                                $(`#calendar-${month} .ui-state-active`).removeClass('ui-state-active').attr('aria-current', 'false');
+                            }, 1);
                         }
-                        return [true, isHighlighted ? 'highlight' : ''];
-                    },
-                    onChangeMonthYear: function (year, month, inst) {
-                        setTimeout(() => {
-                            $(`#calendar-${month} .ui-datepicker-current-day`).removeClass('ui-datepicker-current-day');
-                            $(`#calendar-${month} .ui-state-active`).removeClass('ui-state-active').attr('aria-current', 'false');
-                        }, 1);
-                    },
-                    onSelect: function (dateText, inst) {
-                        setTimeout(() => {
-                            $(`#calendar-${month} .ui-datepicker-current-day`).removeClass('ui-datepicker-current-day');
-                            $(`#calendar-${month} .ui-state-active`).removeClass('ui-state-active').attr('aria-current', 'false');
-                        }, 1);
+                    });
+
+                    // Ensure no cells have ui-state-active class after rendering
+                    setTimeout(() => {
+                        $(`#calendar-${month} .ui-datepicker-current-day`).removeClass('ui-datepicker-current-day');
+                        $(`#calendar-${month} .ui-state-active`).removeClass('ui-state-active').attr('aria-current', 'false');
+                    }, 1);
+                }
+
+                // Add hover event listener to highlighted cells
+                $(document).on('mouseenter', '.highlight a', function (event) {
+                    if (!$(this).data('clicked')) {
+                        showAppointmentDialog($(this), event);
                     }
                 });
 
-                // Ensure no cells have ui-state-active class after rendering
-                setTimeout(() => {
-                    $(`#calendar-${month} .ui-datepicker-current-day`).removeClass('ui-datepicker-current-day');
-                    $(`#calendar-${month} .ui-state-active`).removeClass('ui-state-active').attr('aria-current', 'false');
-                }, 1);
-            }
+                $(document).on('mouseleave', '.highlight a', function () {
+                    if (!$(this).data('clicked')) {
+                        hideAppointmentDialog();
+                    }
+                });
 
-            // Add hover event listener to highlighted cells
-            $(document).on('mouseenter', '.highlight a', function (event) {
-                if (!$(this).data('clicked')) {
+                // Add click event listener to highlighted cells
+                $(document).on('click', '.highlight a', function (event) {
+                    event.stopPropagation();
+                    $('.highlight a').data('clicked', false); // Reset all click states
+                    $(this).data('clicked', true);
+                    clearTimeout(dialogTimeout);
                     showAppointmentDialog($(this), event);
-                }
-            });
+                    dialogTimeout = setTimeout(hideAppointmentDialog, 3000);
+                });
 
-            $(document).on('mouseleave', '.highlight a', function () {
-                if (!$(this).data('clicked')) {
+                // Hide the dialog on clicking outside
+                $(document).on('click', function () {
                     hideAppointmentDialog();
-                }
-            });
-
-            // Add click event listener to highlighted cells
-            $(document).on('click', '.highlight a', function (event) {
-                event.stopPropagation();
-                $('.highlight a').data('clicked', false); // Reset all click states
-                $(this).data('clicked', true);
-                clearTimeout(dialogTimeout);
-                showAppointmentDialog($(this), event);
-                dialogTimeout = setTimeout(hideAppointmentDialog, 3000);
-            });
-
-            // Hide the dialog on clicking outside
-            $(document).on('click', function () {
-                hideAppointmentDialog();
-            });
-        }
-
-        function showAppointmentDialog(element, event) {
-            const date = element.text();
-            const month = element.closest('.calendar').attr('id').split('-')[1];
-            const dateStr = `${currentYear}-${String(parseInt(month) + 1).padStart(2, '0')}-${String(date).padStart(2, '0')}`;
-            let appointmentDetails = {};
-            const selectedService = $('#service-filter').val();
-
-            if (selectedService === "all") {
-                for (let service in data) {
-                    if (data[service][dateStr]) {
-                        if (!appointmentDetails[service]) {
-                            appointmentDetails[service] = [];
-                        }
-                        appointmentDetails[service] = appointmentDetails[service].concat(data[service][dateStr]);
-                    }
-                }
-            } else {
-                if (data[selectedService][dateStr]) {
-                    appointmentDetails[selectedService] = data[selectedService][dateStr];
-                }
-            }
-
-            let appointmentText = '';
-            for (let service in appointmentDetails) {
-                appointmentText += `${service}: ${appointmentDetails[service].join(', ')}<br>`;
-            }
-
-            if (appointmentText) {
-                $('#appointment-times').html(appointmentText);
-                $('#appointment-dialog').css({
-                    display: 'block',
-                    left: event.pageX + 15,
-                    top: event.pageY + 15
                 });
             }
-        }
 
-        function hideAppointmentDialog() {
-            $('#appointment-dialog').css('display', 'none');
-            $('.highlight a').data('clicked', false);
-        }
+            function showAppointmentDialog(element, event) {
+                const date = element.text();
+                const month = element.closest('.calendar').attr('id').split('-')[1];
+                const dateStr = `${currentYear}-${String(parseInt(month) + 1).padStart(2, '0')}-${String(date).padStart(2, '0')}`;
+                let appointmentDetails = {};
+                const selectedService = $('#service-filter').val();
 
-        $('#prev-year').on('click', () => {
-            currentYear--;
-            updateYear();
+                if (selectedService === "all") {
+                    for (let service in data) {
+                        if (data[service][dateStr]) {
+                            if (!appointmentDetails[service]) {
+                                appointmentDetails[service] = [];
+                            }
+                            appointmentDetails[service] = appointmentDetails[service].concat(data[service][dateStr]);
+                        }
+                    }
+                } else {
+                    if (data[selectedService][dateStr]) {
+                        appointmentDetails[selectedService] = data[selectedService][dateStr];
+                    }
+                }
+
+                let appointmentText = '';
+                for (let service in appointmentDetails) {
+                    appointmentText += `${service}: ${appointmentDetails[service].join(', ')}<br>`;
+                }
+
+                if (appointmentText) {
+                    $('#appointment-times').html(appointmentText);
+                    $('#appointment-dialog').css({
+                        display: 'block',
+                        left: event.pageX + 15,
+                        top: event.pageY + 15
+                    });
+                }
+            }
+
+            function hideAppointmentDialog() {
+                $('#appointment-dialog').css('display', 'none');
+                $('.highlight a').data('clicked', false);
+            }
+
+            $('#prev-year').on('click', () => {
+                currentYear--;
+                updateYear();
+            });
+
+            $('#next-year').on('click', () => {
+                currentYear++;
+                updateYear();
+            });
+
+            $('#service-filter').on('change', () => {
+                generateCalendars(currentYear);
+            });
+
+            $(document).ready(() => {
+                populateServiceFilter();
+                updateYear();
+            });
         });
 
-        $('#next-year').on('click', () => {
-            currentYear++;
-            updateYear();
-        });
+        function waitForData() {
+    return new Promise((resolve) => {
+        const interval = setInterval(() => {
+            let UserDetailedAppointments = sessionStorage.getItem('UserDetailedAppointments');
+            let ServiceJustKeysAppointments = sessionStorage.getItem('ServiceJustKeysAppointments');
 
-        $('#service-filter').on('change', () => {
-            generateCalendars(currentYear);
-        });
+            // Parse the JSON strings from sessionStorage
+            UserDetailedAppointments = UserDetailedAppointments ? JSON.parse(UserDetailedAppointments) : null;
+            ServiceJustKeysAppointments = ServiceJustKeysAppointments ? JSON.parse(ServiceJustKeysAppointments) : null;
 
-        $(document).ready(() => {
-            populateServiceFilter();
-            updateYear();
-        });
+            // Check if both are not null, undefined, or empty
+            if (UserDetailedAppointments && UserDetailedAppointments.length > 0 && ServiceJustKeysAppointments && Object.keys(ServiceJustKeysAppointments).length > 0) {
+                clearInterval(interval);
+                resolve({
+                    UserDetailedAppointments,
+                    ServiceJustKeysAppointments
+                });
+            }
+        }, 100); // Check every 100 milliseconds
+    });
+}
     </script>
 </body>
 
