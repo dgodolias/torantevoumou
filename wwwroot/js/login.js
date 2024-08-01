@@ -49,6 +49,7 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
             }
         });
     })
+    
     .catch((error) => {
         // Hide the loader
         loaderElement.style.display = 'none';
