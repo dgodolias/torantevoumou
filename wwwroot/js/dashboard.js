@@ -34,7 +34,7 @@ window.addEventListener('load', function () {
 
         $('#pastappointmentLink').click(function (e) {
             e.preventDefault();
-            $('#container').load('/pastappointments?userId=' + userId);
+            $('#container').html('<iframe src="/heatmap" style="width:100%; height:100%; border:none;"></iframe>');
         });
 
         $("#profileLink").click(function (e) {
@@ -116,7 +116,7 @@ async function Init(userId) {
             
 
             sessionStorage.setItem('ServiceJustKeysAppointments', JSON.stringify(serviceAppointments));
-            console.log('ServiceJustKeysAppointments:', serviceAppointments);
+            console.log('ServiceJustKeysAppointments:', JSON.stringify(serviceAppointments));
 
             // Fetch detailed appointments
             let appointments = [];

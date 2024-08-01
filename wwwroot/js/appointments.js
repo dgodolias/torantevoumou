@@ -1,8 +1,32 @@
-var serviceName;
-var servicesInfo;
-var AllDetailedAppointmentsForService;
-var AppointmentsByDate;
-var UserId;
+(function () {
+    let currentAppointmentsScale = parseFloat(localStorage.getItem('appointmentsPageScale')) || 1;
+    let container = document.getElementById('inside-appointment-flex-container');
+    console.log(container);
+    if (container){
+        container.style.transform = `scale(${currentAppointmentsScale})`;
+
+        document.getElementById('zoom-in').addEventListener('click', function () {
+            if (currentAppointmentsScale < 1.3) {
+                currentAppointmentsScale += 0.07;
+                container.style.transform = `scale(${currentAppointmentsScale})`;
+                localStorage.setItem('appointmentsPageScale', currentAppointmentsScale);
+            }
+        });
+
+        document.getElementById('zoom-out').addEventListener('click', function () {
+            if (currentAppointmentsScale > 0.5) {
+                currentAppointmentsScale -= 0.07;
+                container.style.transform = `scale(${currentAppointmentsScale})`;
+                localStorage.setItem('appointmentsPageScale', currentAppointmentsScale);
+            }
+        });
+        
+    }
+})();
+
+
+$(document).ready(function () {
+    cellColours = ['purple1', 'purple2', 'purple3', 'purple4', 'grey-background'];
 
 
 
@@ -264,7 +288,11 @@ function addAppointment(json) {
             loaderElement.style.display = 'none';
             setTimeout(() => {
                 alert('Your appointment has been successfully booked!');
-                location.reload();
+                sessionStorage.setItem('UserDetailedAppointments', null);
+                sessionStorage.setItem('ServiceJustKeysAppointments', null);
+
+                // Reload the entire site
+                location.href = '/Dashboard?userId='+sessionStorage.getItem('UserId');
             }, 100);
         })
         .catch((error) => {
