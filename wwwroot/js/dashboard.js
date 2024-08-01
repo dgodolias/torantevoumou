@@ -14,10 +14,10 @@ window.addEventListener('load', function () {
     // Embedding the appointments view in the dashboard view
     $(document).ready(function () {
         var userId = sessionStorage.getItem('UserId');
-        
+
         if (userId) {
             Init(userId); // Call the refactored function
-        }        
+        }
 
         console.log('User ID: ', userId);
 
@@ -68,7 +68,7 @@ window.addEventListener('load', function () {
             console.log('ServicesInfo saved to sessionStorage:', data);
         })
         .catch(error => console.error('Error fetching ServicesInfo:', error));
-});
+}); // <-- This was missing
 
 // This function checks the login status
 function checkLoginStatus() {
@@ -104,7 +104,7 @@ async function Init(userId) {
             serviceNames.forEach(serviceName => {
                 serviceAppointments[serviceName] = [];
             });
-            
+
             data.serviceswithappointmentkey.split('#')
                 .filter(s => s.trim() !== '' && s.includes('('))
                 .forEach(s => {
@@ -113,7 +113,7 @@ async function Init(userId) {
                     let appointmentIds = parts[1].slice(0, -1).split(','); // Remove the closing parenthesis and split
                     serviceAppointments[serviceName] = appointmentIds;
                 });
-            
+
 
             sessionStorage.setItem('ServiceJustKeysAppointments', JSON.stringify(serviceAppointments));
             console.log('ServiceJustKeysAppointments:', JSON.stringify(serviceAppointments));

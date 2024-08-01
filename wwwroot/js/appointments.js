@@ -2,7 +2,7 @@
     let currentAppointmentsScale = parseFloat(localStorage.getItem('appointmentsPageScale')) || 1;
     let container = document.getElementById('inside-appointment-flex-container');
     console.log(container);
-    if (container){
+    if (container) {
         container.style.transform = `scale(${currentAppointmentsScale})`;
 
         document.getElementById('zoom-in').addEventListener('click', function () {
@@ -20,15 +20,13 @@
                 localStorage.setItem('appointmentsPageScale', currentAppointmentsScale);
             }
         });
-        
+
     }
 })();
 
-
 $(document).ready(function () {
     cellColours = ['purple1', 'purple2', 'purple3', 'purple4', 'grey-background'];
-
-
+});
 
 (function () {
     let currentAppointmentsScale = parseFloat(localStorage.getItem('appointmentsPageScale')) || 1;
@@ -58,16 +56,14 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-
     getServiceData().then(({ serviceName: retrievedServiceName, servicesInfo: retrievedServicesInfo, AllDetailedAppointmentsForService: retrievedAllDetailedAppointmentsForService
         , AppointmentsByDate: retrievedAppointmentsByDate, UserId: retrievedUserId
-     }) => {
+    }) => {
         serviceName = retrievedServiceName; // Assign to global variable
         servicesInfo = retrievedServicesInfo; // Assign to global variable
         AllDetailedAppointmentsForService = retrievedAllDetailedAppointmentsForService; // Assign to global variable
         AppointmentsByDate = retrievedAppointmentsByDate; // Assign to global variable
         UserId = retrievedUserId; // Assign to global variable
-
 
         cellColours = ['purple1', 'purple2', 'purple3', 'purple4', 'grey-background'];
 
@@ -159,11 +155,8 @@ $(document).ready(function () {
 
         console.log("Dialog initialized")
 
-
     });
 });
-
-
 
 async function handleDateOrServiceSelection() {
     loaderElement.style.display = 'flex';
@@ -229,7 +222,7 @@ async function handleDateOrServiceSelection() {
             $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[2]);
         } else if (appointmentPercentage < 100) {
             $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[3]);
-        } else {
+        } else if (appointmentPercentage >= 100) {
             $(`.${cellId} a`).removeClass(cellColours.join(' ')).addClass(cellColours[4]);
         }
     });
@@ -454,5 +447,5 @@ async function waitForAllData() {
         }
       }, 100); // Check every 100ms
     });
-  }
-  
+}
+

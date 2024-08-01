@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W/Kalu0e2mW5X0CNEqnLPpXWJlVAILlkiiePtxOfQs4=",
+  "Hash": "dxhoKkWMYuU/1ztX0vsvI8JvRyDrSeD4G7BkUwJN/H0=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -430,8 +430,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\appointments.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ok1as0bv83",
-      "Integrity": "iM0XY/H9rbWstms4aGs6AKet0IchHSI+dzBL3NR86xo=",
+      "Fingerprint": "5gu83t6vu2",
+      "Integrity": "2xyergIife+4WKJaMzh34zsnCAiNOo682jzaCvaK2I4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\appointments.js"
@@ -724,8 +724,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\login.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "acb8efmqhk",
-      "Integrity": "lsoEi1YycxmHqOo1UxS74eaKyFsBHtcNJMNpQO1VgSY=",
+      "Fingerprint": "g9usij4d42",
+      "Integrity": "NIat+5+NqQBNkkH1x7j1X8XBVE8FDMzHEK26kr7PCxQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\login.js"
@@ -2005,8 +2005,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\dashboard.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "pmcpiy2pgx",
-      "Integrity": "z3nAnc5yiAXXiLYntmerDyC4ysk4aqA9OfvRI7GUWZg=",
+      "Fingerprint": "qvz4uwaz1m",
+      "Integrity": "pkybu424sXNJauzutZYXj6ZsU85oGYaCGErE7zjZIV0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\dashboard.js"
@@ -7171,8 +7171,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3huo6tfhna",
-      "Integrity": "ucUsz0TvIlj6Ot/th+TmSgHg8i3SPhKgrJAGFf6oAyA=",
+      "Fingerprint": "q3xbu6ps89",
+      "Integrity": "qj3DjO/6ajHHWg74Tn8pMmmbPXA+eKYhsSfqL+TAg40=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\appointments.js"
@@ -7297,8 +7297,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rgsmz4d1ou",
-      "Integrity": "m9wd8FdEk0hEgHksl0/qVe0WRqDOeu6cb6SBOl2E/mY=",
+      "Fingerprint": "5edau1u2zd",
+      "Integrity": "s7tFy9pQRUPZkNDB7s4f/LGLifnwZQgJ850BeATzyXs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\dashboard.js"
@@ -7423,8 +7423,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "n2zizpnk0c",
-      "Integrity": "8QYgnyECyQ2hsnqFui1oN134WX9gvuQSo980buoR2q0=",
+      "Fingerprint": "cp80r5xb9w",
+      "Integrity": "8NSfQXNcrxCsnQS8SWGw/UpaOvIiQXfRdPl2fDHT4Ng=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\login.js"
@@ -7975,7 +7975,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 31 Jul 2024 19:23:39 GMT"
+          "Value": "Thu, 01 Aug 2024 07:20:34 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -8019,7 +8019,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 31 Jul 2024 19:23:39 GMT"
+          "Value": "Thu, 01 Aug 2024 07:20:34 GMT"
         }
       ],
       "EndpointProperties": []
@@ -8047,7 +8047,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 31 Jul 2024 19:23:39 GMT"
+          "Value": "Thu, 01 Aug 2024 07:20:34 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -8947,6 +8947,116 @@
     {
       "Route": "css/pastappointments.css",
       "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\hdyj37416d.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000910746812"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1097"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B8qJ031pTLKNwJbdJExmkQPIZc1XXLXpe3sQquT5/NM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Aug 2024 07:13:23 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nfjAuvPZZC09n/IWXjh2m2zy36kC8seME3QP8aguL6M=\""
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/pastappointments.css",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\pastappointments.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nfjAuvPZZC09n/IWXjh2m2zy36kC8seME3QP8aguL6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Aug 2024 07:13:23 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/pastappointments.css.gz",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\hdyj37416d.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1097"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B8qJ031pTLKNwJbdJExmkQPIZc1XXLXpe3sQquT5/NM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Aug 2024 07:13:23 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "css/profile.css",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\hp52ryigwn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -20769,7 +20879,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000251004016"
+          "Quality": "0.000208637596"
         }
       ],
       "ResponseHeaders": [
@@ -20779,15 +20889,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3983"
+          "Value": "4792"
         },
         {
           "Name": "ETag",
-          "Value": "\"iM0XY/H9rbWstms4aGs6AKet0IchHSI+dzBL3NR86xo=\""
+          "Value": "\"2xyergIife+4WKJaMzh34zsnCAiNOo682jzaCvaK2I4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 31 Jul 2024 20:22:45 GMT"
+          "Value": "Thu, 01 Aug 2024 07:39:28 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -20803,7 +20913,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ucUsz0TvIlj6Ot/th+TmSgHg8i3SPhKgrJAGFf6oAyA=\""
+          "Value": "W/\"qj3DjO/6ajHHWg74Tn8pMmmbPXA+eKYhsSfqL+TAg40=\""
         }
       ],
       "EndpointProperties": []
@@ -20819,7 +20929,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14935"
+          "Value": "20044"
         },
         {
           "Name": "Content-Type",
@@ -20827,11 +20937,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ucUsz0TvIlj6Ot/th+TmSgHg8i3SPhKgrJAGFf6oAyA=\""
+          "Value": "\"qj3DjO/6ajHHWg74Tn8pMmmbPXA+eKYhsSfqL+TAg40=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 31 Jul 2024 20:22:45 GMT"
+          "Value": "Thu, 01 Aug 2024 07:39:28 GMT"
         }
       ],
       "EndpointProperties": []
@@ -20847,7 +20957,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3983"
+          "Value": "4792"
         },
         {
           "Name": "Content-Type",
@@ -20855,11 +20965,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iM0XY/H9rbWstms4aGs6AKet0IchHSI+dzBL3NR86xo=\""
+          "Value": "\"2xyergIife+4WKJaMzh34zsnCAiNOo682jzaCvaK2I4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 31 Jul 2024 20:22:45 GMT"
+          "Value": "Thu, 01 Aug 2024 07:39:28 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -21429,7 +21539,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000560224090"
+          "Quality": "0.000556173526"
         }
       ],
       "ResponseHeaders": [
@@ -21439,15 +21549,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1784"
+          "Value": "1797"
         },
         {
           "Name": "ETag",
-          "Value": "\"z3nAnc5yiAXXiLYntmerDyC4ysk4aqA9OfvRI7GUWZg=\""
+          "Value": "\"pkybu424sXNJauzutZYXj6ZsU85oGYaCGErE7zjZIV0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 31 Jul 2024 19:13:02 GMT"
+          "Value": "Thu, 01 Aug 2024 07:26:36 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -21463,7 +21573,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"m9wd8FdEk0hEgHksl0/qVe0WRqDOeu6cb6SBOl2E/mY=\""
+          "Value": "W/\"s7tFy9pQRUPZkNDB7s4f/LGLifnwZQgJ850BeATzyXs=\""
         }
       ],
       "EndpointProperties": []
@@ -21479,7 +21589,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6363"
+          "Value": "6349"
         },
         {
           "Name": "Content-Type",
@@ -21487,11 +21597,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"m9wd8FdEk0hEgHksl0/qVe0WRqDOeu6cb6SBOl2E/mY=\""
+          "Value": "\"s7tFy9pQRUPZkNDB7s4f/LGLifnwZQgJ850BeATzyXs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 31 Jul 2024 19:13:02 GMT"
+          "Value": "Thu, 01 Aug 2024 07:26:36 GMT"
         }
       ],
       "EndpointProperties": []
@@ -21507,7 +21617,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1784"
+          "Value": "1797"
         },
         {
           "Name": "Content-Type",
@@ -21515,11 +21625,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z3nAnc5yiAXXiLYntmerDyC4ysk4aqA9OfvRI7GUWZg=\""
+          "Value": "\"pkybu424sXNJauzutZYXj6ZsU85oGYaCGErE7zjZIV0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 31 Jul 2024 19:13:02 GMT"
+          "Value": "Thu, 01 Aug 2024 07:26:36 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -22089,7 +22199,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000966183575"
+          "Quality": "0.000964320154"
         }
       ],
       "ResponseHeaders": [
@@ -22099,15 +22209,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1034"
+          "Value": "1036"
         },
         {
           "Name": "ETag",
-          "Value": "\"lsoEi1YycxmHqOo1UxS74eaKyFsBHtcNJMNpQO1VgSY=\""
+          "Value": "\"NIat+5+NqQBNkkH1x7j1X8XBVE8FDMzHEK26kr7PCxQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Jun 2024 21:31:17 GMT"
+          "Value": "Thu, 01 Aug 2024 07:22:15 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -22123,7 +22233,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8QYgnyECyQ2hsnqFui1oN134WX9gvuQSo980buoR2q0=\""
+          "Value": "W/\"8NSfQXNcrxCsnQS8SWGw/UpaOvIiQXfRdPl2fDHT4Ng=\""
         }
       ],
       "EndpointProperties": []
@@ -22139,7 +22249,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2438"
+          "Value": "2444"
         },
         {
           "Name": "Content-Type",
@@ -22147,11 +22257,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8QYgnyECyQ2hsnqFui1oN134WX9gvuQSo980buoR2q0=\""
+          "Value": "\"8NSfQXNcrxCsnQS8SWGw/UpaOvIiQXfRdPl2fDHT4Ng=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Jun 2024 21:31:17 GMT"
+          "Value": "Thu, 01 Aug 2024 07:22:15 GMT"
         }
       ],
       "EndpointProperties": []
@@ -22167,7 +22277,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1034"
+          "Value": "1036"
         },
         {
           "Name": "Content-Type",
@@ -22175,11 +22285,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lsoEi1YycxmHqOo1UxS74eaKyFsBHtcNJMNpQO1VgSY=\""
+          "Value": "\"NIat+5+NqQBNkkH1x7j1X8XBVE8FDMzHEK26kr7PCxQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Jun 2024 21:31:17 GMT"
+          "Value": "Thu, 01 Aug 2024 07:22:15 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -22305,6 +22415,116 @@
     {
       "Route": "js/pastappointments.js",
       "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\5lr2il81tu.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000424088210"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2357"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JnCwUVQTFY/HFSq+41R1wbnYdM9YIpDiwKGxeIBI0lA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Aug 2024 07:13:23 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"zJBJnpTQdRlKcB+fnFO3GeztG06NChss7X4ocO2zTbc=\""
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/pastappointments.js",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\pastappointments.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zJBJnpTQdRlKcB+fnFO3GeztG06NChss7X4ocO2zTbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Aug 2024 07:13:23 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/pastappointments.js.gz",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\5lr2il81tu.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JnCwUVQTFY/HFSq+41R1wbnYdM9YIpDiwKGxeIBI0lA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Aug 2024 07:13:23 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/profile.js",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\gc8a0s49tc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -22437,7 +22657,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 25 Jul 2024 07:50:41 GMT"
+          "Value": "Thu, 01 Aug 2024 07:13:23 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -22481,7 +22701,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 25 Jul 2024 07:50:41 GMT"
+          "Value": "Thu, 01 Aug 2024 07:13:23 GMT"
         }
       ],
       "EndpointProperties": []
@@ -22509,7 +22729,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 25 Jul 2024 07:50:41 GMT"
+          "Value": "Thu, 01 Aug 2024 07:13:23 GMT"
         },
         {
           "Name": "Content-Encoding",
