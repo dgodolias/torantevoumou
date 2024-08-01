@@ -1510,7 +1510,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\login.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2444"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228NSfQXNcrxCsnQS8SWGw/UpaOvIiQXfRdPl2fDHT4Ng=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Aug 2024 07:22:15 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2840"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022E6CAMLJC1XisJxVuNDKw8/Xw7C9EIQUo\u002BB6xJWtH6PM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Aug 2024 08:28:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/nivo-lightbox.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\nivo-lightbox.js))</AssetFile>

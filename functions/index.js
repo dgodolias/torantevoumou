@@ -1,7 +1,49 @@
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
+const {getAuth} = require("firebase-admin/auth"); // Import getAuth
 
 admin.initializeApp();
+
+exports.sendVerificationEmail = functions.https.onRequest(async (req, res) => {
+  const allowedOrigins = [
+    "https://localhost:7177",
+    "https://www.torantevoumou.gr",
+    "https://torantevoumou.gr",
+  ];
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.set("Access-Control-Allow-Origin", origin);
+  }
+  res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
+  res.set("Access-Control-Allow-Headers", "*");
+
+  // Respond to OPTIONS requests (required by CORS preflight)
+  if (req.method === "OPTIONS") {
+    res.status(200).send();
+    return;
+  }
+
+  const email = req.body.email;
+
+  if (!email) {
+    return res.status(400).send("Email is required");
+  }
+
+  const actionCodeSettings = {
+    url: "https://www.torantevoumou.gr/Login",
+    handleCodeInApp: true,
+  };
+
+  try {
+    const auth = getAuth();
+    await auth.sendSignInLinkToEmail(email, actionCodeSettings);
+    res.status(200).send("Verification email sent"); // Send a response
+  } catch (error) {
+    console.error("Error sending email:", error);
+    res.status(500).send("Error sending email"); // Send an error response
+  }
+});
+
 
 exports.getUsers = functions.https.onRequest(async (req, res) => {
   try {

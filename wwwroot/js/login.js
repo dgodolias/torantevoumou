@@ -12,36 +12,24 @@ firebase.initializeApp(firebaseConfig);
 
 // Get the loader element
 const loaderElement = document.querySelector('.loader');
+
 // Event listener for form submission
 document.querySelector('#login-form').addEventListener('submit', function(event) {
-    // Prevent the form from being submitted normally
     event.preventDefault();
 
     var email = document.querySelector('#email').value;
     var password = document.querySelector('#password').value;
-    // Show the loader
     loaderElement.style.display = 'flex';
 
-    // Sign in with email and password
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
-        // Signed in 
         var user = userCredential.user;
-        // Get the ID token
         user.getIdToken().then((idToken) => {
-
-            // Store the ID token and user ID in the session storage
             sessionStorage.setItem('IdToken', idToken);
             sessionStorage.setItem('UserId', user.uid);
-            // Set the userLoggedIn flag to true
             sessionStorage.setItem('userLoggedIn', 'true');
-
-            // If the login time is not set, set it to the current time
             var loginTime = new Date().getTime();
             sessionStorage.setItem('loginTime', loginTime);
-            console.log('Login time: ', loginTime);
-
-            // Check if user.uid has a value before redirecting
             if (user.uid) {
                 window.location.href = '/Dashboard?userId=' + user.uid;
             } else {
@@ -49,14 +37,43 @@ document.querySelector('#login-form').addEventListener('submit', function(event)
             }
         });
     })
-    
     .catch((error) => {
-        // Hide the loader
         loaderElement.style.display = 'none';
-        // Handle the error
         var errorCode = error.code;
         var errorMessage = error.message;
-        // Print the error to the console
         console.log('Error code: ', errorCode, ', Error message: ', errorMessage);
     });
+});
+
+// Event listener for forgot password link
+document.querySelector('#forgot-password').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    var email = document.querySelector('#email').value;
+    if (!email) {
+        alert('Please enter your email address');
+        return;
+    }
+
+    fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/sendVerificationEmail', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ email: email }),
+    mode: 'no-cors' // Disable CORS checks
+    })
+    .then(response => {
+    // You can't access response.text() or response.json() here
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    // You can only check response.ok to see if the request was successful
+    alert('Verification email sent successfully. Please check your inbox.');
+    })
+    .catch(error => {
+    console.error('There has been a problem with your fetch operation:', error);
+    alert('Failed to send verification email. Please try again.');
+    });
+
 });
