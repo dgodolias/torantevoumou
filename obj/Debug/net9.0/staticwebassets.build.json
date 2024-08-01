@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HQxAwced0qYXOkpXIXeRR83sfZIQlQ/NR4KhAIK9lfg=",
+  "Hash": "Dc9lcuxSGnprlekrXXlETg4uk2kjL/4lcKr/AopOUxA=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -724,8 +724,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\login.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "z19kbi1tgj",
-      "Integrity": "KdK/Bsp7vfbJuXay2GYDLGSXmxhKgIktdCdFhWn+vZM=",
+      "Fingerprint": "5vfw89ckzz",
+      "Integrity": "UaREtJkwN5BCYe5jxxWhoNntsIzIaSi2UofPXg/ZCz0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\login.js"
@@ -7423,8 +7423,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pp5odom9ea",
-      "Integrity": "E6CAMLJC1XisJxVuNDKw8/Xw7C9EIQUo+B6xJWtH6PM=",
+      "Fingerprint": "h3n5jybmno",
+      "Integrity": "0xD1u4nOOtmcozwjBpt3jOzOkcE5AoUU5W6NPRw8e0k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\login.js"
@@ -22199,7 +22199,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000853970965"
+          "Quality": "0.000722021661"
         }
       ],
       "ResponseHeaders": [
@@ -22209,15 +22209,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1170"
+          "Value": "1384"
         },
         {
           "Name": "ETag",
-          "Value": "\"KdK/Bsp7vfbJuXay2GYDLGSXmxhKgIktdCdFhWn+vZM=\""
+          "Value": "\"UaREtJkwN5BCYe5jxxWhoNntsIzIaSi2UofPXg/ZCz0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 Aug 2024 08:28:36 GMT"
+          "Value": "Thu, 01 Aug 2024 09:21:34 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -22233,7 +22233,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"E6CAMLJC1XisJxVuNDKw8/Xw7C9EIQUo+B6xJWtH6PM=\""
+          "Value": "W/\"0xD1u4nOOtmcozwjBpt3jOzOkcE5AoUU5W6NPRw8e0k=\""
         }
       ],
       "EndpointProperties": []
@@ -22249,7 +22249,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2840"
+          "Value": "3549"
         },
         {
           "Name": "Content-Type",
@@ -22257,11 +22257,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"E6CAMLJC1XisJxVuNDKw8/Xw7C9EIQUo+B6xJWtH6PM=\""
+          "Value": "\"0xD1u4nOOtmcozwjBpt3jOzOkcE5AoUU5W6NPRw8e0k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 Aug 2024 08:28:36 GMT"
+          "Value": "Thu, 01 Aug 2024 09:21:34 GMT"
         }
       ],
       "EndpointProperties": []
@@ -22277,7 +22277,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1170"
+          "Value": "1384"
         },
         {
           "Name": "Content-Type",
@@ -22285,11 +22285,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KdK/Bsp7vfbJuXay2GYDLGSXmxhKgIktdCdFhWn+vZM=\""
+          "Value": "\"UaREtJkwN5BCYe5jxxWhoNntsIzIaSi2UofPXg/ZCz0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 Aug 2024 08:28:36 GMT"
+          "Value": "Thu, 01 Aug 2024 09:21:34 GMT"
         },
         {
           "Name": "Content-Encoding",

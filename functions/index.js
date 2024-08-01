@@ -1,10 +1,8 @@
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
-const {getAuth} = require("firebase-admin/auth"); // Import getAuth
-
 admin.initializeApp();
 
-exports.sendVerificationEmail = functions.https.onRequest(async (req, res) => {
+exports.prepareEmail = functions.https.onRequest(async (req, res) => {
   const allowedOrigins = [
     "https://localhost:7177",
     "https://www.torantevoumou.gr",
@@ -15,7 +13,7 @@ exports.sendVerificationEmail = functions.https.onRequest(async (req, res) => {
     res.set("Access-Control-Allow-Origin", origin);
   }
   res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
-  res.set("Access-Control-Allow-Headers", "*");
+  res.set("Access-Control-Allow-Headers", "Content-Type");
 
   // Respond to OPTIONS requests (required by CORS preflight)
   if (req.method === "OPTIONS") {
@@ -25,22 +23,23 @@ exports.sendVerificationEmail = functions.https.onRequest(async (req, res) => {
 
   const email = req.body.email;
 
+  console.log("Request body:", req.body);
+
   if (!email) {
+    console.log("Email is required");
     return res.status(400).send("Email is required");
   }
 
-  const actionCodeSettings = {
-    url: "https://www.torantevoumou.gr/Login",
-    handleCodeInApp: true,
-  };
+  // Perform any server-side checks or preparations here
 
   try {
-    const auth = getAuth();
-    await auth.sendSignInLinkToEmail(email, actionCodeSettings);
-    res.status(200).send("Verification email sent"); // Send a response
+    // This is just an example response; customize as needed
+    res.status(200).json({
+      message: `Email ${email} is ready to receive sign-in link.`
+    });
   } catch (error) {
-    console.error("Error sending email:", error);
-    res.status(500).send("Error sending email"); // Send an error response
+    console.error("Error preparing email:", error);
+    res.status(500).send("Error preparing email");
   }
 });
 

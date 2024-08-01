@@ -1,3 +1,4 @@
+// Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBmSJlgs_5jVU1CdD9002fdhT9GCld75EM",
     authDomain: "torantevoumou-86820.firebaseapp.com",
@@ -55,25 +56,41 @@ document.querySelector('#forgot-password').addEventListener('click', function(ev
         return;
     }
 
-    fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/sendVerificationEmail', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ email: email }),
-    mode: 'no-cors' // Disable CORS checks
+    // Call the Cloud Function to prepare the email
+    fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/prepareEmail', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email: email }),
+        mode: 'cors'
     })
     .then(response => {
-    // You can't access response.text() or response.json() here
-    if (!response.ok) {
-        throw new Error('Network response was not ok');
-    }
-    // You can only check response.ok to see if the request was successful
-    alert('Verification email sent successfully. Please check your inbox.');
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log(data.message);
+        // After preparing email, send the sign-in link
+        const actionCodeSettings = {
+            url: window.location.origin + '/Login',
+            handleCodeInApp: true
+        };
+        
+        const auth = firebase.auth();
+        auth.sendSignInLinkToEmail(email, actionCodeSettings)
+        .then(() => {
+            alert('Verification email sent successfully. Please check your inbox.');
+        })
+        .catch(error => {
+            console.error('Error sending sign-in link:', error);
+            alert('Failed to send verification email. Please try again.');
+        });
     })
     .catch(error => {
-    console.error('There has been a problem with your fetch operation:', error);
-    alert('Failed to send verification email. Please try again.');
+        console.error('There has been a problem with your fetch operation:', error);
+        alert('Failed to prepare email. Please try again.');
     });
-
 });
