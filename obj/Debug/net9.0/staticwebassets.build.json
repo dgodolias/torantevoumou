@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bMf5EkuFC6et73IkeFf2ICwDWcTw5ahFoPEp6xQ0xRs=",
+  "Hash": "6MBU5/WdjJjFOUZEY9//5yN7pIaFY+Pb8V2GHaV0+B8=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -724,8 +724,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\login.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "n2c0gmv4z7",
-      "Integrity": "H1WfTuOoOM9iWz1OASzS63YXIzG/ppCYAGSDnWZhnDM=",
+      "Fingerprint": "fvhv79sn6j",
+      "Integrity": "xeim1YYjJzbaydAFkQ/7R94l1EWqkCu/CjhKlBqslB0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\login.js"
@@ -1186,8 +1186,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\forgotpassword.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "zy82l51bto",
-      "Integrity": "FS02xedeOUbQ8Q53pU8svKcYTb8NZZyaxftH8DZ1qZE=",
+      "Fingerprint": "tz0qg58w8t",
+      "Integrity": "iUs+kFjElbVxNPIlaGHfscfBz89AY+SfMrW1qO5lVL4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\forgotpassword.js"
@@ -1359,6 +1359,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\nlno92k1di.gz",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "js/changepassword.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\changepassword.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "duqhkiyki4",
+      "Integrity": "Jd5LKP2xY7dPF+eN6BzJ4MBHXsZ0aio9PW24FYaAWfI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\changepassword.js"
     },
     {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\ntqypuyyl3.gz",
@@ -7262,6 +7283,27 @@
       "OriginalItemSpec": "wwwroot\\js\\carousel.js"
     },
     {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\changepassword.js",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "js/changepassword.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1050wb2jie",
+      "Integrity": "r9qf+hjL+gO2oP1ISmYmTiTfcl6P7YU+tIikRwa6nA4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\changepassword.js"
+    },
+    {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\checkLoginTime.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
@@ -7360,8 +7402,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "08s3ap11r6",
-      "Integrity": "oE9dPtkFiJY3ZTBQWY4kp/7pShwPivORyUzMjASVU50=",
+      "Fingerprint": "7j76b1hhms",
+      "Integrity": "o0qhpj3RCaRKd2cBV0mujOePylQgdyGq+2eQeMPhxek=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\forgotpassword.js"
@@ -7465,8 +7507,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z50mh68o87",
-      "Integrity": "qUzKNYlgexjQPz54VjTYyIXqXYLZv9m5mZEUmhXtD0c=",
+      "Fingerprint": "ag3xemsaez",
+      "Integrity": "Rkr5tY6uz7LPkYfb94M67TcqK7zD5bcCWokLrqIXU54=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\login.js"
@@ -21355,6 +21397,116 @@
       "EndpointProperties": []
     },
     {
+      "Route": "js/changepassword.js",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\nlno92k1di.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001386962552"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "720"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jd5LKP2xY7dPF+eN6BzJ4MBHXsZ0aio9PW24FYaAWfI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 15:24:29 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"r9qf+hjL+gO2oP1ISmYmTiTfcl6P7YU+tIikRwa6nA4=\""
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/changepassword.js",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\changepassword.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r9qf+hjL+gO2oP1ISmYmTiTfcl6P7YU+tIikRwa6nA4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 15:24:29 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/changepassword.js.gz",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\nlno92k1di.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jd5LKP2xY7dPF+eN6BzJ4MBHXsZ0aio9PW24FYaAWfI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 15:24:29 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
       "Route": "js/checkLoginTime.js",
       "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\ssp0vuuvjg.gz",
       "Selectors": [
@@ -21801,7 +21953,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001371742112"
+          "Quality": "0.001078748652"
         }
       ],
       "ResponseHeaders": [
@@ -21811,15 +21963,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "728"
+          "Value": "926"
         },
         {
           "Name": "ETag",
-          "Value": "\"FS02xedeOUbQ8Q53pU8svKcYTb8NZZyaxftH8DZ1qZE=\""
+          "Value": "\"iUs+kFjElbVxNPIlaGHfscfBz89AY+SfMrW1qO5lVL4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Aug 2024 07:33:46 GMT"
+          "Value": "Fri, 02 Aug 2024 15:27:23 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -21835,7 +21987,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"oE9dPtkFiJY3ZTBQWY4kp/7pShwPivORyUzMjASVU50=\""
+          "Value": "W/\"o0qhpj3RCaRKd2cBV0mujOePylQgdyGq+2eQeMPhxek=\""
         }
       ],
       "EndpointProperties": []
@@ -21851,7 +22003,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1765"
+          "Value": "2245"
         },
         {
           "Name": "Content-Type",
@@ -21859,11 +22011,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oE9dPtkFiJY3ZTBQWY4kp/7pShwPivORyUzMjASVU50=\""
+          "Value": "\"o0qhpj3RCaRKd2cBV0mujOePylQgdyGq+2eQeMPhxek=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Aug 2024 07:33:46 GMT"
+          "Value": "Fri, 02 Aug 2024 15:27:23 GMT"
         }
       ],
       "EndpointProperties": []
@@ -21879,7 +22031,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "728"
+          "Value": "926"
         },
         {
           "Name": "Content-Type",
@@ -21887,11 +22039,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FS02xedeOUbQ8Q53pU8svKcYTb8NZZyaxftH8DZ1qZE=\""
+          "Value": "\"iUs+kFjElbVxNPIlaGHfscfBz89AY+SfMrW1qO5lVL4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Aug 2024 07:33:46 GMT"
+          "Value": "Fri, 02 Aug 2024 15:27:23 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -22351,7 +22503,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000904977376"
+          "Quality": "0.000957854406"
         }
       ],
       "ResponseHeaders": [
@@ -22361,15 +22513,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1104"
+          "Value": "1043"
         },
         {
           "Name": "ETag",
-          "Value": "\"H1WfTuOoOM9iWz1OASzS63YXIzG/ppCYAGSDnWZhnDM=\""
+          "Value": "\"xeim1YYjJzbaydAFkQ/7R94l1EWqkCu/CjhKlBqslB0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Aug 2024 12:37:33 GMT"
+          "Value": "Fri, 02 Aug 2024 15:29:35 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -22385,7 +22537,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"qUzKNYlgexjQPz54VjTYyIXqXYLZv9m5mZEUmhXtD0c=\""
+          "Value": "W/\"Rkr5tY6uz7LPkYfb94M67TcqK7zD5bcCWokLrqIXU54=\""
         }
       ],
       "EndpointProperties": []
@@ -22401,7 +22553,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2784"
+          "Value": "2795"
         },
         {
           "Name": "Content-Type",
@@ -22409,11 +22561,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qUzKNYlgexjQPz54VjTYyIXqXYLZv9m5mZEUmhXtD0c=\""
+          "Value": "\"Rkr5tY6uz7LPkYfb94M67TcqK7zD5bcCWokLrqIXU54=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Aug 2024 12:37:33 GMT"
+          "Value": "Fri, 02 Aug 2024 15:29:35 GMT"
         }
       ],
       "EndpointProperties": []
@@ -22429,7 +22581,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1104"
+          "Value": "1043"
         },
         {
           "Name": "Content-Type",
@@ -22437,11 +22589,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"H1WfTuOoOM9iWz1OASzS63YXIzG/ppCYAGSDnWZhnDM=\""
+          "Value": "\"xeim1YYjJzbaydAFkQ/7R94l1EWqkCu/CjhKlBqslB0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Aug 2024 12:37:33 GMT"
+          "Value": "Fri, 02 Aug 2024 15:29:35 GMT"
         },
         {
           "Name": "Content-Encoding",

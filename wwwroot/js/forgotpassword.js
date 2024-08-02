@@ -1,8 +1,22 @@
-// Firebase configuration
-const firebaseConfig = {
-    // ... your Firebase config ...
-};
-firebase.initializeApp(firebaseConfig);
+// Assuming you have your config.json file in the root directory
+
+// Read the config.json file
+fetch('../config.json') // Use '../' to go up one level from \wwwroot\js\ to the root
+  .then(response => response.json())
+  .then(data => {
+    // Extract the firebaseConfig object from the data
+    const firebaseConfig = data.firebaseConfig;
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Now you can use Firebase services
+    console.log('Firebase initialized successfully!');
+  })
+  .catch(error => {
+    console.error('Error reading config.json:', error);
+  });
+
 
 const forgotPasswordForm = document.querySelector('#forgot-password-form');
 const loaderElement = document.querySelector('.loader');

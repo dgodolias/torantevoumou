@@ -1,16 +1,19 @@
-// Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyBmSJlgs_5jVU1CdD9002fdhT9GCld75EM",
-    authDomain: "torantevoumou-86820.firebaseapp.com",
-    databaseURL: "https://torantevoumou-86820-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "torantevoumou-86820",
-    storageBucket: "torantevoumou-86820.appspot.com",
-    messagingSenderId: "249720175444",
-    appId: "1:249720175444:web:ef072577d5879e7a4d26c1",
-    measurementId: "G-2LXMRZZBRW"
-};
-firebase.initializeApp(firebaseConfig);
+// Read the config.json file
+fetch('../config.json') // Use '../' to go up one level from \wwwroot\js\ to the root
+  .then(response => response.json())
+  .then(data => {
+    // Extract the firebaseConfig object from the data
+    const firebaseConfig = data.firebaseConfig;
 
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Now you can use Firebase services
+    console.log('Firebase initialized successfully!');
+  })
+  .catch(error => {
+    console.error('Error reading config.json:', error);
+  });
 // Get the loader element
 const loaderElement = document.querySelector('.loader');
 
