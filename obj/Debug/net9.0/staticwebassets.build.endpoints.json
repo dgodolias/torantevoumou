@@ -14244,6 +14244,116 @@
       "EndpointProperties": []
     },
     {
+      "Route": "js/forgotpassword.js",
+      "AssetFile": "js/forgotpassword.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001371742112"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "728"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FS02xedeOUbQ8Q53pU8svKcYTb8NZZyaxftH8DZ1qZE=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"oE9dPtkFiJY3ZTBQWY4kp/7pShwPivORyUzMjASVU50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 07:33:46 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/forgotpassword.js",
+      "AssetFile": "js/forgotpassword.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1765"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oE9dPtkFiJY3ZTBQWY4kp/7pShwPivORyUzMjASVU50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 07:33:46 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/forgotpassword.js.gz",
+      "AssetFile": "js/forgotpassword.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "728"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FS02xedeOUbQ8Q53pU8svKcYTb8NZZyaxftH8DZ1qZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 07:33:46 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
       "Route": "js/index.js",
       "AssetFile": "js/index.js.gz",
       "Selectors": [
@@ -14690,7 +14800,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000722021661"
+          "Quality": "0.000904977376"
         }
       ],
       "ResponseHeaders": [
@@ -14704,7 +14814,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1384"
+          "Value": "1104"
         },
         {
           "Name": "Content-Type",
@@ -14712,15 +14822,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UaREtJkwN5BCYe5jxxWhoNntsIzIaSi2UofPXg/ZCz0=\""
+          "Value": "\"H1WfTuOoOM9iWz1OASzS63YXIzG/ppCYAGSDnWZhnDM=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"0xD1u4nOOtmcozwjBpt3jOzOkcE5AoUU5W6NPRw8e0k=\""
+          "Value": "W/\"qUzKNYlgexjQPz54VjTYyIXqXYLZv9m5mZEUmhXtD0c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 Aug 2024 09:21:34 GMT"
+          "Value": "Fri, 02 Aug 2024 12:37:33 GMT"
         },
         {
           "Name": "Vary",
@@ -14740,7 +14850,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3549"
+          "Value": "2784"
         },
         {
           "Name": "Content-Type",
@@ -14748,11 +14858,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0xD1u4nOOtmcozwjBpt3jOzOkcE5AoUU5W6NPRw8e0k=\""
+          "Value": "\"qUzKNYlgexjQPz54VjTYyIXqXYLZv9m5mZEUmhXtD0c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 Aug 2024 09:21:34 GMT"
+          "Value": "Fri, 02 Aug 2024 12:37:33 GMT"
         }
       ],
       "EndpointProperties": []
@@ -14772,7 +14882,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1384"
+          "Value": "1104"
         },
         {
           "Name": "Content-Type",
@@ -14780,11 +14890,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UaREtJkwN5BCYe5jxxWhoNntsIzIaSi2UofPXg/ZCz0=\""
+          "Value": "\"H1WfTuOoOM9iWz1OASzS63YXIzG/ppCYAGSDnWZhnDM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 Aug 2024 09:21:34 GMT"
+          "Value": "Fri, 02 Aug 2024 12:37:33 GMT"
         },
         {
           "Name": "Vary",

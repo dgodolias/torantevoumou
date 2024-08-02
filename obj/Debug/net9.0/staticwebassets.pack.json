@@ -993,6 +993,10 @@
       "PackagePath": "staticwebassets\\js\\eurethrio.js"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\forgotpassword.js",
+      "PackagePath": "staticwebassets\\js\\forgotpassword.js"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\index.js",
       "PackagePath": "staticwebassets\\js\\index.js"
     },

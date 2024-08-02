@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Dc9lcuxSGnprlekrXXlETg4uk2kjL/4lcKr/AopOUxA=",
+  "Hash": "bMf5EkuFC6et73IkeFf2ICwDWcTw5ahFoPEp6xQ0xRs=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -724,8 +724,8 @@
       "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\login.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "5vfw89ckzz",
-      "Integrity": "UaREtJkwN5BCYe5jxxWhoNntsIzIaSi2UofPXg/ZCz0=",
+      "Fingerprint": "n2c0gmv4z7",
+      "Integrity": "H1WfTuOoOM9iWz1OASzS63YXIzG/ppCYAGSDnWZhnDM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\login.js"
@@ -1170,6 +1170,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-Italic.css"
+    },
+    {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\kbyvxzoodu.gz",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "js/forgotpassword.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\forgotpassword.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "zy82l51bto",
+      "Integrity": "FS02xedeOUbQ8Q53pU8svKcYTb8NZZyaxftH8DZ1qZE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\forgotpassword.js"
     },
     {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\kl6afb8xrt.gz",
@@ -7325,6 +7346,27 @@
       "OriginalItemSpec": "wwwroot\\js\\eurethrio.js"
     },
     {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\forgotpassword.js",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "js/forgotpassword.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "08s3ap11r6",
+      "Integrity": "oE9dPtkFiJY3ZTBQWY4kp/7pShwPivORyUzMjASVU50=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\forgotpassword.js"
+    },
+    {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\index.js",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
@@ -7423,8 +7465,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "h3n5jybmno",
-      "Integrity": "0xD1u4nOOtmcozwjBpt3jOzOkcE5AoUU5W6NPRw8e0k=",
+      "Fingerprint": "z50mh68o87",
+      "Integrity": "qUzKNYlgexjQPz54VjTYyIXqXYLZv9m5mZEUmhXtD0c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\login.js"
@@ -21753,6 +21795,116 @@
       "EndpointProperties": []
     },
     {
+      "Route": "js/forgotpassword.js",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\kbyvxzoodu.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001371742112"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "728"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FS02xedeOUbQ8Q53pU8svKcYTb8NZZyaxftH8DZ1qZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 07:33:46 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"oE9dPtkFiJY3ZTBQWY4kp/7pShwPivORyUzMjASVU50=\""
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/forgotpassword.js",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\js\\forgotpassword.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1765"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oE9dPtkFiJY3ZTBQWY4kp/7pShwPivORyUzMjASVU50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 07:33:46 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "js/forgotpassword.js.gz",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\kbyvxzoodu.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "728"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FS02xedeOUbQ8Q53pU8svKcYTb8NZZyaxftH8DZ1qZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 07:33:46 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
       "Route": "js/index.js",
       "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\plpackiaon.gz",
       "Selectors": [
@@ -22199,7 +22351,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000722021661"
+          "Quality": "0.000904977376"
         }
       ],
       "ResponseHeaders": [
@@ -22209,15 +22361,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1384"
+          "Value": "1104"
         },
         {
           "Name": "ETag",
-          "Value": "\"UaREtJkwN5BCYe5jxxWhoNntsIzIaSi2UofPXg/ZCz0=\""
+          "Value": "\"H1WfTuOoOM9iWz1OASzS63YXIzG/ppCYAGSDnWZhnDM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 Aug 2024 09:21:34 GMT"
+          "Value": "Fri, 02 Aug 2024 12:37:33 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -22233,7 +22385,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"0xD1u4nOOtmcozwjBpt3jOzOkcE5AoUU5W6NPRw8e0k=\""
+          "Value": "W/\"qUzKNYlgexjQPz54VjTYyIXqXYLZv9m5mZEUmhXtD0c=\""
         }
       ],
       "EndpointProperties": []
@@ -22249,7 +22401,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3549"
+          "Value": "2784"
         },
         {
           "Name": "Content-Type",
@@ -22257,11 +22409,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0xD1u4nOOtmcozwjBpt3jOzOkcE5AoUU5W6NPRw8e0k=\""
+          "Value": "\"qUzKNYlgexjQPz54VjTYyIXqXYLZv9m5mZEUmhXtD0c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 Aug 2024 09:21:34 GMT"
+          "Value": "Fri, 02 Aug 2024 12:37:33 GMT"
         }
       ],
       "EndpointProperties": []
@@ -22277,7 +22429,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1384"
+          "Value": "1104"
         },
         {
           "Name": "Content-Type",
@@ -22285,11 +22437,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UaREtJkwN5BCYe5jxxWhoNntsIzIaSi2UofPXg/ZCz0=\""
+          "Value": "\"H1WfTuOoOM9iWz1OASzS63YXIzG/ppCYAGSDnWZhnDM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 Aug 2024 09:21:34 GMT"
+          "Value": "Fri, 02 Aug 2024 12:37:33 GMT"
         },
         {
           "Name": "Content-Encoding",

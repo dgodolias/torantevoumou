@@ -56,41 +56,18 @@ document.querySelector('#forgot-password').addEventListener('click', function(ev
         return;
     }
 
-    // Call the Cloud Function to prepare the email
-    fetch('https://us-central1-torantevoumou-86820.cloudfunctions.net/prepareEmail', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ email: email }),
-        mode: 'cors'
+    const auth = firebase.auth();
+    auth.sendSignInLinkToEmail(email, {
+        url: window.location.origin + '/ResetPassword', // Your redirect URL
+        handleCodeInApp: true // Handle the code in your app
     })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log(data.message);
-        // After preparing email, send the sign-in link
-        const actionCodeSettings = {
-            url: window.location.origin + '/Login',
-            handleCodeInApp: true
-        };
-        
-        const auth = firebase.auth();
-        auth.sendSignInLinkToEmail(email, actionCodeSettings)
-        .then(() => {
-            alert('Verification email sent successfully. Please check your inbox.');
-        })
-        .catch(error => {
-            console.error('Error sending sign-in link:', error);
-            alert('Failed to send verification email. Please try again.');
-        });
+    .then(() => {
+        console.log('Password reset email sent successfully.');
+        alert('Password reset email sent successfully. Please check your inbox.');
     })
     .catch(error => {
-        console.error('There has been a problem with your fetch operation:', error);
-        alert('Failed to prepare email. Please try again.');
+        console.error('Error sending password reset email:', error);
+        alert('Failed to send password reset email. Please try again.');
     });
+    
 });

@@ -35,7 +35,7 @@ exports.prepareEmail = functions.https.onRequest(async (req, res) => {
   try {
     // This is just an example response; customize as needed
     res.status(200).json({
-      message: `Email ${email} is ready to receive sign-in link.`
+      message: `Email ${email} is ready to receive sign-in link.`,
     });
   } catch (error) {
     console.error("Error preparing email:", error);
@@ -43,6 +43,49 @@ exports.prepareEmail = functions.https.onRequest(async (req, res) => {
   }
 });
 
+exports.changePassword = functions.https.onRequest(async (req, res) => {
+  const allowedOrigins = [
+    "https://localhost:7177",
+    "https://www.torantevoumou.gr",
+    "https://torantevoumou.gr",
+  ];
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.set("Access-Control-Allow-Origin", origin);
+  }
+  res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
+  res.set("Access-Control-Allow-Headers", "Content-Type");
+
+  // Respond to OPTIONS requests (required by CORS preflight)
+  if (req.method === "OPTIONS") {
+    res.status(200).send();
+    return;
+  }
+
+  const {userId, newPassword} = req.body;
+
+  console.log("Request body:", req.body);
+
+  if (!userId || !newPassword) {
+    console.log("userId and newPassword are required");
+    return res.status(400).send("userId and newPassword are required");
+  }
+
+  try {
+    // Update the user's password in Firebase Authentication
+    await admin.auth().updateUser(userId, {password: newPassword});
+
+    // Optionally, you can also update the password in your Realtime Database
+    // if you store passwords there.
+
+    res.status(200).json({
+      message: `Password for user ${userId} updated successfully.`,
+    });
+  } catch (error) {
+    console.error("Error changing password:", error);
+    res.status(500).send("Error changing password");
+  }
+});
 
 exports.getUsers = functions.https.onRequest(async (req, res) => {
   try {
