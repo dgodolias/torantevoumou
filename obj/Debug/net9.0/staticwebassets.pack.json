@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\404.html"
     },
     {
+      "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\config.json",
+      "PackagePath": "staticwebassets\\config.json"
+    },
+    {
       "Id": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\appointments.css",
       "PackagePath": "staticwebassets\\css\\appointments.css"
     },

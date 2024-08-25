@@ -1,4 +1,5 @@
 key.json
 *.env
-**/bin/
-**/obj/
+bin/
+obj/
+wwwroot/config.json

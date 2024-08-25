@@ -112,6 +112,116 @@
       "EndpointProperties": []
     },
     {
+      "Route": "config.json",
+      "AssetFile": "config.json.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003289473684"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FYrrW25jmWtnLOnjbi+2TjnYoHpENoNiz1qcOSO6k2Q=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Qpda3uw8Futboiinihu+OqYr5+1gEqoQ6NIaMGraHZ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 15:31:11 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "config.json",
+      "AssetFile": "config.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "482"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qpda3uw8Futboiinihu+OqYr5+1gEqoQ6NIaMGraHZ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 15:31:11 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "config.json.gz",
+      "AssetFile": "config.json.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FYrrW25jmWtnLOnjbi+2TjnYoHpENoNiz1qcOSO6k2Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 15:31:11 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
       "Route": "css/appointments.css",
       "AssetFile": "css/appointments.css.gz",
       "Selectors": [
@@ -14940,7 +15050,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Aug 2024 15:29:35 GMT"
+          "Value": "Sun, 25 Aug 2024 09:32:58 GMT"
         },
         {
           "Name": "Vary",
@@ -14972,7 +15082,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Aug 2024 15:29:35 GMT"
+          "Value": "Sun, 25 Aug 2024 09:32:58 GMT"
         }
       ],
       "EndpointProperties": []
@@ -15004,7 +15114,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Aug 2024 15:29:35 GMT"
+          "Value": "Sun, 25 Aug 2024 09:32:58 GMT"
         },
         {
           "Name": "Vary",

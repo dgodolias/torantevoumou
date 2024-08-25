@@ -6,6 +6,12 @@
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1841"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00224DHEO\u002B\u002BTLFIqOzU9/GVQdUT9WJxd17upePqKYxDARP8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 15 Apr 2024 19:34:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/torantevoumou/config.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\config.json))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"482"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022Qpda3uw8Futboiinihu\u002BOqYr5\u002B1gEqoQ6NIaMGraHZ8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 Aug 2024 15:31:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/css/appointments.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\appointments.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1522,7 +1528,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\login.js))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2795"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Rkr5tY6uz7LPkYfb94M67TcqK7zD5bcCWokLrqIXU54=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 Aug 2024 15:29:35 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2795"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Rkr5tY6uz7LPkYfb94M67TcqK7zD5bcCWokLrqIXU54=\u0022"},{"Name":"Last-Modified","Value":"Sun, 25 Aug 2024 09:32:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/torantevoumou/js/nivo-lightbox.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\nivo-lightbox.js))</AssetFile>

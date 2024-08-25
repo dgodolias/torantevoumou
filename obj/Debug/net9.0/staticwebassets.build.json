@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6MBU5/WdjJjFOUZEY9//5yN7pIaFY+Pb8V2GHaV0+B8=",
+  "Hash": "DsaJuWyumYJpDHPC2Abjqsq6ook1x67sUQ5QdeYR6SM=",
   "Source": "torantevoumou",
   "BasePath": "_content/torantevoumou",
   "Mode": "Default",
@@ -2138,6 +2138,27 @@
       "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\fonts\\Rebeqa\\Rebeqa Font\\Web-TT\\Rebeqa-BlackItalic.css"
     },
     {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\za97mkjohs.gz",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "config.json.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\config.json",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "1l2s2jeter",
+      "Integrity": "FYrrW25jmWtnLOnjbi+2TjnYoHpENoNiz1qcOSO6k2Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\config.json"
+    },
+    {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\zd6754u37e.gz",
       "SourceId": "torantevoumou",
       "SourceType": "Discovered",
@@ -2199,6 +2220,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\404.html"
+    },
+    {
+      "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\config.json",
+      "SourceId": "torantevoumou",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\",
+      "BasePath": "_content/torantevoumou",
+      "RelativePath": "config.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uxw2sm5ilo",
+      "Integrity": "Qpda3uw8Futboiinihu+OqYr5+1gEqoQ6NIaMGraHZ8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\config.json"
     },
     {
       "Identity": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\css\\appointments.css",
@@ -7802,6 +7844,116 @@
         {
           "Name": "Last-Modified",
           "Value": "Mon, 15 Apr 2024 19:34:47 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "config.json",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\za97mkjohs.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003289473684"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "303"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FYrrW25jmWtnLOnjbi+2TjnYoHpENoNiz1qcOSO6k2Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 15:31:11 GMT"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Qpda3uw8Futboiinihu+OqYr5+1gEqoQ6NIaMGraHZ8=\""
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "config.json",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\wwwroot\\config.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "482"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qpda3uw8Futboiinihu+OqYr5+1gEqoQ6NIaMGraHZ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 15:31:11 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "config.json.gz",
+      "AssetFile": "c:\\Users\\USER\\Desktop\\webapp\\torantevoumou\\obj\\Debug\\net9.0\\compressed\\za97mkjohs.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FYrrW25jmWtnLOnjbi+2TjnYoHpENoNiz1qcOSO6k2Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 Aug 2024 15:31:11 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -22521,7 +22673,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Aug 2024 15:29:35 GMT"
+          "Value": "Sun, 25 Aug 2024 09:32:58 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -22565,7 +22717,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Aug 2024 15:29:35 GMT"
+          "Value": "Sun, 25 Aug 2024 09:32:58 GMT"
         }
       ],
       "EndpointProperties": []
@@ -22593,7 +22745,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Aug 2024 15:29:35 GMT"
+          "Value": "Sun, 25 Aug 2024 09:32:58 GMT"
         },
         {
           "Name": "Content-Encoding",
